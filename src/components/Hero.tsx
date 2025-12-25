@@ -1,0 +1,113 @@
+import { Button } from "@/components/ui/button";
+import { Star, Globe, ArrowRight } from "lucide-react";
+
+const Hero = () => {
+  const languages = [
+    { name: "Swedish", flag: "🇸🇪" },
+    { name: "Bulgarian", flag: "🇧🇬" },
+    { name: "French", flag: "🇫🇷" },
+    { name: "Arabic", flag: "🇸🇦" },
+    { name: "English", flag: "🇬🇧" },
+    { name: "Spanish", flag: "🇪🇸" },
+    { name: "Tunisian", flag: "🇹🇳" },
+  ];
+
+  const scrollToContact = () => {
+    const element = document.querySelector("#contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section className="relative min-h-screen hero-gradient text-white overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
+      </div>
+
+      <div className="relative container-custom pt-32 pb-20 md:pt-40 md:pb-28">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fade-in">
+            <Globe className="w-4 h-4 text-primary-glow" />
+            <span className="text-sm font-medium">Digital Marketing Excellence from Sofia</span>
+          </div>
+
+          {/* Main Headline */}
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-fade-in-up">
+            Grow Your Business with{" "}
+            <span className="text-gradient">Expert Digital Marketing</span>
+          </h1>
+
+          {/* Slogan */}
+          <p className="text-xl md:text-2xl text-white/80 mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            Swedish quality and precision with Bulgarian prices.
+          </p>
+
+          {/* Subheadline */}
+          <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            Google Business Profile optimization, Local SEO, and full digital marketing solutions 
+            to help your business dominate local search results.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <Button
+              onClick={scrollToContact}
+              size="lg"
+              className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-6 text-lg glow-effect group"
+            >
+              Talk to Sales
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button
+              onClick={scrollToContact}
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-6 text-lg"
+            >
+              Get Started
+            </Button>
+          </div>
+
+          {/* Language Support */}
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <p className="text-sm text-white/50 mb-4">Support in 7 languages</p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {languages.map((lang) => (
+                <div
+                  key={lang.name}
+                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm"
+                >
+                  <span>{lang.flag}</span>
+                  <span className="text-white/80">{lang.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Testimonial Preview */}
+          <div className="mt-16 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
+            <div className="flex items-center justify-center gap-1 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            <p className="text-white/80 italic mb-4">
+              "AWSOON transformed our online presence. Our Google visibility increased by 300% in just 3 months!"
+            </p>
+            <p className="text-sm text-white/50">— Happy Client</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+    </section>
+  );
+};
+
+export default Hero;
