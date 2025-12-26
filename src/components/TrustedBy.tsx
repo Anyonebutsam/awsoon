@@ -1,3 +1,5 @@
+import awsoonLogo from "@/assets/awsoon-logo.jpg";
+
 const TrustedBy = () => {
   const brands = [
     {
@@ -9,11 +11,24 @@ const TrustedBy = () => {
       logo: null,
       text: "AVANTI-BG",
     },
+    {
+      name: "Serdika Center",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Serdika_Center_Logo.svg/200px-Serdika_Center_Logo.svg.png",
+    },
   ];
 
   return (
     <section className="section-padding bg-background">
       <div className="container-custom">
+        {/* AWSOON Logo Feature */}
+        <div className="flex justify-center mb-12">
+          <img 
+            src={awsoonLogo} 
+            alt="AWSOON" 
+            className="h-24 md:h-32 rounded-2xl shadow-lg"
+          />
+        </div>
+
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
             Trusted Partners

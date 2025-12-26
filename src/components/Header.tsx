@@ -44,25 +44,29 @@ const Header = () => {
     setMobileMenuOpen(false);
   };
 
-  const headerClasses = scrolled || !isHomePage
-    ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-sm"
-    : "bg-transparent border-b border-transparent";
-
-  const textClasses = scrolled || !isHomePage
-    ? "text-muted-foreground hover:text-foreground"
-    : "text-white/80 hover:text-white";
-
-  const logoClasses = scrolled || !isHomePage
-    ? ""
-    : "brightness-0 invert";
+  const scrollProgress = Math.min(window.scrollY / 100, 1);
+  const isScrolled = scrolled || !isHomePage;
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerClasses}`}>
+    <header 
+      className="fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-out"
+      style={{
+        backgroundColor: isScrolled ? 'hsl(var(--background) / 0.95)' : 'transparent',
+        backdropFilter: isScrolled ? 'blur(12px)' : 'none',
+        borderColor: isScrolled ? 'hsl(var(--border))' : 'transparent',
+        boxShadow: isScrolled ? '0 1px 3px rgba(0,0,0,0.1)' : 'none',
+      }}
+    >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={awsoonLogo} alt="AWSOON" className={`h-10 md:h-12 rounded-lg transition-all duration-300 ${logoClasses}`} />
+            <img 
+              src={awsoonLogo} 
+              alt="AWSOON" 
+              className="h-10 md:h-12 rounded-lg transition-all duration-500"
+              style={{ filter: isScrolled ? 'none' : 'brightness(0) invert(1)' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -72,7 +76,10 @@ const Header = () => {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className={`px-4 py-2 text-sm font-medium transition-colors rounded-lg ${textClasses} ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-500"
+                  style={{
+                    color: isScrolled ? 'hsl(var(--muted-foreground))' : 'rgba(255,255,255,0.8)',
+                  }}
                 >
                   {link.name}
                 </Link>
@@ -80,7 +87,10 @@ const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className={`px-4 py-2 text-sm font-medium transition-colors rounded-lg ${textClasses} ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-500"
+                  style={{
+                    color: isScrolled ? 'hsl(var(--muted-foreground))' : 'rgba(255,255,255,0.8)',
+                  }}
                 >
                   {link.name}
                 </button>
