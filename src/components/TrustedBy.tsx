@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import awsoonLogo from "@/assets/awsoon-logo.jpg";
+import telusLogo from "@/assets/brands/telus-digital.png";
+import serdikaLogo from "@/assets/brands/serdika-center.jpg";
 
 const TrustedBy = () => {
   const { t } = useTranslation();
@@ -7,7 +9,7 @@ const TrustedBy = () => {
   const brands = [
     {
       name: "TELUS Digital",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TELUS_Communications_Logo.svg/200px-TELUS_Communications_Logo.svg.png",
+      logo: telusLogo,
     },
     {
       name: "Avanti-BG",
@@ -16,7 +18,7 @@ const TrustedBy = () => {
     },
     {
       name: "Serdika Center",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Serdika_Center_Logo.svg/200px-Serdika_Center_Logo.svg.png",
+      logo: serdikaLogo,
     },
   ];
 
@@ -45,13 +47,13 @@ const TrustedBy = () => {
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="flex items-center justify-center p-6 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+              className="flex items-center justify-center h-16 w-40 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
             >
               {brand.logo ? (
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="h-10 md:h-14 object-contain"
+                  className="h-full w-full object-contain"
                 />
               ) : (
                 <span className="text-2xl md:text-3xl font-display font-bold text-foreground/70">

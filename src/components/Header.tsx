@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import awsoonLogo from "@/assets/awsoon-logo.jpg";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,14 +59,14 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo Text */}
           <Link to="/" className="flex items-center gap-2">
-            <img 
-              src={awsoonLogo} 
-              alt="AWSOON" 
-              className="h-10 md:h-12 rounded-lg transition-all duration-500"
-              style={{ filter: isScrolled ? 'none' : 'brightness(0) invert(1)' }}
-            />
+            <span 
+              className="font-display text-xl md:text-2xl font-bold transition-all duration-500"
+              style={{ color: isScrolled ? 'hsl(var(--foreground))' : 'white' }}
+            >
+              AWSOON
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -98,8 +98,9 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* Language Switcher & CTA Button */}
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <Button
               onClick={() => scrollToSection("#contact")}
               className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-6"
@@ -108,17 +109,20 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? (
-              <X className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
-            ) : (
-              <Menu className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
-            )}
-          </button>
+          {/* Mobile: Language Switcher & Menu Button */}
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
+            <button
+              className={`p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
+              ) : (
+                <Menu className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
