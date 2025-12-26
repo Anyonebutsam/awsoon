@@ -115,6 +115,29 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.4;
+  }
+
+  /* RTL language support - Arabic, Tunisian */
+  html[lang="ar"], html[lang="tn"],
+  :lang(ar), :lang(tn) {
+    direction: rtl;
+  }
+
+  /* Arabic text styling - prevent descender clipping */
+  :lang(ar) h1, :lang(ar) h2, :lang(ar) h3, :lang(ar) h4, :lang(ar) h5, :lang(ar) h6,
+  :lang(tn) h1, :lang(tn) h2, :lang(tn) h3, :lang(tn) h4, :lang(tn) h5, :lang(tn) h6,
+  [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6,
+  [lang="tn"] h1, [lang="tn"] h2, [lang="tn"] h3, [lang="tn"] h4, [lang="tn"] h5, [lang="tn"] h6 {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.8;
+    padding-bottom: 0.15em;
+    overflow: visible;
+  }
+
+  :lang(ar), :lang(tn), [lang="ar"], [lang="tn"] {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.7;
   }
 }
 
