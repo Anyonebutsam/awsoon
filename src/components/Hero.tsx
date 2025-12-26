@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Star, Globe, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   const languages = [
     { name: "Swedish", flag: "🇸🇪" },
     { name: "Bulgarian", flag: "🇧🇬" },
@@ -33,24 +36,23 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fade-in">
             <Globe className="w-4 h-4 text-primary-glow" />
-            <span className="text-sm font-medium">Digital Marketing Excellence from Sofia</span>
+            <span className="text-sm font-medium">{t('hero.badge')}</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-fade-in-up">
-            Grow Your Business with{" "}
-            <span className="text-gradient">Expert Digital Marketing</span>
+            {t('hero.headline')}{" "}
+            <span className="text-gradient">{t('hero.headlineHighlight')}</span>
           </h1>
 
           {/* Slogan */}
           <p className="text-xl md:text-2xl text-white/80 mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Swedish quality and precision with Bulgarian prices.
+            {t('hero.slogan')}
           </p>
 
           {/* Subheadline */}
           <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Google Business Profile optimization, Local SEO, and full digital marketing solutions 
-            to help your business dominate local search results.
+            {t('hero.subheadline')}
           </p>
 
           {/* CTA Buttons */}
@@ -60,7 +62,7 @@ const Hero = () => {
               size="lg"
               className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-6 text-lg glow-effect group"
             >
-              Talk to Sales
+              {t('hero.talkToSales')}
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -69,13 +71,13 @@ const Hero = () => {
               variant="outline"
               className="border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-6 text-lg"
             >
-              Get Started
+              {t('hero.getStarted')}
             </Button>
           </div>
 
           {/* Language Support */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <p className="text-sm text-white/50 mb-4">Support in 7 languages</p>
+            <p className="text-sm text-white/50 mb-4">{t('hero.languageSupport')}</p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               {languages.map((lang) => (
                 <div
@@ -97,9 +99,9 @@ const Hero = () => {
               ))}
             </div>
             <p className="text-white/80 italic mb-4">
-              "AWSOON transformed our online presence. Our Google visibility increased by 300% in just 3 months!"
+              "{t('hero.testimonial')}"
             </p>
-            <p className="text-sm text-white/50">— Happy Client</p>
+            <p className="text-sm text-white/50">{t('hero.happyClient')}</p>
           </div>
         </div>
       </div>

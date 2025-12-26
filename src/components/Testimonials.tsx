@@ -1,7 +1,10 @@
 import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+  
   const testimonials = [
     {
       name: "Erik Johansson",
@@ -34,13 +37,13 @@ const Testimonials = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
-            Testimonials
+            {t('testimonials.label')}
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            What Our Clients Say
+            {t('testimonials.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what businesses across Europe have to say about working with us.
+            {t('testimonials.subtitle')}
           </p>
         </div>
 

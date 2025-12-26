@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import awsoonLogo from "@/assets/awsoon-logo.jpg";
 
 const TrustedBy = () => {
+  const { t } = useTranslation();
+  
   const brands = [
     {
       name: "TELUS Digital",
@@ -31,10 +34,10 @@ const TrustedBy = () => {
 
         <div className="text-center mb-12">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
-            Trusted Partners
+            {t('trustedBy.label')}
           </p>
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground">
-            Trusted by Leading Brands Across Europe
+            {t('trustedBy.title')}
           </h2>
         </div>
 
