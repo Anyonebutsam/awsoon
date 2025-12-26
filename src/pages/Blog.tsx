@@ -372,12 +372,13 @@ const Blog = () => {
                 <p className="text-muted-foreground mb-6">
                   Let our experts handle your Google Business Profile optimization and management.
                 </p>
-                <Link to="/#contact">
-                  <Button className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8">
-                    Get in Touch
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </Link>
+                <Button 
+                  className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8"
+                  onClick={() => window.location.href = '/#contact'}
+                >
+                  Get in Touch
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
               </div>
             </div>
           </div>
