@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import awsoonLogo from "@/assets/awsoon-logo.jpg";
 import telusLogo from "@/assets/brands/telus-digital.png";
+import avantiLogo from "@/assets/brands/avanti.png";
 import serdikaLogo from "@/assets/brands/serdika-center.jpg";
 
 const TrustedBy = () => {
@@ -13,8 +14,7 @@ const TrustedBy = () => {
     },
     {
       name: "Avanti-BG",
-      logo: null,
-      text: "AVANTI-BG",
+      logo: avantiLogo,
     },
     {
       name: "Serdika Center",
@@ -43,23 +43,17 @@ const TrustedBy = () => {
           </h2>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="flex items-center justify-center h-16 w-40 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+              className="flex items-center justify-center h-12 md:h-16 w-32 md:w-40 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
             >
-              {brand.logo ? (
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="h-full w-full object-contain"
-                />
-              ) : (
-                <span className="text-2xl md:text-3xl font-display font-bold text-foreground/70">
-                  {brand.text}
-                </span>
-              )}
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="max-h-full max-w-full object-contain"
+              />
             </div>
           ))}
         </div>
