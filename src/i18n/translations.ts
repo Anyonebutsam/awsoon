@@ -87,17 +87,28 @@ export const translations = {
         starter: {
           title: "Starter",
           description: "Perfect for single-location businesses just getting started with their online presence.",
-          features: ["Google Business Profile optimization", "Basic local SEO", "Monthly reporting", "Email support"]
+          feature1: "Google Business Profile optimization",
+          feature2: "Basic local SEO",
+          feature3: "Monthly reporting",
+          feature4: "Email support"
         },
         growth: {
           title: "Growth",
           description: "Ideal for businesses with multiple locations looking to expand their reach.",
-          features: ["Up to 5 locations", "Advanced local SEO", "Social media management", "Weekly reporting", "Priority support"]
+          feature1: "Up to 5 locations",
+          feature2: "Advanced local SEO",
+          feature3: "Social media management",
+          feature4: "Weekly reporting",
+          feature5: "Priority support"
         },
         enterprise: {
           title: "Enterprise",
           description: "Custom solutions for large organizations with complex needs.",
-          features: ["Unlimited locations", "Full digital marketing suite", "Dedicated account manager", "Custom reporting", "24/7 support"]
+          feature1: "Unlimited locations",
+          feature2: "Full digital marketing suite",
+          feature3: "Dedicated account manager",
+          feature4: "Custom reporting",
+          feature5: "24/7 support"
         }
       },
       // Testimonials
@@ -263,17 +274,28 @@ export const translations = {
         starter: {
           title: "Start",
           description: "Perfekt för företag med en plats som precis börjat med sin online-närvaro.",
-          features: ["Google Företagsprofil-optimering", "Grundläggande lokal SEO", "Månadsrapportering", "E-postsupport"]
+          feature1: "Google Företagsprofil-optimering",
+          feature2: "Grundläggande lokal SEO",
+          feature3: "Månadsrapportering",
+          feature4: "E-postsupport"
         },
         growth: {
           title: "Tillväxt",
           description: "Idealisk för företag med flera platser som vill utöka sin räckvidd.",
-          features: ["Upp till 5 platser", "Avancerad lokal SEO", "Hantering av sociala medier", "Veckorapportering", "Prioriterad support"]
+          feature1: "Upp till 5 platser",
+          feature2: "Avancerad lokal SEO",
+          feature3: "Hantering av sociala medier",
+          feature4: "Veckorapportering",
+          feature5: "Prioriterad support"
         },
         enterprise: {
           title: "Företag",
           description: "Anpassade lösningar för stora organisationer med komplexa behov.",
-          features: ["Obegränsade platser", "Komplett digital marknadsföringssvit", "Dedikerad kontoansvarig", "Anpassad rapportering", "24/7 support"]
+          feature1: "Obegränsade platser",
+          feature2: "Komplett digital marknadsföringssvit",
+          feature3: "Dedikerad kontoansvarig",
+          feature4: "Anpassad rapportering",
+          feature5: "24/7 support"
         }
       },
       testimonials: {
@@ -435,17 +457,28 @@ export const translations = {
         starter: {
           title: "Стартов",
           description: "Перфектен за бизнеси с една локация, които тепърва започват онлайн присъствието си.",
-          features: ["Оптимизация на Google Business Profile", "Основно локално SEO", "Месечно отчитане", "Имейл поддръжка"]
+          feature1: "Оптимизация на Google Business Profile",
+          feature2: "Основно локално SEO",
+          feature3: "Месечно отчитане",
+          feature4: "Имейл поддръжка"
         },
         growth: {
           title: "Растеж",
           description: "Идеален за бизнеси с множество локации, които искат да разширят обхвата си.",
-          features: ["До 5 локации", "Разширено локално SEO", "Управление на социални мрежи", "Седмично отчитане", "Приоритетна поддръжка"]
+          feature1: "До 5 локации",
+          feature2: "Разширено локално SEO",
+          feature3: "Управление на социални мрежи",
+          feature4: "Седмично отчитане",
+          feature5: "Приоритетна поддръжка"
         },
         enterprise: {
           title: "Корпоративен",
           description: "Персонализирани решения за големи организации с комплексни нужди.",
-          features: ["Неограничени локации", "Пълен пакет дигитален маркетинг", "Персонален мениджър", "Персонализирано отчитане", "24/7 поддръжка"]
+          feature1: "Неограничени локации",
+          feature2: "Пълен пакет дигитален маркетинг",
+          feature3: "Персонален мениджър",
+          feature4: "Персонализирано отчитане",
+          feature5: "24/7 поддръжка"
         }
       },
       testimonials: {
@@ -607,17 +640,28 @@ export const translations = {
         starter: {
           title: "Démarrage",
           description: "Parfait pour les entreprises mono-site qui commencent leur présence en ligne.",
-          features: ["Optimisation Google Business Profile", "SEO local basique", "Rapports mensuels", "Support email"]
+          feature1: "Optimisation Google Business Profile",
+          feature2: "SEO local basique",
+          feature3: "Rapports mensuels",
+          feature4: "Support email"
         },
         growth: {
           title: "Croissance",
           description: "Idéal pour les entreprises multi-sites cherchant à étendre leur portée.",
-          features: ["Jusqu'à 5 sites", "SEO local avancé", "Gestion réseaux sociaux", "Rapports hebdomadaires", "Support prioritaire"]
+          feature1: "Jusqu'à 5 sites",
+          feature2: "SEO local avancé",
+          feature3: "Gestion réseaux sociaux",
+          feature4: "Rapports hebdomadaires",
+          feature5: "Support prioritaire"
         },
         enterprise: {
           title: "Entreprise",
           description: "Solutions personnalisées pour les grandes organisations.",
-          features: ["Sites illimités", "Suite marketing digital complète", "Gestionnaire de compte dédié", "Rapports personnalisés", "Support 24/7"]
+          feature1: "Sites illimités",
+          feature2: "Suite marketing digital complète",
+          feature3: "Gestionnaire de compte dédié",
+          feature4: "Rapports personnalisés",
+          feature5: "Support 24/7"
         }
       },
       testimonials: {
@@ -779,17 +823,28 @@ export const translations = {
         starter: {
           title: "البداية",
           description: "مثالي للشركات ذات الموقع الواحد التي بدأت للتو في بناء تواجدها على الإنترنت.",
-          features: ["تحسين Google Business Profile", "SEO محلي أساسي", "تقارير شهرية", "دعم بالبريد الإلكتروني"]
+          feature1: "تحسين Google Business Profile",
+          feature2: "SEO محلي أساسي",
+          feature3: "تقارير شهرية",
+          feature4: "دعم بالبريد الإلكتروني"
         },
         growth: {
           title: "النمو",
           description: "مثالي للشركات متعددة المواقع التي تتطلع إلى توسيع نطاقها.",
-          features: ["حتى 5 مواقع", "SEO محلي متقدم", "إدارة وسائل التواصل الاجتماعي", "تقارير أسبوعية", "دعم ذو أولوية"]
+          feature1: "حتى 5 مواقع",
+          feature2: "SEO محلي متقدم",
+          feature3: "إدارة وسائل التواصل الاجتماعي",
+          feature4: "تقارير أسبوعية",
+          feature5: "دعم ذو أولوية"
         },
         enterprise: {
           title: "المؤسسات",
           description: "حلول مخصصة للمنظمات الكبيرة ذات الاحتياجات المعقدة.",
-          features: ["مواقع غير محدودة", "مجموعة تسويق رقمي كاملة", "مدير حساب مخصص", "تقارير مخصصة", "دعم 24/7"]
+          feature1: "مواقع غير محدودة",
+          feature2: "مجموعة تسويق رقمي كاملة",
+          feature3: "مدير حساب مخصص",
+          feature4: "تقارير مخصصة",
+          feature5: "دعم 24/7"
         }
       },
       testimonials: {
@@ -951,17 +1006,28 @@ export const translations = {
         starter: {
           title: "Inicial",
           description: "Perfecto para negocios de una ubicación que comienzan su presencia online.",
-          features: ["Optimización Google Business Profile", "SEO local básico", "Informes mensuales", "Soporte por email"]
+          feature1: "Optimización Google Business Profile",
+          feature2: "SEO local básico",
+          feature3: "Informes mensuales",
+          feature4: "Soporte por email"
         },
         growth: {
           title: "Crecimiento",
           description: "Ideal para negocios con múltiples ubicaciones que buscan expandir su alcance.",
-          features: ["Hasta 5 ubicaciones", "SEO local avanzado", "Gestión de redes sociales", "Informes semanales", "Soporte prioritario"]
+          feature1: "Hasta 5 ubicaciones",
+          feature2: "SEO local avanzado",
+          feature3: "Gestión de redes sociales",
+          feature4: "Informes semanales",
+          feature5: "Soporte prioritario"
         },
         enterprise: {
           title: "Empresarial",
           description: "Soluciones personalizadas para grandes organizaciones con necesidades complejas.",
-          features: ["Ubicaciones ilimitadas", "Suite completa de marketing digital", "Gestor de cuenta dedicado", "Informes personalizados", "Soporte 24/7"]
+          feature1: "Ubicaciones ilimitadas",
+          feature2: "Suite completa de marketing digital",
+          feature3: "Gestor de cuenta dedicado",
+          feature4: "Informes personalizados",
+          feature5: "Soporte 24/7"
         }
       },
       testimonials: {
@@ -1123,17 +1189,28 @@ export const translations = {
         starter: {
           title: "البداية",
           description: "ممتاز للشركات إلي عندها موقع واحد وباديين في بناء التواجد متاعهم.",
-          features: ["تحسين Google Business Profile", "SEO محلي أساسي", "تقارير شهرية", "دعم بالإيمايل"]
+          feature1: "تحسين Google Business Profile",
+          feature2: "SEO محلي أساسي",
+          feature3: "تقارير شهرية",
+          feature4: "دعم بالإيمايل"
         },
         growth: {
           title: "النمو",
           description: "مثالي للشركات إلي عندها مواقع متعددة وحابين يوسّعو.",
-          features: ["حتى 5 مواقع", "SEO محلي متقدم", "إدارة السوشيال ميديا", "تقارير أسبوعية", "دعم أولوية"]
+          feature1: "حتى 5 مواقع",
+          feature2: "SEO محلي متقدم",
+          feature3: "إدارة السوشيال ميديا",
+          feature4: "تقارير أسبوعية",
+          feature5: "دعم أولوية"
         },
         enterprise: {
           title: "للمؤسسات",
           description: "حلول مخصصة للمنظمات الكبيرة.",
-          features: ["مواقع بلا حدود", "باكاج تسويق رقمي كامل", "مدير حساب مخصص", "تقارير مخصصة", "دعم 24/7"]
+          feature1: "مواقع بلا حدود",
+          feature2: "باكاج تسويق رقمي كامل",
+          feature3: "مدير حساب مخصص",
+          feature4: "تقارير مخصصة",
+          feature5: "دعم 24/7"
         }
       },
       testimonials: {
