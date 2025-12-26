@@ -1,30 +1,33 @@
 import { Search, ClipboardCheck, Rocket, BarChart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Process = () => {
+  const { t } = useTranslation();
+  
   const steps = [
     {
       icon: Search,
       step: "01",
-      title: "Discovery",
-      description: "We start by understanding your business, goals, target audience, and current online presence through a detailed consultation.",
+      titleKey: "process.steps.discovery.title",
+      descriptionKey: "process.steps.discovery.description",
     },
     {
       icon: ClipboardCheck,
       step: "02",
-      title: "Audit & Strategy",
-      description: "Our team conducts a comprehensive audit of your digital footprint and develops a customized strategy tailored to your needs.",
+      titleKey: "process.steps.audit.title",
+      descriptionKey: "process.steps.audit.description",
     },
     {
       icon: Rocket,
       step: "03",
-      title: "Implementation",
-      description: "We execute the optimization plan with precision, implementing best practices and industry-leading techniques.",
+      titleKey: "process.steps.implementation.title",
+      descriptionKey: "process.steps.implementation.description",
     },
     {
       icon: BarChart,
       step: "04",
-      title: "Reporting & Support",
-      description: "Receive detailed monthly reports on your progress with ongoing support and continuous optimization for maximum results.",
+      titleKey: "process.steps.reporting.title",
+      descriptionKey: "process.steps.reporting.description",
     },
   ];
 
@@ -33,13 +36,13 @@ const Process = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
-            Our Process
+            {t('process.label')}
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            How We Work
+            {t('process.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A proven 4-step process designed to deliver measurable results for your business.
+            {t('process.subtitle')}
           </p>
         </div>
 
@@ -67,10 +70,10 @@ const Process = () => {
 
                 {/* Content */}
                 <h3 className="font-display text-xl font-bold text-foreground mb-3">
-                  {step.title}
+                  {t(step.titleKey)}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  {step.description}
+                  {t(step.descriptionKey)}
                 </p>
               </div>
             </div>

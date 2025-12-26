@@ -5,9 +5,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Mail, MapPin, Send, Globe } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,8 +27,8 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: t('contact.form.successTitle'),
+      description: t('contact.form.successMessage'),
     });
     
     setFormData({ name: "", email: "", company: "", service: "", message: "" });
@@ -42,13 +44,13 @@ const Contact = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
-            Contact Us
+            {t('contact.label')}
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Let's Grow Your Business
+            {t('contact.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to improve your online presence? Get in touch with us today for a free consultation.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -57,12 +59,10 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-6">
-                Get in Touch
+                {t('contact.label')}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether you're looking to optimize your Google Business Profile, improve your local SEO, 
-                or need a full digital marketing strategy, we're here to help. Reach out and let's discuss 
-                how we can grow your business together.
+                {t('contact.subtitle')}
               </p>
             </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Email</p>
+                  <p className="font-semibold text-foreground">{t('contact.info.email')}</p>
                   <a
                     href="mailto:sam@awsoon.com"
                     className="text-primary hover:underline"
@@ -87,8 +87,8 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Location</p>
-                  <p className="text-muted-foreground">Sofia, Bulgaria</p>
+                  <p className="font-semibold text-foreground">{t('contact.info.location')}</p>
+                  <p className="text-muted-foreground">{t('contact.info.locationValue')}</p>
                 </div>
               </div>
 
@@ -97,9 +97,9 @@ const Contact = () => {
                   <Globe className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Languages</p>
+                  <p className="font-semibold text-foreground">{t('contact.info.languages')}</p>
                   <p className="text-muted-foreground">
-                    Swedish, Bulgarian, French, Arabic, Tunisian, English, Spanish
+                    {t('contact.info.languagesValue')}
                   </p>
                 </div>
               </div>
@@ -126,21 +126,21 @@ const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Your Name
+                    {t('contact.form.name')}
                   </label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="John Doe"
+                    placeholder={t('contact.form.namePlaceholder')}
                     required
                     className="bg-background"
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    Email Address
+                    {t('contact.form.email')}
                   </label>
                   <Input
                     id="email"
@@ -148,7 +148,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="john@company.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                     required
                     className="bg-background"
                   />
@@ -157,49 +157,49 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                  Company Name
+                  {t('contact.form.company')}
                 </label>
                 <Input
                   id="company"
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder="Your Company"
+                  placeholder={t('contact.form.companyPlaceholder')}
                   className="bg-background"
                 />
               </div>
 
               <div>
                 <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
-                  Service Interest
+                  {t('contact.form.service')}
                 </label>
                 <Select
                   value={formData.service}
                   onValueChange={(value) => setFormData((prev) => ({ ...prev, service: value }))}
                 >
                   <SelectTrigger className="bg-background">
-                    <SelectValue placeholder="Select a service" />
+                    <SelectValue placeholder={t('contact.form.servicePlaceholder')} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="gbp">Google Business Profile Optimization</SelectItem>
-                    <SelectItem value="local-seo">Local SEO Services</SelectItem>
-                    <SelectItem value="digital-marketing">Full Digital Marketing</SelectItem>
-                    <SelectItem value="reputation">Reputation Management</SelectItem>
-                    <SelectItem value="other">Other / Not Sure</SelectItem>
+                    <SelectItem value="gbp">{t('contact.form.services.gbp')}</SelectItem>
+                    <SelectItem value="local-seo">{t('contact.form.services.localSeo')}</SelectItem>
+                    <SelectItem value="digital-marketing">{t('contact.form.services.digitalMarketing')}</SelectItem>
+                    <SelectItem value="reputation">{t('contact.form.services.reputation')}</SelectItem>
+                    <SelectItem value="other">{t('contact.form.services.other')}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Your Message
+                  {t('contact.form.message')}
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your business and goals..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                   rows={4}
                   required
                   className="bg-background resize-none"
@@ -212,10 +212,10 @@ const Contact = () => {
                 className="w-full bg-primary hover:bg-primary-hover text-primary-foreground font-semibold py-6 text-lg group"
               >
                 {isSubmitting ? (
-                  "Sending..."
+                  t('contact.form.submitting')
                 ) : (
                   <>
-                    Send Message
+                    {t('contact.form.submit')}
                     <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}

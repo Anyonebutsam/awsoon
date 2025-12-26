@@ -1,43 +1,34 @@
-import { MapPin, Search, Megaphone, BarChart3, Users, Globe } from "lucide-react";
+import { MapPin, Search, Megaphone, Users } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
       icon: MapPin,
-      title: "Google Business Profile Optimization",
-      description: "Complete GBP management including profile setup, optimization, posts, reviews management, and local visibility enhancement.",
+      titleKey: "services.gbp.title",
+      descriptionKey: "services.gbp.description",
       features: ["Profile Optimization", "Review Management", "Weekly Posts", "Photo Updates"],
     },
     {
       icon: Search,
-      title: "Local SEO Services",
-      description: "Dominate local search results with our comprehensive local SEO strategies including citations, NAP consistency, and maps optimization.",
+      titleKey: "services.localSeo.title",
+      descriptionKey: "services.localSeo.description",
       features: ["Citation Building", "NAP Consistency", "Maps Optimization", "Local Keywords"],
     },
     {
       icon: Megaphone,
-      title: "Digital Marketing Suite",
-      description: "Full-service digital marketing including SEO, social media management, paid advertising, and content marketing.",
+      titleKey: "services.digitalMarketing.title",
+      descriptionKey: "services.digitalMarketing.description",
       features: ["SEO Strategy", "Social Media", "Paid Ads", "Content Marketing"],
     },
     {
-      icon: BarChart3,
-      title: "Analytics & Reporting",
-      description: "Detailed performance tracking and insights to measure your ROI and make data-driven decisions for your marketing strategy.",
-      features: ["Monthly Reports", "ROI Tracking", "Competitor Analysis", "Growth Metrics"],
-    },
-    {
       icon: Users,
-      title: "Reputation Management",
-      description: "Build and maintain a stellar online reputation with our review generation and response strategies.",
+      titleKey: "services.reputation.title",
+      descriptionKey: "services.reputation.description",
       features: ["Review Generation", "Response Templates", "Sentiment Analysis", "Brand Monitoring"],
-    },
-    {
-      icon: Globe,
-      title: "Multilingual Support",
-      description: "Reach international audiences with marketing support in 7 languages including Swedish, Bulgarian, French, and more.",
-      features: ["7 Languages", "Cultural Adaptation", "Local Markets", "Translation Services"],
     },
   ];
 
@@ -46,21 +37,20 @@ const Services = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
-            Our Services
+            {t('services.label')}
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Everything You Need to Grow Online
+            {t('services.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From local SEO to full digital marketing solutions, we provide comprehensive services 
-            to help your business thrive in the digital landscape.
+            {t('services.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <Card
-              key={service.title}
+              key={service.titleKey}
               className="card-hover bg-card border-border/50 overflow-hidden group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -68,9 +58,9 @@ const Services = () => {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
-                <CardTitle className="font-display text-xl">{service.title}</CardTitle>
+                <CardTitle className="font-display text-xl">{t(service.titleKey)}</CardTitle>
                 <CardDescription className="text-muted-foreground leading-relaxed">
-                  {service.description}
+                  {t(service.descriptionKey)}
                 </CardDescription>
               </CardHeader>
               <CardContent>
