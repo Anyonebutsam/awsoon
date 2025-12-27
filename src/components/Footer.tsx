@@ -1,4 +1,4 @@
-import { Globe } from "lucide-react";
+import { Globe, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import awsoonLogo from "@/assets/awsoon-logo.jpg";
 
@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-background">
+    <footer dir="ltr" className="bg-foreground text-background">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -23,9 +23,20 @@ const Footer = () => {
             <p className="text-background/70 mb-6 max-w-md leading-relaxed">
               {t('footer.description')}
             </p>
-            <div className="flex items-center gap-2 text-sm text-background/50">
-              <Globe className="w-4 h-4" />
-              <span>{t('footer.languages')}</span>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 text-sm text-background/50">
+                <Globe className="w-4 h-4" />
+                <span>{t('footer.languages')}</span>
+              </div>
+              <a
+                href="https://www.linkedin.com/company/awsoon/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary hover:text-foreground flex items-center justify-center transition-all duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
 

@@ -1,9 +1,22 @@
-import { Star } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const Testimonials = () => {
   const { t } = useTranslation();
+  const plugin = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
   
   const testimonials = [
     {
@@ -30,6 +43,30 @@ const Testimonials = () => {
       avatar: "AD",
       rating: 5,
     },
+    {
+      name: "Sofia García",
+      title: "Marketing Manager",
+      company: "Barcelona Retail Group",
+      content: "Incredible results! Our Google Business Profile went from barely visible to dominating local search. The team understood our needs perfectly and delivered beyond expectations.",
+      avatar: "SG",
+      rating: 5,
+    },
+    {
+      name: "Ahmed Hassan",
+      title: "Founder",
+      company: "Cairo Digital Agency",
+      content: "Their Arabic language support was exceptional. They understood the nuances of our market and helped us reach customers we never could before. Professional and reliable.",
+      avatar: "AH",
+      rating: 5,
+    },
+    {
+      name: "Lina Bergström",
+      title: "Operations Director",
+      company: "Stockholm Consulting",
+      content: "From day one, AWSOON demonstrated professionalism and expertise. Our online reputation has never been better, and the ROI has been outstanding.",
+      avatar: "LB",
+      rating: 5,
+    },
   ];
 
   return (
@@ -47,42 +84,55 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={testimonial.name}
-              className="card-hover bg-card border-border/50"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="p-8">
-                {/* Rating */}
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-full max-w-6xl mx-auto"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={testimonial.name} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                <Card className="card-hover bg-card border-border/50 h-full">
+                  <CardContent className="p-6 md:p-8 flex flex-col h-full">
+                    {/* Rating */}
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
 
-                {/* Content */}
-                <p className="text-muted-foreground leading-relaxed mb-6 italic">
-                  "{testimonial.content}"
-                </p>
-
-                {/* Author */}
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
-                    {testimonial.avatar}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.title}, {testimonial.company}
+                    {/* Content */}
+                    <p className="text-muted-foreground leading-relaxed mb-6 italic flex-grow">
+                      "{testimonial.content}"
                     </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+
+                    {/* Author */}
+                    <div className="flex items-center gap-4 mt-auto">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                        {testimonial.avatar}
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {testimonial.title}, {testimonial.company}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-center gap-4 mt-8">
+            <CarouselPrevious className="relative inset-0 translate-y-0 bg-primary/10 hover:bg-primary/20 border-border" />
+            <CarouselNext className="relative inset-0 translate-y-0 bg-primary/10 hover:bg-primary/20 border-border" />
+          </div>
+        </Carousel>
       </div>
     </section>
   );

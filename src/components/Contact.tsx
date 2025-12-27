@@ -6,10 +6,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, MapPin, Send, Globe } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "react-i18next";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,16 +24,34 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    toast({
-      title: t('contact.form.successTitle'),
-      description: t('contact.form.successMessage'),
-    });
-    
-    setFormData({ name: "", email: "", company: "", service: "", message: "" });
-    setIsSubmitting(false);
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          ...formData,
+          language: i18n.language,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: t('contact.form.successTitle'),
+        description: t('contact.form.successMessage'),
+      });
+
+      setFormData({ name: "", email: "", company: "", service: "", message: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or email us directly at sam@awsoon.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
