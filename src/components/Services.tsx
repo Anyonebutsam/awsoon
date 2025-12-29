@@ -2,6 +2,12 @@ import { MapPin, Search, Megaphone, Users } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 
+// Google Brand Colors
+const GoogleBlue = "#4285F4";
+const GoogleRed = "#EA4335";
+const GoogleYellow = "#FBBC05";
+const GoogleGreen = "#34A853";
+
 const Services = () => {
   const { t } = useTranslation();
   
@@ -11,24 +17,28 @@ const Services = () => {
       titleKey: "services.gbp.title",
       descriptionKey: "services.gbp.description",
       features: ["Profile Optimization", "Review Management", "Weekly Posts", "Photo Updates"],
+      color: GoogleBlue, // Google Blue for Maps/GBP
     },
     {
       icon: Search,
       titleKey: "services.localSeo.title",
       descriptionKey: "services.localSeo.description",
       features: ["Citation Building", "NAP Consistency", "Maps Optimization", "Local Keywords"],
+      color: GoogleGreen, // Google Green for SEO/Growth
     },
     {
       icon: Megaphone,
       titleKey: "services.digitalMarketing.title",
       descriptionKey: "services.digitalMarketing.description",
       features: ["SEO Strategy", "Social Media", "Paid Ads", "Content Marketing"],
+      color: GoogleRed, // Google Red for Marketing/Ads
     },
     {
       icon: Users,
       titleKey: "services.reputation.title",
       descriptionKey: "services.reputation.description",
       features: ["Review Generation", "Response Templates", "Sentiment Analysis", "Brand Monitoring"],
+      color: GoogleYellow, // Google Yellow for Reputation/Stars
     },
   ];
 
@@ -55,8 +65,11 @@ const Services = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="pb-4">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="w-7 h-7 text-primary" />
+                <div 
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: `${service.color}15` }}
+                >
+                  <service.icon className="w-7 h-7" style={{ color: service.color }} />
                 </div>
                 <CardTitle className="font-display text-xl">{t(service.titleKey)}</CardTitle>
                 <CardDescription className="text-muted-foreground leading-relaxed">

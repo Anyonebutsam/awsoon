@@ -189,6 +189,149 @@ export const translations = {
         contact: "Contact",
         languages: "Serving clients in 7 languages across Europe",
         rights: "All rights reserved."
+      },
+      // Blog
+      blog: {
+        heroTitle: "Google Business Profile Guides",
+        heroSubtitle: "Step-by-step tutorials to help you optimize and manage your Google Business Profile effectively.",
+        backToBlog: "Back to Blog",
+        read: "read",
+        steps: "steps",
+        stepByStepGuide: "Step-by-Step Guide",
+        proTips: "Pro Tips",
+        readMore: "Read More",
+        cta: {
+          title: "Need Help With Your Business Profile?",
+          description: "Let our experts handle your Google Business Profile optimization and management.",
+          button: "Get in Touch"
+        },
+        bottomCta: {
+          title: "Need Professional Help?",
+          description: "Managing your Google Business Profile can be time-consuming. Let our experts handle it while you focus on running your business.",
+          button: "Contact Us Today"
+        },
+        articles: {
+          "claim-business": {
+            title: "How to Claim Your Business on Google",
+            description: "Learn how to add or claim your Google Business Profile to control how your business appears on Search and Maps.",
+            category: "Getting Started",
+            steps: {
+              step1: { title: "Go to Google Business", content: "Visit business.google.com/add and click 'Add your business to Google'." },
+              step2: { title: "Enter Your Business Details", content: "Fill in your business name, address, phone number, and category. Make sure all information is accurate." },
+              step3: { title: "Search for Existing Listing", content: "Google will search for existing profiles. If your business exists, you can claim it. If not, you'll create a new one." },
+              step4: { title: "Verify Your Business", content: "Choose a verification method (postcard, phone, email, or video) and follow the instructions." }
+            },
+            tips: {
+              tip1: "Only businesses eligible for a Business Profile can add or claim their location on Google.",
+              tip2: "You can add or claim your business at no charge.",
+              tip3: "If a verified profile exists, you'll need to request ownership from the current owner."
+            }
+          },
+          "add-managers": {
+            title: "How to Add Managers to Your Business Profile",
+            description: "Invite owners and managers to help manage your Google Business Profile and handle daily operations.",
+            category: "Team Management",
+            steps: {
+              step1: { title: "Access Your Business Profile", content: "Go to business.google.com and sign in to your Google Account." },
+              step2: { title: "Navigate to People Settings", content: "Click on the profile you want to manage, then select 'People and access' from the menu." },
+              step3: { title: "Add New User", content: "Click 'Add' and enter the email address of the person you want to add." },
+              step4: { title: "Choose Role", content: "Select either 'Owner' (full access) or 'Manager' (can edit but not add/remove users)." },
+              step5: { title: "Send Invitation", content: "Click 'Invite' and the person will receive an email to accept the invitation." }
+            },
+            tips: {
+              tip1: "Each user needs their own Google Account to access the Business Profile.",
+              tip2: "A profile can have multiple owners but only one primary owner.",
+              tip3: "Managers can't add or remove users or delete the profile."
+            }
+          },
+          "local-ranking": {
+            title: "Tips to Improve Your Local Ranking on Google",
+            description: "Discover strategies to boost your business visibility in local search results on Google Maps and Search.",
+            category: "SEO & Ranking",
+            steps: {
+              step1: { title: "Keep Information Up-to-Date", content: "Ensure your address, phone number, business hours, and category are complete and accurate." },
+              step2: { title: "Verify Your Business", content: "Verified businesses are more likely to show up in search results. Complete the verification process." },
+              step3: { title: "Add Photos and Updates", content: "Regularly add high-quality photos and post updates about your products, services, or events." },
+              step4: { title: "Manage Reviews", content: "Respond to customer reviews, both positive and negative. This shows engagement and builds trust." },
+              step5: { title: "Optimize Your Description", content: "Write a compelling business description that includes relevant keywords naturally." }
+            },
+            tips: {
+              tip1: "Complete profiles with accurate info are more likely to appear in relevant searches.",
+              tip2: "Photos of your business, products, and team can increase customer engagement.",
+              tip3: "Responding to reviews shows you value customer feedback."
+            }
+          },
+          "ownership-conflict": {
+            title: "How to Handle Business Profile Ownership Conflicts",
+            description: "Learn how to request ownership of a Business Profile that's currently managed by someone else.",
+            category: "Account Management",
+            steps: {
+              step1: { title: "Find Your Business", content: "Go to business.google.com/add and search for your business name and address." },
+              step2: { title: "Select Your Business", content: "Choose your business from the list. You'll see a message saying 'Someone else may manage this Business Profile'." },
+              step3: { title: "Request Access", content: "Click 'Request access' if you're authorized to manage the business." },
+              step4: { title: "Fill Out the Form", content: "Complete the ownership request form with your relationship to the business." },
+              step5: { title: "Wait for Response", content: "The current owner has 3 days to respond. If no response, you may be able to claim the profile." }
+            },
+            tips: {
+              tip1: "If the request is denied, you can appeal the decision.",
+              tip2: "For Service Area Businesses without a physical location, contact Google support directly.",
+              tip3: "Keep documentation proving your association with the business."
+            }
+          },
+          "handle-duplicates": {
+            title: "How to Handle Duplicate Business Profiles",
+            description: "Resolve issues with multiple profiles for the same business to avoid misleading customers.",
+            category: "Account Management",
+            steps: {
+              step1: { title: "Identify the Duplicate", content: "Search for your business on Google Maps to find any duplicate listings." },
+              step2: { title: "Determine Which to Keep", content: "Keep the verified profile with the most reviews and complete information." },
+              step3: { title: "Request Ownership", content: "If you don't own both profiles, request ownership of the one you want to keep." },
+              step4: { title: "Suggest an Edit", content: "For the duplicate, click 'Suggest an edit' and select 'Close or remove' then 'Duplicate of another place'." },
+              step5: { title: "Contact Support", content: "If the duplicate persists, contact Google Business Profile support for assistance." }
+            },
+            tips: {
+              tip1: "Multiple profiles for the same business are against Google's policies.",
+              tip2: "Duplicate profiles may not show on Google Search or Maps.",
+              tip3: "If a verified profile exists and is owned by someone else, request access first."
+            }
+          },
+          "remove-reviews": {
+            title: "How to Report and Remove Inappropriate Reviews",
+            description: "Learn the proper process for flagging reviews that violate Google's content policies.",
+            category: "Reputation Management",
+            steps: {
+              step1: { title: "Go to Your Business Profile", content: "Visit business.google.com and select 'Read reviews'." },
+              step2: { title: "Find the Review", content: "Locate the review you want to report." },
+              step3: { title: "Click Report", content: "Click the three dots or report icon next to the review." },
+              step4: { title: "Select Violation Type", content: "Choose the reason why the review violates policies (spam, profanity, off-topic, etc.)." },
+              step5: { title: "Submit Report", content: "Click 'Send report' and wait for Google to review (typically several days)." }
+            },
+            tips: {
+              tip1: "Only reviews that violate Google policies are eligible for removal.",
+              tip2: "Don't report reviews just because they're negative - that's not a violation.",
+              tip3: "You can check the status of your report in the Reviews Management Tool.",
+              tip4: "Consider responding professionally to negative reviews instead of trying to remove them."
+            }
+          },
+          "verify-profile": {
+            title: "How to Verify Your Google Business Profile",
+            description: "Complete the verification process to gain full control of your Business Profile and edit your business information.",
+            category: "Getting Started",
+            steps: {
+              step1: { title: "Find Your Business", content: "Search for your business name on Google or Google Maps, or go to business.google.com." },
+              step2: { title: "Claim or Create Profile", content: "Click 'Claim this business' or 'Own this business?' if it exists, otherwise add it." },
+              step3: { title: "Choose Verification Method", content: "Select from available options: postcard by mail, phone call, email, or video verification." },
+              step4: { title: "Complete Verification", content: "Follow the instructions for your chosen method. Postcard takes 5-14 days; other methods are faster." },
+              step5: { title: "Enter Verification Code", content: "Once you receive your code, enter it in your Business Profile to complete verification." }
+            },
+            tips: {
+              tip1: "You need a Google Account to sign up for a Business Profile.",
+              tip2: "Some businesses qualify for instant verification if they've verified their website.",
+              tip3: "Video verification requires showing your business location and documents proving ownership.",
+              tip4: "Keep your business information accurate during verification."
+            }
+          }
+        }
       }
     }
   },
