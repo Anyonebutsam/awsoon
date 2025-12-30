@@ -16,10 +16,10 @@ const TrustedBy = () => {
       name: "Avanti-BG",
       logo: avantiLogo,
     },
-    {
-      name: "Serdika Center",
-      logo: serdikaLogo,
-    },
+  //  {
+  //    name: "Serdika Center",
+ //     logo: serdikaLogo,
+   // },
   ];
 
   return (
