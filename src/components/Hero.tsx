@@ -101,7 +101,7 @@ const Hero = () => {
             <p className="text-white/80 italic mb-4">
               "{t('hero.testimonial')}"
             </p>
-            <p className="text-sm text-white/50">{t('hero.happyClient')}</p>
+            <p className="text-sm text-white/50">— Erik Johansson, Stockholm Dental Clinic</p>
           </div>
         </div>
       </div>

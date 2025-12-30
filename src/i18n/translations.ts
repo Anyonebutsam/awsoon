@@ -515,6 +515,148 @@ export const translations = {
         contact: "Kontakt",
         languages: "Betjänar kunder på 7 språk över hela Europa",
         rights: "Alla rättigheter förbehållna."
+      },
+      blog: {
+        heroTitle: "Google Företagsprofil-guider",
+        heroSubtitle: "Steg-för-steg-tutorials för att hjälpa dig optimera och hantera din Google Företagsprofil effektivt.",
+        backToBlog: "Tillbaka till Blogg",
+        read: "läsning",
+        steps: "steg",
+        stepByStepGuide: "Steg-för-steg-guide",
+        proTips: "Proffsiga Tips",
+        readMore: "Läs Mer",
+        cta: {
+          title: "Behöver du hjälp med din Företagsprofil?",
+          description: "Låt våra experter hantera din Google Företagsprofil-optimering och -hantering.",
+          button: "Kontakta Oss"
+        },
+        bottomCta: {
+          title: "Behöver du professionell hjälp?",
+          description: "Att hantera din Google Företagsprofil kan vara tidskrävande. Låt våra experter ta hand om det medan du fokuserar på att driva ditt företag.",
+          button: "Kontakta Oss Idag"
+        },
+        articles: {
+          "claim-business": {
+            title: "Hur du gör anspråk på ditt företag på Google",
+            description: "Lär dig hur du lägger till eller gör anspråk på din Google Företagsprofil för att kontrollera hur ditt företag visas på Sök och Maps.",
+            category: "Kom Igång",
+            steps: {
+              step1: { title: "Gå till Google Business", content: "Besök business.google.com/add och klicka på 'Lägg till ditt företag på Google'." },
+              step2: { title: "Ange dina företagsuppgifter", content: "Fyll i företagsnamn, adress, telefonnummer och kategori. Se till att all information är korrekt." },
+              step3: { title: "Sök efter befintlig lista", content: "Google söker efter befintliga profiler. Om ditt företag finns kan du göra anspråk på det. Annars skapar du en ny." },
+              step4: { title: "Verifiera ditt företag", content: "Välj en verifieringsmetod (vykort, telefon, e-post eller video) och följ instruktionerna." }
+            },
+            tips: {
+              tip1: "Endast företag som är berättigade till en Företagsprofil kan lägga till eller göra anspråk på sin plats på Google.",
+              tip2: "Du kan lägga till eller göra anspråk på ditt företag utan kostnad.",
+              tip3: "Om en verifierad profil finns måste du begära äganderätt från nuvarande ägare."
+            }
+          },
+          "add-managers": {
+            title: "Hur du lägger till chefer till din Företagsprofil",
+            description: "Bjud in ägare och chefer för att hjälpa till att hantera din Google Företagsprofil och dagliga operationer.",
+            category: "Teamhantering",
+            steps: {
+              step1: { title: "Gå till din Företagsprofil", content: "Gå till business.google.com och logga in på ditt Google-konto." },
+              step2: { title: "Navigera till Personinställningar", content: "Klicka på profilen du vill hantera och välj sedan 'Personer och åtkomst' från menyn." },
+              step3: { title: "Lägg till ny användare", content: "Klicka på 'Lägg till' och ange e-postadressen för personen du vill lägga till." },
+              step4: { title: "Välj roll", content: "Välj antingen 'Ägare' (full åtkomst) eller 'Chef' (kan redigera men inte lägga till/ta bort användare)." },
+              step5: { title: "Skicka inbjudan", content: "Klicka på 'Bjud in' och personen får ett e-postmeddelande för att acceptera inbjudan." }
+            },
+            tips: {
+              tip1: "Varje användare behöver ett eget Google-konto för att komma åt Företagsprofilen.",
+              tip2: "En profil kan ha flera ägare men endast en primär ägare.",
+              tip3: "Chefer kan inte lägga till eller ta bort användare eller radera profilen."
+            }
+          },
+          "local-ranking": {
+            title: "Tips för att förbättra din lokala ranking på Google",
+            description: "Upptäck strategier för att öka din företagssynlighet i lokala sökresultat på Google Maps och Sök.",
+            category: "SEO & Ranking",
+            steps: {
+              step1: { title: "Håll informationen uppdaterad", content: "Se till att din adress, telefonnummer, öppettider och kategori är kompletta och korrekta." },
+              step2: { title: "Verifiera ditt företag", content: "Verifierade företag är mer benägna att dyka upp i sökresultat. Slutför verifieringsprocessen." },
+              step3: { title: "Lägg till foton och uppdateringar", content: "Lägg regelbundet till högkvalitativa foton och posta uppdateringar om dina produkter, tjänster eller evenemang." },
+              step4: { title: "Hantera recensioner", content: "Svara på kundrecensioner, både positiva och negativa. Detta visar engagemang och bygger förtroende." },
+              step5: { title: "Optimera din beskrivning", content: "Skriv en övertygande företagsbeskrivning som innehåller relevanta nyckelord naturligt." }
+            },
+            tips: {
+              tip1: "Kompletta profiler med korrekt info är mer benägna att visas i relevanta sökningar.",
+              tip2: "Foton på ditt företag, produkter och team kan öka kundengagemanget.",
+              tip3: "Att svara på recensioner visar att du värdesätter kundåterkoppling."
+            }
+          },
+          "ownership-conflict": {
+            title: "Hur du hanterar ägarskapskonflikt för Företagsprofil",
+            description: "Lär dig hur du begär äganderätt till en Företagsprofil som för närvarande hanteras av någon annan.",
+            category: "Kontohantering",
+            steps: {
+              step1: { title: "Hitta ditt företag", content: "Gå till business.google.com/add och sök efter ditt företagsnamn och adress." },
+              step2: { title: "Välj ditt företag", content: "Välj ditt företag från listan. Du ser ett meddelande som säger 'Någon annan kan hantera denna Företagsprofil'." },
+              step3: { title: "Begär åtkomst", content: "Klicka på 'Begär åtkomst' om du är behörig att hantera företaget." },
+              step4: { title: "Fyll i formuläret", content: "Fyll i formuläret för ägarskapsförfrågan med din relation till företaget." },
+              step5: { title: "Vänta på svar", content: "Den nuvarande ägaren har 3 dagar att svara. Om inget svar kan du eventuellt göra anspråk på profilen." }
+            },
+            tips: {
+              tip1: "Om begäran avvisas kan du överklaga beslutet.",
+              tip2: "För tjänsteområdesföretag utan fysisk plats, kontakta Google-support direkt.",
+              tip3: "Behåll dokumentation som bevisar din koppling till företaget."
+            }
+          },
+          "handle-duplicates": {
+            title: "Hur du hanterar dubbletter av Företagsprofiler",
+            description: "Lös problem med flera profiler för samma företag för att undvika att vilseleda kunder.",
+            category: "Kontohantering",
+            steps: {
+              step1: { title: "Identifiera dubbletten", content: "Sök efter ditt företag på Google Maps för att hitta eventuella dubblettlistor." },
+              step2: { title: "Bestäm vilken du ska behålla", content: "Behåll den verifierade profilen med flest recensioner och fullständig information." },
+              step3: { title: "Begär äganderätt", content: "Om du inte äger båda profilerna, begär äganderätt till den du vill behålla." },
+              step4: { title: "Föreslå en redigering", content: "För dubbletten, klicka på 'Föreslå en redigering' och välj 'Stäng eller ta bort' sedan 'Dubblett av annan plats'." },
+              step5: { title: "Kontakta support", content: "Om dubbletten kvarstår, kontakta Google Företagsprofil-support för hjälp." }
+            },
+            tips: {
+              tip1: "Flera profiler för samma företag strider mot Googles policyer.",
+              tip2: "Dubblettprofiler kanske inte visas på Google Sök eller Maps.",
+              tip3: "Om en verifierad profil finns och ägs av någon annan, begär först åtkomst."
+            }
+          },
+          "remove-reviews": {
+            title: "Hur du rapporterar och tar bort olämpliga recensioner",
+            description: "Lär dig rätt process för att flagga recensioner som bryter mot Googles innehållspolicyer.",
+            category: "Rykteshantering",
+            steps: {
+              step1: { title: "Gå till din Företagsprofil", content: "Besök business.google.com och välj 'Läs recensioner'." },
+              step2: { title: "Hitta recensionen", content: "Lokalisera recensionen du vill rapportera." },
+              step3: { title: "Klicka på Rapportera", content: "Klicka på de tre prickarna eller rapportikonen bredvid recensionen." },
+              step4: { title: "Välj typ av överträdelse", content: "Välj orsaken till varför recensionen bryter mot policyer (spam, svordomar, off-topic, etc.)." },
+              step5: { title: "Skicka rapport", content: "Klicka på 'Skicka rapport' och vänta på att Google granskar (vanligtvis flera dagar)." }
+            },
+            tips: {
+              tip1: "Endast recensioner som bryter mot Googles policyer kan tas bort.",
+              tip2: "Rapportera inte recensioner bara för att de är negativa - det är ingen överträdelse.",
+              tip3: "Du kan kontrollera status för din rapport i Recensionshanteringsverktyget.",
+              tip4: "Överväg att svara professionellt på negativa recensioner istället för att försöka ta bort dem."
+            }
+          },
+          "verify-profile": {
+            title: "Hur du verifierar din Google Företagsprofil",
+            description: "Slutför verifieringsprocessen för att få full kontroll över din Företagsprofil och redigera din företagsinformation.",
+            category: "Kom Igång",
+            steps: {
+              step1: { title: "Hitta ditt företag", content: "Sök efter ditt företagsnamn på Google eller Google Maps, eller gå till business.google.com." },
+              step2: { title: "Gör anspråk på eller skapa profil", content: "Klicka på 'Gör anspråk på detta företag' eller 'Äger du detta företag?' om det finns, annars lägg till det." },
+              step3: { title: "Välj verifieringsmetod", content: "Välj bland tillgängliga alternativ: vykort med post, telefonsamtal, e-post eller videoverifiering." },
+              step4: { title: "Slutför verifiering", content: "Följ instruktionerna för din valda metod. Vykort tar 5-14 dagar; andra metoder är snabbare." },
+              step5: { title: "Ange verifieringskod", content: "När du får din kod, ange den i din Företagsprofil för att slutföra verifieringen." }
+            },
+            tips: {
+              tip1: "Du behöver ett Google-konto för att registrera dig för en Företagsprofil.",
+              tip2: "Vissa företag kvalificerar för omedelbar verifiering om de har verifierat sin webbplats.",
+              tip3: "Videoverifiering kräver att du visar din företagsplats och dokument som bevisar äganderätt.",
+              tip4: "Håll din företagsinformation korrekt under verifieringen."
+            }
+          }
+        }
       }
     }
   },
@@ -698,6 +840,148 @@ export const translations = {
         contact: "Контакт",
         languages: "Обслужваме клиенти на 7 езика в Европа",
         rights: "Всички права запазени."
+      },
+      blog: {
+        heroTitle: "Ръководства за Google Business Profile",
+        heroSubtitle: "Стъпка по стъпка уроци, които ще ви помогнат да оптимизирате и управлявате вашия Google Business Profile ефективно.",
+        backToBlog: "Обратно към Блога",
+        read: "четене",
+        steps: "стъпки",
+        stepByStepGuide: "Ръководство стъпка по стъпка",
+        proTips: "Професионални съвети",
+        readMore: "Прочетете повече",
+        cta: {
+          title: "Нуждаете се от помощ с вашия бизнес профил?",
+          description: "Нека нашите експерти се погрижат за оптимизацията и управлението на вашия Google Business Profile.",
+          button: "Свържете се с нас"
+        },
+        bottomCta: {
+          title: "Нуждаете се от професионална помощ?",
+          description: "Управлението на вашия Google Business Profile може да отнеме време. Нека нашите експерти се погрижат за това, докато вие се фокусирате върху бизнеса си.",
+          button: "Свържете се днес"
+        },
+        articles: {
+          "claim-business": {
+            title: "Как да заявите бизнеса си в Google",
+            description: "Научете как да добавите или заявите вашия Google Business Profile, за да контролирате как бизнесът ви се показва в Търсене и Карти.",
+            category: "Първи стъпки",
+            steps: {
+              step1: { title: "Отидете на Google Business", content: "Посетете business.google.com/add и кликнете 'Добавете бизнеса си в Google'." },
+              step2: { title: "Въведете данните за бизнеса", content: "Попълнете името на бизнеса, адрес, телефонен номер и категория. Уверете се, че цялата информация е точна." },
+              step3: { title: "Потърсете съществуващ профил", content: "Google ще потърси съществуващи профили. Ако бизнесът ви съществува, можете да го заявите. Ако не, ще създадете нов." },
+              step4: { title: "Потвърдете бизнеса си", content: "Изберете метод за потвърждение (пощенска картичка, телефон, имейл или видео) и следвайте инструкциите." }
+            },
+            tips: {
+              tip1: "Само бизнеси, отговарящи на условията за Business Profile, могат да добавят или заявят местоположението си в Google.",
+              tip2: "Можете да добавите или заявите бизнеса си безплатно.",
+              tip3: "Ако съществува потвърден профил, ще трябва да поискате собственост от настоящия собственик."
+            }
+          },
+          "add-managers": {
+            title: "Как да добавите мениджъри към вашия бизнес профил",
+            description: "Поканете собственици и мениджъри да помагат в управлението на вашия Google Business Profile.",
+            category: "Управление на екип",
+            steps: {
+              step1: { title: "Достъп до вашия бизнес профил", content: "Отидете на business.google.com и влезте в акаунта си в Google." },
+              step2: { title: "Навигирайте до Настройки за хора", content: "Кликнете на профила, който искате да управлявате, след това изберете 'Хора и достъп' от менюто." },
+              step3: { title: "Добавете нов потребител", content: "Кликнете 'Добави' и въведете имейл адреса на човека, когото искате да добавите." },
+              step4: { title: "Изберете роля", content: "Изберете или 'Собственик' (пълен достъп) или 'Мениджър' (може да редактира, но не може да добавя/премахва потребители)." },
+              step5: { title: "Изпратете покана", content: "Кликнете 'Покани' и човекът ще получи имейл, за да приеме поканата." }
+            },
+            tips: {
+              tip1: "Всеки потребител се нуждае от собствен акаунт в Google за достъп до Business Profile.",
+              tip2: "Профилът може да има множество собственици, но само един основен собственик.",
+              tip3: "Мениджърите не могат да добавят или премахват потребители или да изтриват профила."
+            }
+          },
+          "local-ranking": {
+            title: "Съвети за подобряване на локалното ви класиране в Google",
+            description: "Открийте стратегии за повишаване на видимостта на бизнеса ви в локалните резултати от търсенето.",
+            category: "SEO и класиране",
+            steps: {
+              step1: { title: "Поддържайте информацията актуална", content: "Уверете се, че адресът, телефонният номер, работното време и категорията са пълни и точни." },
+              step2: { title: "Потвърдете бизнеса си", content: "Потвърдените бизнеси е по-вероятно да се показват в резултатите от търсенето." },
+              step3: { title: "Добавяйте снимки и актуализации", content: "Редовно добавяйте висококачествени снимки и публикувайте актуализации за вашите продукти или услуги." },
+              step4: { title: "Управлявайте отзивите", content: "Отговаряйте на отзивите на клиентите - както положителните, така и отрицателните." },
+              step5: { title: "Оптимизирайте описанието си", content: "Напишете убедително описание на бизнеса, което включва съответни ключови думи." }
+            },
+            tips: {
+              tip1: "Пълните профили с точна информация е по-вероятно да се появят в съответните търсения.",
+              tip2: "Снимките на вашия бизнес, продукти и екип могат да увеличат ангажираността на клиентите.",
+              tip3: "Отговарянето на отзиви показва, че цените обратната връзка от клиентите."
+            }
+          },
+          "ownership-conflict": {
+            title: "Как да се справите с конфликти за собственост на бизнес профил",
+            description: "Научете как да поискате собственост върху Business Profile, който в момента се управлява от някой друг.",
+            category: "Управление на акаунт",
+            steps: {
+              step1: { title: "Намерете бизнеса си", content: "Отидете на business.google.com/add и потърсете името и адреса на бизнеса си." },
+              step2: { title: "Изберете бизнеса си", content: "Изберете бизнеса си от списъка. Ще видите съобщение, че 'Някой друг може да управлява този Business Profile'." },
+              step3: { title: "Поискайте достъп", content: "Кликнете 'Поискай достъп', ако сте упълномощени да управлявате бизнеса." },
+              step4: { title: "Попълнете формуляра", content: "Попълнете формуляра за заявка за собственост с вашата връзка с бизнеса." },
+              step5: { title: "Изчакайте отговор", content: "Настоящият собственик има 3 дни да отговори. Ако няма отговор, може да можете да заявите профила." }
+            },
+            tips: {
+              tip1: "Ако заявката бъде отхвърлена, можете да обжалвате решението.",
+              tip2: "За бизнеси с обслужваща зона без физическо местоположение, свържете се директно с поддръжката на Google.",
+              tip3: "Съхранявайте документация, доказваща връзката ви с бизнеса."
+            }
+          },
+          "handle-duplicates": {
+            title: "Как да се справите с дублирани бизнес профили",
+            description: "Разрешете проблеми с множество профили за един и същ бизнес.",
+            category: "Управление на акаунт",
+            steps: {
+              step1: { title: "Идентифицирайте дубликата", content: "Потърсете бизнеса си в Google Maps, за да намерите дублиращи се обяви." },
+              step2: { title: "Определете кой да запазите", content: "Запазете потвърдения профил с най-много отзиви и пълна информация." },
+              step3: { title: "Поискайте собственост", content: "Ако не притежавате и двата профила, поискайте собственост върху този, който искате да запазите." },
+              step4: { title: "Предложете редакция", content: "За дубликата кликнете 'Предложи редакция' и изберете 'Затвори или премахни', след това 'Дубликат на друго място'." },
+              step5: { title: "Свържете се с поддръжката", content: "Ако дубликатът продължава да съществува, свържете се с поддръжката на Google Business Profile." }
+            },
+            tips: {
+              tip1: "Множество профили за един и същ бизнес противоречат на политиките на Google.",
+              tip2: "Дублиращите се профили може да не се показват в Google Търсене или Карти.",
+              tip3: "Ако съществува потвърден профил, който се притежава от някой друг, първо поискайте достъп."
+            }
+          },
+          "remove-reviews": {
+            title: "Как да докладвате и премахнете неподходящи отзиви",
+            description: "Научете правилния процес за маркиране на отзиви, които нарушават политиките на Google.",
+            category: "Управление на репутация",
+            steps: {
+              step1: { title: "Отидете на вашия бизнес профил", content: "Посетете business.google.com и изберете 'Прочетете отзивите'." },
+              step2: { title: "Намерете отзива", content: "Намерете отзива, който искате да докладвате." },
+              step3: { title: "Кликнете Докладвай", content: "Кликнете на трите точки или иконата за докладване до отзива." },
+              step4: { title: "Изберете тип нарушение", content: "Изберете причината защо отзивът нарушава политиките (спам, нецензурен език, не по темата и т.н.)." },
+              step5: { title: "Изпратете доклада", content: "Кликнете 'Изпрати доклад' и изчакайте Google да прегледа (обикновено няколко дни)." }
+            },
+            tips: {
+              tip1: "Само отзиви, които нарушават политиките на Google, могат да бъдат премахнати.",
+              tip2: "Не докладвайте отзиви само защото са отрицателни - това не е нарушение.",
+              tip3: "Можете да проверите статуса на вашия доклад в Инструмента за управление на отзиви.",
+              tip4: "Помислете да отговорите професионално на отрицателните отзиви, вместо да се опитвате да ги премахнете."
+            }
+          },
+          "verify-profile": {
+            title: "Как да потвърдите вашия Google Business Profile",
+            description: "Завършете процеса на потвърждение, за да получите пълен контрол над вашия Business Profile.",
+            category: "Първи стъпки",
+            steps: {
+              step1: { title: "Намерете бизнеса си", content: "Потърсете името на бизнеса си в Google или Google Maps, или отидете на business.google.com." },
+              step2: { title: "Заявете или създайте профил", content: "Кликнете 'Заяви този бизнес' или 'Притежавате ли този бизнес?', ако съществува, в противен случай го добавете." },
+              step3: { title: "Изберете метод за потвърждение", content: "Изберете от наличните опции: пощенска картичка по пощата, телефонно обаждане, имейл или видео потвърждение." },
+              step4: { title: "Завършете потвърждението", content: "Следвайте инструкциите за избрания от вас метод. Пощенската картичка отнема 5-14 дни; други методи са по-бързи." },
+              step5: { title: "Въведете кода за потвърждение", content: "Когато получите кода си, въведете го във вашия Business Profile, за да завършите потвърждението." }
+            },
+            tips: {
+              tip1: "Имате нужда от акаунт в Google, за да се регистрирате за Business Profile.",
+              tip2: "Някои бизнеси се квалифицират за мигновено потвърждение, ако са потвърдили уебсайта си.",
+              tip3: "Видео потвърждението изисква да покажете местоположението на бизнеса и документи, доказващи собственост.",
+              tip4: "Поддържайте информацията за бизнеса си точна по време на потвърждението."
+            }
+          }
+        }
       }
     }
   },
@@ -881,6 +1165,148 @@ export const translations = {
         contact: "Contact",
         languages: "Service clients en 7 langues à travers l'Europe",
         rights: "Tous droits réservés."
+      },
+      blog: {
+        heroTitle: "Guides Google Business Profile",
+        heroSubtitle: "Tutoriels étape par étape pour vous aider à optimiser et gérer votre Google Business Profile efficacement.",
+        backToBlog: "Retour au Blog",
+        read: "lecture",
+        steps: "étapes",
+        stepByStepGuide: "Guide étape par étape",
+        proTips: "Conseils Pro",
+        readMore: "Lire Plus",
+        cta: {
+          title: "Besoin d'aide avec votre profil d'entreprise?",
+          description: "Laissez nos experts gérer l'optimisation et la gestion de votre Google Business Profile.",
+          button: "Contactez-nous"
+        },
+        bottomCta: {
+          title: "Besoin d'aide professionnelle?",
+          description: "Gérer votre Google Business Profile peut prendre du temps. Laissez nos experts s'en occuper pendant que vous vous concentrez sur votre entreprise.",
+          button: "Contactez-nous Aujourd'hui"
+        },
+        articles: {
+          "claim-business": {
+            title: "Comment revendiquer votre entreprise sur Google",
+            description: "Apprenez à ajouter ou revendiquer votre Google Business Profile pour contrôler comment votre entreprise apparaît sur Recherche et Maps.",
+            category: "Premiers Pas",
+            steps: {
+              step1: { title: "Allez sur Google Business", content: "Visitez business.google.com/add et cliquez sur 'Ajouter votre entreprise à Google'." },
+              step2: { title: "Entrez vos coordonnées", content: "Remplissez le nom, l'adresse, le téléphone et la catégorie. Assurez-vous que toutes les informations sont exactes." },
+              step3: { title: "Recherchez une fiche existante", content: "Google recherchera les profils existants. Si votre entreprise existe, vous pouvez la revendiquer. Sinon, vous en créerez une nouvelle." },
+              step4: { title: "Vérifiez votre entreprise", content: "Choisissez une méthode de vérification (carte postale, téléphone, email ou vidéo) et suivez les instructions." }
+            },
+            tips: {
+              tip1: "Seules les entreprises éligibles peuvent ajouter ou revendiquer leur emplacement sur Google.",
+              tip2: "Vous pouvez ajouter ou revendiquer votre entreprise gratuitement.",
+              tip3: "Si un profil vérifié existe, vous devrez demander la propriété au propriétaire actuel."
+            }
+          },
+          "add-managers": {
+            title: "Comment ajouter des gestionnaires à votre profil",
+            description: "Invitez des propriétaires et gestionnaires pour aider à gérer votre Google Business Profile.",
+            category: "Gestion d'équipe",
+            steps: {
+              step1: { title: "Accédez à votre profil", content: "Allez sur business.google.com et connectez-vous à votre compte Google." },
+              step2: { title: "Accédez aux paramètres Personnes", content: "Cliquez sur le profil à gérer, puis sélectionnez 'Personnes et accès' dans le menu." },
+              step3: { title: "Ajoutez un utilisateur", content: "Cliquez sur 'Ajouter' et entrez l'adresse email de la personne à ajouter." },
+              step4: { title: "Choisissez le rôle", content: "Sélectionnez 'Propriétaire' (accès complet) ou 'Gestionnaire' (peut modifier mais pas ajouter/supprimer)." },
+              step5: { title: "Envoyez l'invitation", content: "Cliquez sur 'Inviter' et la personne recevra un email pour accepter." }
+            },
+            tips: {
+              tip1: "Chaque utilisateur a besoin de son propre compte Google pour accéder au Business Profile.",
+              tip2: "Un profil peut avoir plusieurs propriétaires mais un seul propriétaire principal.",
+              tip3: "Les gestionnaires ne peuvent pas ajouter/supprimer des utilisateurs ou supprimer le profil."
+            }
+          },
+          "local-ranking": {
+            title: "Conseils pour améliorer votre classement local sur Google",
+            description: "Découvrez des stratégies pour améliorer la visibilité de votre entreprise dans les résultats de recherche locaux.",
+            category: "SEO et Classement",
+            steps: {
+              step1: { title: "Maintenez vos informations à jour", content: "Assurez-vous que votre adresse, téléphone, horaires et catégorie sont complets et exacts." },
+              step2: { title: "Vérifiez votre entreprise", content: "Les entreprises vérifiées ont plus de chances d'apparaître dans les résultats de recherche." },
+              step3: { title: "Ajoutez photos et actualités", content: "Ajoutez régulièrement des photos de qualité et publiez des actualités sur vos produits ou services." },
+              step4: { title: "Gérez les avis", content: "Répondez aux avis clients, positifs comme négatifs. Cela montre votre engagement." },
+              step5: { title: "Optimisez votre description", content: "Rédigez une description convaincante incluant naturellement des mots-clés pertinents." }
+            },
+            tips: {
+              tip1: "Les profils complets avec des informations exactes ont plus de chances d'apparaître dans les recherches pertinentes.",
+              tip2: "Les photos de votre entreprise, produits et équipe peuvent augmenter l'engagement client.",
+              tip3: "Répondre aux avis montre que vous valorisez les retours clients."
+            }
+          },
+          "ownership-conflict": {
+            title: "Comment gérer les conflits de propriété de profil",
+            description: "Apprenez à demander la propriété d'un Business Profile actuellement géré par quelqu'un d'autre.",
+            category: "Gestion de compte",
+            steps: {
+              step1: { title: "Trouvez votre entreprise", content: "Allez sur business.google.com/add et recherchez le nom et l'adresse de votre entreprise." },
+              step2: { title: "Sélectionnez votre entreprise", content: "Choisissez votre entreprise dans la liste. Vous verrez 'Quelqu'un d'autre peut gérer ce Business Profile'." },
+              step3: { title: "Demandez l'accès", content: "Cliquez sur 'Demander l'accès' si vous êtes autorisé à gérer l'entreprise." },
+              step4: { title: "Remplissez le formulaire", content: "Complétez le formulaire de demande de propriété avec votre relation avec l'entreprise." },
+              step5: { title: "Attendez la réponse", content: "Le propriétaire actuel a 3 jours pour répondre. Sans réponse, vous pourrez peut-être revendiquer le profil." }
+            },
+            tips: {
+              tip1: "Si la demande est refusée, vous pouvez faire appel de la décision.",
+              tip2: "Pour les entreprises de services sans emplacement physique, contactez directement le support Google.",
+              tip3: "Conservez la documentation prouvant votre lien avec l'entreprise."
+            }
+          },
+          "handle-duplicates": {
+            title: "Comment gérer les profils d'entreprise en double",
+            description: "Résolvez les problèmes de profils multiples pour la même entreprise.",
+            category: "Gestion de compte",
+            steps: {
+              step1: { title: "Identifiez le doublon", content: "Recherchez votre entreprise sur Google Maps pour trouver les fiches en double." },
+              step2: { title: "Déterminez lequel garder", content: "Gardez le profil vérifié avec le plus d'avis et d'informations complètes." },
+              step3: { title: "Demandez la propriété", content: "Si vous ne possédez pas les deux profils, demandez la propriété de celui à garder." },
+              step4: { title: "Suggérez une modification", content: "Pour le doublon, cliquez 'Suggérer une modification' et sélectionnez 'Fermer ou supprimer' puis 'Doublon d'un autre lieu'." },
+              step5: { title: "Contactez le support", content: "Si le doublon persiste, contactez le support Google Business Profile." }
+            },
+            tips: {
+              tip1: "Plusieurs profils pour la même entreprise sont contre les politiques de Google.",
+              tip2: "Les profils en double peuvent ne pas apparaître sur Google Recherche ou Maps.",
+              tip3: "Si un profil vérifié existe et appartient à quelqu'un d'autre, demandez d'abord l'accès."
+            }
+          },
+          "remove-reviews": {
+            title: "Comment signaler et supprimer les avis inappropriés",
+            description: "Apprenez le processus correct pour signaler les avis qui violent les politiques de Google.",
+            category: "Gestion de réputation",
+            steps: {
+              step1: { title: "Accédez à votre profil", content: "Visitez business.google.com et sélectionnez 'Lire les avis'." },
+              step2: { title: "Trouvez l'avis", content: "Localisez l'avis que vous souhaitez signaler." },
+              step3: { title: "Cliquez sur Signaler", content: "Cliquez sur les trois points ou l'icône de signalement à côté de l'avis." },
+              step4: { title: "Sélectionnez le type de violation", content: "Choisissez la raison pour laquelle l'avis viole les politiques (spam, obscénité, hors-sujet, etc.)." },
+              step5: { title: "Soumettez le signalement", content: "Cliquez 'Envoyer le signalement' et attendez que Google examine (généralement plusieurs jours)." }
+            },
+            tips: {
+              tip1: "Seuls les avis violant les politiques de Google peuvent être supprimés.",
+              tip2: "Ne signalez pas les avis simplement parce qu'ils sont négatifs - ce n'est pas une violation.",
+              tip3: "Vous pouvez vérifier le statut de votre signalement dans l'Outil de gestion des avis.",
+              tip4: "Envisagez de répondre professionnellement aux avis négatifs plutôt que d'essayer de les supprimer."
+            }
+          },
+          "verify-profile": {
+            title: "Comment vérifier votre Google Business Profile",
+            description: "Complétez le processus de vérification pour obtenir le contrôle total de votre Business Profile.",
+            category: "Premiers Pas",
+            steps: {
+              step1: { title: "Trouvez votre entreprise", content: "Recherchez le nom de votre entreprise sur Google ou Google Maps, ou allez sur business.google.com." },
+              step2: { title: "Revendiquez ou créez un profil", content: "Cliquez 'Revendiquer cette entreprise' ou 'Êtes-vous le propriétaire?' si elle existe, sinon ajoutez-la." },
+              step3: { title: "Choisissez la méthode de vérification", content: "Sélectionnez parmi les options: carte postale, appel téléphonique, email ou vérification vidéo." },
+              step4: { title: "Complétez la vérification", content: "Suivez les instructions pour votre méthode choisie. La carte postale prend 5-14 jours; les autres méthodes sont plus rapides." },
+              step5: { title: "Entrez le code de vérification", content: "Une fois votre code reçu, entrez-le dans votre Business Profile pour compléter la vérification." }
+            },
+            tips: {
+              tip1: "Vous avez besoin d'un compte Google pour vous inscrire à un Business Profile.",
+              tip2: "Certaines entreprises peuvent bénéficier d'une vérification instantanée si elles ont vérifié leur site web.",
+              tip3: "La vérification vidéo nécessite de montrer votre emplacement et des documents prouvant la propriété.",
+              tip4: "Gardez vos informations d'entreprise exactes pendant la vérification."
+            }
+          }
+        }
       }
     }
   },

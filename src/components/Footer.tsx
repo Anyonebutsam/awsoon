@@ -19,10 +19,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <img src={awsoonLogo} alt="AWSOON" className="h-12 rounded-lg mb-4" />
-            <p className="text-background/70 mb-6 max-w-md leading-relaxed">
-              {t('footer.description')}
-            </p>
+            <div className="flex items-start gap-4 mb-6">
+              <img src={awsoonLogo} alt="AWSOON" className="h-12 rounded-lg flex-shrink-0" />
+              <p className="text-background/70 max-w-md leading-relaxed">
+                {t('footer.description')}
+              </p>
+            </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-sm text-background/50">
                 <Globe className="w-4 h-4" />
