@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import awsoonLogo from "@/assets/awsoon-logo.jpg";
 import telusLogo from "@/assets/brands/telus-digital.png";
 import avantiLogo from "@/assets/brands/avanti.png";
-import serdikaLogo from "@/assets/brands/serdika-center-logo.jpg";
+import serdikaLogo from "@/assets/brands/serdika-center.jpg";
 
 const TrustedBy = () => {
   const { t } = useTranslation();
