@@ -113,8 +113,8 @@ const Pricing = () => {
                   onClick={scrollToContact}
                   className={`w-full group ${
                     pkg.popular
-                      ? "bg-primary hover:bg-primary-hover text-primary-foreground"
-                      : "bg-secondary hover:bg-secondary/80 text-secondary-foreground"
+                      ? "bg-[#1a73e8] hover:bg-[#1557b0] text-white"
+                      : "bg-[#4285f4] hover:bg-[#1a73e8] text-white"
                   }`}
                 >
                   {t('pricing.contactUs')}

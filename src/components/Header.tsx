@@ -99,19 +99,19 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Language Switcher & CTA Button */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Language Switcher & CTA Button - fixed LTR order */}
+          <div className="hidden md:flex items-center gap-3" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-6"
+              className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-6"
             >
               Get Started
             </Button>
           </div>
 
-          {/* Mobile: Language Switcher & Menu Button */}
-          <div className="md:hidden flex items-center gap-2">
+          {/* Mobile: Language Switcher & Menu Button - fixed LTR order */}
+          <div className="md:hidden flex items-center gap-2" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <button
               className={`p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
