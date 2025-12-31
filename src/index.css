@@ -118,8 +118,7 @@
   }
 
   /* RTL language support - Arabic, Tunisian */
-  html[lang="ar"], html[lang="tn"],
-  :lang(ar), :lang(tn) {
+  html[lang="ar"], html[lang="tn"] {
     direction: rtl;
   }
 
