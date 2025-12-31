@@ -1490,6 +1490,148 @@ export const translations = {
         contact: "اتصل بنا",
         languages: "نخدم العملاء بـ 7 لغات في أوروبا",
         rights: "جميع الحقوق محفوظة."
+      },
+      blog: {
+        heroTitle: "أدلة Google Business Profile",
+        heroSubtitle: "دروس خطوة بخطوة لمساعدتك على تحسين وإدارة Google Business Profile بفعالية.",
+        backToBlog: "العودة للمدونة",
+        read: "قراءة",
+        steps: "خطوات",
+        stepByStepGuide: "دليل خطوة بخطوة",
+        proTips: "نصائح احترافية",
+        readMore: "اقرأ المزيد",
+        cta: {
+          title: "هل تحتاج مساعدة مع ملف عملك؟",
+          description: "دع خبراءنا يتولون تحسين وإدارة Google Business Profile الخاص بك.",
+          button: "تواصل معنا"
+        },
+        bottomCta: {
+          title: "هل تحتاج مساعدة احترافية؟",
+          description: "إدارة Google Business Profile يمكن أن تستغرق وقتًا. دع خبراءنا يتولون الأمر بينما تركز على عملك.",
+          button: "تواصل معنا اليوم"
+        },
+        articles: {
+          "claim-business": {
+            title: "كيفية المطالبة بعملك على Google",
+            description: "تعلم كيفية إضافة أو المطالبة بـ Google Business Profile للتحكم في كيفية ظهور عملك في البحث والخرائط.",
+            category: "البداية",
+            steps: {
+              step1: { title: "اذهب إلى Google Business", content: "زر business.google.com/add وانقر 'أضف عملك إلى Google'." },
+              step2: { title: "أدخل تفاصيل عملك", content: "املأ اسم العمل والعنوان ورقم الهاتف والفئة. تأكد من دقة جميع المعلومات." },
+              step3: { title: "ابحث عن قائمة موجودة", content: "سيبحث Google عن ملفات موجودة. إذا كان عملك موجودًا، يمكنك المطالبة به. إذا لم يكن، ستنشئ واحدًا جديدًا." },
+              step4: { title: "تحقق من عملك", content: "اختر طريقة التحقق (بطاقة بريدية، هاتف، بريد إلكتروني أو فيديو) واتبع التعليمات." }
+            },
+            tips: {
+              tip1: "فقط الأعمال المؤهلة لـ Business Profile يمكنها إضافة أو المطالبة بموقعها على Google.",
+              tip2: "يمكنك إضافة أو المطالبة بعملك مجانًا.",
+              tip3: "إذا كان هناك ملف مُتحقق منه، ستحتاج إلى طلب الملكية من المالك الحالي."
+            }
+          },
+          "add-managers": {
+            title: "كيفية إضافة مديرين لملف عملك",
+            description: "ادعُ مالكين ومديرين للمساعدة في إدارة Google Business Profile.",
+            category: "إدارة الفريق",
+            steps: {
+              step1: { title: "الوصول لملف عملك", content: "اذهب إلى business.google.com وسجل الدخول بحسابك في Google." },
+              step2: { title: "انتقل لإعدادات الأشخاص", content: "انقر على الملف الذي تريد إدارته، ثم اختر 'الأشخاص والوصول' من القائمة." },
+              step3: { title: "أضف مستخدمًا جديدًا", content: "انقر 'إضافة' وأدخل عنوان البريد الإلكتروني للشخص الذي تريد إضافته." },
+              step4: { title: "اختر الدور", content: "اختر إما 'مالك' (وصول كامل) أو 'مدير' (يمكنه التعديل لكن لا يمكنه إضافة/إزالة المستخدمين)." },
+              step5: { title: "أرسل الدعوة", content: "انقر 'دعوة' وسيتلقى الشخص بريدًا إلكترونيًا لقبول الدعوة." }
+            },
+            tips: {
+              tip1: "كل مستخدم يحتاج حساب Google خاص به للوصول إلى Business Profile.",
+              tip2: "يمكن للملف أن يكون له عدة مالكين لكن مالك رئيسي واحد فقط.",
+              tip3: "المديرون لا يمكنهم إضافة أو إزالة المستخدمين أو حذف الملف."
+            }
+          },
+          "local-ranking": {
+            title: "نصائح لتحسين ترتيبك المحلي على Google",
+            description: "اكتشف استراتيجيات لتعزيز ظهور عملك في نتائج البحث المحلية.",
+            category: "SEO والترتيب",
+            steps: {
+              step1: { title: "حافظ على تحديث المعلومات", content: "تأكد من أن العنوان ورقم الهاتف وساعات العمل والفئة كاملة ودقيقة." },
+              step2: { title: "تحقق من عملك", content: "الأعمال المتحقق منها أكثر احتمالاً للظهور في نتائج البحث." },
+              step3: { title: "أضف صورًا وتحديثات", content: "أضف صورًا عالية الجودة بانتظام وانشر تحديثات عن منتجاتك أو خدماتك." },
+              step4: { title: "إدارة المراجعات", content: "رد على مراجعات العملاء، الإيجابية والسلبية." },
+              step5: { title: "حسّن وصفك", content: "اكتب وصفًا مقنعًا يتضمن كلمات مفتاحية ذات صلة بشكل طبيعي." }
+            },
+            tips: {
+              tip1: "الملفات الكاملة بمعلومات دقيقة أكثر احتمالاً للظهور في عمليات البحث ذات الصلة.",
+              tip2: "صور عملك ومنتجاتك وفريقك يمكن أن تزيد تفاعل العملاء.",
+              tip3: "الرد على المراجعات يُظهر أنك تقدر ملاحظات العملاء."
+            }
+          },
+          "ownership-conflict": {
+            title: "كيفية التعامل مع صراعات ملكية ملف العمل",
+            description: "تعلم كيفية طلب ملكية Business Profile يديره شخص آخر حاليًا.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "ابحث عن عملك", content: "اذهب إلى business.google.com/add وابحث عن اسم وعنوان عملك." },
+              step2: { title: "اختر عملك", content: "اختر عملك من القائمة. سترى رسالة 'شخص آخر قد يدير هذا Business Profile'." },
+              step3: { title: "اطلب الوصول", content: "انقر 'طلب الوصول' إذا كنت مخولاً بإدارة العمل." },
+              step4: { title: "املأ النموذج", content: "أكمل نموذج طلب الملكية بعلاقتك بالعمل." },
+              step5: { title: "انتظر الرد", content: "المالك الحالي لديه 3 أيام للرد. إذا لم يرد، قد تتمكن من المطالبة بالملف." }
+            },
+            tips: {
+              tip1: "إذا تم رفض الطلب، يمكنك استئناف القرار.",
+              tip2: "للأعمال الخدمية بدون موقع فعلي، تواصل مع دعم Google مباشرة.",
+              tip3: "احتفظ بالوثائق التي تثبت ارتباطك بالعمل."
+            }
+          },
+          "handle-duplicates": {
+            title: "كيفية التعامل مع ملفات العمل المكررة",
+            description: "حل مشاكل الملفات المتعددة لنفس العمل.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "حدد المكرر", content: "ابحث عن عملك في خرائط Google للعثور على أي قوائم مكررة." },
+              step2: { title: "حدد أيهما تحتفظ به", content: "احتفظ بالملف المتحقق منه الذي يحتوي على أكثر المراجعات ومعلومات كاملة." },
+              step3: { title: "اطلب الملكية", content: "إذا لم تكن تملك كلا الملفين، اطلب ملكية الذي تريد الاحتفاظ به." },
+              step4: { title: "اقترح تعديلاً", content: "للمكرر، انقر 'اقتراح تعديل' واختر 'إغلاق أو إزالة' ثم 'نسخة مكررة من مكان آخر'." },
+              step5: { title: "تواصل مع الدعم", content: "إذا استمر المكرر، تواصل مع دعم Google Business Profile للمساعدة." }
+            },
+            tips: {
+              tip1: "ملفات متعددة لنفس العمل تخالف سياسات Google.",
+              tip2: "الملفات المكررة قد لا تظهر في بحث Google أو الخرائط.",
+              tip3: "إذا كان هناك ملف متحقق منه يملكه شخص آخر، اطلب الوصول أولاً."
+            }
+          },
+          "remove-reviews": {
+            title: "كيفية الإبلاغ عن وإزالة المراجعات غير اللائقة",
+            description: "تعلم العملية الصحيحة للإبلاغ عن المراجعات التي تنتهك سياسات Google.",
+            category: "إدارة السمعة",
+            steps: {
+              step1: { title: "اذهب لملف عملك", content: "زر business.google.com واختر 'قراءة المراجعات'." },
+              step2: { title: "ابحث عن المراجعة", content: "حدد المراجعة التي تريد الإبلاغ عنها." },
+              step3: { title: "انقر إبلاغ", content: "انقر على النقاط الثلاث أو أيقونة الإبلاغ بجانب المراجعة." },
+              step4: { title: "اختر نوع المخالفة", content: "اختر سبب انتهاك المراجعة للسياسات (سبام، ألفاظ نابية، خارج الموضوع، إلخ)." },
+              step5: { title: "أرسل البلاغ", content: "انقر 'إرسال البلاغ' وانتظر مراجعة Google (عادة عدة أيام)." }
+            },
+            tips: {
+              tip1: "فقط المراجعات التي تنتهك سياسات Google مؤهلة للإزالة.",
+              tip2: "لا تبلغ عن المراجعات لمجرد أنها سلبية - هذا ليس انتهاكًا.",
+              tip3: "يمكنك التحقق من حالة بلاغك في أداة إدارة المراجعات.",
+              tip4: "فكر في الرد باحترافية على المراجعات السلبية بدلاً من محاولة إزالتها."
+            }
+          },
+          "verify-profile": {
+            title: "كيفية التحقق من Google Business Profile",
+            description: "أكمل عملية التحقق للحصول على تحكم كامل في Business Profile.",
+            category: "البداية",
+            steps: {
+              step1: { title: "ابحث عن عملك", content: "ابحث عن اسم عملك في Google أو خرائط Google، أو اذهب إلى business.google.com." },
+              step2: { title: "طالب أو أنشئ ملفًا", content: "انقر 'المطالبة بهذا العمل' أو 'هل تملك هذا العمل؟' إذا كان موجودًا، وإلا أضفه." },
+              step3: { title: "اختر طريقة التحقق", content: "اختر من الخيارات المتاحة: بطاقة بريدية، مكالمة هاتفية، بريد إلكتروني، أو تحقق بالفيديو." },
+              step4: { title: "أكمل التحقق", content: "اتبع التعليمات لطريقتك المختارة. البطاقة البريدية تستغرق 5-14 يومًا؛ الطرق الأخرى أسرع." },
+              step5: { title: "أدخل رمز التحقق", content: "عندما تستلم رمزك، أدخله في Business Profile لإكمال التحقق." }
+            },
+            tips: {
+              tip1: "تحتاج حساب Google للتسجيل في Business Profile.",
+              tip2: "بعض الأعمال قد تحصل على تحقق فوري إذا تحققت من موقعها الإلكتروني.",
+              tip3: "التحقق بالفيديو يتطلب إظهار موقع عملك ووثائق تثبت الملكية.",
+              tip4: "حافظ على دقة معلومات عملك أثناء التحقق."
+            }
+          }
+        }
       }
     }
   },
@@ -1673,6 +1815,148 @@ export const translations = {
         contact: "Contacto",
         languages: "Atendiendo clientes en 7 idiomas en Europa",
         rights: "Todos los derechos reservados."
+      },
+      blog: {
+        heroTitle: "Guías de Google Business Profile",
+        heroSubtitle: "Tutoriales paso a paso para ayudarte a optimizar y gestionar tu Google Business Profile de manera efectiva.",
+        backToBlog: "Volver al Blog",
+        read: "lectura",
+        steps: "pasos",
+        stepByStepGuide: "Guía paso a paso",
+        proTips: "Consejos Pro",
+        readMore: "Leer Más",
+        cta: {
+          title: "¿Necesitas ayuda con tu perfil de empresa?",
+          description: "Deja que nuestros expertos gestionen la optimización y administración de tu Google Business Profile.",
+          button: "Contáctanos"
+        },
+        bottomCta: {
+          title: "¿Necesitas ayuda profesional?",
+          description: "Gestionar tu Google Business Profile puede llevar tiempo. Deja que nuestros expertos se encarguen mientras te concentras en tu negocio.",
+          button: "Contáctanos Hoy"
+        },
+        articles: {
+          "claim-business": {
+            title: "Cómo reclamar tu negocio en Google",
+            description: "Aprende a añadir o reclamar tu Google Business Profile para controlar cómo aparece tu negocio en Búsqueda y Maps.",
+            category: "Primeros Pasos",
+            steps: {
+              step1: { title: "Ve a Google Business", content: "Visita business.google.com/add y haz clic en 'Añadir tu negocio a Google'." },
+              step2: { title: "Introduce tus datos", content: "Rellena el nombre, dirección, teléfono y categoría. Asegúrate de que toda la información sea correcta." },
+              step3: { title: "Busca ficha existente", content: "Google buscará perfiles existentes. Si tu negocio existe, puedes reclamarlo. Si no, crearás uno nuevo." },
+              step4: { title: "Verifica tu negocio", content: "Elige un método de verificación (postal, teléfono, email o vídeo) y sigue las instrucciones." }
+            },
+            tips: {
+              tip1: "Solo los negocios elegibles pueden añadir o reclamar su ubicación en Google.",
+              tip2: "Puedes añadir o reclamar tu negocio gratis.",
+              tip3: "Si existe un perfil verificado, deberás solicitar la propiedad al propietario actual."
+            }
+          },
+          "add-managers": {
+            title: "Cómo añadir gestores a tu perfil de empresa",
+            description: "Invita a propietarios y gestores para ayudar a administrar tu Google Business Profile.",
+            category: "Gestión de equipo",
+            steps: {
+              step1: { title: "Accede a tu perfil", content: "Ve a business.google.com e inicia sesión en tu cuenta de Google." },
+              step2: { title: "Ve a Configuración de personas", content: "Haz clic en el perfil a gestionar y selecciona 'Personas y acceso' en el menú." },
+              step3: { title: "Añade usuario", content: "Haz clic en 'Añadir' e introduce el email de la persona a añadir." },
+              step4: { title: "Elige el rol", content: "Selecciona 'Propietario' (acceso completo) o 'Gestor' (puede editar pero no añadir/eliminar usuarios)." },
+              step5: { title: "Envía la invitación", content: "Haz clic en 'Invitar' y la persona recibirá un email para aceptar." }
+            },
+            tips: {
+              tip1: "Cada usuario necesita su propia cuenta de Google para acceder al Business Profile.",
+              tip2: "Un perfil puede tener varios propietarios pero solo un propietario principal.",
+              tip3: "Los gestores no pueden añadir/eliminar usuarios ni eliminar el perfil."
+            }
+          },
+          "local-ranking": {
+            title: "Consejos para mejorar tu ranking local en Google",
+            description: "Descubre estrategias para mejorar la visibilidad de tu negocio en los resultados de búsqueda locales.",
+            category: "SEO y Ranking",
+            steps: {
+              step1: { title: "Mantén la información actualizada", content: "Asegúrate de que tu dirección, teléfono, horarios y categoría estén completos y correctos." },
+              step2: { title: "Verifica tu negocio", content: "Los negocios verificados tienen más probabilidades de aparecer en los resultados de búsqueda." },
+              step3: { title: "Añade fotos y actualizaciones", content: "Añade regularmente fotos de calidad y publica actualizaciones sobre tus productos o servicios." },
+              step4: { title: "Gestiona las reseñas", content: "Responde a las reseñas de clientes, tanto positivas como negativas." },
+              step5: { title: "Optimiza tu descripción", content: "Escribe una descripción convincente que incluya palabras clave relevantes de forma natural." }
+            },
+            tips: {
+              tip1: "Los perfiles completos con información correcta tienen más probabilidades de aparecer en búsquedas relevantes.",
+              tip2: "Las fotos de tu negocio, productos y equipo pueden aumentar el engagement.",
+              tip3: "Responder a las reseñas muestra que valoras los comentarios de los clientes."
+            }
+          },
+          "ownership-conflict": {
+            title: "Cómo gestionar conflictos de propiedad de perfil",
+            description: "Aprende a solicitar la propiedad de un Business Profile actualmente gestionado por otra persona.",
+            category: "Gestión de cuenta",
+            steps: {
+              step1: { title: "Encuentra tu negocio", content: "Ve a business.google.com/add y busca el nombre y dirección de tu negocio." },
+              step2: { title: "Selecciona tu negocio", content: "Elige tu negocio de la lista. Verás 'Otra persona puede estar gestionando este Business Profile'." },
+              step3: { title: "Solicita acceso", content: "Haz clic en 'Solicitar acceso' si estás autorizado a gestionar el negocio." },
+              step4: { title: "Rellena el formulario", content: "Completa el formulario de solicitud de propiedad con tu relación con el negocio." },
+              step5: { title: "Espera respuesta", content: "El propietario actual tiene 3 días para responder. Sin respuesta, podrás reclamar el perfil." }
+            },
+            tips: {
+              tip1: "Si la solicitud es rechazada, puedes apelar la decisión.",
+              tip2: "Para negocios de servicios sin ubicación física, contacta directamente con el soporte de Google.",
+              tip3: "Guarda documentación que demuestre tu conexión con el negocio."
+            }
+          },
+          "handle-duplicates": {
+            title: "Cómo gestionar perfiles de empresa duplicados",
+            description: "Resuelve problemas de múltiples perfiles para el mismo negocio.",
+            category: "Gestión de cuenta",
+            steps: {
+              step1: { title: "Identifica el duplicado", content: "Busca tu negocio en Google Maps para encontrar fichas duplicadas." },
+              step2: { title: "Decide cuál mantener", content: "Mantén el perfil verificado con más reseñas e información completa." },
+              step3: { title: "Solicita la propiedad", content: "Si no posees ambos perfiles, solicita la propiedad del que quieres mantener." },
+              step4: { title: "Sugiere una edición", content: "Para el duplicado, haz clic en 'Sugerir una edición' y selecciona 'Cerrar o eliminar' luego 'Duplicado de otro lugar'." },
+              step5: { title: "Contacta soporte", content: "Si el duplicado persiste, contacta con el soporte de Google Business Profile." }
+            },
+            tips: {
+              tip1: "Múltiples perfiles para el mismo negocio van contra las políticas de Google.",
+              tip2: "Los perfiles duplicados pueden no aparecer en Google Búsqueda o Maps.",
+              tip3: "Si existe un perfil verificado de otra persona, solicita primero el acceso."
+            }
+          },
+          "remove-reviews": {
+            title: "Cómo reportar y eliminar reseñas inapropiadas",
+            description: "Aprende el proceso correcto para reportar reseñas que violan las políticas de Google.",
+            category: "Gestión de reputación",
+            steps: {
+              step1: { title: "Accede a tu perfil", content: "Visita business.google.com y selecciona 'Leer reseñas'." },
+              step2: { title: "Encuentra la reseña", content: "Localiza la reseña que quieres reportar." },
+              step3: { title: "Haz clic en Reportar", content: "Haz clic en los tres puntos o el icono de reporte junto a la reseña." },
+              step4: { title: "Selecciona tipo de violación", content: "Elige la razón por la que la reseña viola las políticas (spam, obscenidad, fuera de tema, etc.)." },
+              step5: { title: "Envía el reporte", content: "Haz clic en 'Enviar reporte' y espera a que Google lo revise (normalmente varios días)." }
+            },
+            tips: {
+              tip1: "Solo las reseñas que violan las políticas de Google pueden eliminarse.",
+              tip2: "No reportes reseñas solo porque son negativas - eso no es una violación.",
+              tip3: "Puedes verificar el estado de tu reporte en la Herramienta de gestión de reseñas.",
+              tip4: "Considera responder profesionalmente a las reseñas negativas en lugar de intentar eliminarlas."
+            }
+          },
+          "verify-profile": {
+            title: "Cómo verificar tu Google Business Profile",
+            description: "Completa el proceso de verificación para obtener control total de tu Business Profile.",
+            category: "Primeros Pasos",
+            steps: {
+              step1: { title: "Encuentra tu negocio", content: "Busca el nombre de tu negocio en Google o Google Maps, o ve a business.google.com." },
+              step2: { title: "Reclama o crea perfil", content: "Haz clic en 'Reclamar este negocio' o '¿Es tuyo este negocio?' si existe, sino añádelo." },
+              step3: { title: "Elige método de verificación", content: "Selecciona entre las opciones: postal, llamada telefónica, email o verificación por vídeo." },
+              step4: { title: "Completa la verificación", content: "Sigue las instrucciones de tu método elegido. La postal tarda 5-14 días; otros métodos son más rápidos." },
+              step5: { title: "Introduce el código", content: "Una vez recibas tu código, introdúcelo en tu Business Profile para completar la verificación." }
+            },
+            tips: {
+              tip1: "Necesitas una cuenta de Google para registrarte en un Business Profile.",
+              tip2: "Algunos negocios pueden obtener verificación instantánea si han verificado su web.",
+              tip3: "La verificación por vídeo requiere mostrar tu ubicación y documentos de propiedad.",
+              tip4: "Mantén tu información de negocio correcta durante la verificación."
+            }
+          }
+        }
       }
     }
   },
@@ -1856,6 +2140,148 @@ export const translations = {
         contact: "اتصل بينا",
         languages: "نخدمو الكليانات بـ 7 لغات في أوروبا",
         rights: "جميع الحقوق محفوظة."
+      },
+      blog: {
+        heroTitle: "دليل Google Business Profile",
+        heroSubtitle: "تعليمات خطوة بخطوة باش تعاونك تحسّن وتدير Google Business Profile متاعك بطريقة فعالة.",
+        backToBlog: "ارجع للمدونة",
+        read: "قراءة",
+        steps: "خطوات",
+        stepByStepGuide: "دليل خطوة بخطوة",
+        proTips: "نصائح احترافية",
+        readMore: "اقرأ أكثر",
+        cta: {
+          title: "محتاج مساعدة مع ملف الأعمال متاعك؟",
+          description: "خلّي خبراءنا يتعاملو مع تحسين وإدارة Google Business Profile متاعك.",
+          button: "اتصل بينا"
+        },
+        bottomCta: {
+          title: "محتاج مساعدة احترافية؟",
+          description: "إدارة Google Business Profile متاعك تاخذ وقت. خلّي خبراءنا يهتمو بيها وأنت ركّز على خدمتك.",
+          button: "اتصل بينا اليوم"
+        },
+        articles: {
+          "claim-business": {
+            title: "كيفاش تطالب بخدمتك على Google",
+            description: "تعلّم كيفاش تضيف أو تطالب بـ Google Business Profile متاعك باش تتحكم في كيفاش تظهر خدمتك في البحث والخرائط.",
+            category: "البداية",
+            steps: {
+              step1: { title: "روح لـ Google Business", content: "زور business.google.com/add واضغط 'أضف خدمتك لـ Google'." },
+              step2: { title: "دخّل معلومات الخدمة", content: "عبّي الاسم والعنوان ورقم التليفون والصنف. تأكد أن كل المعلومات صحيحة." },
+              step3: { title: "ابحث على قائمة موجودة", content: "Google باش يبحث على ملفات موجودة. إذا خدمتك موجودة، تنجم تطالب بيها. إذا لا، باش تنشئ وحدة جديدة." },
+              step4: { title: "تحقق من خدمتك", content: "اختار طريقة التحقق (بطاقة بريدية، تليفون، إيمايل أو فيديو) واتبع التعليمات." }
+            },
+            tips: {
+              tip1: "كان الخدمات المؤهلة تنجم تضيف أو تطالب بموقعها على Google.",
+              tip2: "تنجم تضيف أو تطالب بخدمتك مجاني.",
+              tip3: "إذا في ملف متحقق منو، باش تحتاج تطلب الملكية من المالك الحالي."
+            }
+          },
+          "add-managers": {
+            title: "كيفاش تضيف مديرين لملف الأعمال متاعك",
+            description: "ادعي مالكين ومديرين باش يعاونوك في إدارة Google Business Profile متاعك.",
+            category: "إدارة الفريق",
+            steps: {
+              step1: { title: "ادخل لملف الأعمال متاعك", content: "روح لـ business.google.com وسجّل دخول بحسابك في Google." },
+              step2: { title: "روح لإعدادات الأشخاص", content: "اضغط على الملف اللي تحب تديرو، ثم اختار 'الأشخاص والوصول' من القائمة." },
+              step3: { title: "أضف مستخدم جديد", content: "اضغط 'أضف' ودخّل عنوان الإيمايل متاع الشخص اللي تحب تضيفو." },
+              step4: { title: "اختار الدور", content: "اختار 'مالك' (وصول كامل) أو 'مدير' (يقدر يعدّل لكن ما يقدرش يضيف/يحذف مستخدمين)." },
+              step5: { title: "ابعث الدعوة", content: "اضغط 'ادعي' والشخص باش يستلم إيمايل باش يقبل الدعوة." }
+            },
+            tips: {
+              tip1: "كل مستخدم يحتاج حساب Google خاص بيه باش يوصل للـ Business Profile.",
+              tip2: "ملف يقدر يكون فيه عدة مالكين لكن مالك رئيسي واحد برك.",
+              tip3: "المديرين ما يقدروش يضيفو أو يحذفو مستخدمين أو يحذفو الملف."
+            }
+          },
+          "local-ranking": {
+            title: "نصائح باش تحسّن ترتيبك المحلي على Google",
+            description: "اكتشف استراتيجيات باش تزيد ظهور خدمتك في نتائج البحث المحلية.",
+            category: "SEO والترتيب",
+            steps: {
+              step1: { title: "حافظ على المعلومات محدثة", content: "تأكد أن العنوان ورقم التليفون وساعات العمل والصنف كاملين وصحيحين." },
+              step2: { title: "تحقق من خدمتك", content: "الخدمات المتحقق منها أكثر احتمال تظهر في نتائج البحث." },
+              step3: { title: "أضف صور وتحديثات", content: "أضف صور عالية الجودة بانتظام وانشر تحديثات على منتجاتك أو خدماتك." },
+              step4: { title: "أدِر التقييمات", content: "رد على تقييمات الكليانات، الإيجابية والسلبية." },
+              step5: { title: "حسّن الوصف متاعك", content: "اكتب وصف مقنع يتضمن كلمات مفتاحية مناسبة بشكل طبيعي." }
+            },
+            tips: {
+              tip1: "الملفات الكاملة بمعلومات صحيحة أكثر احتمال تظهر في البحث المناسب.",
+              tip2: "صور خدمتك ومنتجاتك وفريقك تقدر تزيد التفاعل مع الكليانات.",
+              tip3: "الرد على التقييمات يبيّن أنك تقدّر ردود الكليانات."
+            }
+          },
+          "ownership-conflict": {
+            title: "كيفاش تتعامل مع صراعات ملكية ملف الأعمال",
+            description: "تعلّم كيفاش تطلب ملكية Business Profile اللي حاليًا يديرو شخص آخر.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "لقى خدمتك", content: "روح لـ business.google.com/add وابحث على اسم خدمتك وعنوانها." },
+              step2: { title: "اختار خدمتك", content: "اختار خدمتك من القائمة. باش تشوف رسالة 'شخص آخر يمكن يدير هذا Business Profile'." },
+              step3: { title: "اطلب الوصول", content: "اضغط 'اطلب الوصول' إذا أنت مخوّل باش تدير الخدمة." },
+              step4: { title: "عبّي الاستمارة", content: "أكمل استمارة طلب الملكية بعلاقتك بالخدمة." },
+              step5: { title: "انتظر الرد", content: "المالك الحالي عندو 3 أيام باش يرد. إذا ما ردش، تنجم تطالب بالملف." }
+            },
+            tips: {
+              tip1: "إذا الطلب انرفض، تنجم تستأنف القرار.",
+              tip2: "للخدمات اللي ما عندهاش موقع فيزيائي، اتصل بدعم Google مباشرة.",
+              tip3: "احتفظ بوثائق تثبت علاقتك بالخدمة."
+            }
+          },
+          "handle-duplicates": {
+            title: "كيفاش تتعامل مع ملفات الأعمال المكررة",
+            description: "حل مشاكل الملفات المتعددة لنفس الخدمة.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "حدد المكرر", content: "ابحث على خدمتك في خرائط Google باش تلقى القوائم المكررة." },
+              step2: { title: "قرر شنو تحتفظ بيه", content: "احتفظ بالملف المتحقق منو اللي عندو أكثر تقييمات ومعلومات كاملة." },
+              step3: { title: "اطلب الملكية", content: "إذا ما تملكش الملفين، اطلب ملكية اللي تحب تحتفظ بيه." },
+              step4: { title: "اقترح تعديل", content: "للمكرر، اضغط 'اقترح تعديل' واختار 'أغلق أو احذف' ثم 'نسخة مكررة من مكان آخر'." },
+              step5: { title: "اتصل بالدعم", content: "إذا المكرر بقى، اتصل بدعم Google Business Profile للمساعدة." }
+            },
+            tips: {
+              tip1: "ملفات متعددة لنفس الخدمة ضد سياسات Google.",
+              tip2: "الملفات المكررة ممكن ما تظهرش في بحث Google أو الخرائط.",
+              tip3: "إذا في ملف متحقق منو يملكو شخص آخر، اطلب الوصول الأول."
+            }
+          },
+          "remove-reviews": {
+            title: "كيفاش تبلّغ وتحذف التقييمات غير المناسبة",
+            description: "تعلّم العملية الصحيحة للإبلاغ عن التقييمات اللي تخالف سياسات Google.",
+            category: "إدارة السمعة",
+            steps: {
+              step1: { title: "روح لملف الأعمال متاعك", content: "زور business.google.com واختار 'اقرأ التقييمات'." },
+              step2: { title: "لقى التقييم", content: "حدد التقييم اللي تحب تبلّغ عليه." },
+              step3: { title: "اضغط إبلاغ", content: "اضغط على النقاط الثلاثة أو أيقونة الإبلاغ جنب التقييم." },
+              step4: { title: "اختار نوع المخالفة", content: "اختار السبب اللي التقييم يخالف السياسات (سبام، كلام بذيء، خارج الموضوع، إلخ)." },
+              step5: { title: "ابعث البلاغ", content: "اضغط 'ابعث البلاغ' وانتظر Google تراجع (عادة عدة أيام)." }
+            },
+            tips: {
+              tip1: "كان التقييمات اللي تخالف سياسات Google تنجم تتحذف.",
+              tip2: "ما تبلّغش على التقييمات كان لأنها سلبية - هذا مش مخالفة.",
+              tip3: "تنجم تتحقق من حالة البلاغ متاعك في أداة إدارة التقييمات.",
+              tip4: "فكّر في الرد باحترافية على التقييمات السلبية بدل ما تحاول تحذفها."
+            }
+          },
+          "verify-profile": {
+            title: "كيفاش تتحقق من Google Business Profile متاعك",
+            description: "أكمل عملية التحقق باش تحصل على تحكم كامل في Business Profile متاعك.",
+            category: "البداية",
+            steps: {
+              step1: { title: "لقى خدمتك", content: "ابحث على اسم خدمتك في Google أو خرائط Google، أو روح لـ business.google.com." },
+              step2: { title: "طالب أو أنشئ ملف", content: "اضغط 'طالب بهذه الخدمة' أو 'هذي خدمتك؟' إذا موجودة، وإلا أضفها." },
+              step3: { title: "اختار طريقة التحقق", content: "اختار من الخيارات المتاحة: بطاقة بريدية، مكالمة، إيمايل، أو تحقق بالفيديو." },
+              step4: { title: "أكمل التحقق", content: "اتبع التعليمات للطريقة اللي اخترتها. البطاقة البريدية تاخذ 5-14 يوم؛ الطرق الأخرى أسرع." },
+              step5: { title: "دخّل رمز التحقق", content: "وقت اللي تستلم الرمز متاعك، دخّلو في Business Profile متاعك باش تكمل التحقق." }
+            },
+            tips: {
+              tip1: "تحتاج حساب Google باش تسجّل في Business Profile.",
+              tip2: "بعض الخدمات تقدر تحصل على تحقق فوري إذا تحققت من موقعها الإلكتروني.",
+              tip3: "التحقق بالفيديو يتطلب تبيّن موقعك ووثائق تثبت الملكية.",
+              tip4: "حافظ على معلومات خدمتك صحيحة خلال التحقق."
+            }
+          }
+        }
       }
     }
   }
