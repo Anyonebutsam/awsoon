@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Clock, BookOpen } from "lucide-react";
@@ -14,6 +15,9 @@ import ownershipConflictImg from "@/assets/blog/ownership-conflict.jpg";
 import handleDuplicatesImg from "@/assets/blog/handle-duplicates.jpg";
 import removeReviewsImg from "@/assets/blog/remove-reviews.jpg";
 import verifyProfileImg from "@/assets/blog/verify-profile.jpg";
+import updateHoursImg from "@/assets/blog/update-hours.jpg";
+import bookingLinksImg from "@/assets/blog/booking-links.jpg";
+import adsPhoneImg from "@/assets/blog/ads-phone.jpg";
 
 interface BlogArticle {
   id: string;
@@ -72,6 +76,27 @@ const blogArticles: BlogArticle[] = [
     readTime: "6 min",
     stepsCount: 5,
     tipsCount: 4,
+  },
+  {
+    id: "update-hours",
+    image: updateHoursImg,
+    readTime: "4 min",
+    stepsCount: 4,
+    tipsCount: 3,
+  },
+  {
+    id: "booking-links",
+    image: bookingLinksImg,
+    readTime: "6 min",
+    stepsCount: 5,
+    tipsCount: 4,
+  },
+  {
+    id: "ads-phone",
+    image: adsPhoneImg,
+    readTime: "5 min",
+    stepsCount: 4,
+    tipsCount: 3,
   },
 ];
 
@@ -132,11 +157,16 @@ const Blog = () => {
     const category = t(`blog.articles.${selectedArticle.id}.category`);
 
     return (
-      <div className="min-h-screen bg-hero-bg">
+      <div className="min-h-screen bg-[#0a0a0f] dark">
         <Header />
-        <main className="pt-20">
+        <motion.main 
+          className="pt-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
           {/* Article Header */}
-          <div className="bg-gradient-to-br from-primary to-primary-hover text-white py-16">
+          <div className="bg-gradient-to-br from-[#1a73e8] to-[#0d47a1] text-white py-16">
             <div className="container-custom">
               <button
                 onClick={() => setSelectedArticle(null)}
@@ -178,39 +208,45 @@ const Blog = () => {
 
               {/* Steps */}
               <div className="space-y-8">
-                <h2 className="font-display text-2xl font-bold text-foreground">
+                <h2 className="font-display text-2xl font-bold text-gray-100">
                   {t('blog.stepByStepGuide')}
                 </h2>
                 {steps.map((step, index) => (
-                  <div key={index} className="flex gap-6">
+                  <motion.div 
+                    key={index} 
+                    className="flex gap-6"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
                     <div className="flex-shrink-0">
-                      <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 rounded-full bg-[#1a73e8] text-white flex items-center justify-center font-bold">
                         {index + 1}
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                      <h3 className="font-display text-xl font-semibold text-gray-100 mb-2">
                         {step.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-gray-400 leading-relaxed">
                         {step.content}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
               {/* Tips */}
               {tips.length > 0 && (
-                <div className="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-2xl">
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-4">
+                <div className="mt-12 p-6 bg-[#1a73e8]/10 border border-[#1a73e8]/30 rounded-2xl">
+                  <h3 className="font-display text-xl font-semibold text-gray-100 mb-4">
                     {t('blog.proTips')}
                   </h3>
                   <ul className="space-y-3">
                     {tips.map((tip, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <span className="text-primary font-bold">•</span>
-                        <span className="text-muted-foreground">{tip}</span>
+                        <span className="text-[#1a73e8] font-bold">•</span>
+                        <span className="text-gray-400">{tip}</span>
                       </li>
                     ))}
                   </ul>
@@ -218,15 +254,15 @@ const Blog = () => {
               )}
 
               {/* CTA */}
-              <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl text-center">
-                <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+              <div className="mt-12 p-8 bg-gradient-to-br from-[#1a73e8]/20 to-[#1a73e8]/5 rounded-2xl text-center border border-[#1a73e8]/20">
+                <h3 className="font-display text-2xl font-bold text-gray-100 mb-3">
                   {t('blog.cta.title')}
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-gray-400 mb-6">
                   {t('blog.cta.description')}
                 </p>
                 <Button 
-                  className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8"
+                  className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-8"
                   onClick={() => window.location.href = '/#contact'}
                 >
                   {t('blog.cta.button')}
@@ -235,18 +271,28 @@ const Blog = () => {
               </div>
             </div>
           </div>
-        </main>
+        </motion.main>
         <Footer />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-hero-bg">
+    <div className="min-h-screen bg-[#0a0a0f] dark">
       <Header />
-      <main className="pt-20">
+      <motion.main 
+        className="pt-20"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ 
+          type: "spring",
+          stiffness: 100,
+          damping: 20,
+          duration: 0.5 
+        }}
+      >
         {/* Hero */}
-        <div className="bg-gradient-to-br from-primary to-primary-hover text-white py-20">
+        <div className="bg-gradient-to-br from-[#1a73e8] to-[#0d47a1] text-white py-20">
           <div className="container-custom text-center">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               {t('blog.heroTitle')}
@@ -260,15 +306,18 @@ const Blog = () => {
         {/* Articles Grid */}
         <div className="container-custom py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogArticles.map((article) => {
+            {blogArticles.map((article, index) => {
               const title = t(`blog.articles.${article.id}.title`);
               const description = t(`blog.articles.${article.id}.description`);
               const category = t(`blog.articles.${article.id}.category`);
               
               return (
-                <article
+                <motion.article
                   key={article.id}
-                  className="group bg-card border border-border/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.4 }}
+                  className="group bg-[#12121a] border border-gray-800/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-[#1a73e8]/10 transition-all duration-300 cursor-pointer"
                   onClick={() => setSelectedArticle(article)}
                 >
                   <div className="aspect-video overflow-hidden">
@@ -280,49 +329,49 @@ const Blog = () => {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                      <span className="px-2.5 py-1 bg-[#1a73e8]/20 text-[#4d9fff] text-xs font-medium rounded-full">
                         {category}
                       </span>
-                      <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <span className="flex items-center gap-1 text-xs text-gray-500">
                         <Clock className="w-3 h-3" />
                         {article.readTime}
                       </span>
                     </div>
-                    <h2 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <h2 className="font-display text-xl font-bold text-gray-100 mb-2 group-hover:text-[#4d9fff] transition-colors">
                       {title}
                     </h2>
-                    <p className="text-muted-foreground text-sm line-clamp-2">
+                    <p className="text-gray-500 text-sm line-clamp-2">
                       {description}
                     </p>
-                    <button className="mt-4 flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
+                    <button className="mt-4 flex items-center gap-2 text-[#1a73e8] font-medium text-sm group-hover:gap-3 transition-all">
                       {t('blog.readMore')}
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
-                </article>
+                </motion.article>
               );
             })}
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="bg-hero-bg/50 py-16 border-t border-border/20">
+        <div className="bg-[#0d0d12] py-16 border-t border-gray-800/30">
           <div className="container-custom text-center">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-100 mb-4">
               {t('blog.bottomCta.title')}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
               {t('blog.bottomCta.description')}
             </p>
             <Link to="/#contact">
-              <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8">
+              <Button size="lg" className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-8">
                 {t('blog.bottomCta.button')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </div>
   );
