@@ -330,6 +330,56 @@ export const translations = {
               tip3: "Video verification requires showing your business location and documents proving ownership.",
               tip4: "Keep your business information accurate during verification."
             }
+          },
+          "update-hours": {
+            title: "How to Update Your Business Hours",
+            description: "Learn how to set and edit your business hours on Google Business Profile so customers always see accurate information.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Go to Business Profile", content: "Visit business.google.com and sign in to your Google Account." },
+              step2: { title: "Navigate to Hours", content: "Click 'Edit profile', then select 'Hours' at the top right and click the Edit icon." },
+              step3: { title: "Set Your Hours", content: "Check the box next to each day your business is open and use the dropdowns to set hours." },
+              step4: { title: "Add Special Hours", content: "For holidays or special events, add special hours to show temporary changes." }
+            },
+            tips: {
+              tip1: "You can set different hours for each day of the week.",
+              tip2: "Add breaks if your business closes during the day (like lunch hours).",
+              tip3: "Use special hours for holidays to avoid confusing customers."
+            }
+          },
+          "booking-links": {
+            title: "How to Add Booking & Ordering Links",
+            description: "Add reservation buttons and ordering links to your Google Business Profile to help customers book directly.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Access Your Profile", content: "Go to business.google.com and select the business you want to edit." },
+              step2: { title: "Find Link Settings", content: "Click 'Edit profile' and navigate to the 'More' tab or look for booking/ordering options." },
+              step3: { title: "Add Your Link", content: "Paste your booking URL or ordering link from your preferred platform." },
+              step4: { title: "Choose Link Type", content: "Select whether it's for appointments, reservations, food orders, or other services." },
+              step5: { title: "Save Changes", content: "Click 'Save' and your link will appear as a button on your profile." }
+            },
+            tips: {
+              tip1: "Reserve with Google partners can add automatic booking buttons.",
+              tip2: "Third-party links that appear without permission must be removed by that provider, not Google.",
+              tip3: "Test your links regularly to ensure they work correctly.",
+              tip4: "Use clear, direct URLs that take customers straight to the booking page."
+            }
+          },
+          "ads-phone": {
+            title: "How to Use Google Ads Phone Number on Your Profile",
+            description: "Track phone calls from your Google Business Profile by using a Google Ads tracking number for better campaign analytics.",
+            category: "Advertising",
+            steps: {
+              step1: { title: "Set Up Call Extensions", content: "In Google Ads, create a phone extension asset with your tracking number." },
+              step2: { title: "Link Your Profile", content: "Connect your Google Business Profile to your Google Ads account as a location asset." },
+              step3: { title: "Configure the Number", content: "Set your Google Ads tracking number to display when your profile appears as an ad." },
+              step4: { title: "Monitor Results", content: "Track calls, conversions, and ROAS from your Google Ads dashboard." }
+            },
+            tips: {
+              tip1: "Location assets display your Business Profile as an Ad in search results.",
+              tip2: "Without a tracking number, you won't know which calls came from ads.",
+              tip3: "Phone extension tracking numbers help measure campaign effectiveness."
+            }
           }
         }
       }
@@ -654,6 +704,56 @@ export const translations = {
               tip2: "Vissa företag kvalificerar för omedelbar verifiering om de har verifierat sin webbplats.",
               tip3: "Videoverifiering kräver att du visar din företagsplats och dokument som bevisar äganderätt.",
               tip4: "Håll din företagsinformation korrekt under verifieringen."
+            }
+          },
+          "update-hours": {
+            title: "Hur du uppdaterar dina öppettider",
+            description: "Lär dig hur du ställer in och redigerar dina öppettider på Google Företagsprofil så att kunderna alltid ser korrekt information.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Gå till Företagsprofil", content: "Besök business.google.com och logga in på ditt Google-konto." },
+              step2: { title: "Navigera till Öppettider", content: "Klicka på 'Redigera profil', välj sedan 'Öppettider' uppe till höger och klicka på redigeringsikonen." },
+              step3: { title: "Ställ in dina öppettider", content: "Markera rutan bredvid varje dag ditt företag är öppet och använd rullgardinsmenyerna för att ställa in tider." },
+              step4: { title: "Lägg till specialtider", content: "För helgdagar eller speciella evenemang, lägg till specialtider för att visa tillfälliga ändringar." }
+            },
+            tips: {
+              tip1: "Du kan ställa in olika öppettider för varje dag i veckan.",
+              tip2: "Lägg till pauser om ditt företag stänger under dagen (som lunchpauser).",
+              tip3: "Använd specialtider för helgdagar för att undvika förvirring hos kunderna."
+            }
+          },
+          "booking-links": {
+            title: "Hur du lägger till boknings- och beställningslänkar",
+            description: "Lägg till reservationsknappar och beställningslänkar i din Google Företagsprofil så att kunderna kan boka direkt.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Öppna din profil", content: "Gå till business.google.com och välj det företag du vill redigera." },
+              step2: { title: "Hitta länkinställningar", content: "Klicka på 'Redigera profil' och navigera till fliken 'Mer' eller leta efter boknings-/beställningsalternativ." },
+              step3: { title: "Lägg till din länk", content: "Klistra in din boknings-URL eller beställningslänk från din föredragna plattform." },
+              step4: { title: "Välj länktyp", content: "Välj om det gäller möten, reservationer, matbeställningar eller andra tjänster." },
+              step5: { title: "Spara ändringar", content: "Klicka på 'Spara' och din länk visas som en knapp på din profil." }
+            },
+            tips: {
+              tip1: "Reserve with Google-partners kan lägga till automatiska bokningsknappar.",
+              tip2: "Tredjepartslänkar som visas utan tillstånd måste tas bort av den leverantören, inte Google.",
+              tip3: "Testa dina länkar regelbundet för att säkerställa att de fungerar.",
+              tip4: "Använd tydliga, direkta URL:er som tar kunderna direkt till bokningssidan."
+            }
+          },
+          "ads-phone": {
+            title: "Hur du använder Google Ads-telefonnummer på din profil",
+            description: "Spåra telefonsamtal från din Google Företagsprofil genom att använda ett Google Ads-spårningsnummer för bättre kampanjanalys.",
+            category: "Annonsering",
+            steps: {
+              step1: { title: "Konfigurera samtalstillägg", content: "I Google Ads, skapa ett telefontillägg med ditt spårningsnummer." },
+              step2: { title: "Länka din profil", content: "Anslut din Google Företagsprofil till ditt Google Ads-konto som en platstillgång." },
+              step3: { title: "Konfigurera numret", content: "Ställ in ditt Google Ads-spårningsnummer att visas när din profil visas som en annons." },
+              step4: { title: "Övervaka resultat", content: "Spåra samtal, konverteringar och ROAS från din Google Ads-instrumentpanel." }
+            },
+            tips: {
+              tip1: "Platstillgångar visar din Företagsprofil som en annons i sökresultaten.",
+              tip2: "Utan ett spårningsnummer vet du inte vilka samtal som kom från annonser.",
+              tip3: "Telefontillägg med spårningsnummer hjälper till att mäta kampanjeffektivitet."
             }
           }
         }
@@ -980,6 +1080,56 @@ export const translations = {
               tip3: "Видео потвърждението изисква да покажете местоположението на бизнеса и документи, доказващи собственост.",
               tip4: "Поддържайте информацията за бизнеса си точна по време на потвърждението."
             }
+          },
+          "update-hours": {
+            title: "Как да актуализирате работното време",
+            description: "Научете как да зададете и редактирате работното време на вашия Google Business Profile.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Отидете на Business Profile", content: "Посетете business.google.com и влезте в акаунта си в Google." },
+              step2: { title: "Навигирайте до Работно време", content: "Кликнете 'Редактиране на профила', след това изберете 'Работно време' горе вдясно и кликнете иконата за редактиране." },
+              step3: { title: "Задайте работното време", content: "Маркирайте квадратчето до всеки ден, когато бизнесът е отворен, и използвайте падащите менюта за задаване на часове." },
+              step4: { title: "Добавете специални часове", content: "За празници или специални събития добавете специални часове за показване на временни промени." }
+            },
+            tips: {
+              tip1: "Можете да зададете различни часове за всеки ден от седмицата.",
+              tip2: "Добавете почивки, ако бизнесът затваря през деня (като обедна почивка).",
+              tip3: "Използвайте специални часове за празници, за да избегнете объркване на клиентите."
+            }
+          },
+          "booking-links": {
+            title: "Как да добавите линкове за резервации и поръчки",
+            description: "Добавете бутони за резервация и линкове за поръчки към вашия Google Business Profile.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Достъп до профила", content: "Отидете на business.google.com и изберете бизнеса, който искате да редактирате." },
+              step2: { title: "Намерете настройките за линкове", content: "Кликнете 'Редактиране на профила' и навигирайте до раздела 'Още' или потърсете опции за резервации/поръчки." },
+              step3: { title: "Добавете линка си", content: "Поставете URL адреса за резервации или линка за поръчки от предпочитаната платформа." },
+              step4: { title: "Изберете тип линк", content: "Изберете дали е за срещи, резервации, поръчки на храна или други услуги." },
+              step5: { title: "Запазете промените", content: "Кликнете 'Запази' и линкът ще се появи като бутон в профила ви." }
+            },
+            tips: {
+              tip1: "Партньорите на Reserve with Google могат да добавят автоматични бутони за резервация.",
+              tip2: "Линкове от трети страни, които се появяват без разрешение, трябва да бъдат премахнати от този доставчик, не от Google.",
+              tip3: "Тествайте редовно линковете си, за да сте сигурни, че работят.",
+              tip4: "Използвайте ясни, директни URL адреси, които водят клиентите директно до страницата за резервация."
+            }
+          },
+          "ads-phone": {
+            title: "Как да използвате телефонен номер от Google Ads в профила си",
+            description: "Проследявайте телефонни обаждания от вашия Google Business Profile, като използвате номер за проследяване от Google Ads.",
+            category: "Реклама",
+            steps: {
+              step1: { title: "Настройте разширения за обаждания", content: "В Google Ads създайте телефонно разширение с вашия номер за проследяване." },
+              step2: { title: "Свържете профила си", content: "Свържете вашия Google Business Profile към акаунта си в Google Ads като актив за местоположение." },
+              step3: { title: "Конфигурирайте номера", content: "Настройте номера за проследяване от Google Ads да се показва, когато профилът ви се появява като реклама." },
+              step4: { title: "Следете резултатите", content: "Проследявайте обаждания, конверсии и ROAS от таблото за управление на Google Ads." }
+            },
+            tips: {
+              tip1: "Активите за местоположение показват вашия Business Profile като реклама в резултатите от търсенето.",
+              tip2: "Без номер за проследяване няма да знаете кои обаждания са от реклами.",
+              tip3: "Телефонните разширения за проследяване помагат да се измери ефективността на кампанията."
+            }
           }
         }
       }
@@ -1304,6 +1454,56 @@ export const translations = {
               tip2: "Certaines entreprises peuvent bénéficier d'une vérification instantanée si elles ont vérifié leur site web.",
               tip3: "La vérification vidéo nécessite de montrer votre emplacement et des documents prouvant la propriété.",
               tip4: "Gardez vos informations d'entreprise exactes pendant la vérification."
+            }
+          },
+          "update-hours": {
+            title: "Comment mettre à jour vos horaires d'ouverture",
+            description: "Apprenez à définir et modifier vos horaires sur Google Business Profile pour que les clients voient toujours des informations exactes.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Accédez à Business Profile", content: "Visitez business.google.com et connectez-vous à votre compte Google." },
+              step2: { title: "Naviguez vers Horaires", content: "Cliquez 'Modifier le profil', puis sélectionnez 'Horaires' en haut à droite et cliquez sur l'icône de modification." },
+              step3: { title: "Définissez vos horaires", content: "Cochez la case à côté de chaque jour où votre entreprise est ouverte et utilisez les menus déroulants pour définir les heures." },
+              step4: { title: "Ajoutez des horaires spéciaux", content: "Pour les jours fériés ou événements spéciaux, ajoutez des horaires spéciaux pour montrer les changements temporaires." }
+            },
+            tips: {
+              tip1: "Vous pouvez définir des horaires différents pour chaque jour de la semaine.",
+              tip2: "Ajoutez des pauses si votre entreprise ferme pendant la journée (comme les pauses déjeuner).",
+              tip3: "Utilisez les horaires spéciaux pour les jours fériés afin d'éviter de confondre les clients."
+            }
+          },
+          "booking-links": {
+            title: "Comment ajouter des liens de réservation et de commande",
+            description: "Ajoutez des boutons de réservation et des liens de commande à votre Google Business Profile pour aider les clients à réserver directement.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Accédez à votre profil", content: "Allez sur business.google.com et sélectionnez l'entreprise à modifier." },
+              step2: { title: "Trouvez les paramètres de lien", content: "Cliquez 'Modifier le profil' et naviguez vers l'onglet 'Plus' ou cherchez les options de réservation/commande." },
+              step3: { title: "Ajoutez votre lien", content: "Collez votre URL de réservation ou lien de commande de votre plateforme préférée." },
+              step4: { title: "Choisissez le type de lien", content: "Sélectionnez s'il s'agit de rendez-vous, réservations, commandes de nourriture ou autres services." },
+              step5: { title: "Enregistrez les modifications", content: "Cliquez 'Enregistrer' et votre lien apparaîtra comme un bouton sur votre profil." }
+            },
+            tips: {
+              tip1: "Les partenaires Reserve with Google peuvent ajouter des boutons de réservation automatiques.",
+              tip2: "Les liens tiers qui apparaissent sans permission doivent être supprimés par ce fournisseur, pas par Google.",
+              tip3: "Testez régulièrement vos liens pour vous assurer qu'ils fonctionnent.",
+              tip4: "Utilisez des URLs claires et directes qui mènent les clients directement à la page de réservation."
+            }
+          },
+          "ads-phone": {
+            title: "Comment utiliser un numéro Google Ads sur votre profil",
+            description: "Suivez les appels téléphoniques de votre Google Business Profile en utilisant un numéro de suivi Google Ads pour de meilleures analyses de campagne.",
+            category: "Publicité",
+            steps: {
+              step1: { title: "Configurez les extensions d'appel", content: "Dans Google Ads, créez une extension téléphonique avec votre numéro de suivi." },
+              step2: { title: "Liez votre profil", content: "Connectez votre Google Business Profile à votre compte Google Ads comme ressource de localisation." },
+              step3: { title: "Configurez le numéro", content: "Configurez votre numéro de suivi Google Ads pour qu'il s'affiche quand votre profil apparaît comme annonce." },
+              step4: { title: "Surveillez les résultats", content: "Suivez les appels, conversions et ROAS depuis votre tableau de bord Google Ads." }
+            },
+            tips: {
+              tip1: "Les ressources de localisation affichent votre Business Profile comme une annonce dans les résultats de recherche.",
+              tip2: "Sans numéro de suivi, vous ne saurez pas quels appels proviennent des annonces.",
+              tip3: "Les extensions d'appel avec suivi aident à mesurer l'efficacité des campagnes."
             }
           }
         }
@@ -1630,6 +1830,56 @@ export const translations = {
               tip3: "التحقق بالفيديو يتطلب إظهار موقع عملك ووثائق تثبت الملكية.",
               tip4: "حافظ على دقة معلومات عملك أثناء التحقق."
             }
+          },
+          "update-hours": {
+            title: "كيفية تحديث ساعات العمل",
+            description: "تعلم كيفية ضبط وتعديل ساعات عملك على Google Business Profile.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "اذهب لـ Business Profile", content: "زر business.google.com وسجل الدخول بحسابك في Google." },
+              step2: { title: "انتقل لساعات العمل", content: "انقر 'تعديل الملف'، ثم اختر 'الساعات' أعلى اليمين وانقر أيقونة التعديل." },
+              step3: { title: "حدد ساعاتك", content: "ضع علامة على كل يوم يكون فيه عملك مفتوحًا واستخدم القوائم المنسدلة لتحديد الأوقات." },
+              step4: { title: "أضف ساعات خاصة", content: "للعطلات أو الأحداث الخاصة، أضف ساعات خاصة لإظهار التغييرات المؤقتة." }
+            },
+            tips: {
+              tip1: "يمكنك تحديد ساعات مختلفة لكل يوم من أيام الأسبوع.",
+              tip2: "أضف فترات راحة إذا كان عملك يغلق خلال اليوم (مثل استراحة الغداء).",
+              tip3: "استخدم الساعات الخاصة للعطلات لتجنب إرباك العملاء."
+            }
+          },
+          "booking-links": {
+            title: "كيفية إضافة روابط الحجز والطلب",
+            description: "أضف أزرار الحجز وروابط الطلب لـ Google Business Profile لمساعدة العملاء على الحجز مباشرة.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "الوصول لملفك", content: "اذهب إلى business.google.com واختر العمل الذي تريد تعديله." },
+              step2: { title: "ابحث عن إعدادات الروابط", content: "انقر 'تعديل الملف' وانتقل لعلامة 'المزيد' أو ابحث عن خيارات الحجز/الطلب." },
+              step3: { title: "أضف رابطك", content: "الصق رابط الحجز أو رابط الطلب من منصتك المفضلة." },
+              step4: { title: "اختر نوع الرابط", content: "اختر ما إذا كان للمواعيد أو الحجوزات أو طلبات الطعام أو خدمات أخرى." },
+              step5: { title: "احفظ التغييرات", content: "انقر 'حفظ' وسيظهر رابطك كزر على ملفك." }
+            },
+            tips: {
+              tip1: "يمكن لشركاء Reserve with Google إضافة أزرار حجز تلقائية.",
+              tip2: "الروابط من طرف ثالث التي تظهر بدون إذن يجب إزالتها من ذلك المزود، وليس Google.",
+              tip3: "اختبر روابطك بانتظام للتأكد من أنها تعمل.",
+              tip4: "استخدم روابط واضحة ومباشرة تأخذ العملاء مباشرة لصفحة الحجز."
+            }
+          },
+          "ads-phone": {
+            title: "كيفية استخدام رقم Google Ads على ملفك",
+            description: "تتبع المكالمات من Google Business Profile باستخدام رقم تتبع Google Ads لتحليلات حملات أفضل.",
+            category: "الإعلانات",
+            steps: {
+              step1: { title: "إعداد إضافات الاتصال", content: "في Google Ads، أنشئ إضافة هاتفية برقم التتبع الخاص بك." },
+              step2: { title: "اربط ملفك", content: "اربط Google Business Profile بحساب Google Ads كأصل موقع." },
+              step3: { title: "كوّن الرقم", content: "اضبط رقم تتبع Google Ads للظهور عندما يظهر ملفك كإعلان." },
+              step4: { title: "راقب النتائج", content: "تتبع المكالمات والتحويلات وROAS من لوحة تحكم Google Ads." }
+            },
+            tips: {
+              tip1: "أصول الموقع تعرض Business Profile كإعلان في نتائج البحث.",
+              tip2: "بدون رقم تتبع، لن تعرف أي المكالمات جاءت من الإعلانات.",
+              tip3: "إضافات الهاتف للتتبع تساعد في قياس فعالية الحملة."
+            }
           }
         }
       }
@@ -1955,6 +2205,56 @@ export const translations = {
               tip3: "La verificación por vídeo requiere mostrar tu ubicación y documentos de propiedad.",
               tip4: "Mantén tu información de negocio correcta durante la verificación."
             }
+          },
+          "update-hours": {
+            title: "Cómo actualizar tus horarios de apertura",
+            description: "Aprende a configurar y editar tus horarios en Google Business Profile para que los clientes vean información precisa.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Accede a Business Profile", content: "Visita business.google.com e inicia sesión en tu cuenta de Google." },
+              step2: { title: "Navega a Horarios", content: "Haz clic en 'Editar perfil', luego selecciona 'Horarios' arriba a la derecha y haz clic en el icono de edición." },
+              step3: { title: "Configura tus horarios", content: "Marca la casilla junto a cada día que tu negocio está abierto y usa los menús desplegables para establecer las horas." },
+              step4: { title: "Añade horarios especiales", content: "Para festivos o eventos especiales, añade horarios especiales para mostrar cambios temporales." }
+            },
+            tips: {
+              tip1: "Puedes configurar horarios diferentes para cada día de la semana.",
+              tip2: "Añade pausas si tu negocio cierra durante el día (como la pausa del almuerzo).",
+              tip3: "Usa horarios especiales para festivos para evitar confundir a los clientes."
+            }
+          },
+          "booking-links": {
+            title: "Cómo añadir enlaces de reserva y pedidos",
+            description: "Añade botones de reserva y enlaces de pedidos a tu Google Business Profile para que los clientes reserven directamente.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Accede a tu perfil", content: "Ve a business.google.com y selecciona el negocio a editar." },
+              step2: { title: "Encuentra configuración de enlaces", content: "Haz clic en 'Editar perfil' y navega a la pestaña 'Más' o busca opciones de reserva/pedidos." },
+              step3: { title: "Añade tu enlace", content: "Pega tu URL de reserva o enlace de pedidos de tu plataforma preferida." },
+              step4: { title: "Elige tipo de enlace", content: "Selecciona si es para citas, reservas, pedidos de comida u otros servicios." },
+              step5: { title: "Guarda los cambios", content: "Haz clic en 'Guardar' y tu enlace aparecerá como botón en tu perfil." }
+            },
+            tips: {
+              tip1: "Los socios de Reserve with Google pueden añadir botones de reserva automáticos.",
+              tip2: "Los enlaces de terceros que aparecen sin permiso deben ser eliminados por ese proveedor, no por Google.",
+              tip3: "Prueba tus enlaces regularmente para asegurarte de que funcionan.",
+              tip4: "Usa URLs claras y directas que lleven a los clientes directamente a la página de reserva."
+            }
+          },
+          "ads-phone": {
+            title: "Cómo usar un número de Google Ads en tu perfil",
+            description: "Rastrea llamadas desde tu Google Business Profile usando un número de seguimiento de Google Ads para mejores análisis de campaña.",
+            category: "Publicidad",
+            steps: {
+              step1: { title: "Configura extensiones de llamada", content: "En Google Ads, crea una extensión de teléfono con tu número de seguimiento." },
+              step2: { title: "Vincula tu perfil", content: "Conecta tu Google Business Profile a tu cuenta de Google Ads como recurso de ubicación." },
+              step3: { title: "Configura el número", content: "Configura tu número de seguimiento de Google Ads para que aparezca cuando tu perfil se muestre como anuncio." },
+              step4: { title: "Monitorea resultados", content: "Rastrea llamadas, conversiones y ROAS desde tu panel de Google Ads." }
+            },
+            tips: {
+              tip1: "Los recursos de ubicación muestran tu Business Profile como anuncio en los resultados de búsqueda.",
+              tip2: "Sin número de seguimiento, no sabrás qué llamadas vinieron de los anuncios.",
+              tip3: "Las extensiones de llamada con seguimiento ayudan a medir la efectividad de las campañas."
+            }
           }
         }
       }
@@ -2279,6 +2579,56 @@ export const translations = {
               tip2: "بعض الخدمات تقدر تحصل على تحقق فوري إذا تحققت من موقعها الإلكتروني.",
               tip3: "التحقق بالفيديو يتطلب تبيّن موقعك ووثائق تثبت الملكية.",
               tip4: "حافظ على معلومات خدمتك صحيحة خلال التحقق."
+            }
+          },
+          "update-hours": {
+            title: "كيفاش تحدّث ساعات العمل متاعك",
+            description: "تعلّم كيفاش تحط وتعدّل ساعات العمل في Google Business Profile متاعك.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "روح لـ Business Profile", content: "زور business.google.com وادخل بحسابك في Google." },
+              step2: { title: "روح للساعات", content: "اضغط 'عدّل الملف'، ثم اختار 'الساعات' فوق ومن اليمين واضغط أيقونة التعديل." },
+              step3: { title: "حط ساعاتك", content: "علّم على كل نهار الخدمة متاعك مفتوحة واستعمل القوائم باش تحط الأوقات." },
+              step4: { title: "زيد ساعات خاصة", content: "للأعياد أو المناسبات، زيد ساعات خاصة باش تبيّن التغييرات المؤقتة." }
+            },
+            tips: {
+              tip1: "تنجم تحط ساعات مختلفة لكل يوم من الأسبوع.",
+              tip2: "زيد فترات راحة إذا الخدمة تسكر في النص متاع النهار (كيما وقت الغداء).",
+              tip3: "استعمل الساعات الخاصة للأعياد باش ما تخلطش الكليانات."
+            }
+          },
+          "booking-links": {
+            title: "كيفاش تزيد روابط الحجز والطلبات",
+            description: "زيد بوتونات الحجز وروابط الطلبات في Google Business Profile متاعك باش تعاون الكليانات يحجزو مباشرة.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "ادخل للملف متاعك", content: "روح لـ business.google.com واختار الخدمة اللي تحب تعدّلها." },
+              step2: { title: "لقى إعدادات الروابط", content: "اضغط 'عدّل الملف' وروح للتاب 'أكثر' أو دوّر على خيارات الحجز/الطلبات." },
+              step3: { title: "زيد الرابط متاعك", content: "الصق رابط الحجز أو رابط الطلبات من المنصة اللي تحبها." },
+              step4: { title: "اختار نوع الرابط", content: "اختار إذا هو لمواعيد، حجوزات، طلبات أكل، أو خدمات أخرى." },
+              step5: { title: "سجّل التغييرات", content: "اضغط 'سجّل' والرابط متاعك باش يظهر كبوتون في الملف متاعك." }
+            },
+            tips: {
+              tip1: "شركاء Reserve with Google يقدرو يزيدو بوتونات حجز أوتوماتيكية.",
+              tip2: "الروابط من طرف ثالث اللي تظهر بدون إذن لازم تتحذف من المزوّد هذاك، مش Google.",
+              tip3: "جرّب الروابط متاعك بشكل منتظم باش تتأكد تخدم.",
+              tip4: "استعمل روابط واضحة ومباشرة تودّي الكليانات مباشرة لصفحة الحجز."
+            }
+          },
+          "ads-phone": {
+            title: "كيفاش تستعمل رقم Google Ads في الملف متاعك",
+            description: "تتبّع المكالمات من Google Business Profile متاعك باستعمال رقم تتبّع Google Ads لتحليلات حملات أحسن.",
+            category: "الإعلانات",
+            steps: {
+              step1: { title: "حط إضافات الاتصال", content: "في Google Ads، أنشئ إضافة تليفون برقم التتبّع متاعك." },
+              step2: { title: "اربط الملف متاعك", content: "اربط Google Business Profile متاعك بحساب Google Ads كأصل موقع." },
+              step3: { title: "كوّن الرقم", content: "حط رقم تتبّع Google Ads باش يظهر وقت اللي الملف متاعك يظهر كإعلان." },
+              step4: { title: "راقب النتائج", content: "تتبّع المكالمات والتحويلات وROAS من لوحة تحكم Google Ads." }
+            },
+            tips: {
+              tip1: "أصول الموقع تبيّن Business Profile متاعك كإعلان في نتائج البحث.",
+              tip2: "بدون رقم تتبّع، ما تعرفش شني مكالمات جات من الإعلانات.",
+              tip3: "إضافات التليفون للتتبّع تعاون تقيس فعالية الحملة."
             }
           }
         }

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustedBy from "@/components/TrustedBy";
@@ -11,7 +12,13 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <motion.div 
+      className="min-h-screen bg-background"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.3 }}
+    >
       <Header />
       <main>
         <Hero />
@@ -24,7 +31,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
