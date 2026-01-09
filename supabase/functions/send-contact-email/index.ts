@@ -93,7 +93,7 @@ const handler = async (req: Request): Promise<Response> => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "AWSOON Contact Form <onboarding@resend.dev>",
+        from: "AWSOON Contact Form <contact@awsoon.com>",
         to: ["sam@awsoon.com"],
         subject: `New Contact Form Submission from ${name}`,
         html: `
@@ -121,7 +121,7 @@ const handler = async (req: Request): Promise<Response> => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "AWSOON <onboarding@resend.dev>",
+        from: "AWSOON <noreply@awsoon.com>",
         to: [email],
         subject: getConfirmationSubject(language),
         html: getConfirmationBody(name, language),
