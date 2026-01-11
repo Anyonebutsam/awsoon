@@ -1,42 +1,73 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, Check } from "lucide-react";
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
+// Import service images
+import gbpImage from "@/assets/services/google-business-profile.jpg";
+import googleAdsImage from "@/assets/services/google-ads.jpg";
+import metaAdsImage from "@/assets/services/meta-ads.jpg";
+import localSeoImage from "@/assets/services/local-seo.jpg";
+import reputationImage from "@/assets/services/reputation-management.jpg";
+
 const serviceData: Record<string, { 
   color: string; 
   gradient: string;
+  image: string;
 }> = {
   "google-business-profile": {
     color: "#4285F4",
     gradient: "from-[#4285F4] to-[#1a5fd4]",
+    image: gbpImage,
   },
   "google-ads": {
     color: "#EA4335",
     gradient: "from-[#EA4335] to-[#c5221f]",
+    image: googleAdsImage,
   },
   "meta-ads": {
     color: "#1877F2",
     gradient: "from-[#1877F2] to-[#0d5cc9]",
+    image: metaAdsImage,
   },
   "local-seo": {
     color: "#34A853",
     gradient: "from-[#34A853] to-[#1e7e34]",
+    image: localSeoImage,
   },
   "reputation-management": {
     color: "#FBBC05",
     gradient: "from-[#FBBC05] to-[#d4a000]",
+    image: reputationImage,
   },
 };
 
 const ServiceDetail = () => {
   const { serviceId } = useParams<{ serviceId: string }>();
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [serviceId]);
   
   const service = serviceId ? serviceData[serviceId] : null;
+  
+  const handleBackToServices = () => {
+    navigate('/', { replace: false });
+    // Small delay to allow navigation, then scroll to services
+    setTimeout(() => {
+      const servicesSection = document.getElementById('services');
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
   
   if (!service) {
     return (
@@ -44,9 +75,12 @@ const ServiceDetail = () => {
         <Header />
         <div className="pt-32 pb-20 text-center">
           <h1 className="text-3xl font-bold mb-4">Service not found</h1>
-          <Link to="/#services" className="text-primary hover:underline">
+          <button 
+            onClick={handleBackToServices}
+            className="text-primary hover:underline"
+          >
             Back to Services
-          </Link>
+          </button>
         </div>
         <Footer />
       </div>
@@ -96,13 +130,13 @@ const ServiceDetail = () => {
       {/* Hero Section */}
       <section className={`pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br ${service.gradient}`}>
         <div className="container-custom">
-          <Link 
-            to="/#services" 
+          <button 
+            onClick={handleBackToServices}
             className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             {t('services.backToServices')}
-          </Link>
+          </button>
           
           <motion.h1 
             className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
@@ -121,6 +155,24 @@ const ServiceDetail = () => {
           >
             {subtitle}
           </motion.p>
+        </div>
+      </section>
+
+      {/* Service Image Section */}
+      <section className="py-12 md:py-16 bg-muted/30">
+        <div className="container-custom">
+          <motion.div
+            className="relative rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <img 
+              src={service.image} 
+              alt={title}
+              className="w-full h-auto object-cover"
+            />
+          </motion.div>
         </div>
       </section>
 
