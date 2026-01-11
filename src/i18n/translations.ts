@@ -922,6 +922,173 @@ export const translations = {
               tip2: "Utan ett spårningsnummer vet du inte vilka samtal som kom från annonser.",
               tip3: "Telefontillägg med spårningsnummer hjälper till att mäta kampanjeffektivitet."
             }
+          },
+          "respond-reviews": {
+            title: "Hur du svarar på kundrecensioner",
+            description: "Lär dig hur du läser och svarar på kundrecensioner på din Google Företagsprofil för att bygga förtroende och engagemang.",
+            category: "Rykteshantering",
+            steps: {
+              step1: { title: "Gå till din Företagsprofil", content: "Besök business.google.com och logga in på ditt Google-konto." },
+              step2: { title: "Välj Läs recensioner", content: "Klicka på 'Läs recensioner' för att se alla kundrecensioner för ditt företag." },
+              step3: { title: "Hitta recensionen", content: "Lokalisera recensionen du vill svara på från listan." },
+              step4: { title: "Klicka på Svara", content: "Klicka på Svara-ikonen bredvid recensionen du vill besvara." },
+              step5: { title: "Skriv ditt svar", content: "Skriv ditt svar i dialogrutan och klicka på 'Svara' för att publicera." }
+            },
+            tips: {
+              tip1: "Svara på recensioner snabbt för att visa kunderna att du värdesätter deras feedback.",
+              tip2: "Håll dina svar professionella, även för negativa recensioner.",
+              tip3: "Tacka kunder för positiva recensioner och adressera bekymmer i negativa.",
+              tip4: "Personifiera dina svar istället för att använda generiska mallar."
+            }
+          },
+          "add-photos": {
+            title: "Hur du lägger till foton i din Företagsprofil",
+            description: "Ladda upp foton för att visa upp ditt företag, produkter och tjänster på Google Sök och Maps.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Öppna din profil", content: "Gå till business.google.com och logga in på ditt Google-konto." },
+              step2: { title: "Välj Lägg till foto", content: "Klicka på 'Lägg till foto' eller navigera till Foton-sektionen i din profil." },
+              step3: { title: "Välj fototyp", content: "Välj typ av foto: logotyp, omslag, interiör, exteriör, produkter eller team." },
+              step4: { title: "Ladda upp dina bilder", content: "Välj bilder från din enhet och ladda upp dem till din profil." }
+            },
+            tips: {
+              tip1: "Använd högkvalitativa bilder som korrekt representerar ditt företag.",
+              tip2: "Lägg till foton regelbundet för att hålla din profil fräsch och engagerande.",
+              tip3: "Inkludera en blandning av interiör-, exteriör-, produkt- och teamfoton."
+            }
+          },
+          "transfer-ownership": {
+            title: "Hur du överför profilägandeskap",
+            description: "Lär dig hur du överför primärt ägandeskap av din Google Företagsprofil till en annan ägare eller chef.",
+            category: "Kontohantering",
+            steps: {
+              step1: { title: "Lägg till den nya ägaren", content: "Lägg först till personen som ägare om de inte redan är det." },
+              step2: { title: "Gå till Personinställningar", content: "Navigera till 'Personer och åtkomst' i dina Företagsprofilinställningar." },
+              step3: { title: "Välj den nya ägaren", content: "Klicka på personen du vill göra till primär ägare." },
+              step4: { title: "Överför ägandeskap", content: "Välj 'Gör till primär ägare' och bekräfta överföringen." }
+            },
+            tips: {
+              tip1: "Endast den nuvarande primära ägaren kan överföra primärt ägandeskap.",
+              tip2: "Den nya ägaren måste redan ha en ägare- eller chefsroll.",
+              tip3: "Överväg konsekvenserna innan du överför ägandeskap permanent."
+            }
+          },
+          "edit-profile": {
+            title: "Hur du redigerar din Företagsprofilinformation",
+            description: "Uppdatera ditt företagsnamn, adress, telefonnummer och andra detaljer på din Google Företagsprofil.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Hitta din profil", content: "Sök efter ditt företag på Google eller gå till business.google.com." },
+              step2: { title: "Välj Redigera profil", content: "Klicka på 'Redigera profil' för att komma åt din företagsinformation." },
+              step3: { title: "Uppdatera information", content: "Redigera fälten du vill ändra: namn, adress, telefon, webbplats, etc." },
+              step4: { title: "Spara ändringar", content: "Klicka på 'Spara' för att publicera din uppdaterade information." }
+            },
+            tips: {
+              tip1: "Håll din information korrekt och uppdaterad.",
+              tip2: "Vissa ändringar kan kräva omverifiering.",
+              tip3: "Ändringar visas vanligtvis inom 24-48 timmar."
+            }
+          },
+          "set-more-hours": {
+            title: "Hur du ställer in leverans-, avhämtnings- och fler öppettider",
+            description: "Lägg till specifika tider för leverans, avhämtning, drive-through och andra tjänster i din Företagsprofil.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Gå till Företagsprofil", content: "Besök business.google.com och logga in på ditt konto." },
+              step2: { title: "Navigera till Öppettider", content: "Klicka på 'Redigera profil' och välj sedan 'Öppettider'." },
+              step3: { title: "Lägg till fler öppettider", content: "Under 'Lägg till fler öppettider', välj typ som 'Leverans' eller 'Avhämtning'." },
+              step4: { title: "Ställ in schemat", content: "Ställ in dagar och tider för varje tjänsttyp och spara." }
+            },
+            tips: {
+              tip1: "Ställ in vanliga öppettider innan du lägger till fler öppettider.",
+              tip2: "Fler öppettider bör vanligtvis vara en delmängd av dina huvudöppettider.",
+              tip3: "Uppdatera specialtider för helgdagar separat."
+            }
+          },
+          "get-more-reviews": {
+            title: "Tips för att få fler kundrecensioner",
+            description: "Upptäck bästa praxis för att uppmuntra kunder att lämna recensioner på din Google Företagsprofil.",
+            category: "Rykteshantering",
+            steps: {
+              step1: { title: "Fråga vid rätt tidpunkt", content: "Be om recensioner när kunder just har haft en positiv upplevelse." },
+              step2: { title: "Gör det enkelt", content: "Dela din recensionslänk eller QR-kod för att förenkla processen." },
+              step3: { title: "Svara på recensioner", content: "Svara på befintliga recensioner för att visa att du värdesätter feedback." },
+              step4: { title: "Utbilda ditt team", content: "Se till att personalen vet hur man artigt ber om recensioner." }
+            },
+            tips: {
+              tip1: "Erbjud aldrig incitament för recensioner - det bryter mot Googles policyer.",
+              tip2: "Svara på alla recensioner, positiva och negativa.",
+              tip3: "Använd din recensionslänk i e-postsignaturer och kvitton.",
+              tip4: "Kvalitetstjänst leder naturligt till fler positiva recensioner."
+            }
+          },
+          "remove-profile": {
+            title: "Hur du tar bort en Företagsprofil",
+            description: "Lär dig hur du tar bort din Företagsprofil från ditt Google-konto eller begär borttagning från Google Sök och Maps.",
+            category: "Kontohantering",
+            steps: {
+              step1: { title: "Gå till Företagsprofil", content: "Besök business.google.com och logga in på ditt konto." },
+              step2: { title: "Öppna Inställningar", content: "Klicka på 'Mer' och välj sedan 'Företagsprofilinställningar'." },
+              step3: { title: "Ta bort profil", content: "Välj 'Ta bort' och välj att ta bort chefer eller hela profilen." },
+              step4: { title: "Bekräfta borttagning", content: "Bekräfta ditt val för att slutföra borttagningsprocessen." }
+            },
+            tips: {
+              tip1: "Endast primära ägare kan ta bort profilinnehåll och chefer.",
+              tip2: "Att ta bort en profil garanterar inte att den försvinner från Maps.",
+              tip3: "Nya ägare måste vänta 7 dagar innan de kan ta bort profiler."
+            }
+          },
+          "create-posts": {
+            title: "Hur du skapar inlägg på din profil",
+            description: "Dela uppdateringar, erbjudanden, evenemang och nyheter direkt på din Google Företagsprofil för att engagera kunder.",
+            category: "Marknadsföring",
+            steps: {
+              step1: { title: "Gå till din profil", content: "Sök efter ditt företag på Google eller besök business.google.com." },
+              step2: { title: "Välj Lägg till uppdatering", content: "Klicka på 'Lägg till uppdatering' eller 'Skapa inlägg' från dina profilalternativ." },
+              step3: { title: "Välj inläggstyp", content: "Välj typ: Uppdatering, Erbjudande, Evenemang eller Produkt." },
+              step4: { title: "Lägg till innehåll", content: "Skriv ditt meddelande, lägg till foton och inkludera relevanta detaljer." },
+              step5: { title: "Publicera inlägg", content: "Granska ditt inlägg och klicka på 'Publicera' för att dela det." }
+            },
+            tips: {
+              tip1: "Inlägg går ut efter 7 dagar, så posta regelbundet.",
+              tip2: "Inkludera en call-to-action-knapp när det är lämpligt.",
+              tip3: "Använd högkvalitativa bilder för att öka engagemanget.",
+              tip4: "Håll texten kortfattad och övertygande."
+            }
+          },
+          "add-products": {
+            title: "Hur du lägger till produkter och tjänster",
+            description: "Visa upp dina produkter och tjänster på din Google Företagsprofil för att hjälpa kunder hitta vad du erbjuder.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Öppna din profil", content: "Gå till business.google.com och logga in på ditt konto." },
+              step2: { title: "Gå till Produkter/Tjänster", content: "Välj 'Redigera produkter' eller 'Redigera tjänster' från din profil." },
+              step3: { title: "Lägg till nytt objekt", content: "Klicka på 'Lägg till produkt' eller 'Lägg till tjänst' för att skapa en ny lista." },
+              step4: { title: "Ange detaljer", content: "Lägg till namn, beskrivning, pris och foto för varje objekt." },
+              step5: { title: "Spara och publicera", content: "Granska dina poster och spara för att publicera dem." }
+            },
+            tips: {
+              tip1: "Använd tydliga, högkvalitativa produktfoton.",
+              tip2: "Inkludera korrekt prissättning när det är möjligt.",
+              tip3: "Organisera produkter i kategorier för enkel bläddring."
+            }
+          },
+          "business-description": {
+            title: "Hur du skriver en bra företagsbeskrivning",
+            description: "Skapa en övertygande företagsbeskrivning som hjälper kunder förstå vad som gör ditt företag unikt.",
+            category: "Profilhantering",
+            steps: {
+              step1: { title: "Gå till Redigera profil", content: "Öppna din Företagsprofil och klicka på 'Redigera profil'." },
+              step2: { title: "Hitta beskrivningsfältet", content: "Navigera till 'Om' eller 'Beskrivning'-sektionen." },
+              step3: { title: "Skriv din beskrivning", content: "Beskriv ditt företag, tjänster och vad som gör dig unik på upp till 750 tecken." },
+              step4: { title: "Spara ändringar", content: "Granska och spara din beskrivning." }
+            },
+            tips: {
+              tip1: "Fokusera på vad som gör ditt företag unikt och värdefullt.",
+              tip2: "Inkludera relevanta nyckelord naturligt utan att överdriva.",
+              tip3: "Nämn dina viktigaste produkter, tjänster och specialiteter.",
+              tip4: "Undvik reklamspråk och håll dig till saklig information."
+            }
           }
         }
       }
@@ -1296,6 +1463,173 @@ export const translations = {
               tip1: "Активите за местоположение показват вашия Business Profile като реклама в резултатите от търсенето.",
               tip2: "Без номер за проследяване няма да знаете кои обаждания са от реклами.",
               tip3: "Телефонните разширения за проследяване помагат да се измери ефективността на кампанията."
+            }
+          },
+          "respond-reviews": {
+            title: "Как да отговаряте на клиентски отзиви",
+            description: "Научете как да четете и отговаряте на клиентски отзиви във вашия Google Business Profile.",
+            category: "Управление на репутация",
+            steps: {
+              step1: { title: "Отидете на вашия Business Profile", content: "Посетете business.google.com и влезте в акаунта си в Google." },
+              step2: { title: "Изберете Прочетете отзивите", content: "Кликнете на 'Прочетете отзивите', за да видите всички клиентски отзиви." },
+              step3: { title: "Намерете отзива", content: "Намерете отзива, на който искате да отговорите." },
+              step4: { title: "Кликнете Отговори", content: "Кликнете на иконата Отговори до отзива." },
+              step5: { title: "Напишете отговора си", content: "Въведете отговора си и кликнете 'Отговори', за да публикувате." }
+            },
+            tips: {
+              tip1: "Отговаряйте бързо на отзивите, за да покажете, че цените мнението на клиентите.",
+              tip2: "Поддържайте отговорите си професионални, дори за отрицателни отзиви.",
+              tip3: "Благодарете на клиентите за положителни отзиви и адресирайте проблемите в отрицателните.",
+              tip4: "Персонализирайте отговорите си вместо да използвате общи шаблони."
+            }
+          },
+          "add-photos": {
+            title: "Как да добавите снимки в профила си",
+            description: "Качете снимки, за да покажете вашия бизнес, продукти и услуги в Google Търсене и Карти.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Достъп до профила", content: "Отидете на business.google.com и влезте в акаунта си." },
+              step2: { title: "Изберете Добави снимка", content: "Кликнете 'Добави снимка' или отидете в секцията Снимки." },
+              step3: { title: "Изберете тип снимка", content: "Изберете тип: лого, корица, интериор, екстериор, продукти или екип." },
+              step4: { title: "Качете изображенията", content: "Изберете изображения от устройството си и ги качете." }
+            },
+            tips: {
+              tip1: "Използвайте висококачествени изображения, които точно представят бизнеса ви.",
+              tip2: "Добавяйте снимки редовно, за да поддържате профила си свеж.",
+              tip3: "Включете микс от интериорни, екстериорни, продуктови и екипни снимки."
+            }
+          },
+          "transfer-ownership": {
+            title: "Как да прехвърлите собствеността на профила",
+            description: "Научете как да прехвърлите основната собственост на вашия Google Business Profile.",
+            category: "Управление на акаунт",
+            steps: {
+              step1: { title: "Добавете новия собственик", content: "Първо добавете лицето като собственик, ако все още не е." },
+              step2: { title: "Отидете в Настройки за хора", content: "Навигирайте до 'Хора и достъп' в настройките." },
+              step3: { title: "Изберете новия собственик", content: "Кликнете на лицето, което искате да направите основен собственик." },
+              step4: { title: "Прехвърлете собствеността", content: "Изберете 'Направи основен собственик' и потвърдете прехвърлянето." }
+            },
+            tips: {
+              tip1: "Само настоящият основен собственик може да прехвърли собствеността.",
+              tip2: "Новият собственик трябва вече да има роля на собственик или мениджър.",
+              tip3: "Помислете за последиците преди да прехвърлите собствеността."
+            }
+          },
+          "edit-profile": {
+            title: "Как да редактирате информацията в профила си",
+            description: "Актуализирайте името на бизнеса, адреса, телефона и други детайли.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Намерете профила си", content: "Търсете бизнеса си в Google или отидете на business.google.com." },
+              step2: { title: "Изберете Редактиране на профила", content: "Кликнете 'Редактиране на профила' за достъп до информацията." },
+              step3: { title: "Актуализирайте информацията", content: "Редактирайте полетата: име, адрес, телефон, уебсайт и др." },
+              step4: { title: "Запазете промените", content: "Кликнете 'Запази' за публикуване на актуализираната информация." }
+            },
+            tips: {
+              tip1: "Поддържайте информацията си точна и актуална.",
+              tip2: "Някои промени може да изискват повторна верификация.",
+              tip3: "Промените обикновено се появяват в рамките на 24-48 часа."
+            }
+          },
+          "set-more-hours": {
+            title: "Как да зададете часове за доставка, взимане и други",
+            description: "Добавете специфични часове за доставка, взимане, drive-through и други услуги.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Отидете на Business Profile", content: "Посетете business.google.com и влезте в акаунта си." },
+              step2: { title: "Навигирайте до Работно време", content: "Кликнете 'Редактиране на профила' и изберете 'Работно време'." },
+              step3: { title: "Добавете повече часове", content: "Под 'Добави повече часове' изберете тип като 'Доставка' или 'Взимане'." },
+              step4: { title: "Задайте графика", content: "Задайте дните и часовете за всеки тип услуга и запазете." }
+            },
+            tips: {
+              tip1: "Задайте обичайното работно време преди да добавите допълнителни часове.",
+              tip2: "Допълнителните часове обикновено трябва да са подмножество на основните часове.",
+              tip3: "Актуализирайте специалните часове за празници отделно."
+            }
+          },
+          "get-more-reviews": {
+            title: "Съвети за получаване на повече клиентски отзиви",
+            description: "Открийте най-добрите практики за насърчаване на клиентите да оставят отзиви.",
+            category: "Управление на репутация",
+            steps: {
+              step1: { title: "Питайте в подходящия момент", content: "Искайте отзиви, когато клиентите току-що са имали положително преживяване." },
+              step2: { title: "Улеснете процеса", content: "Споделете линка за отзиви или QR код за опростяване." },
+              step3: { title: "Отговаряйте на отзиви", content: "Отговаряйте на съществуващи отзиви, за да покажете, че цените обратната връзка." },
+              step4: { title: "Обучете екипа си", content: "Уверете се, че персоналът знае как учтиво да иска отзиви." }
+            },
+            tips: {
+              tip1: "Никога не предлагайте стимули за отзиви - това нарушава политиките на Google.",
+              tip2: "Отговаряйте на всички отзиви, положителни и отрицателни.",
+              tip3: "Използвайте линка за отзиви в имейл подписи и касови бележки.",
+              tip4: "Качественото обслужване естествено води до повече положителни отзиви."
+            }
+          },
+          "remove-profile": {
+            title: "Как да премахнете Business Profile",
+            description: "Научете как да премахнете вашия Business Profile от акаунта си или да поискате премахване от Google.",
+            category: "Управление на акаунт",
+            steps: {
+              step1: { title: "Отидете на Business Profile", content: "Посетете business.google.com и влезте в акаунта си." },
+              step2: { title: "Достъп до Настройки", content: "Кликнете 'Още' и изберете 'Настройки на Business Profile'." },
+              step3: { title: "Премахнете профила", content: "Изберете 'Премахни' и изберете дали да премахнете мениджъри или целия профил." },
+              step4: { title: "Потвърдете премахването", content: "Потвърдете избора си, за да завършите процеса." }
+            },
+            tips: {
+              tip1: "Само основните собственици могат да премахват съдържание и мениджъри.",
+              tip2: "Премахването на профил не гарантира, че няма да се показва в Карти.",
+              tip3: "Новите собственици трябва да изчакат 7 дни преди да могат да премахват профили."
+            }
+          },
+          "create-posts": {
+            title: "Как да създавате публикации в профила си",
+            description: "Споделяйте актуализации, оферти, събития и новини директно в Google Business Profile.",
+            category: "Маркетинг",
+            steps: {
+              step1: { title: "Отидете на профила си", content: "Търсете бизнеса си в Google или посетете business.google.com." },
+              step2: { title: "Изберете Добави актуализация", content: "Кликнете 'Добави актуализация' или 'Създай публикация'." },
+              step3: { title: "Изберете тип публикация", content: "Изберете тип: Актуализация, Оферта, Събитие или Продукт." },
+              step4: { title: "Добавете съдържание", content: "Напишете съобщението си, добавете снимки и включете детайли." },
+              step5: { title: "Публикувайте", content: "Прегледайте публикацията и кликнете 'Публикувай'." }
+            },
+            tips: {
+              tip1: "Публикациите изтичат след 7 дни, така че публикувайте редовно.",
+              tip2: "Включете бутон за призив към действие, когато е подходящо.",
+              tip3: "Използвайте висококачествени изображения за повече ангажираност.",
+              tip4: "Поддържайте текста кратък и убедителен."
+            }
+          },
+          "add-products": {
+            title: "Как да добавите продукти и услуги",
+            description: "Покажете продуктите и услугите си в Google Business Profile.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Достъп до профила", content: "Отидете на business.google.com и влезте." },
+              step2: { title: "Отидете на Продукти/Услуги", content: "Изберете 'Редактирай продуктите' или 'Редактирай услугите'." },
+              step3: { title: "Добавете нов елемент", content: "Кликнете 'Добави продукт' или 'Добави услуга'." },
+              step4: { title: "Въведете детайли", content: "Добавете име, описание, цена и снимка за всеки елемент." },
+              step5: { title: "Запазете и публикувайте", content: "Прегледайте записите си и запазете, за да ги публикувате." }
+            },
+            tips: {
+              tip1: "Използвайте ясни, висококачествени продуктови снимки.",
+              tip2: "Включете точни цени, когато е възможно.",
+              tip3: "Организирайте продуктите в категории за лесно разглеждане."
+            }
+          },
+          "business-description": {
+            title: "Как да напишете страхотно бизнес описание",
+            description: "Създайте убедително бизнес описание, което помага на клиентите да разберат какво прави бизнеса ви уникален.",
+            category: "Управление на профила",
+            steps: {
+              step1: { title: "Отидете на Редактиране на профила", content: "Отворете Business Profile и кликнете 'Редактиране на профила'." },
+              step2: { title: "Намерете полето за описание", content: "Навигирайте до секцията 'За нас' или 'Описание'." },
+              step3: { title: "Напишете описанието си", content: "Опишете бизнеса си, услугите и какво ви прави уникални в до 750 символа." },
+              step4: { title: "Запазете промените", content: "Прегледайте и запазете описанието си." }
+            },
+            tips: {
+              tip1: "Фокусирайте се върху това, което прави бизнеса ви уникален и ценен.",
+              tip2: "Включете релевантни ключови думи естествено, без да прекалявате.",
+              tip3: "Споменете основните си продукти, услуги и специалности.",
+              tip4: "Избягвайте рекламен език и се придържайте към фактическа информация."
             }
           }
         }
@@ -1672,6 +2006,173 @@ export const translations = {
               tip2: "Sans numéro de suivi, vous ne saurez pas quels appels proviennent des annonces.",
               tip3: "Les extensions d'appel avec suivi aident à mesurer l'efficacité des campagnes."
             }
+          },
+          "respond-reviews": {
+            title: "Comment répondre aux avis clients",
+            description: "Apprenez à lire et répondre aux avis clients sur votre Google Business Profile pour bâtir la confiance.",
+            category: "Gestion de réputation",
+            steps: {
+              step1: { title: "Accédez à votre Business Profile", content: "Visitez business.google.com et connectez-vous à votre compte Google." },
+              step2: { title: "Sélectionnez Lire les avis", content: "Cliquez sur 'Lire les avis' pour voir tous les avis clients." },
+              step3: { title: "Trouvez l'avis", content: "Localisez l'avis auquel vous souhaitez répondre." },
+              step4: { title: "Cliquez sur Répondre", content: "Cliquez sur l'icône Répondre à côté de l'avis." },
+              step5: { title: "Écrivez votre réponse", content: "Saisissez votre réponse et cliquez 'Répondre' pour publier." }
+            },
+            tips: {
+              tip1: "Répondez rapidement aux avis pour montrer que vous valorisez les retours clients.",
+              tip2: "Gardez vos réponses professionnelles, même pour les avis négatifs.",
+              tip3: "Remerciez les clients pour les avis positifs et adressez les préoccupations des négatifs.",
+              tip4: "Personnalisez vos réponses plutôt que d'utiliser des modèles génériques."
+            }
+          },
+          "add-photos": {
+            title: "Comment ajouter des photos à votre profil",
+            description: "Téléchargez des photos pour présenter votre entreprise, produits et services sur Google.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Accédez à votre profil", content: "Allez sur business.google.com et connectez-vous." },
+              step2: { title: "Sélectionnez Ajouter photo", content: "Cliquez 'Ajouter photo' ou naviguez vers la section Photos." },
+              step3: { title: "Choisissez le type de photo", content: "Sélectionnez le type: logo, couverture, intérieur, extérieur, produits ou équipe." },
+              step4: { title: "Téléchargez vos images", content: "Sélectionnez les images de votre appareil et téléchargez-les." }
+            },
+            tips: {
+              tip1: "Utilisez des images de haute qualité qui représentent fidèlement votre entreprise.",
+              tip2: "Ajoutez des photos régulièrement pour garder votre profil frais.",
+              tip3: "Incluez un mélange de photos d'intérieur, extérieur, produits et équipe."
+            }
+          },
+          "transfer-ownership": {
+            title: "Comment transférer la propriété du profil",
+            description: "Apprenez à transférer la propriété principale de votre Google Business Profile.",
+            category: "Gestion de compte",
+            steps: {
+              step1: { title: "Ajoutez le nouveau propriétaire", content: "D'abord, ajoutez la personne comme propriétaire si elle ne l'est pas déjà." },
+              step2: { title: "Accédez aux Paramètres Personnes", content: "Naviguez vers 'Personnes et accès' dans les paramètres." },
+              step3: { title: "Sélectionnez le nouveau propriétaire", content: "Cliquez sur la personne que vous voulez rendre propriétaire principal." },
+              step4: { title: "Transférez la propriété", content: "Sélectionnez 'Rendre propriétaire principal' et confirmez le transfert." }
+            },
+            tips: {
+              tip1: "Seul le propriétaire principal actuel peut transférer la propriété principale.",
+              tip2: "Le nouveau propriétaire doit déjà avoir un rôle de propriétaire ou gestionnaire.",
+              tip3: "Considérez les implications avant de transférer la propriété définitivement."
+            }
+          },
+          "edit-profile": {
+            title: "Comment modifier les informations de votre profil",
+            description: "Mettez à jour le nom, l'adresse, le téléphone et autres détails de votre entreprise.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Trouvez votre profil", content: "Recherchez votre entreprise sur Google ou allez sur business.google.com." },
+              step2: { title: "Sélectionnez Modifier le profil", content: "Cliquez 'Modifier le profil' pour accéder aux informations." },
+              step3: { title: "Mettez à jour les informations", content: "Modifiez les champs: nom, adresse, téléphone, site web, etc." },
+              step4: { title: "Enregistrez les modifications", content: "Cliquez 'Enregistrer' pour publier les informations mises à jour." }
+            },
+            tips: {
+              tip1: "Gardez vos informations exactes et à jour.",
+              tip2: "Certaines modifications peuvent nécessiter une nouvelle vérification.",
+              tip3: "Les modifications apparaissent généralement dans les 24-48 heures."
+            }
+          },
+          "set-more-hours": {
+            title: "Comment définir les horaires de livraison, retrait et plus",
+            description: "Ajoutez des horaires spécifiques pour livraison, retrait, drive et autres services.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Accédez à Business Profile", content: "Visitez business.google.com et connectez-vous." },
+              step2: { title: "Naviguez vers Horaires", content: "Cliquez 'Modifier le profil' puis sélectionnez 'Horaires'." },
+              step3: { title: "Ajoutez plus d'horaires", content: "Sous 'Ajouter plus d'horaires', sélectionnez le type comme 'Livraison' ou 'Retrait'." },
+              step4: { title: "Définissez le planning", content: "Définissez les jours et heures pour chaque type de service et enregistrez." }
+            },
+            tips: {
+              tip1: "Définissez d'abord les horaires normaux avant d'ajouter plus d'horaires.",
+              tip2: "Les horaires supplémentaires doivent généralement être un sous-ensemble des horaires principaux.",
+              tip3: "Mettez à jour les horaires spéciaux pour les jours fériés séparément."
+            }
+          },
+          "get-more-reviews": {
+            title: "Conseils pour obtenir plus d'avis clients",
+            description: "Découvrez les meilleures pratiques pour encourager les clients à laisser des avis.",
+            category: "Gestion de réputation",
+            steps: {
+              step1: { title: "Demandez au bon moment", content: "Demandez des avis quand les clients viennent d'avoir une expérience positive." },
+              step2: { title: "Facilitez le processus", content: "Partagez votre lien d'avis ou QR code pour simplifier." },
+              step3: { title: "Répondez aux avis", content: "Répondez aux avis existants pour montrer que vous valorisez les retours." },
+              step4: { title: "Formez votre équipe", content: "Assurez-vous que le personnel sait demander poliment des avis." }
+            },
+            tips: {
+              tip1: "N'offrez jamais d'incitations pour les avis - cela viole les politiques de Google.",
+              tip2: "Répondez à tous les avis, positifs et négatifs.",
+              tip3: "Utilisez votre lien d'avis dans les signatures email et les reçus.",
+              tip4: "Un service de qualité mène naturellement à plus d'avis positifs."
+            }
+          },
+          "remove-profile": {
+            title: "Comment supprimer un Business Profile",
+            description: "Apprenez à supprimer votre Business Profile de votre compte Google.",
+            category: "Gestion de compte",
+            steps: {
+              step1: { title: "Accédez à Business Profile", content: "Visitez business.google.com et connectez-vous." },
+              step2: { title: "Accédez aux Paramètres", content: "Cliquez 'Plus' puis sélectionnez 'Paramètres Business Profile'." },
+              step3: { title: "Supprimez le profil", content: "Sélectionnez 'Supprimer' et choisissez de supprimer les gestionnaires ou tout le profil." },
+              step4: { title: "Confirmez la suppression", content: "Confirmez votre choix pour terminer le processus." }
+            },
+            tips: {
+              tip1: "Seuls les propriétaires principaux peuvent supprimer le contenu et les gestionnaires.",
+              tip2: "Supprimer un profil ne garantit pas qu'il disparaîtra de Maps.",
+              tip3: "Les nouveaux propriétaires doivent attendre 7 jours avant de pouvoir supprimer des profils."
+            }
+          },
+          "create-posts": {
+            title: "Comment créer des publications sur votre profil",
+            description: "Partagez des actualités, offres, événements et nouvelles directement sur Google Business Profile.",
+            category: "Marketing",
+            steps: {
+              step1: { title: "Accédez à votre profil", content: "Recherchez votre entreprise sur Google ou visitez business.google.com." },
+              step2: { title: "Sélectionnez Ajouter une actualité", content: "Cliquez 'Ajouter une actualité' ou 'Créer une publication'." },
+              step3: { title: "Choisissez le type de publication", content: "Sélectionnez le type: Actualité, Offre, Événement ou Produit." },
+              step4: { title: "Ajoutez le contenu", content: "Écrivez votre message, ajoutez des photos et incluez les détails pertinents." },
+              step5: { title: "Publiez", content: "Vérifiez votre publication et cliquez 'Publier'." }
+            },
+            tips: {
+              tip1: "Les publications expirent après 7 jours, alors publiez régulièrement.",
+              tip2: "Incluez un bouton d'appel à l'action quand c'est approprié.",
+              tip3: "Utilisez des images de haute qualité pour augmenter l'engagement.",
+              tip4: "Gardez le texte concis et convaincant."
+            }
+          },
+          "add-products": {
+            title: "Comment ajouter des produits et services",
+            description: "Présentez vos produits et services sur votre Google Business Profile.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Accédez à votre profil", content: "Allez sur business.google.com et connectez-vous." },
+              step2: { title: "Allez aux Produits/Services", content: "Sélectionnez 'Modifier les produits' ou 'Modifier les services'." },
+              step3: { title: "Ajoutez un nouvel élément", content: "Cliquez 'Ajouter un produit' ou 'Ajouter un service'." },
+              step4: { title: "Entrez les détails", content: "Ajoutez nom, description, prix et photo pour chaque élément." },
+              step5: { title: "Enregistrez et publiez", content: "Vérifiez vos entrées et enregistrez pour les publier." }
+            },
+            tips: {
+              tip1: "Utilisez des photos de produits claires et de haute qualité.",
+              tip2: "Incluez des prix précis quand c'est possible.",
+              tip3: "Organisez les produits en catégories pour faciliter la navigation."
+            }
+          },
+          "business-description": {
+            title: "Comment écrire une excellente description d'entreprise",
+            description: "Créez une description convaincante qui aide les clients à comprendre ce qui rend votre entreprise unique.",
+            category: "Gestion du profil",
+            steps: {
+              step1: { title: "Allez à Modifier le profil", content: "Ouvrez votre Business Profile et cliquez 'Modifier le profil'." },
+              step2: { title: "Trouvez le champ description", content: "Naviguez vers la section 'À propos' ou 'Description'." },
+              step3: { title: "Écrivez votre description", content: "Décrivez votre entreprise, services et ce qui vous rend unique en 750 caractères max." },
+              step4: { title: "Enregistrez les modifications", content: "Vérifiez et enregistrez votre description." }
+            },
+            tips: {
+              tip1: "Concentrez-vous sur ce qui rend votre entreprise unique et précieuse.",
+              tip2: "Incluez des mots-clés pertinents naturellement sans bourrer.",
+              tip3: "Mentionnez vos principaux produits, services et spécialités.",
+              tip4: "Évitez le langage promotionnel et restez factuel."
+            }
           }
         }
       }
@@ -2046,6 +2547,173 @@ export const translations = {
               tip1: "أصول الموقع تعرض Business Profile كإعلان في نتائج البحث.",
               tip2: "بدون رقم تتبع، لن تعرف أي المكالمات جاءت من الإعلانات.",
               tip3: "إضافات الهاتف للتتبع تساعد في قياس فعالية الحملة."
+            }
+          },
+          "respond-reviews": {
+            title: "كيفية الرد على مراجعات العملاء",
+            description: "تعلم كيفية قراءة والرد على مراجعات العملاء على Google Business Profile لبناء الثقة والتفاعل.",
+            category: "إدارة السمعة",
+            steps: {
+              step1: { title: "اذهب لملف عملك", content: "زر business.google.com وسجل الدخول بحسابك في Google." },
+              step2: { title: "اختر قراءة المراجعات", content: "انقر على 'قراءة المراجعات' لرؤية جميع مراجعات العملاء." },
+              step3: { title: "ابحث عن المراجعة", content: "حدد المراجعة التي تريد الرد عليها." },
+              step4: { title: "انقر رد", content: "انقر على أيقونة الرد بجانب المراجعة." },
+              step5: { title: "اكتب ردك", content: "أدخل ردك وانقر 'رد' للنشر." }
+            },
+            tips: {
+              tip1: "رد على المراجعات بسرعة لإظهار أنك تقدر ملاحظات العملاء.",
+              tip2: "حافظ على ردودك مهنية، حتى للمراجعات السلبية.",
+              tip3: "اشكر العملاء على المراجعات الإيجابية وعالج المخاوف في السلبية.",
+              tip4: "خصص ردودك بدلاً من استخدام قوالب عامة."
+            }
+          },
+          "add-photos": {
+            title: "كيفية إضافة صور لملفك",
+            description: "ارفع صورًا لعرض عملك ومنتجاتك وخدماتك على Google.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "الوصول لملفك", content: "اذهب إلى business.google.com وسجل الدخول." },
+              step2: { title: "اختر إضافة صورة", content: "انقر 'إضافة صورة' أو انتقل لقسم الصور." },
+              step3: { title: "اختر نوع الصورة", content: "اختر النوع: شعار، غلاف، داخلي، خارجي، منتجات أو فريق." },
+              step4: { title: "ارفع صورك", content: "اختر الصور من جهازك وارفعها." }
+            },
+            tips: {
+              tip1: "استخدم صورًا عالية الجودة تمثل عملك بدقة.",
+              tip2: "أضف صورًا بانتظام لإبقاء ملفك منعشًا.",
+              tip3: "أدرج مزيجًا من صور الداخل والخارج والمنتجات والفريق."
+            }
+          },
+          "transfer-ownership": {
+            title: "كيفية نقل ملكية الملف",
+            description: "تعلم كيفية نقل الملكية الأساسية لـ Google Business Profile إلى مالك آخر.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "أضف المالك الجديد", content: "أولاً، أضف الشخص كمالك إذا لم يكن بالفعل." },
+              step2: { title: "اذهب لإعدادات الأشخاص", content: "انتقل إلى 'الأشخاص والوصول' في الإعدادات." },
+              step3: { title: "اختر المالك الجديد", content: "انقر على الشخص الذي تريد جعله المالك الأساسي." },
+              step4: { title: "انقل الملكية", content: "اختر 'جعل مالكًا أساسيًا' وأكد النقل." }
+            },
+            tips: {
+              tip1: "فقط المالك الأساسي الحالي يمكنه نقل الملكية الأساسية.",
+              tip2: "المالك الجديد يجب أن يكون لديه بالفعل دور مالك أو مدير.",
+              tip3: "فكر في العواقب قبل نقل الملكية بشكل دائم."
+            }
+          },
+          "edit-profile": {
+            title: "كيفية تعديل معلومات ملفك",
+            description: "حدّث اسم عملك وعنوانه ورقم هاتفه وتفاصيل أخرى.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "ابحث عن ملفك", content: "ابحث عن عملك في Google أو اذهب إلى business.google.com." },
+              step2: { title: "اختر تعديل الملف", content: "انقر 'تعديل الملف' للوصول للمعلومات." },
+              step3: { title: "حدّث المعلومات", content: "عدّل الحقول: الاسم، العنوان، الهاتف، الموقع الإلكتروني، إلخ." },
+              step4: { title: "احفظ التغييرات", content: "انقر 'حفظ' لنشر المعلومات المحدّثة." }
+            },
+            tips: {
+              tip1: "حافظ على دقة معلوماتك وتحديثها.",
+              tip2: "بعض التغييرات قد تتطلب إعادة التحقق.",
+              tip3: "التغييرات تظهر عادة خلال 24-48 ساعة."
+            }
+          },
+          "set-more-hours": {
+            title: "كيفية تعيين ساعات التوصيل والاستلام والمزيد",
+            description: "أضف ساعات محددة للتوصيل والاستلام ودرايف ثرو وخدمات أخرى.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "اذهب لـ Business Profile", content: "زر business.google.com وسجل الدخول." },
+              step2: { title: "انتقل للساعات", content: "انقر 'تعديل الملف' ثم اختر 'الساعات'." },
+              step3: { title: "أضف ساعات إضافية", content: "تحت 'أضف ساعات إضافية'، اختر النوع مثل 'التوصيل' أو 'الاستلام'." },
+              step4: { title: "حدد الجدول", content: "حدد الأيام والأوقات لكل نوع خدمة واحفظ." }
+            },
+            tips: {
+              tip1: "حدد ساعات العمل العادية قبل إضافة ساعات إضافية.",
+              tip2: "الساعات الإضافية يجب أن تكون عادة مجموعة فرعية من ساعاتك الرئيسية.",
+              tip3: "حدّث الساعات الخاصة للعطلات بشكل منفصل."
+            }
+          },
+          "get-more-reviews": {
+            title: "نصائح للحصول على المزيد من مراجعات العملاء",
+            description: "اكتشف أفضل الممارسات لتشجيع العملاء على ترك مراجعات.",
+            category: "إدارة السمعة",
+            steps: {
+              step1: { title: "اسأل في الوقت المناسب", content: "اطلب المراجعات عندما يكون العملاء قد مروا بتجربة إيجابية." },
+              step2: { title: "اجعل الأمر سهلاً", content: "شارك رابط المراجعة أو رمز QR لتبسيط العملية." },
+              step3: { title: "رد على المراجعات", content: "رد على المراجعات الموجودة لإظهار أنك تقدر الملاحظات." },
+              step4: { title: "درّب فريقك", content: "تأكد من أن الموظفين يعرفون كيفية طلب المراجعات بأدب." }
+            },
+            tips: {
+              tip1: "لا تقدم أبدًا حوافز للمراجعات - هذا يخالف سياسات Google.",
+              tip2: "رد على جميع المراجعات، الإيجابية والسلبية.",
+              tip3: "استخدم رابط المراجعة في توقيعات البريد الإلكتروني والإيصالات.",
+              tip4: "الخدمة الجيدة تؤدي طبيعيًا لمزيد من المراجعات الإيجابية."
+            }
+          },
+          "remove-profile": {
+            title: "كيفية إزالة Business Profile",
+            description: "تعلم كيفية إزالة Business Profile من حسابك أو طلب الإزالة من Google.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "اذهب لـ Business Profile", content: "زر business.google.com وسجل الدخول." },
+              step2: { title: "الوصول للإعدادات", content: "انقر 'المزيد' ثم اختر 'إعدادات Business Profile'." },
+              step3: { title: "أزل الملف", content: "اختر 'إزالة' واختر إزالة المديرين أو الملف بالكامل." },
+              step4: { title: "أكد الإزالة", content: "أكد اختيارك لإكمال العملية." }
+            },
+            tips: {
+              tip1: "فقط المالكون الأساسيون يمكنهم إزالة المحتوى والمديرين.",
+              tip2: "إزالة ملف لا تضمن اختفاءه من الخرائط.",
+              tip3: "المالكون الجدد يجب أن ينتظروا 7 أيام قبل إزالة الملفات."
+            }
+          },
+          "create-posts": {
+            title: "كيفية إنشاء منشورات على ملفك",
+            description: "شارك التحديثات والعروض والأحداث والأخبار مباشرة على Google Business Profile.",
+            category: "التسويق",
+            steps: {
+              step1: { title: "اذهب لملفك", content: "ابحث عن عملك في Google أو زر business.google.com." },
+              step2: { title: "اختر إضافة تحديث", content: "انقر 'إضافة تحديث' أو 'إنشاء منشور'." },
+              step3: { title: "اختر نوع المنشور", content: "اختر النوع: تحديث، عرض، حدث أو منتج." },
+              step4: { title: "أضف المحتوى", content: "اكتب رسالتك، أضف صورًا وأدرج التفاصيل." },
+              step5: { title: "انشر", content: "راجع منشورك وانقر 'نشر'." }
+            },
+            tips: {
+              tip1: "المنشورات تنتهي بعد 7 أيام، لذا انشر بانتظام.",
+              tip2: "أدرج زر دعوة للعمل عندما يكون مناسبًا.",
+              tip3: "استخدم صورًا عالية الجودة لزيادة التفاعل.",
+              tip4: "اجعل النص موجزًا ومقنعًا."
+            }
+          },
+          "add-products": {
+            title: "كيفية إضافة المنتجات والخدمات",
+            description: "اعرض منتجاتك وخدماتك على Google Business Profile.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "الوصول لملفك", content: "اذهب إلى business.google.com وسجل الدخول." },
+              step2: { title: "اذهب للمنتجات/الخدمات", content: "اختر 'تعديل المنتجات' أو 'تعديل الخدمات'." },
+              step3: { title: "أضف عنصرًا جديدًا", content: "انقر 'إضافة منتج' أو 'إضافة خدمة'." },
+              step4: { title: "أدخل التفاصيل", content: "أضف الاسم والوصف والسعر والصورة لكل عنصر." },
+              step5: { title: "احفظ وانشر", content: "راجع إدخالاتك واحفظ لنشرها." }
+            },
+            tips: {
+              tip1: "استخدم صور منتجات واضحة وعالية الجودة.",
+              tip2: "أدرج أسعارًا دقيقة عندما يكون ذلك ممكنًا.",
+              tip3: "نظم المنتجات في فئات لسهولة التصفح."
+            }
+          },
+          "business-description": {
+            title: "كيفية كتابة وصف عمل رائع",
+            description: "اصنع وصفًا مقنعًا يساعد العملاء على فهم ما يجعل عملك فريدًا.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "اذهب لتعديل الملف", content: "افتح Business Profile وانقر 'تعديل الملف'." },
+              step2: { title: "ابحث عن حقل الوصف", content: "انتقل لقسم 'حول' أو 'الوصف'." },
+              step3: { title: "اكتب وصفك", content: "صف عملك وخدماتك وما يجعلك فريدًا في 750 حرفًا كحد أقصى." },
+              step4: { title: "احفظ التغييرات", content: "راجع واحفظ وصفك." }
+            },
+            tips: {
+              tip1: "ركز على ما يجعل عملك فريدًا وقيمًا.",
+              tip2: "أدرج كلمات مفتاحية ذات صلة بشكل طبيعي دون حشو.",
+              tip3: "اذكر منتجاتك وخدماتك وتخصصاتك الرئيسية.",
+              tip4: "تجنب اللغة الترويجية والتزم بالمعلومات الواقعية."
             }
           }
         }
@@ -2422,6 +3090,173 @@ export const translations = {
               tip2: "Sin número de seguimiento, no sabrás qué llamadas vinieron de los anuncios.",
               tip3: "Las extensiones de llamada con seguimiento ayudan a medir la efectividad de las campañas."
             }
+          },
+          "respond-reviews": {
+            title: "Cómo responder a las reseñas de clientes",
+            description: "Aprende a leer y responder a las reseñas de clientes en tu Google Business Profile para generar confianza.",
+            category: "Gestión de reputación",
+            steps: {
+              step1: { title: "Accede a tu Business Profile", content: "Visita business.google.com e inicia sesión en tu cuenta de Google." },
+              step2: { title: "Selecciona Leer reseñas", content: "Haz clic en 'Leer reseñas' para ver todas las reseñas de clientes." },
+              step3: { title: "Encuentra la reseña", content: "Localiza la reseña a la que quieres responder." },
+              step4: { title: "Haz clic en Responder", content: "Haz clic en el icono Responder junto a la reseña." },
+              step5: { title: "Escribe tu respuesta", content: "Ingresa tu respuesta y haz clic 'Responder' para publicar." }
+            },
+            tips: {
+              tip1: "Responde rápidamente a las reseñas para mostrar que valoras los comentarios.",
+              tip2: "Mantén tus respuestas profesionales, incluso para reseñas negativas.",
+              tip3: "Agradece a los clientes por las reseñas positivas y aborda las preocupaciones en las negativas.",
+              tip4: "Personaliza tus respuestas en lugar de usar plantillas genéricas."
+            }
+          },
+          "add-photos": {
+            title: "Cómo añadir fotos a tu perfil",
+            description: "Sube fotos para mostrar tu negocio, productos y servicios en Google.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Accede a tu perfil", content: "Ve a business.google.com e inicia sesión." },
+              step2: { title: "Selecciona Añadir foto", content: "Haz clic en 'Añadir foto' o navega a la sección Fotos." },
+              step3: { title: "Elige el tipo de foto", content: "Selecciona el tipo: logo, portada, interior, exterior, productos o equipo." },
+              step4: { title: "Sube tus imágenes", content: "Selecciona imágenes de tu dispositivo y súbelas." }
+            },
+            tips: {
+              tip1: "Usa imágenes de alta calidad que representen fielmente tu negocio.",
+              tip2: "Añade fotos regularmente para mantener tu perfil fresco.",
+              tip3: "Incluye una mezcla de fotos de interior, exterior, productos y equipo."
+            }
+          },
+          "transfer-ownership": {
+            title: "Cómo transferir la propiedad del perfil",
+            description: "Aprende a transferir la propiedad principal de tu Google Business Profile a otro propietario.",
+            category: "Gestión de cuenta",
+            steps: {
+              step1: { title: "Añade al nuevo propietario", content: "Primero, añade a la persona como propietario si aún no lo es." },
+              step2: { title: "Ve a Configuración de personas", content: "Navega a 'Personas y acceso' en la configuración." },
+              step3: { title: "Selecciona al nuevo propietario", content: "Haz clic en la persona que quieres hacer propietario principal." },
+              step4: { title: "Transfiere la propiedad", content: "Selecciona 'Hacer propietario principal' y confirma la transferencia." }
+            },
+            tips: {
+              tip1: "Solo el propietario principal actual puede transferir la propiedad principal.",
+              tip2: "El nuevo propietario ya debe tener un rol de propietario o gestor.",
+              tip3: "Considera las implicaciones antes de transferir la propiedad permanentemente."
+            }
+          },
+          "edit-profile": {
+            title: "Cómo editar la información de tu perfil",
+            description: "Actualiza el nombre, dirección, teléfono y otros detalles de tu negocio.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Encuentra tu perfil", content: "Busca tu negocio en Google o ve a business.google.com." },
+              step2: { title: "Selecciona Editar perfil", content: "Haz clic en 'Editar perfil' para acceder a la información." },
+              step3: { title: "Actualiza la información", content: "Edita los campos: nombre, dirección, teléfono, web, etc." },
+              step4: { title: "Guarda los cambios", content: "Haz clic en 'Guardar' para publicar la información actualizada." }
+            },
+            tips: {
+              tip1: "Mantén tu información precisa y actualizada.",
+              tip2: "Algunos cambios pueden requerir re-verificación.",
+              tip3: "Los cambios suelen aparecer en 24-48 horas."
+            }
+          },
+          "set-more-hours": {
+            title: "Cómo configurar horarios de entrega, recogida y más",
+            description: "Añade horarios específicos para entrega, recogida, drive-through y otros servicios.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Accede a Business Profile", content: "Visita business.google.com e inicia sesión." },
+              step2: { title: "Navega a Horarios", content: "Haz clic en 'Editar perfil' y selecciona 'Horarios'." },
+              step3: { title: "Añade más horarios", content: "En 'Añadir más horarios', selecciona el tipo como 'Entrega' o 'Recogida'." },
+              step4: { title: "Configura el horario", content: "Establece los días y horas para cada tipo de servicio y guarda." }
+            },
+            tips: {
+              tip1: "Configura primero los horarios normales antes de añadir más horarios.",
+              tip2: "Los horarios adicionales suelen ser un subconjunto de tus horarios principales.",
+              tip3: "Actualiza los horarios especiales para festivos por separado."
+            }
+          },
+          "get-more-reviews": {
+            title: "Consejos para conseguir más reseñas de clientes",
+            description: "Descubre las mejores prácticas para animar a los clientes a dejar reseñas.",
+            category: "Gestión de reputación",
+            steps: {
+              step1: { title: "Pide en el momento adecuado", content: "Solicita reseñas cuando los clientes acaban de tener una experiencia positiva." },
+              step2: { title: "Facilita el proceso", content: "Comparte tu enlace de reseñas o código QR para simplificarlo." },
+              step3: { title: "Responde a las reseñas", content: "Responde a las reseñas existentes para mostrar que valoras los comentarios." },
+              step4: { title: "Forma a tu equipo", content: "Asegúrate de que el personal sepa pedir reseñas educadamente." }
+            },
+            tips: {
+              tip1: "Nunca ofrezcas incentivos por reseñas - viola las políticas de Google.",
+              tip2: "Responde a todas las reseñas, positivas y negativas.",
+              tip3: "Usa tu enlace de reseñas en firmas de email y recibos.",
+              tip4: "Un servicio de calidad lleva naturalmente a más reseñas positivas."
+            }
+          },
+          "remove-profile": {
+            title: "Cómo eliminar un Business Profile",
+            description: "Aprende a eliminar tu Business Profile de tu cuenta de Google.",
+            category: "Gestión de cuenta",
+            steps: {
+              step1: { title: "Accede a Business Profile", content: "Visita business.google.com e inicia sesión." },
+              step2: { title: "Accede a Configuración", content: "Haz clic en 'Más' y selecciona 'Configuración de Business Profile'." },
+              step3: { title: "Elimina el perfil", content: "Selecciona 'Eliminar' y elige eliminar gestores o todo el perfil." },
+              step4: { title: "Confirma la eliminación", content: "Confirma tu elección para completar el proceso." }
+            },
+            tips: {
+              tip1: "Solo los propietarios principales pueden eliminar contenido y gestores.",
+              tip2: "Eliminar un perfil no garantiza que desaparezca de Maps.",
+              tip3: "Los nuevos propietarios deben esperar 7 días antes de poder eliminar perfiles."
+            }
+          },
+          "create-posts": {
+            title: "Cómo crear publicaciones en tu perfil",
+            description: "Comparte actualizaciones, ofertas, eventos y novedades directamente en Google Business Profile.",
+            category: "Marketing",
+            steps: {
+              step1: { title: "Accede a tu perfil", content: "Busca tu negocio en Google o visita business.google.com." },
+              step2: { title: "Selecciona Añadir actualización", content: "Haz clic en 'Añadir actualización' o 'Crear publicación'." },
+              step3: { title: "Elige el tipo de publicación", content: "Selecciona el tipo: Actualización, Oferta, Evento o Producto." },
+              step4: { title: "Añade el contenido", content: "Escribe tu mensaje, añade fotos e incluye los detalles relevantes." },
+              step5: { title: "Publica", content: "Revisa tu publicación y haz clic 'Publicar'." }
+            },
+            tips: {
+              tip1: "Las publicaciones caducan a los 7 días, así que publica regularmente.",
+              tip2: "Incluye un botón de llamada a la acción cuando sea apropiado.",
+              tip3: "Usa imágenes de alta calidad para aumentar el engagement.",
+              tip4: "Mantén el texto conciso y convincente."
+            }
+          },
+          "add-products": {
+            title: "Cómo añadir productos y servicios",
+            description: "Muestra tus productos y servicios en tu Google Business Profile.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Accede a tu perfil", content: "Ve a business.google.com e inicia sesión." },
+              step2: { title: "Ve a Productos/Servicios", content: "Selecciona 'Editar productos' o 'Editar servicios'." },
+              step3: { title: "Añade un nuevo elemento", content: "Haz clic en 'Añadir producto' o 'Añadir servicio'." },
+              step4: { title: "Introduce los detalles", content: "Añade nombre, descripción, precio y foto para cada elemento." },
+              step5: { title: "Guarda y publica", content: "Revisa tus entradas y guarda para publicarlas." }
+            },
+            tips: {
+              tip1: "Usa fotos de productos claras y de alta calidad.",
+              tip2: "Incluye precios precisos cuando sea posible.",
+              tip3: "Organiza los productos en categorías para facilitar la navegación."
+            }
+          },
+          "business-description": {
+            title: "Cómo escribir una excelente descripción de negocio",
+            description: "Crea una descripción convincente que ayude a los clientes a entender qué hace único a tu negocio.",
+            category: "Gestión de perfil",
+            steps: {
+              step1: { title: "Ve a Editar perfil", content: "Abre tu Business Profile y haz clic en 'Editar perfil'." },
+              step2: { title: "Encuentra el campo de descripción", content: "Navega a la sección 'Acerca de' o 'Descripción'." },
+              step3: { title: "Escribe tu descripción", content: "Describe tu negocio, servicios y qué te hace único en 750 caracteres máx." },
+              step4: { title: "Guarda los cambios", content: "Revisa y guarda tu descripción." }
+            },
+            tips: {
+              tip1: "Céntrate en lo que hace tu negocio único y valioso.",
+              tip2: "Incluye palabras clave relevantes de forma natural sin saturar.",
+              tip3: "Menciona tus principales productos, servicios y especialidades.",
+              tip4: "Evita el lenguaje promocional y mantente factual."
+            }
           }
         }
       }
@@ -2796,6 +3631,173 @@ export const translations = {
               tip1: "أصول الموقع تبيّن Business Profile متاعك كإعلان في نتائج البحث.",
               tip2: "بدون رقم تتبّع، ما تعرفش شني مكالمات جات من الإعلانات.",
               tip3: "إضافات التليفون للتتبّع تعاون تقيس فعالية الحملة."
+            }
+          },
+          "respond-reviews": {
+            title: "كيفاش ترد على تقييمات الكليانات",
+            description: "تعلّم كيفاش تقرا وترد على تقييمات الكليانات في Google Business Profile متاعك باش تبني الثقة.",
+            category: "إدارة السمعة",
+            steps: {
+              step1: { title: "روح لملف الأعمال متاعك", content: "زور business.google.com وادخل بحسابك في Google." },
+              step2: { title: "اختار اقرأ التقييمات", content: "اضغط 'اقرأ التقييمات' باش تشوف كل تقييمات الكليانات." },
+              step3: { title: "لقى التقييم", content: "حدد التقييم اللي تحب ترد عليه." },
+              step4: { title: "اضغط رد", content: "اضغط على أيقونة الرد جنب التقييم." },
+              step5: { title: "اكتب ردك", content: "دخّل ردك واضغط 'رد' باش تنشر." }
+            },
+            tips: {
+              tip1: "رد بسرعة على التقييمات باش تبيّن إنك تقدّر ملاحظات الكليانات.",
+              tip2: "خلّي ردودك احترافية، حتى للتقييمات السلبية.",
+              tip3: "اشكر الكليانات على التقييمات الإيجابية وعالج المشاكل في السلبية.",
+              tip4: "خصص ردودك بدل ما تستعمل قوالب عامة."
+            }
+          },
+          "add-photos": {
+            title: "كيفاش تزيد صور للملف متاعك",
+            description: "ارفع صور باش تبيّن خدمتك ومنتجاتك وخدماتك في Google.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "ادخل للملف متاعك", content: "روح لـ business.google.com وادخل." },
+              step2: { title: "اختار زيد صورة", content: "اضغط 'زيد صورة' أو روح لقسم الصور." },
+              step3: { title: "اختار نوع الصورة", content: "اختار النوع: لوقو، غلاف، داخلي، خارجي، منتجات أو فريق." },
+              step4: { title: "ارفع صورك", content: "اختار الصور من جهازك وارفعهم." }
+            },
+            tips: {
+              tip1: "استعمل صور عالية الجودة تمثّل خدمتك صح.",
+              tip2: "زيد صور بانتظام باش تخلي الملف متاعك فريش.",
+              tip3: "حط مزيج من صور الداخل والخارج والمنتجات والفريق."
+            }
+          },
+          "transfer-ownership": {
+            title: "كيفاش تنقل ملكية الملف",
+            description: "تعلّم كيفاش تنقل الملكية الرئيسية متاع Google Business Profile متاعك لمالك آخر.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "زيد المالك الجديد", content: "الأول، زيد الشخص كمالك إذا ما هوش بالفعل." },
+              step2: { title: "روح لإعدادات الأشخاص", content: "روح لـ 'الأشخاص والوصول' في الإعدادات." },
+              step3: { title: "اختار المالك الجديد", content: "اضغط على الشخص اللي تحب تخليه مالك رئيسي." },
+              step4: { title: "انقل الملكية", content: "اختار 'اجعله مالك رئيسي' وأكد النقل." }
+            },
+            tips: {
+              tip1: "كان المالك الرئيسي الحالي يقدر ينقل الملكية الرئيسية.",
+              tip2: "المالك الجديد لازم يكون عندو بالفعل دور مالك أو مدير.",
+              tip3: "فكّر في العواقب قبل ما تنقل الملكية بشكل دائم."
+            }
+          },
+          "edit-profile": {
+            title: "كيفاش تعدّل معلومات الملف متاعك",
+            description: "حدّث اسم خدمتك وعنوانها ورقم تليفونها وتفاصيل أخرى.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "لقى الملف متاعك", content: "ابحث على خدمتك في Google أو روح لـ business.google.com." },
+              step2: { title: "اختار عدّل الملف", content: "اضغط 'عدّل الملف' باش توصل للمعلومات." },
+              step3: { title: "حدّث المعلومات", content: "عدّل الحقول: الاسم، العنوان، التليفون، الموقع، إلخ." },
+              step4: { title: "سجّل التغييرات", content: "اضغط 'سجّل' باش تنشر المعلومات المحدّثة." }
+            },
+            tips: {
+              tip1: "حافظ على معلوماتك صحيحة ومحدّثة.",
+              tip2: "بعض التغييرات تنجم تحتاج إعادة التحقق.",
+              tip3: "التغييرات عادة تظهر خلال 24-48 ساعة."
+            }
+          },
+          "set-more-hours": {
+            title: "كيفاش تحط ساعات التوصيل والاستلام والمزيد",
+            description: "زيد ساعات محددة للتوصيل والاستلام ودرايف ثرو وخدمات أخرى.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "روح لـ Business Profile", content: "زور business.google.com وادخل." },
+              step2: { title: "روح للساعات", content: "اضغط 'عدّل الملف' ثم اختار 'الساعات'." },
+              step3: { title: "زيد ساعات إضافية", content: "تحت 'زيد ساعات إضافية'، اختار النوع كيما 'التوصيل' أو 'الاستلام'." },
+              step4: { title: "حط الجدول", content: "حط الأيام والأوقات لكل نوع خدمة وسجّل." }
+            },
+            tips: {
+              tip1: "حط ساعات العمل العادية قبل ما تزيد ساعات إضافية.",
+              tip2: "الساعات الإضافية عادة لازم تكون جزء من ساعاتك الرئيسية.",
+              tip3: "حدّث الساعات الخاصة للأعياد بشكل منفصل."
+            }
+          },
+          "get-more-reviews": {
+            title: "نصائح باش تجيب أكثر تقييمات من الكليانات",
+            description: "اكتشف أحسن الممارسات باش تشجّع الكليانات يخليو تقييمات.",
+            category: "إدارة السمعة",
+            steps: {
+              step1: { title: "اسأل في الوقت المناسب", content: "اطلب التقييمات وقت اللي الكليانات مرّو بتجربة إيجابية." },
+              step2: { title: "سهّل العملية", content: "شارك رابط التقييم أو رمز QR باش تسهّل." },
+              step3: { title: "رد على التقييمات", content: "رد على التقييمات الموجودة باش تبيّن إنك تقدّر الملاحظات." },
+              step4: { title: "درّب فريقك", content: "تأكد إن الموظفين يعرفو كيفاش يطلبو التقييمات بأدب." }
+            },
+            tips: {
+              tip1: "ما تقدمش أبدًا حوافز للتقييمات - هذا يخالف سياسات Google.",
+              tip2: "رد على كل التقييمات، الإيجابية والسلبية.",
+              tip3: "استعمل رابط التقييم في توقيعات الإيمايل والإيصالات.",
+              tip4: "الخدمة الباهية تجيب بشكل طبيعي أكثر تقييمات إيجابية."
+            }
+          },
+          "remove-profile": {
+            title: "كيفاش تحذف Business Profile",
+            description: "تعلّم كيفاش تحذف Business Profile متاعك من حسابك أو تطلب الحذف من Google.",
+            category: "إدارة الحساب",
+            steps: {
+              step1: { title: "روح لـ Business Profile", content: "زور business.google.com وادخل." },
+              step2: { title: "ادخل للإعدادات", content: "اضغط 'أكثر' ثم اختار 'إعدادات Business Profile'." },
+              step3: { title: "احذف الملف", content: "اختار 'احذف' واختار تحذف المديرين أو الملف بالكامل." },
+              step4: { title: "أكد الحذف", content: "أكد اختيارك باش تكمل العملية." }
+            },
+            tips: {
+              tip1: "كان المالكين الرئيسيين يقدرو يحذفو المحتوى والمديرين.",
+              tip2: "حذف ملف ما يضمنش إنو يختفي من الخرائط.",
+              tip3: "المالكين الجداد لازم ينتظرو 7 أيام قبل ما يقدرو يحذفو الملفات."
+            }
+          },
+          "create-posts": {
+            title: "كيفاش تنشئ منشورات في الملف متاعك",
+            description: "شارك التحديثات والعروض والأحداث والأخبار مباشرة في Google Business Profile متاعك.",
+            category: "التسويق",
+            steps: {
+              step1: { title: "روح للملف متاعك", content: "ابحث على خدمتك في Google أو زور business.google.com." },
+              step2: { title: "اختار زيد تحديث", content: "اضغط 'زيد تحديث' أو 'أنشئ منشور'." },
+              step3: { title: "اختار نوع المنشور", content: "اختار النوع: تحديث، عرض، حدث أو منتج." },
+              step4: { title: "زيد المحتوى", content: "اكتب رسالتك، زيد صور وحط التفاصيل." },
+              step5: { title: "انشر", content: "راجع منشورك واضغط 'انشر'." }
+            },
+            tips: {
+              tip1: "المنشورات تنتهي بعد 7 أيام، لذا انشر بانتظام.",
+              tip2: "حط بوتون دعوة للعمل وقت اللي يكون مناسب.",
+              tip3: "استعمل صور عالية الجودة باش تزيد التفاعل.",
+              tip4: "خلّي النص قصير ومقنع."
+            }
+          },
+          "add-products": {
+            title: "كيفاش تزيد منتجات وخدمات",
+            description: "بيّن منتجاتك وخدماتك في Google Business Profile متاعك.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "ادخل للملف متاعك", content: "روح لـ business.google.com وادخل." },
+              step2: { title: "روح للمنتجات/الخدمات", content: "اختار 'عدّل المنتجات' أو 'عدّل الخدمات'." },
+              step3: { title: "زيد عنصر جديد", content: "اضغط 'زيد منتج' أو 'زيد خدمة'." },
+              step4: { title: "دخّل التفاصيل", content: "زيد الاسم والوصف والسعر والصورة لكل عنصر." },
+              step5: { title: "سجّل وانشر", content: "راجع إدخالاتك وسجّل باش تنشرهم." }
+            },
+            tips: {
+              tip1: "استعمل صور منتجات واضحة وعالية الجودة.",
+              tip2: "حط أسعار صحيحة وقت اللي يمكن.",
+              tip3: "نظّم المنتجات في فئات باش يسهل التصفح."
+            }
+          },
+          "business-description": {
+            title: "كيفاش تكتب وصف خدمة ممتاز",
+            description: "اصنع وصف مقنع يعاون الكليانات يفهمو شنو يخلي خدمتك فريدة.",
+            category: "إدارة الملف",
+            steps: {
+              step1: { title: "روح لعدّل الملف", content: "افتح Business Profile متاعك واضغط 'عدّل الملف'." },
+              step2: { title: "لقى حقل الوصف", content: "روح لقسم 'حول' أو 'الوصف'." },
+              step3: { title: "اكتب وصفك", content: "اوصف خدمتك وخدماتك وشنو يخليك فريد في 750 حرف كحد أقصى." },
+              step4: { title: "سجّل التغييرات", content: "راجع واسجّل وصفك." }
+            },
+            tips: {
+              tip1: "ركّز على شنو يخلي خدمتك فريدة وقيّمة.",
+              tip2: "حط كلمات مفتاحية مناسبة بشكل طبيعي بدون حشو.",
+              tip3: "اذكر منتجاتك وخدماتك وتخصصاتك الرئيسية.",
+              tip4: "تجنّب اللغة الترويجية والتزم بالمعلومات الواقعية."
             }
           }
         }
