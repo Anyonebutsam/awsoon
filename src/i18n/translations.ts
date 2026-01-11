@@ -380,6 +380,173 @@ export const translations = {
               tip2: "Without a tracking number, you won't know which calls came from ads.",
               tip3: "Phone extension tracking numbers help measure campaign effectiveness."
             }
+          },
+          "respond-reviews": {
+            title: "How to Reply to Customer Reviews",
+            description: "Learn how to read and respond to customer reviews on your Google Business Profile to build trust and engagement.",
+            category: "Reputation Management",
+            steps: {
+              step1: { title: "Go to Your Business Profile", content: "Visit business.google.com and sign in to your Google Account." },
+              step2: { title: "Select Read Reviews", content: "Click on 'Read reviews' to see all customer reviews for your business." },
+              step3: { title: "Find the Review", content: "Locate the review you want to respond to from the list." },
+              step4: { title: "Click Reply", content: "Click the Reply icon next to the review you want to respond to." },
+              step5: { title: "Write Your Response", content: "Enter your reply in the dialog box and click 'Reply' to publish." }
+            },
+            tips: {
+              tip1: "Respond to reviews promptly to show customers you value their feedback.",
+              tip2: "Keep your responses professional, even for negative reviews.",
+              tip3: "Thank customers for positive reviews and address concerns in negative ones.",
+              tip4: "Personalize your responses rather than using generic templates."
+            }
+          },
+          "add-photos": {
+            title: "How to Add Photos to Your Business Profile",
+            description: "Upload photos to showcase your business, products, and services on Google Search and Maps.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Access Your Profile", content: "Go to business.google.com and sign in to your Google Account." },
+              step2: { title: "Select Add Photo", content: "Click 'Add photo' or navigate to the Photos section of your profile." },
+              step3: { title: "Choose Photo Type", content: "Select the type of photo: logo, cover, interior, exterior, products, or team." },
+              step4: { title: "Upload Your Images", content: "Select images from your device and upload them to your profile." }
+            },
+            tips: {
+              tip1: "Use high-quality images that accurately represent your business.",
+              tip2: "Add photos regularly to keep your profile fresh and engaging.",
+              tip3: "Include a mix of interior, exterior, product, and team photos."
+            }
+          },
+          "transfer-ownership": {
+            title: "How to Transfer Profile Ownership",
+            description: "Learn how to transfer primary ownership of your Google Business Profile to another owner or manager.",
+            category: "Account Management",
+            steps: {
+              step1: { title: "Add the New Owner", content: "First, add the person as an owner if they aren't already." },
+              step2: { title: "Go to People Settings", content: "Navigate to 'People and access' in your Business Profile settings." },
+              step3: { title: "Select the New Owner", content: "Click on the person you want to make the primary owner." },
+              step4: { title: "Transfer Ownership", content: "Select 'Make primary owner' and confirm the transfer." }
+            },
+            tips: {
+              tip1: "Only the current primary owner can transfer primary ownership.",
+              tip2: "The new owner must already have an owner or manager role.",
+              tip3: "Consider the implications before transferring ownership permanently."
+            }
+          },
+          "edit-profile": {
+            title: "How to Edit Your Business Profile Info",
+            description: "Update your business name, address, phone number, and other details on your Google Business Profile.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Find Your Profile", content: "Search for your business on Google or go to business.google.com." },
+              step2: { title: "Select Edit Profile", content: "Click 'Edit profile' to access your business information." },
+              step3: { title: "Update Information", content: "Edit the fields you want to change: name, address, phone, website, etc." },
+              step4: { title: "Save Changes", content: "Click 'Save' to publish your updated information." }
+            },
+            tips: {
+              tip1: "Keep your information accurate and up-to-date.",
+              tip2: "Some changes may require re-verification.",
+              tip3: "Changes typically appear within 24-48 hours."
+            }
+          },
+          "set-more-hours": {
+            title: "How to Set Delivery, Takeout & More Hours",
+            description: "Add specific hours for delivery, takeout, drive-through, and other services on your Business Profile.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Go to Business Profile", content: "Visit business.google.com and sign in to your account." },
+              step2: { title: "Navigate to Hours", content: "Click 'Edit profile' then select 'Hours'." },
+              step3: { title: "Add More Hours", content: "Under 'Add more hours', select the type like 'Delivery' or 'Takeout'." },
+              step4: { title: "Set the Schedule", content: "Set the days and times for each service type and save." }
+            },
+            tips: {
+              tip1: "Set regular business hours before adding more hours.",
+              tip2: "More hours should typically be a subset of your main hours.",
+              tip3: "Update special hours for holidays separately."
+            }
+          },
+          "get-more-reviews": {
+            title: "Tips to Get More Customer Reviews",
+            description: "Discover best practices for encouraging customers to leave reviews on your Google Business Profile.",
+            category: "Reputation Management",
+            steps: {
+              step1: { title: "Ask at the Right Time", content: "Request reviews when customers have just had a positive experience." },
+              step2: { title: "Make It Easy", content: "Share your review link or QR code to simplify the process." },
+              step3: { title: "Respond to Reviews", content: "Reply to existing reviews to show you value feedback." },
+              step4: { title: "Train Your Team", content: "Ensure staff know how to politely ask for reviews." }
+            },
+            tips: {
+              tip1: "Never offer incentives for reviews - it violates Google's policies.",
+              tip2: "Respond to all reviews, positive and negative.",
+              tip3: "Use your review link in email signatures and receipts.",
+              tip4: "Quality service naturally leads to more positive reviews."
+            }
+          },
+          "remove-profile": {
+            title: "How to Remove a Business Profile",
+            description: "Learn how to remove your Business Profile from your Google Account or request removal from Google Search and Maps.",
+            category: "Account Management",
+            steps: {
+              step1: { title: "Go to Business Profile", content: "Visit business.google.com and sign in to your account." },
+              step2: { title: "Access Settings", content: "Click 'More' then select 'Business Profile settings'." },
+              step3: { title: "Remove Profile", content: "Select 'Remove' and choose to remove managers or the entire profile." },
+              step4: { title: "Confirm Removal", content: "Confirm your choice to complete the removal process." }
+            },
+            tips: {
+              tip1: "Only primary owners can remove profile content and managers.",
+              tip2: "Removing a profile doesn't guarantee it won't appear on Maps.",
+              tip3: "New owners must wait 7 days before they can remove profiles."
+            }
+          },
+          "create-posts": {
+            title: "How to Create Posts on Your Profile",
+            description: "Share updates, offers, events, and news directly on your Google Business Profile to engage customers.",
+            category: "Marketing",
+            steps: {
+              step1: { title: "Go to Your Profile", content: "Search for your business on Google or visit business.google.com." },
+              step2: { title: "Select Add Update", content: "Click 'Add update' or 'Create post' from your profile options." },
+              step3: { title: "Choose Post Type", content: "Select the type: Update, Offer, Event, or Product." },
+              step4: { title: "Add Content", content: "Write your message, add photos, and include any relevant details." },
+              step5: { title: "Publish Post", content: "Review your post and click 'Post' to publish it." }
+            },
+            tips: {
+              tip1: "Posts expire after 7 days, so post regularly.",
+              tip2: "Include a call-to-action button when appropriate.",
+              tip3: "Use high-quality images to increase engagement.",
+              tip4: "Keep text concise and compelling."
+            }
+          },
+          "add-products": {
+            title: "How to Add Products & Services",
+            description: "Showcase your products and services on your Google Business Profile to help customers find what you offer.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Access Your Profile", content: "Go to business.google.com and sign in to your account." },
+              step2: { title: "Go to Products/Services", content: "Select 'Edit products' or 'Edit services' from your profile." },
+              step3: { title: "Add New Item", content: "Click 'Add product' or 'Add service' to create a new listing." },
+              step4: { title: "Enter Details", content: "Add name, description, price, and photo for each item." },
+              step5: { title: "Save and Publish", content: "Review your entries and save to publish them." }
+            },
+            tips: {
+              tip1: "Use clear, high-quality product photos.",
+              tip2: "Include accurate pricing when possible.",
+              tip3: "Organize products into categories for easy browsing."
+            }
+          },
+          "business-description": {
+            title: "How to Write a Great Business Description",
+            description: "Craft a compelling business description that helps customers understand what makes your business unique.",
+            category: "Profile Management",
+            steps: {
+              step1: { title: "Go to Edit Profile", content: "Access your Business Profile and click 'Edit profile'." },
+              step2: { title: "Find Description Field", content: "Navigate to the 'About' or 'Description' section." },
+              step3: { title: "Write Your Description", content: "Describe your business, services, and what makes you unique in up to 750 characters." },
+              step4: { title: "Save Changes", content: "Review and save your description." }
+            },
+            tips: {
+              tip1: "Focus on what makes your business unique and valuable.",
+              tip2: "Include relevant keywords naturally without stuffing.",
+              tip3: "Mention your key products, services, and specialties.",
+              tip4: "Avoid promotional language and stick to factual information."
+            }
           }
         }
       }

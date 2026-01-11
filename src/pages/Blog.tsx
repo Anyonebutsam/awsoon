@@ -18,6 +18,16 @@ import verifyProfileImg from "@/assets/blog/verify-profile.jpg";
 import updateHoursImg from "@/assets/blog/update-hours.jpg";
 import bookingLinksImg from "@/assets/blog/booking-links.jpg";
 import adsPhoneImg from "@/assets/blog/ads-phone.jpg";
+import respondReviewsImg from "@/assets/blog/respond-reviews.jpg";
+import addPhotosImg from "@/assets/blog/add-photos.jpg";
+import transferOwnershipImg from "@/assets/blog/transfer-ownership.jpg";
+import editProfileImg from "@/assets/blog/edit-profile.jpg";
+import setMoreHoursImg from "@/assets/blog/set-more-hours.jpg";
+import getMoreReviewsImg from "@/assets/blog/get-more-reviews.jpg";
+import removeProfileImg from "@/assets/blog/remove-profile.jpg";
+import createPostsImg from "@/assets/blog/create-posts.jpg";
+import addProductsImg from "@/assets/blog/add-products.jpg";
+import businessDescriptionImg from "@/assets/blog/business-description.jpg";
 
 interface BlogArticle {
   id: string;
@@ -97,6 +107,76 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 4,
     tipsCount: 3,
+  },
+  {
+    id: "respond-reviews",
+    image: respondReviewsImg,
+    readTime: "5 min",
+    stepsCount: 5,
+    tipsCount: 4,
+  },
+  {
+    id: "add-photos",
+    image: addPhotosImg,
+    readTime: "4 min",
+    stepsCount: 4,
+    tipsCount: 3,
+  },
+  {
+    id: "transfer-ownership",
+    image: transferOwnershipImg,
+    readTime: "5 min",
+    stepsCount: 4,
+    tipsCount: 3,
+  },
+  {
+    id: "edit-profile",
+    image: editProfileImg,
+    readTime: "4 min",
+    stepsCount: 4,
+    tipsCount: 3,
+  },
+  {
+    id: "set-more-hours",
+    image: setMoreHoursImg,
+    readTime: "4 min",
+    stepsCount: 4,
+    tipsCount: 3,
+  },
+  {
+    id: "get-more-reviews",
+    image: getMoreReviewsImg,
+    readTime: "5 min",
+    stepsCount: 4,
+    tipsCount: 4,
+  },
+  {
+    id: "remove-profile",
+    image: removeProfileImg,
+    readTime: "4 min",
+    stepsCount: 4,
+    tipsCount: 3,
+  },
+  {
+    id: "create-posts",
+    image: createPostsImg,
+    readTime: "5 min",
+    stepsCount: 5,
+    tipsCount: 4,
+  },
+  {
+    id: "add-products",
+    image: addProductsImg,
+    readTime: "5 min",
+    stepsCount: 5,
+    tipsCount: 3,
+  },
+  {
+    id: "business-description",
+    image: businessDescriptionImg,
+    readTime: "4 min",
+    stepsCount: 4,
+    tipsCount: 4,
   },
 ];
 
