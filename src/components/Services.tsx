@@ -1,6 +1,5 @@
-import { MapPin, Search, Megaphone, Users, ArrowRight } from "lucide-react";
+import { MapPin, Search, Megaphone, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 // Google Brand Colors
 const GoogleBlue = "#4285F4";
@@ -10,44 +9,43 @@ const GoogleGreen = "#34A853";
 
 const Services = () => {
   const { t } = useTranslation();
+
+  const scrollToContact = () => {
+    const element = document.querySelector('#contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   
   const services = [
     {
       icon: MapPin,
       titleKey: "services.gbp.title",
       descriptionKey: "services.gbp.description",
-      detailKey: "services.gbp.detail",
       color: GoogleBlue,
-      href: "/blog?category=gbp"
     },
     {
       icon: Search,
       titleKey: "services.localSeo.title",
       descriptionKey: "services.localSeo.description",
-      detailKey: "services.localSeo.detail",
       color: GoogleGreen,
-      href: "/blog?category=seo"
     },
     {
       icon: Megaphone,
       titleKey: "services.digitalMarketing.title",
       descriptionKey: "services.digitalMarketing.description",
-      detailKey: "services.digitalMarketing.detail",
       color: GoogleRed,
-      href: "/blog?category=marketing"
     },
     {
       icon: Users,
       titleKey: "services.reputation.title",
       descriptionKey: "services.reputation.description",
-      detailKey: "services.reputation.detail",
       color: GoogleYellow,
-      href: "/blog?category=reputation"
     },
   ];
 
   return (
-    <section id="services" className="section-padding bg-background">
+    <section id="services" className="section-padding bg-muted/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-2">
@@ -61,47 +59,60 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-border rounded-2xl overflow-hidden">
+        {/* Vertical Service List - Clean like Digiwise */}
+        <div className="max-w-4xl mx-auto space-y-6">
           {services.map((service, index) => (
-            <Link
+            <button
               key={service.titleKey}
-              to={service.href}
-              className="group relative p-8 md:p-10 bg-card hover:bg-muted/50 transition-all duration-300 border-border"
-              style={{
-                borderRight: index % 2 === 0 ? '1px solid hsl(var(--border))' : 'none',
-                borderBottom: index < 2 ? '1px solid hsl(var(--border))' : 'none',
-              }}
+              onClick={scrollToContact}
+              className="group w-full text-left bg-card hover:bg-card/80 border border-border hover:border-primary/30 rounded-xl p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
             >
-              {/* Icon */}
-              <div 
-                className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110"
-                style={{ backgroundColor: `${service.color}15` }}
-              >
-                <service.icon className="w-8 h-8" style={{ color: service.color }} />
+              <div className="flex items-start gap-5">
+                {/* Icon */}
+                <div 
+                  className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: `${service.color}12` }}
+                >
+                  <service.icon className="w-7 h-7" style={{ color: service.color }} />
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {t(service.titleKey)}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {t(service.descriptionKey)}
+                  </p>
+                </div>
+
+                {/* Arrow indicator */}
+                <div className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-muted group-hover:bg-primary/10 transition-colors flex-shrink-0 mt-2">
+                  <svg 
+                    className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              
-              {/* Title */}
-              <h3 className="font-display text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                {t(service.titleKey)}
-              </h3>
-              
-              {/* Short Description */}
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                {t(service.descriptionKey)}
-              </p>
-              
-              {/* Detailed Explanation */}
-              <p className="text-sm text-muted-foreground/80 leading-relaxed mb-6">
-                {t(service.detailKey)}
-              </p>
-              
-              {/* CTA Link */}
-              <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
-                {t('services.learnMore')}
-                <ArrowRight className="w-4 h-4" />
-              </div>
-            </Link>
+            </button>
           ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-12">
+          <p className="text-muted-foreground mb-4">
+            {t('services.ctaText')}
+          </p>
+          <button
+            onClick={scrollToContact}
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            {t('services.ctaButton')}
+          </button>
         </div>
       </div>
     </section>
