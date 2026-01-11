@@ -2065,6 +2065,123 @@ export const translations = {
           title: "Prêt à Commencer?",
           description: "Discutons de comment nous pouvons aider votre entreprise à croître avec nos services de marketing digital experts.",
           button: "Contactez-Nous Aujourd'hui"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Business Profile",
+            subtitle: "Votre vitrine digitale 24/7 sur Google Search et Maps",
+            description: "Un service complet d'optimisation Google Business Profile qui garantit que votre entreprise se démarque dans les recherches locales. Nous gérons tout, de la configuration initiale à la gestion continue, vous aidant à attirer plus de clients.",
+            features: {
+              feature1: "Configuration et optimisation complètes du profil",
+              feature2: "Publications et mises à jour hebdomadaires",
+              feature3: "Gestion des photos et vidéos",
+              feature4: "Surveillance et réponse aux avis",
+              feature5: "Gestion des questions-réponses",
+              feature6: "Suivi des insights et performances",
+              feature7: "Gestion multi-établissements",
+              feature8: "Analyse de la concurrence"
+            },
+            benefits: {
+              benefit1: "Augmentez votre visibilité dans les recherches locales jusqu'à 300%",
+              benefit2: "Renforcez la confiance avec une présence en ligne professionnelle",
+              benefit3: "Gagnez du temps avec notre approche clé en main",
+              benefit4: "Recevez plus d'appels et de demandes d'itinéraire",
+              benefit5: "Restez en avance sur la concurrence avec des mises à jour régulières",
+              benefit6: "Accédez à des rapports de performance détaillés"
+            }
+          },
+          "google-ads": {
+            title: "Google Ads",
+            subtitle: "Atteignez les clients exactement quand ils recherchent vos services",
+            description: "Des campagnes Google Ads stratégiques qui placent votre entreprise en tête des résultats de recherche. Nous créons, gérons et optimisons vos annonces pour assurer un retour sur investissement maximal.",
+            features: {
+              feature1: "Recherche de mots-clés et stratégie",
+              feature2: "Création et optimisation d'annonces",
+              feature3: "Configuration du suivi des conversions",
+              feature4: "Gestion des enchères et du budget",
+              feature5: "Tests A/B des annonces",
+              feature6: "Rapports de performance",
+              feature7: "Optimisation de la page d'atterrissage",
+              feature8: "Stratégies de remarketing"
+            },
+            benefits: {
+              benefit1: "Ne payez que pour les clics réels sur votre site",
+              benefit2: "Ciblez les clients au moment où ils recherchent",
+              benefit3: "Contrôle budgétaire flexible",
+              benefit4: "Résultats mesurables et suivi ROI",
+              benefit5: "Obtenez une visibilité instantanée dans les recherches",
+              benefit6: "Dépassez la concurrence pour les mots-clés de valeur"
+            }
+          },
+          "meta-ads": {
+            title: "Meta Ads",
+            subtitle: "Atteignez votre audience sur Facebook et Instagram",
+            description: "Des campagnes publicitaires Meta ciblées qui connectent votre entreprise avec des clients potentiels sur Facebook et Instagram. Notre approche basée sur les données assure des performances optimales.",
+            features: {
+              feature1: "Configuration et gestion de campagnes",
+              feature2: "Ciblage et segmentation d'audience",
+              feature3: "Design créatif des annonces",
+              feature4: "Publicité vidéo et carrousel",
+              feature5: "Campagnes de génération de leads",
+              feature6: "Configuration du pixel et suivi",
+              feature7: "Audiences de retargeting",
+              feature8: "Gestion des catalogues Shopping"
+            },
+            benefits: {
+              benefit1: "Atteignez des milliards d'utilisateurs actifs",
+              benefit2: "Ciblage précis de l'audience par intérêts",
+              benefit3: "Formats publicitaires visuellement engageants",
+              benefit4: "Options de budget rentables",
+              benefit5: "Analyses détaillées des campagnes",
+              benefit6: "Intégration parfaite entre les plateformes"
+            }
+          },
+          "local-seo": {
+            title: "SEO Local",
+            subtitle: "Dominez les résultats de recherche locaux et Google Maps",
+            description: "Des stratégies SEO locales complètes qui aident votre entreprise à apparaître en tête des résultats lorsque les clients locaux recherchent vos services.",
+            features: {
+              feature1: "Optimisation du site pour la recherche locale",
+              feature2: "Construction de citations locales",
+              feature3: "Optimisation Google Maps",
+              feature4: "Création de contenu local",
+              feature5: "Acquisition de backlinks locaux",
+              feature6: "Suivi et rapports de classement",
+              feature7: "Analyse des concurrents",
+              feature8: "Optimisation mobile"
+            },
+            benefits: {
+              benefit1: "Classez plus haut dans les recherches locales",
+              benefit2: "Attirez plus de clients locaux",
+              benefit3: "Renforcez l'autorité dans votre zone de service",
+              benefit4: "Augmentez le trafic piétonnier vers votre établissement",
+              benefit5: "Devancez les concurrents locaux",
+              benefit6: "Croissance durable à long terme"
+            }
+          },
+          "reputation-management": {
+            title: "Gestion de Réputation",
+            subtitle: "Construisez et protégez votre réputation en ligne",
+            description: "Des services complets de gestion de réputation qui vous aident à générer des avis positifs, à répondre professionnellement et à bâtir la confiance avec les clients potentiels.",
+            features: {
+              feature1: "Surveillance et alertes d'avis",
+              feature2: "Rédaction de réponses aux avis",
+              feature3: "Campagnes de génération d'avis",
+              feature4: "Signalement d'avis négatifs",
+              feature5: "Analyse des sentiments",
+              feature6: "Veille de la concurrence",
+              feature7: "Surveillance des réseaux sociaux",
+              feature8: "Gestion de crise"
+            },
+            benefits: {
+              benefit1: "Améliorez votre note moyenne",
+              benefit2: "Renforcez la confiance avec les clients potentiels",
+              benefit3: "Transformez les retours négatifs en opportunités",
+              benefit4: "Démarquez-vous de la concurrence",
+              benefit5: "Améliorez la fidélité client",
+              benefit6: "Protégez la réputation de votre marque"
+            }
+          }
         }
       },
       process: {
@@ -2625,6 +2742,123 @@ export const translations = {
           title: "مستعد للبدء؟",
           description: "دعنا نناقش كيف يمكننا مساعدة عملك على النمو مع خدمات التسويق الرقمي الاحترافية.",
           button: "اتصل بنا اليوم"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Business Profile",
+            subtitle: "واجهتك الرقمية على مدار الساعة على بحث Google والخرائط",
+            description: "خدمة تحسين Google Business Profile كاملة تضمن تميز عملك في عمليات البحث المحلية. نتولى كل شيء من الإعداد الأولي إلى الإدارة المستمرة.",
+            features: {
+              feature1: "إعداد وتحسين كامل للملف الشخصي",
+              feature2: "منشورات وتحديثات أسبوعية",
+              feature3: "إدارة الصور والفيديو",
+              feature4: "مراقبة المراجعات والرد عليها",
+              feature5: "إدارة الأسئلة والأجوبة",
+              feature6: "تتبع الأداء والتحليلات",
+              feature7: "إدارة المواقع المتعددة",
+              feature8: "تحليل المنافسين"
+            },
+            benefits: {
+              benefit1: "زيادة الظهور في نتائج البحث المحلية حتى 300%",
+              benefit2: "بناء الثقة مع العملاء من خلال حضور احترافي عبر الإنترنت",
+              benefit3: "توفير الوقت مع نهجنا الشامل في الإدارة",
+              benefit4: "الحصول على المزيد من المكالمات وطلبات الاتجاهات",
+              benefit5: "البقاء في المقدمة مع التحديثات المنتظمة",
+              benefit6: "الوصول إلى تقارير أداء مفصلة"
+            }
+          },
+          "google-ads": {
+            title: "إعلانات Google",
+            subtitle: "الوصول للعملاء بالضبط عندما يبحثون عن خدماتك",
+            description: "حملات إعلانات Google استراتيجية تضع عملك في قمة نتائج البحث. نقوم بإنشاء وإدارة وتحسين إعلاناتك لضمان أقصى عائد على الاستثمار.",
+            features: {
+              feature1: "بحث الكلمات المفتاحية والاستراتيجية",
+              feature2: "إنشاء الإعلانات وتحسينها",
+              feature3: "إعداد تتبع التحويلات",
+              feature4: "إدارة المزايدة والميزانية",
+              feature5: "اختبار A/B للإعلانات",
+              feature6: "تقارير الأداء",
+              feature7: "تحسين صفحة الهبوط",
+              feature8: "استراتيجيات إعادة التسويق"
+            },
+            benefits: {
+              benefit1: "ادفع فقط مقابل النقرات الفعلية على موقعك",
+              benefit2: "استهدف العملاء في لحظة البحث",
+              benefit3: "تحكم مرن في الميزانية",
+              benefit4: "نتائج قابلة للقياس وتتبع العائد",
+              benefit5: "احصل على ظهور فوري في البحث",
+              benefit6: "تفوق على المنافسين للكلمات المفتاحية القيمة"
+            }
+          },
+          "meta-ads": {
+            title: "إعلانات Meta",
+            subtitle: "الوصول لجمهورك على فيسبوك وإنستغرام",
+            description: "حملات إعلانية Meta مستهدفة تربط عملك بالعملاء المحتملين على فيسبوك وإنستغرام. نهجنا القائم على البيانات يضمن الأداء الأمثل.",
+            features: {
+              feature1: "إعداد وإدارة الحملات",
+              feature2: "استهداف وتقسيم الجمهور",
+              feature3: "تصميم إبداعي للإعلانات",
+              feature4: "إعلانات الفيديو والكاروسيل",
+              feature5: "حملات توليد العملاء المحتملين",
+              feature6: "إعداد البكسل والتتبع",
+              feature7: "جماهير إعادة الاستهداف",
+              feature8: "إدارة كتالوج التسوق"
+            },
+            benefits: {
+              benefit1: "الوصول إلى مليارات المستخدمين النشطين",
+              benefit2: "استهداف دقيق للجمهور حسب الاهتمامات",
+              benefit3: "أشكال إعلانية جذابة بصرياً",
+              benefit4: "خيارات ميزانية فعالة من حيث التكلفة",
+              benefit5: "تحليلات حملات تفصيلية",
+              benefit6: "تكامل سلس عبر المنصات"
+            }
+          },
+          "local-seo": {
+            title: "تحسين محركات البحث المحلية",
+            subtitle: "السيطرة على نتائج البحث المحلية وخرائط Google",
+            description: "استراتيجيات SEO محلية شاملة تساعد عملك على الظهور في القمة عندما يبحث العملاء المحليون عن خدماتك.",
+            features: {
+              feature1: "تحسين الموقع للبحث المحلي",
+              feature2: "بناء الاستشهادات المحلية",
+              feature3: "تحسين خرائط Google",
+              feature4: "إنشاء محتوى محلي",
+              feature5: "الحصول على روابط خلفية محلية",
+              feature6: "تتبع الترتيب والتقارير",
+              feature7: "تحليل المنافسين",
+              feature8: "تحسين الجوال"
+            },
+            benefits: {
+              benefit1: "ترتيب أعلى في عمليات البحث المحلية",
+              benefit2: "جذب المزيد من العملاء المحليين",
+              benefit3: "بناء السلطة في منطقة خدمتك",
+              benefit4: "زيادة حركة المرور إلى موقعك الفعلي",
+              benefit5: "التفوق على المنافسين المحليين",
+              benefit6: "نمو مستدام طويل الأمد"
+            }
+          },
+          "reputation-management": {
+            title: "إدارة السمعة",
+            subtitle: "بناء وحماية سمعتك عبر الإنترنت",
+            description: "خدمات إدارة سمعة شاملة تساعدك على توليد مراجعات إيجابية والرد باحترافية وبناء الثقة مع العملاء المحتملين.",
+            features: {
+              feature1: "مراقبة وتنبيهات المراجعات",
+              feature2: "كتابة ردود المراجعات",
+              feature3: "حملات توليد المراجعات",
+              feature4: "الإبلاغ عن المراجعات السلبية",
+              feature5: "تحليل المشاعر",
+              feature6: "مراقبة المنافسين",
+              feature7: "مراقبة وسائل التواصل الاجتماعي",
+              feature8: "إدارة الأزمات"
+            },
+            benefits: {
+              benefit1: "تحسين متوسط تقييمك",
+              benefit2: "بناء الثقة مع العملاء المحتملين",
+              benefit3: "تحويل الملاحظات السلبية إلى فرص",
+              benefit4: "التميز عن المنافسين",
+              benefit5: "تحسين ولاء العملاء",
+              benefit6: "حماية سمعة علامتك التجارية"
+            }
+          }
         }
       },
       process: {
@@ -3185,6 +3419,123 @@ export const translations = {
           title: "¿Listo para Empezar?",
           description: "Hablemos de cómo podemos ayudar a tu negocio a crecer con nuestros servicios de marketing digital expertos.",
           button: "Contáctanos Hoy"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Business Profile",
+            subtitle: "Tu escaparate digital 24/7 en Google Search y Maps",
+            description: "Un servicio completo de optimización de Google Business Profile que asegura que tu negocio destaque en búsquedas locales. Nos encargamos de todo, desde la configuración inicial hasta la gestión continua.",
+            features: {
+              feature1: "Configuración y optimización completa del perfil",
+              feature2: "Publicaciones y actualizaciones semanales",
+              feature3: "Gestión de fotos y videos",
+              feature4: "Monitoreo y respuesta a reseñas",
+              feature5: "Gestión de preguntas y respuestas",
+              feature6: "Seguimiento de insights y rendimiento",
+              feature7: "Gestión de múltiples ubicaciones",
+              feature8: "Análisis de competidores"
+            },
+            benefits: {
+              benefit1: "Aumenta la visibilidad en búsquedas locales hasta un 300%",
+              benefit2: "Genera confianza con una presencia online profesional",
+              benefit3: "Ahorra tiempo con nuestro enfoque de gestión integral",
+              benefit4: "Recibe más llamadas y solicitudes de direcciones",
+              benefit5: "Mantente adelante de la competencia con actualizaciones regulares",
+              benefit6: "Accede a informes de rendimiento detallados"
+            }
+          },
+          "google-ads": {
+            title: "Google Ads",
+            subtitle: "Alcanza a los clientes exactamente cuando buscan tus servicios",
+            description: "Campañas estratégicas de Google Ads que posicionan tu negocio en la cima de los resultados de búsqueda. Creamos, gestionamos y optimizamos tus anuncios para asegurar el máximo retorno de inversión.",
+            features: {
+              feature1: "Investigación de palabras clave y estrategia",
+              feature2: "Creación y optimización de anuncios",
+              feature3: "Configuración de seguimiento de conversiones",
+              feature4: "Gestión de pujas y presupuesto",
+              feature5: "Pruebas A/B de anuncios",
+              feature6: "Informes de rendimiento",
+              feature7: "Optimización de página de destino",
+              feature8: "Estrategias de remarketing"
+            },
+            benefits: {
+              benefit1: "Paga solo por clics reales a tu sitio web",
+              benefit2: "Alcanza clientes en el momento de la búsqueda",
+              benefit3: "Control flexible del presupuesto",
+              benefit4: "Resultados medibles y seguimiento del ROI",
+              benefit5: "Obtén visibilidad instantánea en búsquedas",
+              benefit6: "Supera a los competidores en palabras clave valiosas"
+            }
+          },
+          "meta-ads": {
+            title: "Meta Ads",
+            subtitle: "Alcanza a tu audiencia en Facebook e Instagram",
+            description: "Campañas publicitarias de Meta dirigidas que conectan tu negocio con clientes potenciales en Facebook e Instagram. Nuestro enfoque basado en datos asegura un rendimiento óptimo.",
+            features: {
+              feature1: "Configuración y gestión de campañas",
+              feature2: "Segmentación de audiencia",
+              feature3: "Diseño creativo de anuncios",
+              feature4: "Publicidad en video y carrusel",
+              feature5: "Campañas de generación de leads",
+              feature6: "Configuración de pixel y seguimiento",
+              feature7: "Audiencias de retargeting",
+              feature8: "Gestión de catálogo de compras"
+            },
+            benefits: {
+              benefit1: "Alcanza miles de millones de usuarios activos",
+              benefit2: "Segmentación precisa por intereses",
+              benefit3: "Formatos de anuncios visualmente atractivos",
+              benefit4: "Opciones de presupuesto rentables",
+              benefit5: "Analíticas detalladas de campañas",
+              benefit6: "Integración perfecta entre plataformas"
+            }
+          },
+          "local-seo": {
+            title: "SEO Local",
+            subtitle: "Domina los resultados de búsqueda locales y Google Maps",
+            description: "Estrategias completas de SEO local que ayudan a tu negocio a aparecer en la cima cuando los clientes locales buscan tus servicios.",
+            features: {
+              feature1: "Optimización del sitio web para búsqueda local",
+              feature2: "Construcción de citaciones locales",
+              feature3: "Optimización de Google Maps",
+              feature4: "Creación de contenido local",
+              feature5: "Adquisición de backlinks locales",
+              feature6: "Seguimiento de rankings e informes",
+              feature7: "Análisis de competidores",
+              feature8: "Optimización móvil"
+            },
+            benefits: {
+              benefit1: "Posiciónate más alto en búsquedas locales",
+              benefit2: "Atrae más clientes locales",
+              benefit3: "Construye autoridad en tu área de servicio",
+              benefit4: "Aumenta el tráfico a tu ubicación física",
+              benefit5: "Supera a los competidores locales",
+              benefit6: "Crecimiento sostenible a largo plazo"
+            }
+          },
+          "reputation-management": {
+            title: "Gestión de Reputación",
+            subtitle: "Construye y protege tu reputación online",
+            description: "Servicios completos de gestión de reputación que te ayudan a generar reseñas positivas, responder profesionalmente y construir confianza con clientes potenciales.",
+            features: {
+              feature1: "Monitoreo y alertas de reseñas",
+              feature2: "Redacción de respuestas a reseñas",
+              feature3: "Campañas de generación de reseñas",
+              feature4: "Reporte de reseñas negativas",
+              feature5: "Análisis de sentimiento",
+              feature6: "Monitoreo de competidores",
+              feature7: "Monitoreo de redes sociales",
+              feature8: "Gestión de crisis"
+            },
+            benefits: {
+              benefit1: "Mejora tu calificación promedio",
+              benefit2: "Genera confianza con clientes potenciales",
+              benefit3: "Convierte feedback negativo en oportunidades",
+              benefit4: "Destaca sobre la competencia",
+              benefit5: "Mejora la lealtad del cliente",
+              benefit6: "Protege la reputación de tu marca"
+            }
+          }
         }
       },
       process: {
@@ -3745,6 +4096,123 @@ export const translations = {
           title: "مستعد تبدا؟",
           description: "خلينا نحكيو كيفاش نقدرو نعاونو خدمتك تكبر بخدمات التسويق الرقمي الاحترافية متاعنا.",
           button: "تواصل معانا اليوم"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Business Profile",
+            subtitle: "الفيترين الرقمي متاعك 24/7 على بحث Google والخرائط",
+            description: "خدمة تحسين Google Business Profile كاملة تضمن إن خدمتك تبرز في عمليات البحث المحلية. نتكفلو بكل شي من الإعداد للإدارة المستمرة.",
+            features: {
+              feature1: "إعداد وتحسين كامل للملف",
+              feature2: "منشورات وتحديثات أسبوعية",
+              feature3: "إدارة الصور والفيديو",
+              feature4: "مراقبة المراجعات والرد عليها",
+              feature5: "إدارة الأسئلة والأجوبة",
+              feature6: "تتبع الأداء والتحليلات",
+              feature7: "إدارة مواقع متعددة",
+              feature8: "تحليل المنافسين"
+            },
+            benefits: {
+              benefit1: "زيادة الظهور في نتائج البحث المحلية حتى 300%",
+              benefit2: "بناء الثقة مع الكليانات بحضور احترافي",
+              benefit3: "توفير الوقت بنهجنا الشامل في الإدارة",
+              benefit4: "الحصول على مكالمات أكثر وطلبات اتجاهات",
+              benefit5: "البقاء في المقدمة مع التحديثات المنتظمة",
+              benefit6: "الوصول لتقارير أداء مفصلة"
+            }
+          },
+          "google-ads": {
+            title: "إعلانات Google",
+            subtitle: "وصّل للكليانات بالضبط وقت اللي يلوجو على خدماتك",
+            description: "حملات إعلانات Google استراتيجية تحط خدمتك في قمة نتائج البحث. نخلقو ونديرو ونحسنو إعلاناتك باش نضمنو أقصى عائد على الاستثمار.",
+            features: {
+              feature1: "بحث الكلمات المفتاحية والاستراتيجية",
+              feature2: "إنشاء الإعلانات وتحسينها",
+              feature3: "إعداد تتبع التحويلات",
+              feature4: "إدارة المزايدة والميزانية",
+              feature5: "اختبار A/B للإعلانات",
+              feature6: "تقارير الأداء",
+              feature7: "تحسين صفحة الهبوط",
+              feature8: "استراتيجيات إعادة التسويق"
+            },
+            benefits: {
+              benefit1: "خلّص برك على النقرات الحقيقية على موقعك",
+              benefit2: "استهدف الكليانات في لحظة البحث",
+              benefit3: "تحكم مرن في الميزانية",
+              benefit4: "نتائج قابلة للقياس وتتبع العائد",
+              benefit5: "احصل على ظهور فوري في البحث",
+              benefit6: "تفوق على المنافسين للكلمات المفتاحية القيمة"
+            }
+          },
+          "meta-ads": {
+            title: "إعلانات Meta",
+            subtitle: "وصّل لجمهورك على فيسبوك وإنستغرام",
+            description: "حملات إعلانية Meta مستهدفة تربط خدمتك بالكليانات المحتملين على فيسبوك وإنستغرام. نهجنا القائم على البيانات يضمن أداء ممتاز.",
+            features: {
+              feature1: "إعداد وإدارة الحملات",
+              feature2: "استهداف وتقسيم الجمهور",
+              feature3: "تصميم إبداعي للإعلانات",
+              feature4: "إعلانات الفيديو والكاروسيل",
+              feature5: "حملات توليد العملاء المحتملين",
+              feature6: "إعداد البكسل والتتبع",
+              feature7: "جماهير إعادة الاستهداف",
+              feature8: "إدارة كتالوج التسوق"
+            },
+            benefits: {
+              benefit1: "وصّل لمليارات المستخدمين النشطين",
+              benefit2: "استهداف دقيق حسب الاهتمامات",
+              benefit3: "أشكال إعلانية جذابة بصرياً",
+              benefit4: "خيارات ميزانية فعالة",
+              benefit5: "تحليلات حملات مفصلة",
+              benefit6: "تكامل سلس عبر المنصات"
+            }
+          },
+          "local-seo": {
+            title: "SEO المحلي",
+            subtitle: "سيطر على نتائج البحث المحلية وخرائط Google",
+            description: "استراتيجيات SEO محلية شاملة تعاون خدمتك تظهر في القمة وقت اللي الكليانات المحليين يلوجو على خدماتك.",
+            features: {
+              feature1: "تحسين الموقع للبحث المحلي",
+              feature2: "بناء الاستشهادات المحلية",
+              feature3: "تحسين خرائط Google",
+              feature4: "إنشاء محتوى محلي",
+              feature5: "الحصول على روابط خلفية محلية",
+              feature6: "تتبع الترتيب والتقارير",
+              feature7: "تحليل المنافسين",
+              feature8: "تحسين الجوال"
+            },
+            benefits: {
+              benefit1: "ترتيب أعلى في عمليات البحث المحلية",
+              benefit2: "جذب كليانات محليين أكثر",
+              benefit3: "بناء السلطة في منطقة خدمتك",
+              benefit4: "زيادة حركة المرور لموقعك الفعلي",
+              benefit5: "التفوق على المنافسين المحليين",
+              benefit6: "نمو مستدام طويل الأمد"
+            }
+          },
+          "reputation-management": {
+            title: "إدارة السمعة",
+            subtitle: "ابني واحمي سمعتك على الإنترنت",
+            description: "خدمات إدارة سمعة شاملة تعاونك باش تولّد مراجعات إيجابية وترد باحترافية وتبني الثقة مع الكليانات المحتملين.",
+            features: {
+              feature1: "مراقبة وتنبيهات المراجعات",
+              feature2: "كتابة ردود المراجعات",
+              feature3: "حملات توليد المراجعات",
+              feature4: "الإبلاغ عن المراجعات السلبية",
+              feature5: "تحليل المشاعر",
+              feature6: "مراقبة المنافسين",
+              feature7: "مراقبة السوشيال ميديا",
+              feature8: "إدارة الأزمات"
+            },
+            benefits: {
+              benefit1: "حسّن متوسط تقييمك",
+              benefit2: "ابني الثقة مع الكليانات المحتملين",
+              benefit3: "حوّل الملاحظات السلبية لفرص",
+              benefit4: "تميّز عن المنافسين",
+              benefit5: "حسّن ولاء الكليانات",
+              benefit6: "احمي سمعة علامتك التجارية"
+            }
+          }
         }
       },
       process: {
