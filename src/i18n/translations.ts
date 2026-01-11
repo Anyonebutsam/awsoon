@@ -61,6 +61,7 @@ export const translations = {
           "local-seo": "Local SEO",
           "reputation-management": "Reputation"
         },
+        readMore: "Read More",
         backToServices: "Back to Services",
         whatWeOffer: "What We Offer",
         whyChooseUs: "Why Choose Us",
@@ -752,6 +753,7 @@ export const translations = {
           "local-seo": "Lokal SEO",
           "reputation-management": "Rykte"
         },
+        readMore: "Läs Mer",
         backToServices: "Tillbaka till Tjänster",
         whatWeOffer: "Vad Vi Erbjuder",
         whyChooseUs: "Varför Välja Oss",
@@ -1408,6 +1410,7 @@ export const translations = {
           "local-seo": "Локално SEO",
           "reputation-management": "Репутация"
         },
+        readMore: "Прочетете Повече",
         backToServices: "Обратно към Услуги",
         whatWeOffer: "Какво Предлагаме",
         whyChooseUs: "Защо Да Изберете Нас",
@@ -2052,8 +2055,17 @@ export const translations = {
           description: "Surveillez, gérez et améliorez votre réputation en ligne sur toutes les plateformes."
         },
         learnMore: "En Savoir Plus",
+        readMore: "En Savoir Plus",
+        backToServices: "Retour aux Services",
+        whatWeOffer: "Ce Que Nous Offrons",
+        whyChooseUs: "Pourquoi Nous Choisir",
         ctaText: "Pas sûr de quel service vous avez besoin ? Parlons-en.",
-        ctaButton: "Consultation gratuite"
+        ctaButton: "Consultation gratuite",
+        cta: {
+          title: "Prêt à Commencer?",
+          description: "Discutons de comment nous pouvons aider votre entreprise à croître avec nos services de marketing digital experts.",
+          button: "Contactez-Nous Aujourd'hui"
+        }
       },
       process: {
         label: "Notre Méthode",
@@ -2603,8 +2615,17 @@ export const translations = {
           description: "مراقبة وإدارة وتحسين سمعتك عبر الإنترنت على جميع المنصات."
         },
         learnMore: "اعرف المزيد",
+        readMore: "اعرف المزيد",
+        backToServices: "العودة للخدمات",
+        whatWeOffer: "ما نقدمه",
+        whyChooseUs: "لماذا تختارنا",
         ctaText: "غير متأكد من الخدمة التي تحتاجها؟ دعنا نتحدث.",
-        ctaButton: "استشارة مجانية"
+        ctaButton: "استشارة مجانية",
+        cta: {
+          title: "مستعد للبدء؟",
+          description: "دعنا نناقش كيف يمكننا مساعدة عملك على النمو مع خدمات التسويق الرقمي الاحترافية.",
+          button: "اتصل بنا اليوم"
+        }
       },
       process: {
         label: "طريقة العمل",
@@ -3154,8 +3175,17 @@ export const translations = {
           description: "Monitorea, gestiona y mejora tu reputación online en todas las plataformas."
         },
         learnMore: "Saber Más",
+        readMore: "Saber Más",
+        backToServices: "Volver a Servicios",
+        whatWeOffer: "Lo Que Ofrecemos",
+        whyChooseUs: "Por Qué Elegirnos",
         ctaText: "¿No sabes qué servicio necesitas? Hablemos.",
-        ctaButton: "Consulta gratuita"
+        ctaButton: "Consulta gratuita",
+        cta: {
+          title: "¿Listo para Empezar?",
+          description: "Hablemos de cómo podemos ayudar a tu negocio a crecer con nuestros servicios de marketing digital expertos.",
+          button: "Contáctanos Hoy"
+        }
       },
       process: {
         label: "Cómo Trabajamos",
@@ -3705,8 +3735,17 @@ export const translations = {
           description: "راقب، أدِر وحسّن سمعتك على الإنترنت في جميع المنصات."
         },
         learnMore: "اعرف أكثر",
+        readMore: "اعرف أكثر",
+        backToServices: "ارجع للخدمات",
+        whatWeOffer: "شنوا نقدمو",
+        whyChooseUs: "علاش تختارنا",
         ctaText: "مش متأكد أي خدمة تحتاج؟ خلّينا نحكي.",
-        ctaButton: "استشارة مجانية"
+        ctaButton: "استشارة مجانية",
+        cta: {
+          title: "مستعد تبدا؟",
+          description: "خلينا نحكيو كيفاش نقدرو نعاونو خدمتك تكبر بخدمات التسويق الرقمي الاحترافية متاعنا.",
+          button: "تواصل معانا اليوم"
+        }
       },
       process: {
         label: "كيفاش نخدمو",
