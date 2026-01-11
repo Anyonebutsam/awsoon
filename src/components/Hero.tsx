@@ -97,7 +97,7 @@ const Hero = () => {
                 </button>
               ))}
             </div>
-            <p className="text-xs text-white/40 mt-3">{t('hero.selectLanguage', 'Select the desired language!')}</p>
+            <p className="text-xs text-white/40 mt-3">{t('hero.selectLanguage')}</p>
           </div>
 
           {/* Testimonial Preview */}
