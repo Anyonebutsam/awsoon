@@ -59,9 +59,9 @@ const Header = () => {
       }}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="relative flex items-center h-16 md:h-20">
           {/* Logo Text */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <span 
               className="font-display text-xl md:text-2xl font-bold transition-all duration-500"
               style={{ color: isScrolled ? 'hsl(var(--foreground))' : 'white' }}
@@ -70,8 +70,8 @@ const Header = () => {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 flex-1 justify-center">
+          {/* Desktop Navigation (pinned to viewport center so it doesn't shift) */}
+          <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => (
               link.href.startsWith("/") ? (
                 <Link
@@ -100,7 +100,7 @@ const Header = () => {
           </nav>
 
           {/* Language Switcher & CTA Button - fixed LTR order */}
-          <div className="hidden md:flex items-center gap-3 flex-shrink-0" style={{ direction: 'ltr' }}>
+          <div className="hidden md:flex items-center gap-3 ml-auto flex-shrink-0" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <Button
               onClick={() => scrollToSection("#contact")}
@@ -111,7 +111,7 @@ const Header = () => {
           </div>
 
           {/* Mobile: Language Switcher & Menu Button - fixed LTR order */}
-          <div className="md:hidden flex items-center gap-2" style={{ direction: 'ltr' }}>
+          <div className="md:hidden flex items-center gap-2 ml-auto" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <button
               className={`p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
