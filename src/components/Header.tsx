@@ -57,8 +57,8 @@ const Header = () => {
       }}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo Text - fixed width to prevent shift */}
+        <div className="flex items-center h-16 md:h-20">
+          {/* Logo Text - fixed width to balance the layout */}
           <div className="w-[100px] md:w-[120px] flex-shrink-0">
             <Link to="/" className="flex items-center gap-2">
               <span 
@@ -70,7 +70,8 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation - fixed width center section */}
+          {/* Desktop Navigation - centered with flex-1 on both sides */}
+          <div className="hidden md:flex flex-1 justify-center">
           <nav className="hidden md:flex items-center justify-center gap-1 flex-1">
             {navLinks.map((link) => (
               link.href.startsWith("/") ? (
@@ -98,6 +99,10 @@ const Header = () => {
               )
             ))}
           </nav>
+          </div>
+
+          {/* Right spacer to balance logo width */}
+          <div className="hidden md:block w-[100px] md:w-[120px] flex-shrink-0"></div>
 
           {/* Mobile Menu Button */}
           <button
