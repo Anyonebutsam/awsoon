@@ -32,31 +32,160 @@ export const translations = {
       // Services
       services: {
         label: "Our Services",
-        title: "Complete Digital Marketing Solutions",
+        title: "Our Services",
         subtitle: "From Google Business Profile optimization to full-scale digital marketing campaigns, we help businesses of all sizes grow their online presence.",
         gbp: {
           title: "Google Business Profile",
-          description: "Your digital storefront, available 24/7, all year round. You never get a second chance to make a first impression.",
-          detail: "We optimize your profile from the ground up – ensuring it's complete, accurate, and designed to convert searchers into customers. Weekly posts, photo updates, and review management included."
+          description: "Your digital storefront, available 24/7, all year round. You never get a second chance to make a first impression. We build your profile from the ground up – modern, mobile-optimized and lightning fast."
+        },
+        googleAds: {
+          title: "Google Ads",
+          description: "We help you reach the top of search results – if you're not visible, you don't exist. You only pay when customers actually click through to your website or call you."
+        },
+        metaAds: {
+          title: "Meta Ads",
+          description: "Your customers are on Facebook and Instagram. Reach your target audience directly in their feed. With targeting based on interests, age, and geographic location, you advertise with precision."
         },
         localSeo: {
-          title: "Local SEO Services",
-          description: "We help you reach the top of local search results – if you're not visible, you don't exist.",
-          detail: "Comprehensive citation building, NAP consistency audits, and Google Maps optimization to ensure your business appears when local customers are searching for your services."
-        },
-        digitalMarketing: {
-          title: "Digital Marketing Suite",
-          description: "Reach your customers directly in their social feeds with precision-targeted advertising.",
-          detail: "From Google Ads to social media campaigns on Facebook, Instagram, and LinkedIn – we create targeted ads based on interests, age, and geographic locations."
+          title: "Local SEO",
+          description: "Dominate local search results and Google Maps. We ensure your business appears when local customers are searching for your services."
         },
         reputation: {
           title: "Reputation Management",
-          description: "Your reputation is your most valuable asset. We help you protect and enhance it.",
-          detail: "Review generation strategies, response templates, sentiment analysis, and brand monitoring across all platforms to build trust and attract more customers."
+          description: "Your reputation is your most valuable asset. We help you generate reviews, respond professionally, and build trust with potential customers."
         },
-        learnMore: "Learn More",
-        ctaText: "Not sure which service you need? Let's talk.",
-        ctaButton: "Get a Free Consultation"
+        buttons: {
+          "google-business-profile": "Google Business",
+          "google-ads": "Google Ads",
+          "meta-ads": "Meta Ads",
+          "local-seo": "Local SEO",
+          "reputation-management": "Reputation"
+        },
+        backToServices: "Back to Services",
+        whatWeOffer: "What We Offer",
+        whyChooseUs: "Why Choose Us",
+        cta: {
+          title: "Ready to Get Started?",
+          description: "Let's discuss how we can help grow your business with our expert digital marketing services.",
+          button: "Contact Us Today"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Business Profile",
+            subtitle: "Your 24/7 digital storefront on Google Search and Maps",
+            description: "A complete Google Business Profile optimization service that ensures your business stands out in local searches. We handle everything from initial setup to ongoing management, helping you attract more customers and build a strong online presence.",
+            features: {
+              feature1: "Complete profile setup and optimization",
+              feature2: "Weekly posts and updates",
+              feature3: "Photo and video management",
+              feature4: "Review monitoring and response",
+              feature5: "Q&A management",
+              feature6: "Insights and performance tracking",
+              feature7: "Multi-location management",
+              feature8: "Competitor analysis"
+            },
+            benefits: {
+              benefit1: "Increase visibility in local search results by up to 300%",
+              benefit2: "Build trust with customers through a professional online presence",
+              benefit3: "Save time with our hands-off management approach",
+              benefit4: "Get more phone calls and direction requests",
+              benefit5: "Stay ahead of competitors with regular updates",
+              benefit6: "Access detailed performance reports"
+            }
+          },
+          "google-ads": {
+            title: "Google Ads",
+            subtitle: "Reach customers exactly when they're searching for your services",
+            description: "Strategic Google Ads campaigns that put your business at the top of search results. We create, manage, and optimize your ads to ensure maximum return on investment while you only pay for actual clicks.",
+            features: {
+              feature1: "Keyword research and strategy",
+              feature2: "Ad copywriting and testing",
+              feature3: "Landing page optimization",
+              feature4: "Bid management and optimization",
+              feature5: "Conversion tracking setup",
+              feature6: "Monthly performance reports",
+              feature7: "A/B testing campaigns",
+              feature8: "Remarketing campaigns"
+            },
+            benefits: {
+              benefit1: "Only pay when customers click your ads",
+              benefit2: "Appear at the top of Google search results instantly",
+              benefit3: "Target specific geographic locations",
+              benefit4: "Track every conversion and ROI",
+              benefit5: "Flexible budget control",
+              benefit6: "Certified Google Ads specialists"
+            }
+          },
+          "meta-ads": {
+            title: "Meta Ads",
+            subtitle: "Connect with your audience on Facebook and Instagram",
+            description: "Precision-targeted advertising on the world's largest social platforms. We create compelling ad campaigns that reach your ideal customers based on their interests, behaviors, and demographics.",
+            features: {
+              feature1: "Audience research and targeting",
+              feature2: "Creative ad design",
+              feature3: "Video ad production",
+              feature4: "Carousel and story ads",
+              feature5: "Lead generation campaigns",
+              feature6: "Retargeting pixel setup",
+              feature7: "A/B creative testing",
+              feature8: "Performance optimization"
+            },
+            benefits: {
+              benefit1: "Reach billions of active users daily",
+              benefit2: "Precise demographic and interest targeting",
+              benefit3: "Visual storytelling that converts",
+              benefit4: "Real-time campaign tracking",
+              benefit5: "Lower cost per acquisition",
+              benefit6: "Build brand awareness and loyalty"
+            }
+          },
+          "local-seo": {
+            title: "Local SEO",
+            subtitle: "Dominate local search results in your area",
+            description: "Comprehensive local SEO strategies that help your business rank higher in location-based searches. We optimize every aspect of your online presence to ensure local customers find you first.",
+            features: {
+              feature1: "Local keyword optimization",
+              feature2: "Citation building and cleanup",
+              feature3: "NAP consistency audits",
+              feature4: "Google Maps optimization",
+              feature5: "Local link building",
+              feature6: "Review generation strategies",
+              feature7: "Local content creation",
+              feature8: "Competitor analysis"
+            },
+            benefits: {
+              benefit1: "Rank higher in 'near me' searches",
+              benefit2: "Increase foot traffic to your location",
+              benefit3: "Build local authority and trust",
+              benefit4: "Outrank local competitors",
+              benefit5: "Long-term sustainable results",
+              benefit6: "Detailed monthly reporting"
+            }
+          },
+          "reputation-management": {
+            title: "Reputation Management",
+            subtitle: "Build and protect your most valuable business asset",
+            description: "Your online reputation directly impacts customer decisions. We help you generate more positive reviews, respond professionally to feedback, and build a stellar online reputation that attracts more customers.",
+            features: {
+              feature1: "Review monitoring across platforms",
+              feature2: "Professional response templates",
+              feature3: "Review generation campaigns",
+              feature4: "Negative review management",
+              feature5: "Sentiment analysis",
+              feature6: "Brand mention monitoring",
+              feature7: "Crisis management",
+              feature8: "Reputation reporting"
+            },
+            benefits: {
+              benefit1: "Increase customer trust and confidence",
+              benefit2: "More 5-star reviews on Google",
+              benefit3: "Professional handling of negative feedback",
+              benefit4: "Real-time alerts for new reviews",
+              benefit5: "Improve local search rankings",
+              benefit6: "Protect your brand image"
+            }
+          }
+        }
       },
       // Process
       process: {
@@ -594,27 +723,132 @@ export const translations = {
       },
       services: {
         label: "Våra Tjänster",
-        title: "Kompletta Digitala Marknadsföringslösningar",
-        subtitle: "Från Google Företagsprofil-optimering till fullskaliga digitala marknadsföringskampanjer, vi hjälper företag av alla storlekar att växa sin online-närvaro.",
+        title: "Våra Tjänster",
+        subtitle: "Från Google Företagsprofil-optimering till fullskaliga digitala marknadsföringskampanjer.",
         gbp: {
           title: "Google Företagsprofil",
-          description: "Komplett optimering av din Google Företagsprofil för att maximera synligheten i lokala sökresultat och Google Maps."
+          description: "Ditt digitala skyltfönster dygnet runt, året om. Du får aldrig chansen till ett nytt första intryck. Vi bygger din profil från grunden – modern, mobilanpassad och blixtsnabb."
+        },
+        googleAds: {
+          title: "Google Ads",
+          description: "Vi hjälper dig att nå toppen av sökresultatet – syns du inte så finns du inte. Förmånligt så betalar ni bara när kunderna faktiskt klickar sig vidare till din webbplats eller ringer dig."
+        },
+        metaAds: {
+          title: "Meta Ads",
+          description: "Dina och andras kunder finns på Facebook och Instagram. Nå din önskade målgrupp direkt i flödet. Med inriktning på intressen, ålder och geografiska placeringar annonserar du pricksäkert."
         },
         localSeo: {
-          title: "Lokala SEO-tjänster",
-          description: "Omfattande lokala SEO-strategier för att hjälpa ditt företag rankas högre i platsbaserade sökningar."
-        },
-        digitalMarketing: {
-          title: "Digital Marknadsföringssvit",
-          description: "Fullservice digital marknadsföring inklusive hantering av sociala medier, innehållsskapande och betald annonsering."
+          title: "Lokal SEO",
+          description: "Dominera lokala sökresultat och Google Maps. Vi ser till att ditt företag dyker upp när lokala kunder söker efter dina tjänster."
         },
         reputation: {
           title: "Rykteshantering",
-          description: "Övervaka, hantera och förbättra ditt online-rykte på alla plattformar och recensionssidor."
+          description: "Ditt rykte är din mest värdefulla tillgång. Vi hjälper dig att generera recensioner, svara professionellt och bygga förtroende hos potentiella kunder."
         },
-        learnMore: "Läs Mer",
-        ctaText: "Osäker på vilken tjänst du behöver? Låt oss prata.",
-        ctaButton: "Boka gratis konsultation"
+        buttons: {
+          "google-business-profile": "Google Business",
+          "google-ads": "Google Ads",
+          "meta-ads": "Meta Ads",
+          "local-seo": "Lokal SEO",
+          "reputation-management": "Rykte"
+        },
+        backToServices: "Tillbaka till Tjänster",
+        whatWeOffer: "Vad Vi Erbjuder",
+        whyChooseUs: "Varför Välja Oss",
+        cta: {
+          title: "Redo att Komma Igång?",
+          description: "Låt oss diskutera hur vi kan hjälpa ditt företag växa med våra expertdigitala marknadsföringstjänster.",
+          button: "Kontakta Oss Idag"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Företagsprofil",
+            subtitle: "Ditt 24/7 digitala skyltfönster på Google Sök och Maps",
+            description: "En komplett Google Företagsprofil-optimeringstjänst som säkerställer att ditt företag sticker ut i lokala sökningar.",
+            features: {
+              feature1: "Komplett profiluppställning och optimering",
+              feature2: "Veckovisa inlägg och uppdateringar",
+              feature3: "Foto- och videohantering",
+              feature4: "Recensionsövervakning och svar",
+              feature5: "Q&A-hantering",
+              feature6: "Insikter och prestandaspårning"
+            },
+            benefits: {
+              benefit1: "Öka synligheten i lokala sökresultat med upp till 300%",
+              benefit2: "Bygg förtroende med en professionell online-närvaro",
+              benefit3: "Spara tid med vår hands-off hantering",
+              benefit4: "Få fler telefonsamtal och vägbeskrivningar"
+            }
+          },
+          "google-ads": {
+            title: "Google Ads",
+            subtitle: "Nå kunder exakt när de söker efter dina tjänster",
+            description: "Strategiska Google Ads-kampanjer som placerar ditt företag högst upp i sökresultaten.",
+            features: {
+              feature1: "Nyckelordsforskning och strategi",
+              feature2: "Annonstextskrivning och testning",
+              feature3: "Landningssideoptimering",
+              feature4: "Budhantering och optimering"
+            },
+            benefits: {
+              benefit1: "Betala bara när kunder klickar på dina annonser",
+              benefit2: "Visas högst upp i Google-sökresultat direkt",
+              benefit3: "Rikta mot specifika geografiska platser",
+              benefit4: "Spåra varje konvertering och ROI"
+            }
+          },
+          "meta-ads": {
+            title: "Meta Ads",
+            subtitle: "Anslut med din målgrupp på Facebook och Instagram",
+            description: "Precisionsriktad annonsering på världens största sociala plattformar.",
+            features: {
+              feature1: "Målgruppsforskning och inriktning",
+              feature2: "Kreativ annonsdesign",
+              feature3: "Videoannonserproduktion",
+              feature4: "Karusell- och story-annonser"
+            },
+            benefits: {
+              benefit1: "Nå miljarder aktiva användare dagligen",
+              benefit2: "Precis demografisk och intresseinriktning",
+              benefit3: "Visuell storytelling som konverterar",
+              benefit4: "Realtidskampanjspårning"
+            }
+          },
+          "local-seo": {
+            title: "Lokal SEO",
+            subtitle: "Dominera lokala sökresultat i ditt område",
+            description: "Omfattande lokala SEO-strategier som hjälper ditt företag att rankas högre.",
+            features: {
+              feature1: "Lokal nyckelordsoptimering",
+              feature2: "Citationsbyggande och städning",
+              feature3: "NAP-konsekvensgranskningar",
+              feature4: "Google Maps-optimering"
+            },
+            benefits: {
+              benefit1: "Ranka högre i 'nära mig'-sökningar",
+              benefit2: "Öka besöken till din plats",
+              benefit3: "Bygg lokal auktoritet och förtroende",
+              benefit4: "Överträffa lokala konkurrenter"
+            }
+          },
+          "reputation-management": {
+            title: "Rykteshantering",
+            subtitle: "Bygg och skydda din mest värdefulla affärstillgång",
+            description: "Ditt online-rykte påverkar direkt kundernas beslut. Vi hjälper dig att generera fler positiva recensioner.",
+            features: {
+              feature1: "Recensionsövervakning över plattformar",
+              feature2: "Professionella svarsmallar",
+              feature3: "Recensionsgenereringskampanjer",
+              feature4: "Negativ recensionshantering"
+            },
+            benefits: {
+              benefit1: "Öka kundens förtroende",
+              benefit2: "Fler 5-stjärniga recensioner på Google",
+              benefit3: "Professionell hantering av negativ feedback",
+              benefit4: "Realtidsvarningar för nya recensioner"
+            }
+          }
+        }
       },
       process: {
         label: "Hur Vi Arbetar",
@@ -1145,27 +1379,130 @@ export const translations = {
       },
       services: {
         label: "Нашите Услуги",
-        title: "Пълни Решения за Дигитален Маркетинг",
-        subtitle: "От оптимизация на Google Business Profile до пълномащабни кампании, помагаме на бизнеси от всякакъв размер да развият онлайн присъствието си.",
+        title: "Нашите Услуги",
+        subtitle: "От оптимизация на Google Business Profile до пълномащабни рекламни кампании.",
         gbp: {
           title: "Google Business Profile",
-          description: "Пълна оптимизация на вашия Google Business Profile за максимална видимост в локалните резултати."
+          description: "Вашата дигитална витрина денонощно. Никога не получавате втори шанс за първо впечатление. Изграждаме профила ви от основите – модерен, мобилно оптимизиран и светкавично бърз."
+        },
+        googleAds: {
+          title: "Google Ads",
+          description: "Помагаме ви да достигнете върха на резултатите от търсенето – ако не сте видими, не съществувате. Плащате само когато клиентите кликнат или се обадят."
+        },
+        metaAds: {
+          title: "Meta Ads",
+          description: "Вашите клиенти са във Facebook и Instagram. Достигнете желаната аудитория директно в емисията. С насочване по интереси, възраст и географско местоположение."
         },
         localSeo: {
-          title: "Локални SEO Услуги",
-          description: "Изчерпателни локални SEO стратегии за по-високо класиране в търсенията базирани на местоположение."
-        },
-        digitalMarketing: {
-          title: "Пакет Дигитален Маркетинг",
-          description: "Пълен дигитален маркетинг включващ управление на социални мрежи, създаване на съдържание и платена реклама."
+          title: "Локално SEO",
+          description: "Доминирайте локалните резултати от търсенето и Google Maps. Осигуряваме появата на вашия бизнес когато локални клиенти търсят услугите ви."
         },
         reputation: {
           title: "Управление на Репутация",
-          description: "Наблюдавайте, управлявайте и подобрявайте онлайн репутацията си във всички платформи."
+          description: "Вашата репутация е най-ценният ви актив. Помагаме ви да генерирате отзиви, да отговаряте професионално и да изграждате доверие."
         },
-        learnMore: "Научете Повече",
-        ctaText: "Не сте сигурни коя услуга ви е нужна? Нека поговорим.",
-        ctaButton: "Безплатна консултация"
+        buttons: {
+          "google-business-profile": "Google Business",
+          "google-ads": "Google Ads",
+          "meta-ads": "Meta Ads",
+          "local-seo": "Локално SEO",
+          "reputation-management": "Репутация"
+        },
+        backToServices: "Обратно към Услуги",
+        whatWeOffer: "Какво Предлагаме",
+        whyChooseUs: "Защо Да Изберете Нас",
+        cta: {
+          title: "Готови ли сте да започнете?",
+          description: "Нека обсъдим как можем да помогнем на вашия бизнес да расте.",
+          button: "Свържете се днес"
+        },
+        pages: {
+          "google-business-profile": {
+            title: "Google Business Profile",
+            subtitle: "Вашата 24/7 дигитална витрина в Google Търсене и Maps",
+            description: "Пълна услуга за оптимизация на Google Business Profile.",
+            features: {
+              feature1: "Пълна настройка и оптимизация на профила",
+              feature2: "Седмични публикации и актуализации",
+              feature3: "Управление на снимки и видео",
+              feature4: "Мониторинг и отговори на отзиви"
+            },
+            benefits: {
+              benefit1: "Увеличете видимостта в локалните резултати с до 300%",
+              benefit2: "Изградете доверие с професионално онлайн присъствие",
+              benefit3: "Спестете време с нашия подход",
+              benefit4: "Получете повече обаждания и маршрути"
+            }
+          },
+          "google-ads": {
+            title: "Google Ads",
+            subtitle: "Достигнете клиенти точно когато търсят вашите услуги",
+            description: "Стратегически Google Ads кампании за максимална възвръщаемост.",
+            features: {
+              feature1: "Проучване и стратегия на ключови думи",
+              feature2: "Писане и тестване на реклами",
+              feature3: "Оптимизация на целеви страници",
+              feature4: "Управление на оферти"
+            },
+            benefits: {
+              benefit1: "Плащайте само при клик",
+              benefit2: "Появете се на върха на Google незабавно",
+              benefit3: "Насочвайте към конкретни локации",
+              benefit4: "Проследявайте всяка конверсия"
+            }
+          },
+          "meta-ads": {
+            title: "Meta Ads",
+            subtitle: "Свържете се с аудиторията си във Facebook и Instagram",
+            description: "Прецизно насочена реклама в най-големите социални платформи.",
+            features: {
+              feature1: "Проучване и насочване на аудитория",
+              feature2: "Креативен дизайн на реклами",
+              feature3: "Продукция на видео реклами",
+              feature4: "Carousel и story реклами"
+            },
+            benefits: {
+              benefit1: "Достигнете милиарди активни потребители",
+              benefit2: "Прецизно демографско насочване",
+              benefit3: "Визуален storytelling",
+              benefit4: "Проследяване на кампании в реално време"
+            }
+          },
+          "local-seo": {
+            title: "Локално SEO",
+            subtitle: "Доминирайте локалните резултати във вашия район",
+            description: "Цялостни локални SEO стратегии за по-високо класиране.",
+            features: {
+              feature1: "Оптимизация на локални ключови думи",
+              feature2: "Изграждане на citations",
+              feature3: "NAP одити",
+              feature4: "Оптимизация на Google Maps"
+            },
+            benefits: {
+              benefit1: "Класирайте се по-високо в търсенията 'близо до мен'",
+              benefit2: "Увеличете посещенията на място",
+              benefit3: "Изградете локален авторитет",
+              benefit4: "Изпреварете конкурентите"
+            }
+          },
+          "reputation-management": {
+            title: "Управление на Репутация",
+            subtitle: "Изградете и защитете най-ценния си бизнес актив",
+            description: "Вашата онлайн репутация влияе директно на решенията на клиентите.",
+            features: {
+              feature1: "Мониторинг на отзиви",
+              feature2: "Професионални шаблони за отговори",
+              feature3: "Кампании за генериране на отзиви",
+              feature4: "Управление на негативни отзиви"
+            },
+            benefits: {
+              benefit1: "Увеличете доверието на клиентите",
+              benefit2: "Повече 5-звездни отзиви",
+              benefit3: "Професионална обработка на негативна обратна връзка",
+              benefit4: "Известия в реално време за нови отзиви"
+            }
+          }
+        }
       },
       process: {
         label: "Как Работим",
