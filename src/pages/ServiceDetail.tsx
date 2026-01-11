@@ -58,7 +58,6 @@ const ServiceDetail = () => {
   const heroY = useTransform(scrollY, [0, 500], [0, 150]);
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0.3]);
   const imageY = useTransform(scrollY, [0, 800], [0, -80]);
-  const imageScale = useTransform(scrollY, [0, 400], [1, 1.05]);
   
   // Scroll to top when component mounts
   useEffect(() => {
@@ -68,14 +67,7 @@ const ServiceDetail = () => {
   const service = serviceId ? serviceData[serviceId] : null;
   
   const handleBackToServices = () => {
-    navigate('/', { replace: false });
-    // Small delay to allow navigation, then scroll to services
-    setTimeout(() => {
-      const servicesSection = document.getElementById('services');
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    navigate('/#services', { replace: false });
   };
   
   if (!service) {
@@ -194,10 +186,7 @@ const ServiceDetail = () => {
         <div className="container-custom">
           <motion.div
             className="relative rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.35, duration: 0.6 }}
-            style={{ y: imageY, scale: imageScale }}
+            style={{ y: imageY }}
           >
             {/* Image glow effect */}
             <div 
