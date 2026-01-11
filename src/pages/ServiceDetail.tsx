@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, Check } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -50,6 +50,15 @@ const ServiceDetail = () => {
   const { serviceId } = useParams<{ serviceId: string }>();
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const heroRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+  
+  // Parallax scroll effects
+  const { scrollY } = useScroll();
+  const heroY = useTransform(scrollY, [0, 500], [0, 150]);
+  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0.3]);
+  const imageY = useTransform(scrollY, [0, 800], [0, -80]);
+  const imageScale = useTransform(scrollY, [0, 400], [1, 1.05]);
   
   // Scroll to top when component mounts
   useEffect(() => {
@@ -127,50 +136,78 @@ const ServiceDetail = () => {
     >
       <Header />
       
-      {/* Hero Section */}
-      <section className={`pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br ${service.gradient}`}>
-        <div className="container-custom">
-          <button 
+      {/* Hero Section with Parallax */}
+      <section 
+        ref={heroRef}
+        className={`relative pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br ${service.gradient} overflow-hidden`}
+      >
+        {/* Parallax Background Elements */}
+        <motion.div 
+          className="absolute inset-0 opacity-10"
+          style={{ y: heroY }}
+        >
+          <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-white/20 blur-3xl" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white/5 blur-3xl" />
+        </motion.div>
+        
+        <motion.div 
+          className="container-custom relative z-10"
+          style={{ opacity: heroOpacity }}
+        >
+          <motion.button 
             onClick={handleBackToServices}
             className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.1 }}
           >
             <ArrowLeft className="w-4 h-4" />
             {t('services.backToServices')}
-          </button>
+          </motion.button>
           
           <motion.h1 
             className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.15, duration: 0.6 }}
           >
             {title}
           </motion.h1>
           
           <motion.p 
             className="text-xl md:text-2xl text-white/90 max-w-3xl"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.25, duration: 0.6 }}
           >
             {subtitle}
           </motion.p>
-        </div>
+        </motion.div>
+        
+        {/* Decorative gradient overlay at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background/20 to-transparent" />
       </section>
 
-      {/* Service Image Section */}
-      <section className="py-12 md:py-16 bg-muted/30">
+      {/* Service Image Section with Parallax */}
+      <section ref={imageRef} className="py-12 md:py-16 bg-muted/30 overflow-hidden">
         <div className="container-custom">
           <motion.div
             className="relative rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.35, duration: 0.6 }}
+            style={{ y: imageY, scale: imageScale }}
           >
+            {/* Image glow effect */}
+            <div 
+              className="absolute -inset-4 opacity-30 blur-2xl"
+              style={{ background: `radial-gradient(circle, ${service.color} 0%, transparent 70%)` }}
+            />
             <img 
               src={service.image} 
               alt={title}
-              className="w-full h-auto object-cover"
+              className="relative w-full h-auto object-cover rounded-2xl"
             />
           </motion.div>
         </div>
@@ -181,7 +218,12 @@ const ServiceDetail = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left Column - Description */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
                 {t('services.whatWeOffer')}
               </h2>
@@ -196,8 +238,9 @@ const ServiceDetail = () => {
                     key={index}
                     className="flex items-start gap-3"
                     initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.1 * index }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.05 * index, duration: 0.4 }}
+                    viewport={{ once: true }}
                   >
                     <div 
                       className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
@@ -209,10 +252,16 @@ const ServiceDetail = () => {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Column - Benefits */}
-            <div className="bg-muted/50 rounded-2xl p-8 md:p-10">
+            <motion.div 
+              className="bg-muted/50 rounded-2xl p-8 md:p-10"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
                 {t('services.whyChooseUs')}
               </h2>
@@ -222,9 +271,10 @@ const ServiceDetail = () => {
                   <motion.div 
                     key={index}
                     className="flex items-start gap-4"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.15 * index }}
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.08 * index, duration: 0.4 }}
+                    viewport={{ once: true }}
                   >
                     <div 
                       className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm"
@@ -236,14 +286,20 @@ const ServiceDetail = () => {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-muted/30 border-t border-border">
-        <div className="container-custom text-center">
+        <motion.div 
+          className="container-custom text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t('services.cta.title')}
           </h2>
@@ -252,7 +308,7 @@ const ServiceDetail = () => {
           </p>
           <Button 
             size="lg" 
-            className="font-semibold px-8"
+            className="font-semibold px-8 hover:scale-105 transition-transform"
             style={{ backgroundColor: service.color }}
             asChild
           >
@@ -260,7 +316,7 @@ const ServiceDetail = () => {
               {t('services.cta.button')}
             </a>
           </Button>
-        </div>
+        </motion.div>
       </section>
 
       <Footer />
