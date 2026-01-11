@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import ScrollToHash from "@/components/ScrollToHash";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import ServiceDetail from "./pages/ServiceDetail";
@@ -34,6 +35,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToHash />
         <AnimatedRoutes />
       </BrowserRouter>
     </TooltipProvider>

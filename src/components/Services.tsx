@@ -45,7 +45,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-[#2a2a2a]">
+    <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-20 md:py-28 bg-[#2a2a2a]">
       <div className="container-custom">
         {/* Section Title */}
         <motion.h2 

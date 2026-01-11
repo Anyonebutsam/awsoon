@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, Check } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -52,6 +52,7 @@ const ServiceDetail = () => {
   const navigate = useNavigate();
   const heroRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   
   // Parallax scroll effects
   const { scrollY } = useScroll();
@@ -62,6 +63,7 @@ const ServiceDetail = () => {
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
+    setIsImageLoaded(false);
   }, [serviceId]);
   
   const service = serviceId ? serviceData[serviceId] : null;
@@ -189,15 +191,31 @@ const ServiceDetail = () => {
             style={{ y: imageY }}
           >
             {/* Image glow effect */}
-            <div 
+            <div
               className="absolute -inset-4 opacity-30 blur-2xl"
               style={{ background: `radial-gradient(circle, ${service.color} 0%, transparent 70%)` }}
             />
-            <img 
-              src={service.image} 
-              alt={title}
-              className="relative w-full h-auto object-cover rounded-2xl"
-            />
+
+            {/* Keep layout stable + fade image in when loaded */}
+            <div className="relative aspect-[25/17] rounded-2xl overflow-hidden">
+              <div
+                className={`absolute inset-0 bg-muted/60 transition-opacity duration-500 ${
+                  isImageLoaded ? "opacity-0" : "opacity-100"
+                }`}
+                aria-hidden="true"
+              />
+
+              <img
+                src={service.image}
+                alt={title}
+                loading="eager"
+                decoding="async"
+                onLoad={() => setIsImageLoaded(true)}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                  isImageLoaded ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            </div>
           </motion.div>
         </div>
       </section>
