@@ -59,19 +59,21 @@ const Header = () => {
       }}
     >
       <div className="container-custom">
-        <div className="relative flex items-center h-16 md:h-20">
-          {/* Logo Text */}
-          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <span 
-              className="font-display text-xl md:text-2xl font-bold transition-all duration-500"
-              style={{ color: isScrolled ? 'hsl(var(--foreground))' : 'white' }}
-            >
-              AWSOON
-            </span>
-          </Link>
+        <div className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo Text - fixed width to prevent shift */}
+          <div className="w-[100px] md:w-[120px] flex-shrink-0">
+            <Link to="/" className="flex items-center gap-2">
+              <span 
+                className="font-display text-xl md:text-2xl font-bold transition-all duration-500"
+                style={{ color: isScrolled ? 'hsl(var(--foreground))' : 'white' }}
+              >
+                AWSOON
+              </span>
+            </Link>
+          </div>
 
-          {/* Desktop Navigation (pinned to viewport center so it doesn't shift) */}
-          <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
+          {/* Desktop Navigation - fixed width center section */}
+          <nav className="hidden md:flex items-center justify-center gap-1 flex-1">
             {navLinks.map((link) => (
               link.href.startsWith("/") ? (
                 <Link
@@ -99,8 +101,8 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Language Switcher & CTA Button - fixed LTR order */}
-          <div className="hidden md:flex items-center gap-3 ml-auto flex-shrink-0" style={{ direction: 'ltr' }}>
+          {/* Language Switcher & CTA Button - fixed width right section */}
+          <div className="hidden md:flex items-center justify-end gap-3 w-[200px] flex-shrink-0" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <Button
               onClick={() => scrollToSection("#contact")}
@@ -110,8 +112,8 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile: Language Switcher & Menu Button - fixed LTR order */}
-          <div className="md:hidden flex items-center gap-2 ml-auto" style={{ direction: 'ltr' }}>
+          {/* Mobile: Language Switcher & Menu Button */}
+          <div className="md:hidden flex items-center gap-2" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <button
               className={`p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
