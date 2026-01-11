@@ -1,6 +1,7 @@
-import { Globe, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import awsoonLogo from "@/assets/awsoon-logo.jpg";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -26,10 +27,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 text-sm text-background/50">
-                <Globe className="w-4 h-4" />
-                <span>{t('footer.languages')}</span>
-              </div>
+              <LanguageSwitcher scrolled={true} isHomePage={false} />
               <a
                 href="https://www.linkedin.com/company/awsoon/?viewAsMember=true"
                 target="_blank"

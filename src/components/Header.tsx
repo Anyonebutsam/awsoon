@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -101,31 +99,17 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Language Switcher & CTA Button - fixed width right section */}
-          <div className="hidden md:flex items-center justify-end gap-3 w-[200px] flex-shrink-0" style={{ direction: 'ltr' }}>
-            <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
-            <Button
-              onClick={() => scrollToSection("#contact")}
-              className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-6 whitespace-nowrap"
-            >
-              Get Started
-            </Button>
-          </div>
-
-          {/* Mobile: Language Switcher & Menu Button */}
-          <div className="md:hidden flex items-center gap-2" style={{ direction: 'ltr' }}>
-            <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
-            <button
-              className={`p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? (
-                <X className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
-              ) : (
-                <Menu className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
-              )}
-            </button>
-          </div>
+          {/* Mobile Menu Button */}
+          <button
+            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled || !isHomePage ? "hover:bg-muted" : "hover:bg-white/10"}`}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
+            ) : (
+              <Menu className={`w-6 h-6 ${scrolled || !isHomePage ? "text-foreground" : "text-white"}`} />
+            )}
+          </button>
         </div>
 
         {/* Mobile Menu */}
@@ -152,12 +136,6 @@ const Header = () => {
                   </button>
                 )
               ))}
-              <Button
-                onClick={() => scrollToSection("#contact")}
-                className="mt-2 bg-primary hover:bg-primary-hover text-primary-foreground font-semibold"
-              >
-                Get Started
-              </Button>
             </nav>
           </div>
         )}
