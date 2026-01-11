@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, Clock, BookOpen } from "lucide-react";
+import { ArrowRight, Clock, BookOpen, MapPin, Search, Megaphone, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
@@ -35,6 +35,7 @@ interface BlogArticle {
   readTime: string;
   stepsCount: number;
   tipsCount: number;
+  serviceCategory: 'gbp' | 'seo' | 'marketing' | 'reputation' | 'all';
 }
 
 const blogArticles: BlogArticle[] = [
@@ -44,6 +45,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "add-managers",
@@ -51,6 +53,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 5,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "local-ranking",
@@ -58,6 +61,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "7 min",
     stepsCount: 5,
     tipsCount: 3,
+    serviceCategory: "seo",
   },
   {
     id: "ownership-conflict",
@@ -65,6 +69,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "6 min",
     stepsCount: 5,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "handle-duplicates",
@@ -72,6 +77,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 5,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "remove-reviews",
@@ -79,6 +85,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 5,
     tipsCount: 4,
+    serviceCategory: "reputation",
   },
   {
     id: "verify-profile",
@@ -86,6 +93,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "6 min",
     stepsCount: 5,
     tipsCount: 4,
+    serviceCategory: "gbp",
   },
   {
     id: "update-hours",
@@ -93,6 +101,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "booking-links",
@@ -100,6 +109,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "6 min",
     stepsCount: 5,
     tipsCount: 4,
+    serviceCategory: "gbp",
   },
   {
     id: "ads-phone",
@@ -107,6 +117,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "marketing",
   },
   {
     id: "respond-reviews",
@@ -114,6 +125,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 5,
     tipsCount: 4,
+    serviceCategory: "reputation",
   },
   {
     id: "add-photos",
@@ -121,6 +133,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "transfer-ownership",
@@ -128,6 +141,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "edit-profile",
@@ -135,6 +149,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "set-more-hours",
@@ -142,6 +157,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "get-more-reviews",
@@ -149,6 +165,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 4,
     tipsCount: 4,
+    serviceCategory: "reputation",
   },
   {
     id: "remove-profile",
@@ -156,6 +173,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 4,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "create-posts",
@@ -163,6 +181,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 5,
     tipsCount: 4,
+    serviceCategory: "marketing",
   },
   {
     id: "add-products",
@@ -170,6 +189,7 @@ const blogArticles: BlogArticle[] = [
     readTime: "5 min",
     stepsCount: 5,
     tipsCount: 3,
+    serviceCategory: "gbp",
   },
   {
     id: "business-description",
@@ -177,13 +197,39 @@ const blogArticles: BlogArticle[] = [
     readTime: "4 min",
     stepsCount: 4,
     tipsCount: 4,
+    serviceCategory: "seo",
   },
+];
+
+const serviceCategories = [
+  { id: 'all', icon: null, label: 'blog.filters.all', color: '#6b7280' },
+  { id: 'gbp', icon: MapPin, label: 'blog.filters.gbp', color: '#4285F4' },
+  { id: 'seo', icon: Search, label: 'blog.filters.seo', color: '#34A853' },
+  { id: 'marketing', icon: Megaphone, label: 'blog.filters.marketing', color: '#EA4335' },
+  { id: 'reputation', icon: Users, label: 'blog.filters.reputation', color: '#FBBC05' },
 ];
 
 const Blog = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedArticle, setSelectedArticle] = useState<BlogArticle | null>(null);
+  const [activeCategory, setActiveCategory] = useState<string>(searchParams.get('category') || 'all');
+
+  // Update URL when category changes
+  const handleCategoryChange = (category: string) => {
+    setActiveCategory(category);
+    if (category === 'all') {
+      setSearchParams({});
+    } else {
+      setSearchParams({ category });
+    }
+  };
+
+  // Filter articles by category
+  const filteredArticles = activeCategory === 'all' 
+    ? blogArticles 
+    : blogArticles.filter(article => article.serviceCategory === activeCategory);
 
   // Handle browser back button
   useEffect(() => {
@@ -343,10 +389,12 @@ const Blog = () => {
                 </p>
                 <Button 
                   className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-8"
-                  onClick={() => window.location.href = '/#contact'}
+                  asChild
                 >
-                  {t('blog.cta.button')}
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <a href="mailto:sam@awsoon.com?subject=I need help with my Google Business Profile">
+                    {t('blog.cta.button')}
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
                 </Button>
               </div>
             </div>
@@ -383,10 +431,39 @@ const Blog = () => {
           </div>
         </div>
 
+        {/* Category Filter */}
+        <div className="container-custom py-8">
+          <div className="flex flex-wrap justify-center gap-3">
+            {serviceCategories.map((cat) => {
+              const IconComponent = cat.icon;
+              const isActive = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => handleCategoryChange(cat.id)}
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border ${
+                    isActive 
+                      ? 'bg-white text-gray-900 border-white shadow-lg' 
+                      : 'bg-transparent text-gray-400 border-gray-700 hover:border-gray-500 hover:text-gray-200'
+                  }`}
+                >
+                  {IconComponent && <IconComponent className="w-4 h-4" style={{ color: isActive ? cat.color : undefined }} />}
+                  {t(cat.label)}
+                  {isActive && (
+                    <span className="ml-1 px-1.5 py-0.5 text-xs bg-gray-200 text-gray-700 rounded-full">
+                      {cat.id === 'all' ? blogArticles.length : blogArticles.filter(a => a.serviceCategory === cat.id).length}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Articles Grid */}
-        <div className="container-custom py-16">
+        <div className="container-custom pb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogArticles.map((article, index) => {
+            {filteredArticles.map((article, index) => {
               const title = t(`blog.articles.${article.id}.title`);
               const description = t(`blog.articles.${article.id}.description`);
               const category = t(`blog.articles.${article.id}.category`);
@@ -396,7 +473,7 @@ const Blog = () => {
                   key={article.id}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.4 }}
+                  transition={{ delay: index * 0.05, duration: 0.4 }}
                   className="group bg-[#12121a] border border-gray-800/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-[#1a73e8]/10 transition-all duration-300 cursor-pointer"
                   onClick={() => setSelectedArticle(article)}
                 >
@@ -443,12 +520,12 @@ const Blog = () => {
             <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
               {t('blog.bottomCta.description')}
             </p>
-            <Link to="/#contact">
-              <Button size="lg" className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-8">
+            <Button size="lg" className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-8" asChild>
+              <a href="mailto:sam@awsoon.com?subject=I need help with my Google Business Profile">
                 {t('blog.bottomCta.button')}
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
+              </a>
+            </Button>
           </div>
         </div>
       </motion.main>

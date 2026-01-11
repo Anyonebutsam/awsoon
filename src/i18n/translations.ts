@@ -36,19 +36,23 @@ export const translations = {
         subtitle: "From Google Business Profile optimization to full-scale digital marketing campaigns, we help businesses of all sizes grow their online presence.",
         gbp: {
           title: "Google Business Profile",
-          description: "Complete optimization of your Google Business Profile to maximize visibility in local search results and Google Maps."
+          description: "Your digital storefront, available 24/7, all year round. You never get a second chance to make a first impression.",
+          detail: "We optimize your profile from the ground up – ensuring it's complete, accurate, and designed to convert searchers into customers. Weekly posts, photo updates, and review management included."
         },
         localSeo: {
           title: "Local SEO Services",
-          description: "Comprehensive local SEO strategies to help your business rank higher in location-based searches."
+          description: "We help you reach the top of local search results – if you're not visible, you don't exist.",
+          detail: "Comprehensive citation building, NAP consistency audits, and Google Maps optimization to ensure your business appears when local customers are searching for your services."
         },
         digitalMarketing: {
           title: "Digital Marketing Suite",
-          description: "Full-service digital marketing including social media management, content creation, and paid advertising."
+          description: "Reach your customers directly in their social feeds with precision-targeted advertising.",
+          detail: "From Google Ads to social media campaigns on Facebook, Instagram, and LinkedIn – we create targeted ads based on interests, age, and geographic locations."
         },
         reputation: {
           title: "Reputation Management",
-          description: "Monitor, manage, and improve your online reputation across all platforms and review sites."
+          description: "Your reputation is your most valuable asset. We help you protect and enhance it.",
+          detail: "Review generation strategies, response templates, sentiment analysis, and brand monitoring across all platforms to build trust and attract more customers."
         },
         learnMore: "Learn More"
       },
@@ -200,6 +204,13 @@ export const translations = {
         stepByStepGuide: "Step-by-Step Guide",
         proTips: "Pro Tips",
         readMore: "Read More",
+        filters: {
+          all: "All Guides",
+          gbp: "Google Business",
+          seo: "Local SEO",
+          marketing: "Marketing",
+          reputation: "Reviews"
+        },
         cta: {
           title: "Need Help With Your Business Profile?",
           description: "Let our experts handle your Google Business Profile optimization and management.",
@@ -742,6 +753,13 @@ export const translations = {
         stepByStepGuide: "Steg-för-steg-guide",
         proTips: "Proffsiga Tips",
         readMore: "Läs Mer",
+        filters: {
+          all: "Alla Guider",
+          gbp: "Google Business",
+          seo: "Lokal SEO",
+          marketing: "Marknadsföring",
+          reputation: "Omdömen"
+        },
         cta: {
           title: "Behöver du hjälp med din Företagsprofil?",
           description: "Låt våra experter hantera din Google Företagsprofil-optimering och -hantering.",
@@ -1284,6 +1302,13 @@ export const translations = {
         stepByStepGuide: "Ръководство стъпка по стъпка",
         proTips: "Професионални съвети",
         readMore: "Прочетете повече",
+        filters: {
+          all: "Всички Ръководства",
+          gbp: "Google Business",
+          seo: "Локално SEO",
+          marketing: "Маркетинг",
+          reputation: "Отзиви"
+        },
         cta: {
           title: "Нуждаете се от помощ с вашия бизнес профил?",
           description: "Нека нашите експерти се погрижат за оптимизацията и управлението на вашия Google Business Profile.",
@@ -1826,6 +1851,13 @@ export const translations = {
         stepByStepGuide: "Guide étape par étape",
         proTips: "Conseils Pro",
         readMore: "Lire Plus",
+        filters: {
+          all: "Tous les Guides",
+          gbp: "Google Business",
+          seo: "SEO Local",
+          marketing: "Marketing",
+          reputation: "Avis"
+        },
         cta: {
           title: "Besoin d'aide avec votre profil d'entreprise?",
           description: "Laissez nos experts gérer l'optimisation et la gestion de votre Google Business Profile.",
@@ -2368,6 +2400,13 @@ export const translations = {
         stepByStepGuide: "دليل خطوة بخطوة",
         proTips: "نصائح احترافية",
         readMore: "اقرأ المزيد",
+        filters: {
+          all: "جميع الأدلة",
+          gbp: "Google Business",
+          seo: "SEO محلي",
+          marketing: "التسويق",
+          reputation: "التقييمات"
+        },
         cta: {
           title: "هل تحتاج مساعدة مع ملف عملك؟",
           description: "دع خبراءنا يتولون تحسين وإدارة Google Business Profile الخاص بك.",
@@ -2910,6 +2949,13 @@ export const translations = {
         stepByStepGuide: "Guía paso a paso",
         proTips: "Consejos Pro",
         readMore: "Leer Más",
+        filters: {
+          all: "Todas las Guías",
+          gbp: "Google Business",
+          seo: "SEO Local",
+          marketing: "Marketing",
+          reputation: "Reseñas"
+        },
         cta: {
           title: "¿Necesitas ayuda con tu perfil de empresa?",
           description: "Deja que nuestros expertos gestionen la optimización y administración de tu Google Business Profile.",
@@ -3452,6 +3498,13 @@ export const translations = {
         stepByStepGuide: "دليل خطوة بخطوة",
         proTips: "نصائح احترافية",
         readMore: "اقرأ أكثر",
+        filters: {
+          all: "الكل",
+          gbp: "Google Business",
+          seo: "SEO محلي",
+          marketing: "التسويق",
+          reputation: "التقييمات"
+        },
         cta: {
           title: "محتاج مساعدة مع ملف الأعمال متاعك؟",
           description: "خلّي خبراءنا يتعاملو مع تحسين وإدارة Google Business Profile متاعك.",
