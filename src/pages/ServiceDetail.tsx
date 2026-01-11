@@ -250,10 +250,10 @@ const ServiceDetail = () => {
                     viewport={{ once: true }}
                   >
                     <div 
-                      className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
+                      className="flex-shrink-0 w-6 h-6 min-w-[1.5rem] min-h-[1.5rem] rounded-full flex items-center justify-center mt-0.5"
                       style={{ backgroundColor: `${service.color}20` }}
                     >
-                      <Check className="w-4 h-4" style={{ color: service.color }} />
+                      <Check className="w-4 h-4 flex-shrink-0" style={{ color: service.color }} />
                     </div>
                     <span className="text-foreground">{feature}</span>
                   </motion.div>
@@ -284,7 +284,7 @@ const ServiceDetail = () => {
                     viewport={{ once: true }}
                   >
                     <div 
-                      className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm"
+                      className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] rounded-lg flex items-center justify-center text-white font-bold text-sm"
                       style={{ backgroundColor: service.color }}
                     >
                       {index + 1}

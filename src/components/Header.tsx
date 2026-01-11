@@ -71,13 +71,13 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1 flex-1 justify-center">
             {navLinks.map((link) => (
               link.href.startsWith("/") ? (
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-500"
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-500 whitespace-nowrap"
                   style={{
                     color: isScrolled ? 'hsl(var(--muted-foreground))' : 'rgba(255,255,255,0.8)',
                   }}
@@ -88,7 +88,7 @@ const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-500"
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-500 whitespace-nowrap"
                   style={{
                     color: isScrolled ? 'hsl(var(--muted-foreground))' : 'rgba(255,255,255,0.8)',
                   }}
@@ -100,11 +100,11 @@ const Header = () => {
           </nav>
 
           {/* Language Switcher & CTA Button - fixed LTR order */}
-          <div className="hidden md:flex items-center gap-3" style={{ direction: 'ltr' }}>
+          <div className="hidden md:flex items-center gap-3 flex-shrink-0" style={{ direction: 'ltr' }}>
             <LanguageSwitcher scrolled={scrolled} isHomePage={isHomePage} />
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-6"
+              className="bg-[#1a73e8] hover:bg-[#1557b0] text-white font-semibold px-6 whitespace-nowrap"
             >
               Get Started
             </Button>

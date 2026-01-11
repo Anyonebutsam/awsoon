@@ -42,10 +42,10 @@ const LanguageSwitcher = ({ scrolled = false, isHomePage = true }: LanguageSwitc
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
         <button
-          className={`flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors w-[72px] ${textClasses}`}
+          className={`flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors min-w-[72px] w-[72px] ${textClasses}`}
         >
           <Globe className="w-4 h-4 flex-shrink-0" />
-          <span className="hidden sm:inline">{currentLanguage.flag}</span>
+          <span className="hidden sm:inline flex-shrink-0">{currentLanguage.flag}</span>
           <ChevronDown className="w-3 h-3 flex-shrink-0" />
         </button>
       </DropdownMenuTrigger>
