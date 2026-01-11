@@ -716,6 +716,7 @@ export const translations = {
         talkToSales: "Prata med Försäljning",
         getStarted: "Kom Igång",
         languageSupport: "Support på 7 språk",
+        selectLanguage: "Välj önskat språk!",
         testimonial: "AWSOON transformerade vår online-närvaro. Vår Google-synlighet ökade med 300% på bara 3 månader!",
         happyClient: "— Nöjd Kund"
       },
@@ -1373,6 +1374,7 @@ export const translations = {
         talkToSales: "Говорете с нас",
         getStarted: "Започнете",
         languageSupport: "Поддръжка на 7 езика",
+        selectLanguage: "Изберете желания език!",
         testimonial: "AWSOON трансформира онлайн присъствието ни. Видимостта ни в Google се увеличи с 300% само за 3 месеца!",
         happyClient: "— Доволен Клиент"
       },
@@ -2028,6 +2030,7 @@ export const translations = {
         talkToSales: "Parler aux Ventes",
         getStarted: "Commencer",
         languageSupport: "Support en 7 langues",
+        selectLanguage: "Sélectionnez la langue souhaitée!",
         testimonial: "AWSOON a transformé notre présence en ligne. Notre visibilité Google a augmenté de 300% en seulement 3 mois!",
         happyClient: "— Client Satisfait"
       },
@@ -2705,6 +2708,7 @@ export const translations = {
         talkToSales: "تحدث مع المبيعات",
         getStarted: "ابدأ الآن",
         languageSupport: "دعم بـ 7 لغات",
+        selectLanguage: "اختر اللغة المطلوبة!",
         testimonial: "غيّر AWSOON تواجدنا على الإنترنت. زادت رؤيتنا على Google بنسبة 300% في 3 أشهر فقط!",
         happyClient: "— عميل سعيد"
       },
@@ -3382,6 +3386,7 @@ export const translations = {
         talkToSales: "Hablar con Ventas",
         getStarted: "Empezar",
         languageSupport: "Soporte en 7 idiomas",
+        selectLanguage: "¡Selecciona el idioma deseado!",
         testimonial: "AWSOON transformó nuestra presencia online. ¡Nuestra visibilidad en Google aumentó un 300% en solo 3 meses!",
         happyClient: "— Cliente Satisfecho"
       },
@@ -4059,6 +4064,7 @@ export const translations = {
         talkToSales: "تكلم معانا",
         getStarted: "ابدا توا",
         languageSupport: "دعم بـ 7 لغات",
+        selectLanguage: "اختار اللغة اللي تحبها!",
         testimonial: "AWSOON غيّر تواجدنا على الإنترنت. الظهور متاعنا على Google زاد 300% في 3 شهور برك!",
         happyClient: "— كليان راضي"
       },
