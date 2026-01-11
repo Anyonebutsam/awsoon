@@ -107,12 +107,6 @@
     @apply border-border;
   }
 
-  html {
-    /* Prevent layout shift when content height / direction changes (language switching) */
-    scrollbar-gutter: stable both-edges;
-    overflow-y: scroll;
-  }
-
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
