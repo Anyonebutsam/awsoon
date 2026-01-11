@@ -3,17 +3,21 @@ import { Star, Globe, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   const languages = [
-    { name: "Swedish", flag: "🇸🇪" },
-    { name: "Bulgarian", flag: "🇧🇬" },
-    { name: "French", flag: "🇫🇷" },
-    { name: "Arabic", flag: "🇸🇦" },
-    { name: "English", flag: "🇬🇧" },
-    { name: "Spanish", flag: "🇪🇸" },
-    { name: "Tunisian", flag: "🇹🇳" },
+    { name: "English", flag: "🇬🇧", code: "en" },
+    { name: "Swedish", flag: "🇸🇪", code: "sv" },
+    { name: "Bulgarian", flag: "🇧🇬", code: "bg" },
+    { name: "French", flag: "🇫🇷", code: "fr" },
+    { name: "Arabic", flag: "🇸🇦", code: "ar" },
+    { name: "Spanish", flag: "🇪🇸", code: "es" },
+    { name: "Tunisian", flag: "🇹🇳", code: "tn" },
   ];
+
+  const handleLanguageChange = (code: string) => {
+    i18n.changeLanguage(code);
+  };
 
   const scrollToContact = () => {
     const element = document.querySelector("#contact");
@@ -75,20 +79,25 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Language Support */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <p className="text-sm text-white/50 mb-4">{t('hero.languageSupport')}</p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               {languages.map((lang) => (
-                <div
+                <button
                   key={lang.name}
-                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm"
+                  onClick={() => handleLanguageChange(lang.code)}
+                  className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full backdrop-blur-sm border text-sm transition-all duration-300 hover:scale-105 cursor-pointer ${
+                    i18n.language === lang.code 
+                      ? "bg-primary/30 border-primary/50 ring-2 ring-primary/30" 
+                      : "bg-white/10 border-white/10 hover:bg-white/20 hover:border-white/20"
+                  }`}
                 >
                   <span>{lang.flag}</span>
                   <span className="text-white/80">{lang.name}</span>
-                </div>
+                </button>
               ))}
             </div>
+            <p className="text-xs text-white/40 mt-3">{t('hero.selectLanguage', 'Select the desired language!')}</p>
           </div>
 
           {/* Testimonial Preview */}

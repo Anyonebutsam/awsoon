@@ -21,6 +21,7 @@ export const translations = {
         talkToSales: "Talk to Sales",
         getStarted: "Get Started",
         languageSupport: "Support in 7 languages",
+        selectLanguage: "Select the desired language!",
         testimonial: "AWSOON transformed our online presence. Our Google visibility increased by 300% in just 3 months!",
         happyClient: "— Happy Client"
       },
