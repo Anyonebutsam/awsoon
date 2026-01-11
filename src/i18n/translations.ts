@@ -54,7 +54,9 @@ export const translations = {
           description: "Your reputation is your most valuable asset. We help you protect and enhance it.",
           detail: "Review generation strategies, response templates, sentiment analysis, and brand monitoring across all platforms to build trust and attract more customers."
         },
-        learnMore: "Learn More"
+        learnMore: "Learn More",
+        ctaText: "Not sure which service you need? Let's talk.",
+        ctaButton: "Get a Free Consultation"
       },
       // Process
       process: {
@@ -610,7 +612,9 @@ export const translations = {
           title: "Rykteshantering",
           description: "Övervaka, hantera och förbättra ditt online-rykte på alla plattformar och recensionssidor."
         },
-        learnMore: "Läs Mer"
+        learnMore: "Läs Mer",
+        ctaText: "Osäker på vilken tjänst du behöver? Låt oss prata.",
+        ctaButton: "Boka gratis konsultation"
       },
       process: {
         label: "Hur Vi Arbetar",
@@ -1159,7 +1163,9 @@ export const translations = {
           title: "Управление на Репутация",
           description: "Наблюдавайте, управлявайте и подобрявайте онлайн репутацията си във всички платформи."
         },
-        learnMore: "Научете Повече"
+        learnMore: "Научете Повече",
+        ctaText: "Не сте сигурни коя услуга ви е нужна? Нека поговорим.",
+        ctaButton: "Безплатна консултация"
       },
       process: {
         label: "Как Работим",
@@ -1708,7 +1714,9 @@ export const translations = {
           title: "Gestion de Réputation",
           description: "Surveillez, gérez et améliorez votre réputation en ligne sur toutes les plateformes."
         },
-        learnMore: "En Savoir Plus"
+        learnMore: "En Savoir Plus",
+        ctaText: "Pas sûr de quel service vous avez besoin ? Parlons-en.",
+        ctaButton: "Consultation gratuite"
       },
       process: {
         label: "Notre Méthode",
@@ -2257,7 +2265,9 @@ export const translations = {
           title: "إدارة السمعة",
           description: "مراقبة وإدارة وتحسين سمعتك عبر الإنترنت على جميع المنصات."
         },
-        learnMore: "اعرف المزيد"
+        learnMore: "اعرف المزيد",
+        ctaText: "غير متأكد من الخدمة التي تحتاجها؟ دعنا نتحدث.",
+        ctaButton: "استشارة مجانية"
       },
       process: {
         label: "طريقة العمل",
@@ -2806,7 +2816,9 @@ export const translations = {
           title: "Gestión de Reputación",
           description: "Monitorea, gestiona y mejora tu reputación online en todas las plataformas."
         },
-        learnMore: "Saber Más"
+        learnMore: "Saber Más",
+        ctaText: "¿No sabes qué servicio necesitas? Hablemos.",
+        ctaButton: "Consulta gratuita"
       },
       process: {
         label: "Cómo Trabajamos",
@@ -3355,7 +3367,9 @@ export const translations = {
           title: "إدارة السمعة",
           description: "راقب، أدِر وحسّن سمعتك على الإنترنت في جميع المنصات."
         },
-        learnMore: "اعرف أكثر"
+        learnMore: "اعرف أكثر",
+        ctaText: "مش متأكد أي خدمة تحتاج؟ خلّينا نحكي.",
+        ctaButton: "استشارة مجانية"
       },
       process: {
         label: "كيفاش نخدمو",
