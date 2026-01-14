@@ -55,12 +55,17 @@ export const translations = {
           title: "Reputation Management",
           description: "Your reputation is your most valuable asset. We help you generate reviews, respond professionally, and build trust with potential customers."
         },
+        website: {
+          title: "Website Development",
+          description: "We create modern, fast, and mobile-optimized websites tailored to your business. Request a free demo – if you like it, it's yours!"
+        },
         buttons: {
           "google-business-profile": "Google Business",
           "google-ads": "Google Ads",
           "meta-ads": "Meta Ads",
           "local-seo": "Local SEO",
-          "reputation-management": "Reputation"
+          "reputation-management": "Reputation",
+          "website-development": "Websites"
         },
         readMore: "Read More",
         backToServices: "Back to Services",
@@ -185,6 +190,29 @@ export const translations = {
               benefit4: "Real-time alerts for new reviews",
               benefit5: "Improve local search rankings",
               benefit6: "Protect your brand image"
+            }
+          },
+          "website-development": {
+            title: "Website Development",
+            subtitle: "Modern, fast websites tailored to your business",
+            description: "We create beautiful, responsive websites that convert visitors into customers. Request a free demo – if you like it, it's yours! No obligation, no risk.",
+            features: {
+              feature1: "Custom design tailored to your brand",
+              feature2: "Mobile-first responsive development",
+              feature3: "Lightning-fast loading speeds",
+              feature4: "SEO-optimized structure",
+              feature5: "Contact forms and lead capture",
+              feature6: "Social media integration",
+              feature7: "Analytics and tracking setup",
+              feature8: "Ongoing maintenance and support"
+            },
+            benefits: {
+              benefit1: "Free demo – try before you commit",
+              benefit2: "Professional design at competitive prices",
+              benefit3: "Mobile-optimized for all devices",
+              benefit4: "Built for search engine visibility",
+              benefit5: "Fast turnaround times",
+              benefit6: "Swedish quality with Bulgarian pricing"
             }
           }
         }
@@ -748,12 +776,17 @@ export const translations = {
           title: "Rykteshantering",
           description: "Ditt rykte är din mest värdefulla tillgång. Vi hjälper dig att generera recensioner, svara professionellt och bygga förtroende hos potentiella kunder."
         },
+        website: {
+          title: "Webbutveckling",
+          description: "Vi skapar moderna, snabba och mobilanpassade webbplatser skräddarsydda för ditt företag. Begär en gratis demo – gillar du den, är den din!"
+        },
         buttons: {
           "google-business-profile": "Google Business",
           "google-ads": "Google Ads",
           "meta-ads": "Meta Ads",
           "local-seo": "Lokal SEO",
-          "reputation-management": "Rykte"
+          "reputation-management": "Rykte",
+          "website-development": "Webbplatser"
         },
         readMore: "Läs Mer",
         backToServices: "Tillbaka till Tjänster",
@@ -850,6 +883,29 @@ export const translations = {
               benefit2: "Fler 5-stjärniga recensioner på Google",
               benefit3: "Professionell hantering av negativ feedback",
               benefit4: "Realtidsvarningar för nya recensioner"
+            }
+          },
+          "website-development": {
+            title: "Webbutveckling",
+            subtitle: "Moderna, snabba webbplatser anpassade för ditt företag",
+            description: "Vi skapar vackra, responsiva webbplatser som konverterar besökare till kunder. Begär en gratis demo – gillar du den, är den din! Ingen förpliktelse, ingen risk.",
+            features: {
+              feature1: "Anpassad design för ditt varumärke",
+              feature2: "Mobil-först responsiv utveckling",
+              feature3: "Blixtsnabba laddningstider",
+              feature4: "SEO-optimerad struktur",
+              feature5: "Kontaktformulär och lead-capture",
+              feature6: "Integration med sociala medier",
+              feature7: "Analys- och spårningsuppsättning",
+              feature8: "Löpande underhåll och support"
+            },
+            benefits: {
+              benefit1: "Gratis demo – prova innan du bestämmer dig",
+              benefit2: "Professionell design till konkurrenskraftiga priser",
+              benefit3: "Mobiloptimerad för alla enheter",
+              benefit4: "Byggd för synlighet i sökmotorer",
+              benefit5: "Snabba leveranstider",
+              benefit6: "Svensk kvalitet till bulgariska priser"
             }
           }
         }
@@ -1406,12 +1462,17 @@ export const translations = {
           title: "Управление на Репутация",
           description: "Вашата репутация е най-ценният ви актив. Помагаме ви да генерирате отзиви, да отговаряте професионално и да изграждате доверие."
         },
+        website: {
+          title: "Уеб разработка",
+          description: "Създаваме модерни, бързи и мобилно оптимизирани уебсайтове, пригодени за вашия бизнес. Поискайте безплатна демонстрация – ако ви хареса, тя е ваша!"
+        },
         buttons: {
           "google-business-profile": "Google Business",
           "google-ads": "Google Ads",
           "meta-ads": "Meta Ads",
           "local-seo": "Локално SEO",
-          "reputation-management": "Репутация"
+          "reputation-management": "Репутация",
+          "website-development": "Уебсайтове"
         },
         readMore: "Прочетете Повече",
         backToServices: "Обратно към Услуги",
@@ -1506,6 +1567,29 @@ export const translations = {
               benefit2: "Повече 5-звездни отзиви",
               benefit3: "Професионална обработка на негативна обратна връзка",
               benefit4: "Известия в реално време за нови отзиви"
+            }
+          },
+          "website-development": {
+            title: "Уеб разработка",
+            subtitle: "Модерни, бързи уебсайтове, пригодени за вашия бизнес",
+            description: "Създаваме красиви, адаптивни уебсайтове, които превръщат посетителите в клиенти. Поискайте безплатна демонстрация – ако ви хареса, тя е ваша! Без ангажимент, без риск.",
+            features: {
+              feature1: "Персонализиран дизайн за вашия бранд",
+              feature2: "Мобилно-първо адаптивно развитие",
+              feature3: "Светкавично бързо зареждане",
+              feature4: "SEO-оптимизирана структура",
+              feature5: "Контактни форми и улавяне на потенциални клиенти",
+              feature6: "Интеграция със социални мрежи",
+              feature7: "Настройка на анализи и проследяване",
+              feature8: "Постоянна поддръжка и подкрепа"
+            },
+            benefits: {
+              benefit1: "Безплатна демонстрация – опитайте преди да решите",
+              benefit2: "Професионален дизайн на конкурентни цени",
+              benefit3: "Мобилно оптимизиран за всички устройства",
+              benefit4: "Изграден за видимост в търсачките",
+              benefit5: "Бързи срокове за изпълнение",
+              benefit6: "Шведско качество на български цени"
             }
           }
         }
@@ -2058,6 +2142,10 @@ export const translations = {
           title: "Gestion de Réputation",
           description: "Surveillez, gérez et améliorez votre réputation en ligne sur toutes les plateformes."
         },
+        website: {
+          title: "Développement Web",
+          description: "Nous créons des sites web modernes, rapides et optimisés pour mobile, adaptés à votre entreprise. Demandez une démo gratuite – si vous l'aimez, il est à vous!"
+        },
         learnMore: "En Savoir Plus",
         readMore: "En Savoir Plus",
         backToServices: "Retour aux Services",
@@ -2184,6 +2272,29 @@ export const translations = {
               benefit4: "Démarquez-vous de la concurrence",
               benefit5: "Améliorez la fidélité client",
               benefit6: "Protégez la réputation de votre marque"
+            }
+          },
+          "website-development": {
+            title: "Développement Web",
+            subtitle: "Sites web modernes et rapides adaptés à votre entreprise",
+            description: "Nous créons de beaux sites web réactifs qui convertissent les visiteurs en clients. Demandez une démo gratuite – si vous l'aimez, il est à vous! Sans engagement, sans risque.",
+            features: {
+              feature1: "Design personnalisé pour votre marque",
+              feature2: "Développement responsive mobile-first",
+              feature3: "Temps de chargement ultra-rapides",
+              feature4: "Structure optimisée pour le SEO",
+              feature5: "Formulaires de contact et capture de leads",
+              feature6: "Intégration des réseaux sociaux",
+              feature7: "Configuration des analyses et du suivi",
+              feature8: "Maintenance et support continus"
+            },
+            benefits: {
+              benefit1: "Démo gratuite – essayez avant de vous engager",
+              benefit2: "Design professionnel à prix compétitifs",
+              benefit3: "Optimisé mobile pour tous les appareils",
+              benefit4: "Conçu pour la visibilité sur les moteurs de recherche",
+              benefit5: "Délais de livraison rapides",
+              benefit6: "Qualité suédoise aux prix bulgares"
             }
           }
         }
@@ -2736,6 +2847,10 @@ export const translations = {
           title: "إدارة السمعة",
           description: "مراقبة وإدارة وتحسين سمعتك عبر الإنترنت على جميع المنصات."
         },
+        website: {
+          title: "تطوير المواقع",
+          description: "نقوم بإنشاء مواقع ويب حديثة وسريعة ومُحسّنة للجوال ومصممة خصيصًا لعملك. اطلب عرضًا توضيحيًا مجانيًا – إذا أعجبك، فهو لك!"
+        },
         learnMore: "اعرف المزيد",
         readMore: "اعرف المزيد",
         backToServices: "العودة للخدمات",
@@ -2862,6 +2977,29 @@ export const translations = {
               benefit4: "التميز عن المنافسين",
               benefit5: "تحسين ولاء العملاء",
               benefit6: "حماية سمعة علامتك التجارية"
+            }
+          },
+          "website-development": {
+            title: "تطوير المواقع",
+            subtitle: "مواقع حديثة وسريعة مصممة خصيصاً لعملك",
+            description: "نقوم بإنشاء مواقع ويب جميلة ومتجاوبة تحول الزوار إلى عملاء. اطلب عرضاً توضيحياً مجانياً – إذا أعجبك، فهو لك! بدون التزام، بدون مخاطر.",
+            features: {
+              feature1: "تصميم مخصص لعلامتك التجارية",
+              feature2: "تطوير متجاوب يراعي الجوال أولاً",
+              feature3: "سرعات تحميل فائقة",
+              feature4: "هيكل مُحسّن لمحركات البحث",
+              feature5: "نماذج اتصال والتقاط العملاء المحتملين",
+              feature6: "تكامل مع وسائل التواصل الاجتماعي",
+              feature7: "إعداد التحليلات والتتبع",
+              feature8: "صيانة ودعم مستمر"
+            },
+            benefits: {
+              benefit1: "عرض توضيحي مجاني – جرب قبل أن تلتزم",
+              benefit2: "تصميم احترافي بأسعار تنافسية",
+              benefit3: "مُحسّن للجوال لجميع الأجهزة",
+              benefit4: "مبني للظهور في محركات البحث",
+              benefit5: "أوقات تسليم سريعة",
+              benefit6: "جودة سويدية بأسعار بلغارية"
             }
           }
         }
@@ -3414,6 +3552,10 @@ export const translations = {
           title: "Gestión de Reputación",
           description: "Monitorea, gestiona y mejora tu reputación online en todas las plataformas."
         },
+        website: {
+          title: "Desarrollo Web",
+          description: "Creamos sitios web modernos, rápidos y optimizados para móviles, adaptados a tu negocio. ¡Solicita una demo gratuita – si te gusta, es tuyo!"
+        },
         learnMore: "Saber Más",
         readMore: "Saber Más",
         backToServices: "Volver a Servicios",
@@ -3540,6 +3682,29 @@ export const translations = {
               benefit4: "Destaca sobre la competencia",
               benefit5: "Mejora la lealtad del cliente",
               benefit6: "Protege la reputación de tu marca"
+            }
+          },
+          "website-development": {
+            title: "Desarrollo Web",
+            subtitle: "Sitios web modernos y rápidos adaptados a tu negocio",
+            description: "Creamos sitios web hermosos y responsivos que convierten visitantes en clientes. ¡Solicita una demo gratuita – si te gusta, es tuyo! Sin compromiso, sin riesgo.",
+            features: {
+              feature1: "Diseño personalizado para tu marca",
+              feature2: "Desarrollo responsive mobile-first",
+              feature3: "Velocidades de carga ultrarrápidas",
+              feature4: "Estructura optimizada para SEO",
+              feature5: "Formularios de contacto y captura de leads",
+              feature6: "Integración con redes sociales",
+              feature7: "Configuración de análisis y seguimiento",
+              feature8: "Mantenimiento y soporte continuo"
+            },
+            benefits: {
+              benefit1: "Demo gratuita – prueba antes de comprometerte",
+              benefit2: "Diseño profesional a precios competitivos",
+              benefit3: "Optimizado para móvil en todos los dispositivos",
+              benefit4: "Construido para visibilidad en buscadores",
+              benefit5: "Tiempos de entrega rápidos",
+              benefit6: "Calidad sueca a precios búlgaros"
             }
           }
         }
@@ -4092,6 +4257,10 @@ export const translations = {
           title: "إدارة السمعة",
           description: "راقب، أدِر وحسّن سمعتك على الإنترنت في جميع المنصات."
         },
+        website: {
+          title: "تطوير المواقع",
+          description: "نخلقو مواقع ويب عصرية وسريعة ومُحسّنة للموبايل ومصممة خصيصًا لخدمتك. اطلب ديمو مجانية – إذا عجبتك، هي متاعك!"
+        },
         learnMore: "اعرف أكثر",
         readMore: "اعرف أكثر",
         backToServices: "ارجع للخدمات",
@@ -4218,6 +4387,29 @@ export const translations = {
               benefit4: "تميّز عن المنافسين",
               benefit5: "حسّن ولاء الكليانات",
               benefit6: "احمي سمعة علامتك التجارية"
+            }
+          },
+          "website-development": {
+            title: "تطوير المواقع",
+            subtitle: "مواقع عصرية وسريعة مصممة خصيصاً لخدمتك",
+            description: "نخلقو مواقع ويب شابة ومتجاوبة تحوّل الزوار لكليانات. اطلب ديمو مجانية – إذا عجبتك، هي متاعك! بلا التزام، بلا مخاطر.",
+            features: {
+              feature1: "تصميم مخصص لعلامتك التجارية",
+              feature2: "تطوير متجاوب يراعي الموبايل أولاً",
+              feature3: "سرعات تحميل خاطفة",
+              feature4: "هيكل مُحسّن لمحركات البحث",
+              feature5: "فورمات اتصال والتقاط الكليانات المحتملين",
+              feature6: "تكامل مع السوشيال ميديا",
+              feature7: "إعداد التحليلات والتتبع",
+              feature8: "صيانة ودعم مستمر"
+            },
+            benefits: {
+              benefit1: "ديمو مجانية – جرب قبل ما تلتزم",
+              benefit2: "تصميم احترافي بأسعار تنافسية",
+              benefit3: "مُحسّن للموبايل لكل الأجهزة",
+              benefit4: "مبني للظهور في محركات البحث",
+              benefit5: "أوقات تسليم سريعة",
+              benefit6: "جودة سويدية بأسعار بلغارية"
             }
           }
         }
