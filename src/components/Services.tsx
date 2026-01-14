@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Target, Share2, Search, Star } from "lucide-react";
+import { ArrowRight, MapPin, Target, Share2, Search, Star, Globe } from "lucide-react";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -41,6 +41,13 @@ const Services = () => {
       descriptionKey: "services.reputation.description",
       icon: Star,
       color: "#FBBC05",
+    },
+    {
+      id: "website-development",
+      titleKey: "services.website.title",
+      descriptionKey: "services.website.description",
+      icon: Globe,
+      color: "#9333EA",
     },
   ];
 
