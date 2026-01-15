@@ -52,7 +52,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-20 md:py-28 bg-[#2a2a2a]">
+    <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-20 md:py-28 hero-gradient">
       <div className="container-custom">
         {/* Section Title */}
         <motion.h2 
@@ -80,7 +80,7 @@ const Services = () => {
               >
                 <Link to={`/services/${service.id}`}>
                   <motion.div 
-                    className="h-full flex flex-col items-center text-center p-6 md:p-8 bg-[#333333] rounded-xl border border-[#444444] transition-all duration-500 cursor-pointer overflow-hidden relative"
+                    className="h-full flex flex-col items-center text-center p-6 md:p-8 bg-card/10 backdrop-blur-sm rounded-xl border border-white/10 transition-all duration-500 cursor-pointer overflow-hidden relative"
                     whileHover={{ 
                       y: -8,
                       borderColor: service.color,
@@ -121,7 +121,7 @@ const Services = () => {
                     
                     {/* Button */}
                     <motion.div 
-                      className="inline-flex items-center justify-center px-6 py-2.5 border-2 border-white text-white text-sm font-medium rounded-full transition-all duration-300 group-hover:bg-white group-hover:text-[#2a2a2a] relative z-10"
+                      className="inline-flex items-center justify-center px-6 py-2.5 border-2 border-white text-white text-sm font-medium rounded-full transition-all duration-300 group-hover:bg-white group-hover:text-foreground relative z-10"
                       whileHover={{ scale: 1.05 }}
                     >
                       {t('services.readMore')}
