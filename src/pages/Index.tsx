@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import TrustedBy from "@/components/TrustedBy";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Pricing from "@/components/Pricing";
@@ -22,7 +21,6 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <TrustedBy />
         <Services />
         <Process />
         <Pricing />
