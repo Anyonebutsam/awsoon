@@ -195,16 +195,16 @@ export const translations = {
           "website-development": {
             title: "Website Development",
             subtitle: "Modern, fast websites tailored to your business",
-            description: "We create beautiful, responsive websites that convert visitors into customers. Request a free demo – if you like it, it's yours! No obligation, no risk.",
+            description: "We create beautiful, responsive websites that convert visitors into customers. Request a free demo – if you like it, it's yours! No obligation, no risk. Our websites are built with the latest technologies for maximum performance and conversions.",
             features: {
               feature1: "Custom design tailored to your brand",
               feature2: "Mobile-first responsive development",
-              feature3: "Lightning-fast loading speeds",
-              feature4: "SEO-optimized structure",
+              feature3: "Lightning-fast loading speeds (0.3s)",
+              feature4: "SEO-optimized structure included",
               feature5: "Contact forms and lead capture",
               feature6: "Social media integration",
               feature7: "Analytics and tracking setup",
-              feature8: "Ongoing maintenance and support"
+              feature8: "100/100 Google PageSpeed score"
             },
             benefits: {
               benefit1: "Free demo – try before you commit",
@@ -213,6 +213,15 @@ export const translations = {
               benefit4: "Built for search engine visibility",
               benefit5: "Fast turnaround times",
               benefit6: "Swedish quality with Bulgarian pricing"
+            },
+            partnership: {
+              badge: "Official Partnership",
+              title: "Powered by Timvat Studio",
+              description: "We've partnered with Timvat Studio, Sweden's leading web development agency specializing in Next.js and React. Together, we deliver lightning-fast websites with 100/100 PageSpeed scores and up to 340% higher conversion rates.",
+              stat1: "Google PageSpeed",
+              stat2: "Load Time",
+              stat3: "Conversion Increase",
+              visitPartner: "Visit Timvat Studio"
             }
           }
         }
@@ -888,16 +897,16 @@ export const translations = {
           "website-development": {
             title: "Webbutveckling",
             subtitle: "Moderna, snabba webbplatser anpassade för ditt företag",
-            description: "Vi skapar vackra, responsiva webbplatser som konverterar besökare till kunder. Begär en gratis demo – gillar du den, är den din! Ingen förpliktelse, ingen risk.",
+            description: "Vi skapar vackra, responsiva webbplatser som konverterar besökare till kunder. Begär en gratis demo – gillar du den, är den din! Ingen förpliktelse, ingen risk. Våra webbplatser byggs med den senaste tekniken för maximal prestanda och konvertering.",
             features: {
               feature1: "Anpassad design för ditt varumärke",
               feature2: "Mobil-först responsiv utveckling",
-              feature3: "Blixtsnabba laddningstider",
-              feature4: "SEO-optimerad struktur",
+              feature3: "Blixtsnabba laddningstider (0,3s)",
+              feature4: "SEO-optimerad struktur ingår",
               feature5: "Kontaktformulär och lead-capture",
               feature6: "Integration med sociala medier",
               feature7: "Analys- och spårningsuppsättning",
-              feature8: "Löpande underhåll och support"
+              feature8: "100/100 Google PageSpeed-poäng"
             },
             benefits: {
               benefit1: "Gratis demo – prova innan du bestämmer dig",
@@ -906,6 +915,15 @@ export const translations = {
               benefit4: "Byggd för synlighet i sökmotorer",
               benefit5: "Snabba leveranstider",
               benefit6: "Svensk kvalitet till bulgariska priser"
+            },
+            partnership: {
+              badge: "Officiellt Partnerskap",
+              title: "Drivs av Timvat Studio",
+              description: "Vi har ingått partnerskap med Timvat Studio, Sveriges ledande webbutvecklingsbyrå specialiserad på Next.js och React. Tillsammans levererar vi blixtsnabba webbplatser med 100/100 PageSpeed-poäng och upp till 340% högre konverteringsfrekvens.",
+              stat1: "Google PageSpeed",
+              stat2: "Laddningstid",
+              stat3: "Konverteringsökning",
+              visitPartner: "Besök Timvat Studio"
             }
           }
         }
@@ -1572,16 +1590,16 @@ export const translations = {
           "website-development": {
             title: "Уеб разработка",
             subtitle: "Модерни, бързи уебсайтове, пригодени за вашия бизнес",
-            description: "Създаваме красиви, адаптивни уебсайтове, които превръщат посетителите в клиенти. Поискайте безплатна демонстрация – ако ви хареса, тя е ваша! Без ангажимент, без риск.",
+            description: "Създаваме красиви, адаптивни уебсайтове, които превръщат посетителите в клиенти. Поискайте безплатна демонстрация – ако ви хареса, тя е ваша! Без ангажимент, без риск. Нашите уебсайтове са изградени с най-новите технологии за максимална производителност и конверсии.",
             features: {
               feature1: "Персонализиран дизайн за вашия бранд",
               feature2: "Мобилно-първо адаптивно развитие",
-              feature3: "Светкавично бързо зареждане",
-              feature4: "SEO-оптимизирана структура",
+              feature3: "Светкавично бързо зареждане (0.3s)",
+              feature4: "SEO-оптимизирана структура включена",
               feature5: "Контактни форми и улавяне на потенциални клиенти",
               feature6: "Интеграция със социални мрежи",
               feature7: "Настройка на анализи и проследяване",
-              feature8: "Постоянна поддръжка и подкрепа"
+              feature8: "100/100 Google PageSpeed резултат"
             },
             benefits: {
               benefit1: "Безплатна демонстрация – опитайте преди да решите",
@@ -1590,6 +1608,15 @@ export const translations = {
               benefit4: "Изграден за видимост в търсачките",
               benefit5: "Бързи срокове за изпълнение",
               benefit6: "Шведско качество на български цени"
+            },
+            partnership: {
+              badge: "Официално Партньорство",
+              title: "Задвижвано от Timvat Studio",
+              description: "Партнираме с Timvat Studio, водещата шведска агенция за уеб разработка, специализирана в Next.js и React. Заедно доставяме светкавично бързи уебсайтове със 100/100 PageSpeed резултат и до 340% по-висока конверсия.",
+              stat1: "Google PageSpeed",
+              stat2: "Време за зареждане",
+              stat3: "Увеличение на конверсиите",
+              visitPartner: "Посетете Timvat Studio"
             }
           }
         }
@@ -2277,16 +2304,16 @@ export const translations = {
           "website-development": {
             title: "Développement Web",
             subtitle: "Sites web modernes et rapides adaptés à votre entreprise",
-            description: "Nous créons de beaux sites web réactifs qui convertissent les visiteurs en clients. Demandez une démo gratuite – si vous l'aimez, il est à vous! Sans engagement, sans risque.",
+            description: "Nous créons de beaux sites web réactifs qui convertissent les visiteurs en clients. Demandez une démo gratuite – si vous l'aimez, il est à vous! Sans engagement, sans risque. Nos sites web sont construits avec les dernières technologies pour des performances et des conversions maximales.",
             features: {
               feature1: "Design personnalisé pour votre marque",
               feature2: "Développement responsive mobile-first",
-              feature3: "Temps de chargement ultra-rapides",
-              feature4: "Structure optimisée pour le SEO",
+              feature3: "Temps de chargement ultra-rapides (0.3s)",
+              feature4: "Structure optimisée pour le SEO incluse",
               feature5: "Formulaires de contact et capture de leads",
               feature6: "Intégration des réseaux sociaux",
               feature7: "Configuration des analyses et du suivi",
-              feature8: "Maintenance et support continus"
+              feature8: "Score Google PageSpeed 100/100"
             },
             benefits: {
               benefit1: "Démo gratuite – essayez avant de vous engager",
@@ -2295,6 +2322,15 @@ export const translations = {
               benefit4: "Conçu pour la visibilité sur les moteurs de recherche",
               benefit5: "Délais de livraison rapides",
               benefit6: "Qualité suédoise aux prix bulgares"
+            },
+            partnership: {
+              badge: "Partenariat Officiel",
+              title: "Propulsé par Timvat Studio",
+              description: "Nous avons conclu un partenariat avec Timvat Studio, l'agence de développement web leader en Suède spécialisée en Next.js et React. Ensemble, nous livrons des sites web ultra-rapides avec des scores PageSpeed de 100/100 et jusqu'à 340% de taux de conversion plus élevés.",
+              stat1: "Google PageSpeed",
+              stat2: "Temps de chargement",
+              stat3: "Augmentation des conversions",
+              visitPartner: "Visiter Timvat Studio"
             }
           }
         }
@@ -2982,16 +3018,16 @@ export const translations = {
           "website-development": {
             title: "تطوير المواقع",
             subtitle: "مواقع حديثة وسريعة مصممة خصيصاً لعملك",
-            description: "نقوم بإنشاء مواقع ويب جميلة ومتجاوبة تحول الزوار إلى عملاء. اطلب عرضاً توضيحياً مجانياً – إذا أعجبك، فهو لك! بدون التزام، بدون مخاطر.",
+            description: "نقوم بإنشاء مواقع ويب جميلة ومتجاوبة تحول الزوار إلى عملاء. اطلب عرضاً توضيحياً مجانياً – إذا أعجبك، فهو لك! بدون التزام، بدون مخاطر. مواقعنا مبنية بأحدث التقنيات لأقصى أداء وتحويلات.",
             features: {
               feature1: "تصميم مخصص لعلامتك التجارية",
               feature2: "تطوير متجاوب يراعي الجوال أولاً",
-              feature3: "سرعات تحميل فائقة",
-              feature4: "هيكل مُحسّن لمحركات البحث",
+              feature3: "سرعات تحميل فائقة (0.3 ثانية)",
+              feature4: "هيكل مُحسّن لمحركات البحث مشمول",
               feature5: "نماذج اتصال والتقاط العملاء المحتملين",
               feature6: "تكامل مع وسائل التواصل الاجتماعي",
               feature7: "إعداد التحليلات والتتبع",
-              feature8: "صيانة ودعم مستمر"
+              feature8: "نتيجة 100/100 في Google PageSpeed"
             },
             benefits: {
               benefit1: "عرض توضيحي مجاني – جرب قبل أن تلتزم",
@@ -3000,6 +3036,15 @@ export const translations = {
               benefit4: "مبني للظهور في محركات البحث",
               benefit5: "أوقات تسليم سريعة",
               benefit6: "جودة سويدية بأسعار بلغارية"
+            },
+            partnership: {
+              badge: "شراكة رسمية",
+              title: "مدعوم من Timvat Studio",
+              description: "لقد شاركنا مع Timvat Studio، وكالة تطوير الويب الرائدة في السويد المتخصصة في Next.js و React. معاً، نقدم مواقع ويب فائقة السرعة بنتائج PageSpeed 100/100 ومعدلات تحويل أعلى بنسبة تصل إلى 340%.",
+              stat1: "Google PageSpeed",
+              stat2: "وقت التحميل",
+              stat3: "زيادة التحويلات",
+              visitPartner: "زيارة Timvat Studio"
             }
           }
         }
@@ -3687,16 +3732,16 @@ export const translations = {
           "website-development": {
             title: "Desarrollo Web",
             subtitle: "Sitios web modernos y rápidos adaptados a tu negocio",
-            description: "Creamos sitios web hermosos y responsivos que convierten visitantes en clientes. ¡Solicita una demo gratuita – si te gusta, es tuyo! Sin compromiso, sin riesgo.",
+            description: "Creamos sitios web hermosos y responsivos que convierten visitantes en clientes. ¡Solicita una demo gratuita – si te gusta, es tuyo! Sin compromiso, sin riesgo. Nuestros sitios web están construidos con las últimas tecnologías para máximo rendimiento y conversiones.",
             features: {
               feature1: "Diseño personalizado para tu marca",
               feature2: "Desarrollo responsive mobile-first",
-              feature3: "Velocidades de carga ultrarrápidas",
-              feature4: "Estructura optimizada para SEO",
+              feature3: "Velocidades de carga ultrarrápidas (0.3s)",
+              feature4: "Estructura optimizada para SEO incluida",
               feature5: "Formularios de contacto y captura de leads",
               feature6: "Integración con redes sociales",
               feature7: "Configuración de análisis y seguimiento",
-              feature8: "Mantenimiento y soporte continuo"
+              feature8: "Puntuación Google PageSpeed 100/100"
             },
             benefits: {
               benefit1: "Demo gratuita – prueba antes de comprometerte",
@@ -3705,6 +3750,15 @@ export const translations = {
               benefit4: "Construido para visibilidad en buscadores",
               benefit5: "Tiempos de entrega rápidos",
               benefit6: "Calidad sueca a precios búlgaros"
+            },
+            partnership: {
+              badge: "Asociación Oficial",
+              title: "Impulsado por Timvat Studio",
+              description: "Nos hemos asociado con Timvat Studio, la agencia líder de desarrollo web en Suecia especializada en Next.js y React. Juntos, entregamos sitios web ultrarrápidos con puntuaciones PageSpeed de 100/100 y tasas de conversión hasta un 340% más altas.",
+              stat1: "Google PageSpeed",
+              stat2: "Tiempo de carga",
+              stat3: "Aumento de conversiones",
+              visitPartner: "Visitar Timvat Studio"
             }
           }
         }
@@ -4392,16 +4446,16 @@ export const translations = {
           "website-development": {
             title: "تطوير المواقع",
             subtitle: "مواقع عصرية وسريعة مصممة خصيصاً لخدمتك",
-            description: "نخلقو مواقع ويب شابة ومتجاوبة تحوّل الزوار لكليانات. اطلب ديمو مجانية – إذا عجبتك، هي متاعك! بلا التزام، بلا مخاطر.",
+            description: "نخلقو مواقع ويب شابة ومتجاوبة تحوّل الزوار لكليانات. اطلب ديمو مجانية – إذا عجبتك، هي متاعك! بلا التزام، بلا مخاطر. مواقعنا مبنية بأحدث التقنيات لأقصى أداء وتحويلات.",
             features: {
               feature1: "تصميم مخصص لعلامتك التجارية",
               feature2: "تطوير متجاوب يراعي الموبايل أولاً",
-              feature3: "سرعات تحميل خاطفة",
-              feature4: "هيكل مُحسّن لمحركات البحث",
+              feature3: "سرعات تحميل خاطفة (0.3 ثانية)",
+              feature4: "هيكل مُحسّن لمحركات البحث مشمول",
               feature5: "فورمات اتصال والتقاط الكليانات المحتملين",
               feature6: "تكامل مع السوشيال ميديا",
               feature7: "إعداد التحليلات والتتبع",
-              feature8: "صيانة ودعم مستمر"
+              feature8: "نتيجة 100/100 في Google PageSpeed"
             },
             benefits: {
               benefit1: "ديمو مجانية – جرب قبل ما تلتزم",
@@ -4410,6 +4464,15 @@ export const translations = {
               benefit4: "مبني للظهور في محركات البحث",
               benefit5: "أوقات تسليم سريعة",
               benefit6: "جودة سويدية بأسعار بلغارية"
+            },
+            partnership: {
+              badge: "شراكة رسمية",
+              title: "مدعوم من Timvat Studio",
+              description: "شاركنا مع Timvat Studio، وكالة تطوير الويب الرائدة في السويد المتخصصة في Next.js و React. مع بعض، نقدمو مواقع ويب سريعة برشا بنتائج PageSpeed 100/100 ومعدلات تحويل أعلى بنسبة تصل إلى 340%.",
+              stat1: "Google PageSpeed",
+              stat2: "وقت التحميل",
+              stat3: "زيادة التحويلات",
+              visitPartner: "زور Timvat Studio"
             }
           }
         }
