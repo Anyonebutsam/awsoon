@@ -11,17 +11,6 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
-// Google Partner Badge SVG component
-const GooglePartnerBadge = () => (
-  <svg viewBox="0 0 200 60" className="h-12 w-auto">
-    <rect x="0" y="0" width="200" height="60" rx="4" fill="#fff" stroke="#dadce0" strokeWidth="1"/>
-    <text x="70" y="25" fontFamily="Google Sans, Arial, sans-serif" fontSize="11" fill="#5f6368">Google</text>
-    <text x="70" y="42" fontFamily="Google Sans, Arial, sans-serif" fontSize="14" fontWeight="500" fill="#1a73e8">Partner</text>
-    <circle cx="30" cy="30" r="18" fill="#4285f4"/>
-    <path d="M30 18 L34 26 L42 28 L36 34 L37 42 L30 38 L23 42 L24 34 L18 28 L26 26 Z" fill="#fff"/>
-  </svg>
-);
-
 const Testimonials = () => {
   const { t } = useTranslation();
   const plugin = useRef(
@@ -93,14 +82,6 @@ const Testimonials = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {t('testimonials.subtitle')}
           </p>
-          
-          {/* Google Partner Badge */}
-          <div className="flex justify-center mt-8">
-            <div className="flex items-center gap-3 px-4 py-2 bg-white rounded-lg shadow-sm border border-gray-200">
-              <GooglePartnerBadge />
-              <span className="text-sm text-gray-600 font-medium">Certified Partner</span>
-            </div>
-          </div>
         </div>
 
         <Carousel
