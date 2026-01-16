@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ArrowLeft, Check, ExternalLink } from "lucide-react";
+import { ArrowLeft, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -302,96 +302,6 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
-
-      {/* Partnership Section - Only for website-development */}
-      {serviceId === 'website-development' && (
-        <section className="py-16 md:py-20 bg-gradient-to-br from-[#9333EA]/10 to-[#7c22c9]/5 border-t border-border">
-          <div className="container-custom">
-            <motion.div
-              className="max-w-4xl mx-auto text-center"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="inline-flex items-center gap-2 bg-[#9333EA]/10 text-[#9333EA] px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span>🤝</span>
-                {t('services.pages.website-development.partnership.badge')}
-              </div>
-              
-              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                {t('services.pages.website-development.partnership.title')}
-              </h2>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">
-                {t('services.pages.website-development.partnership.description')}
-              </p>
-              
-              {/* Partner highlights */}
-              <div className="grid md:grid-cols-3 gap-6 mb-10">
-                <motion.div 
-                  className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-border"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1, duration: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="text-3xl font-bold text-[#9333EA] mb-2">100/100</div>
-                  <div className="text-sm text-muted-foreground">{t('services.pages.website-development.partnership.stat1')}</div>
-                </motion.div>
-                
-                <motion.div 
-                  className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-border"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2, duration: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="text-3xl font-bold text-[#9333EA] mb-2">0.3s</div>
-                  <div className="text-sm text-muted-foreground">{t('services.pages.website-development.partnership.stat2')}</div>
-                </motion.div>
-                
-                <motion.div 
-                  className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-border"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="text-3xl font-bold text-[#9333EA] mb-2">+340%</div>
-                  <div className="text-sm text-muted-foreground">{t('services.pages.website-development.partnership.stat3')}</div>
-                </motion.div>
-              </div>
-              
-              {/* Tech stack */}
-              <div className="flex flex-wrap justify-center gap-3 mb-10">
-                {['Next.js', 'React', 'TypeScript', 'Vercel'].map((tech, index) => (
-                  <motion.span
-                    key={tech}
-                    className="px-4 py-2 bg-card border border-border rounded-full text-sm font-medium text-foreground"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.1 * index, duration: 0.3 }}
-                    viewport={{ once: true }}
-                  >
-                    {tech}
-                  </motion.span>
-                ))}
-              </div>
-              
-              <a 
-                href="https://www.timvat.se/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#9333EA] hover:underline font-medium"
-              >
-                {t('services.pages.website-development.partnership.visitPartner')}
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </motion.div>
-          </div>
-        </section>
-      )}
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-muted/30 border-t border-border">

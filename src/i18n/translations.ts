@@ -214,15 +214,6 @@ export const translations = {
               benefit5: "Fast turnaround times",
               benefit6: "Swedish quality with Bulgarian pricing"
             },
-            partnership: {
-              badge: "Official Partnership",
-              title: "Powered by Timvat Studio",
-              description: "We've partnered with Timvat Studio, Sweden's leading web development agency specializing in Next.js and React. Together, we deliver lightning-fast websites with 100/100 PageSpeed scores and up to 340% higher conversion rates.",
-              stat1: "Google PageSpeed",
-              stat2: "Load Time",
-              stat3: "Conversion Increase",
-              visitPartner: "Visit Timvat Studio"
-            }
           }
         }
       },
@@ -916,15 +907,6 @@ export const translations = {
               benefit5: "Snabba leveranstider",
               benefit6: "Svensk kvalitet till bulgariska priser"
             },
-            partnership: {
-              badge: "Officiellt Partnerskap",
-              title: "Drivs av Timvat Studio",
-              description: "Vi har ingått partnerskap med Timvat Studio, Sveriges ledande webbutvecklingsbyrå specialiserad på Next.js och React. Tillsammans levererar vi blixtsnabba webbplatser med 100/100 PageSpeed-poäng och upp till 340% högre konverteringsfrekvens.",
-              stat1: "Google PageSpeed",
-              stat2: "Laddningstid",
-              stat3: "Konverteringsökning",
-              visitPartner: "Besök Timvat Studio"
-            }
           }
         }
       },
@@ -1609,15 +1591,6 @@ export const translations = {
               benefit5: "Бързи срокове за изпълнение",
               benefit6: "Шведско качество на български цени"
             },
-            partnership: {
-              badge: "Официално Партньорство",
-              title: "Задвижвано от Timvat Studio",
-              description: "Партнираме с Timvat Studio, водещата шведска агенция за уеб разработка, специализирана в Next.js и React. Заедно доставяме светкавично бързи уебсайтове със 100/100 PageSpeed резултат и до 340% по-висока конверсия.",
-              stat1: "Google PageSpeed",
-              stat2: "Време за зареждане",
-              stat3: "Увеличение на конверсиите",
-              visitPartner: "Посетете Timvat Studio"
-            }
           }
         }
       },
@@ -2323,15 +2296,6 @@ export const translations = {
               benefit5: "Délais de livraison rapides",
               benefit6: "Qualité suédoise aux prix bulgares"
             },
-            partnership: {
-              badge: "Partenariat Officiel",
-              title: "Propulsé par Timvat Studio",
-              description: "Nous avons conclu un partenariat avec Timvat Studio, l'agence de développement web leader en Suède spécialisée en Next.js et React. Ensemble, nous livrons des sites web ultra-rapides avec des scores PageSpeed de 100/100 et jusqu'à 340% de taux de conversion plus élevés.",
-              stat1: "Google PageSpeed",
-              stat2: "Temps de chargement",
-              stat3: "Augmentation des conversions",
-              visitPartner: "Visiter Timvat Studio"
-            }
           }
         }
       },
@@ -3037,15 +3001,6 @@ export const translations = {
               benefit5: "أوقات تسليم سريعة",
               benefit6: "جودة سويدية بأسعار بلغارية"
             },
-            partnership: {
-              badge: "شراكة رسمية",
-              title: "مدعوم من Timvat Studio",
-              description: "لقد شاركنا مع Timvat Studio، وكالة تطوير الويب الرائدة في السويد المتخصصة في Next.js و React. معاً، نقدم مواقع ويب فائقة السرعة بنتائج PageSpeed 100/100 ومعدلات تحويل أعلى بنسبة تصل إلى 340%.",
-              stat1: "Google PageSpeed",
-              stat2: "وقت التحميل",
-              stat3: "زيادة التحويلات",
-              visitPartner: "زيارة Timvat Studio"
-            }
           }
         }
       },
@@ -3751,15 +3706,6 @@ export const translations = {
               benefit5: "Tiempos de entrega rápidos",
               benefit6: "Calidad sueca a precios búlgaros"
             },
-            partnership: {
-              badge: "Asociación Oficial",
-              title: "Impulsado por Timvat Studio",
-              description: "Nos hemos asociado con Timvat Studio, la agencia líder de desarrollo web en Suecia especializada en Next.js y React. Juntos, entregamos sitios web ultrarrápidos con puntuaciones PageSpeed de 100/100 y tasas de conversión hasta un 340% más altas.",
-              stat1: "Google PageSpeed",
-              stat2: "Tiempo de carga",
-              stat3: "Aumento de conversiones",
-              visitPartner: "Visitar Timvat Studio"
-            }
           }
         }
       },
@@ -4465,15 +4411,6 @@ export const translations = {
               benefit5: "أوقات تسليم سريعة",
               benefit6: "جودة سويدية بأسعار بلغارية"
             },
-            partnership: {
-              badge: "شراكة رسمية",
-              title: "مدعوم من Timvat Studio",
-              description: "شاركنا مع Timvat Studio، وكالة تطوير الويب الرائدة في السويد المتخصصة في Next.js و React. مع بعض، نقدمو مواقع ويب سريعة برشا بنتائج PageSpeed 100/100 ومعدلات تحويل أعلى بنسبة تصل إلى 340%.",
-              stat1: "Google PageSpeed",
-              stat2: "وقت التحميل",
-              stat3: "زيادة التحويلات",
-              visitPartner: "زور Timvat Studio"
-            }
           }
         }
       },
