@@ -19,8 +19,10 @@ const Index = () => {
     >
       <Header />
       <main>
-        <Hero />
-        <Services />
+        <div className="hero-gradient">
+          <Hero />
+          <Services />
+        </div>
         <Process />
         <Pricing />
         <FAQ />
