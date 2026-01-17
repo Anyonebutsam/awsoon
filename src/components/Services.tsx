@@ -52,7 +52,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-20 md:py-28 hero-gradient">
+    <section id="services" className="scroll-mt-24 md:scroll-mt-28 py-20 md:py-28 bg-transparent">
       <div className="container-custom">
         {/* Section Title */}
         <motion.h2 
