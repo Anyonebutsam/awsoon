@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Star, Globe, ArrowRight } from "lucide-react";
+import { Globe, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -100,18 +100,6 @@ const Hero = () => {
             <p className="text-xs text-white/40 mt-3">{t('hero.selectLanguage')}</p>
           </div>
 
-          {/* Testimonial Preview */}
-          <div className="mt-16 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
-            <div className="flex items-center justify-center gap-1 mb-3">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-              ))}
-            </div>
-            <p className="text-white/80 italic mb-4">
-              "{t('hero.testimonial')}"
-            </p>
-            <p className="text-sm text-white/50">— Erik Johansson, Stockholm Dental Clinic</p>
-          </div>
         </div>
       </div>
 
