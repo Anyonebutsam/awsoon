@@ -3,6 +3,7 @@ import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { ArrowRight, Clock, BookOpen, MapPin, Search, Megaphone, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
@@ -284,6 +285,7 @@ const Blog = () => {
 
     return (
       <div className="min-h-screen bg-[#0a0a0f] dark">
+        <SEO page="blog" />
         <Header />
         <motion.main 
           className="pt-20"
@@ -407,6 +409,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] dark">
+      <SEO page="blog" />
       <Header />
       <motion.main 
         className="pt-20"

@@ -5,6 +5,7 @@ import { ArrowLeft, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 
 // Import service images
@@ -133,6 +134,7 @@ const ServiceDetail = () => {
         duration: 0.4 
       }}
     >
+      <SEO page="services" />
       <Header />
       
       {/* Hero Section with Parallax */}

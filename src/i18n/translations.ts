@@ -1,6 +1,25 @@
 export const translations = {
   en: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "AWSOON Digital Marketing Agency - Expert Google Business Profile Management",
+        home: {
+          title: "AWSOON | Digital Marketing Agency | Google Business Profile Experts",
+          description: "AWSOON offers expert digital marketing services including Google Business Profile optimization, Local SEO, Google Ads, Meta Ads, and reputation management. Swedish quality at Bulgarian prices. Support in 7 languages.",
+          keywords: "digital marketing agency, Google Business Profile, Local SEO, Google Ads, Meta Ads, reputation management, SEO services, online marketing, business profile optimization, Sofia Bulgaria"
+        },
+        blog: {
+          title: "Google Business Profile Guides & Tips | AWSOON Blog",
+          description: "Step-by-step tutorials and expert guides to help you optimize and manage your Google Business Profile effectively. Learn SEO tips, review management, and local marketing strategies.",
+          keywords: "Google Business Profile guides, GBP optimization tips, local SEO tutorials, Google Maps marketing, business profile management, review strategies"
+        },
+        services: {
+          title: "Digital Marketing Services | AWSOON",
+          description: "Comprehensive digital marketing services: Google Business Profile, Local SEO, Google Ads, Meta Ads, Reputation Management, and Website Development. Get a free consultation today.",
+          keywords: "digital marketing services, SEO services, PPC advertising, social media marketing, website development, online reputation management"
+        }
+      },
       // Header
       nav: {
         services: "Services",
@@ -726,6 +745,25 @@ export const translations = {
   },
   sv: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "AWSOON Digital Marknadsföringsbyrå - Expert Google Företagsprofil Hantering",
+        home: {
+          title: "AWSOON | Digital Marknadsföringsbyrå | Google Företagsprofil Experter",
+          description: "AWSOON erbjuder expertdigitala marknadsföringstjänster inklusive Google Företagsprofil-optimering, Lokal SEO, Google Ads, Meta Ads och rykteshantering. Svensk kvalitet till bulgariska priser. Support på 7 språk.",
+          keywords: "digital marknadsföringsbyrå, Google Företagsprofil, Lokal SEO, Google Ads, Meta Ads, rykteshantering, SEO-tjänster, online marknadsföring, företagsprofiloptimering, Sofia Bulgarien"
+        },
+        blog: {
+          title: "Google Företagsprofil Guider & Tips | AWSOON Blogg",
+          description: "Steg-för-steg-guider och experttips för att hjälpa dig optimera och hantera din Google Företagsprofil effektivt. Lär dig SEO-tips, recensionshantering och lokala marknadsföringsstrategier.",
+          keywords: "Google Företagsprofil guider, GBP optimeringstips, lokala SEO tutorials, Google Maps marknadsföring, företagsprofilhantering, recensionsstrategier"
+        },
+        services: {
+          title: "Digitala Marknadsföringstjänster | AWSOON",
+          description: "Omfattande digitala marknadsföringstjänster: Google Företagsprofil, Lokal SEO, Google Ads, Meta Ads, Rykteshantering och Webbutveckling. Få en gratis konsultation idag.",
+          keywords: "digitala marknadsföringstjänster, SEO-tjänster, PPC-annonsering, sociala medier marknadsföring, webbutveckling, online rykteshantering"
+        }
+      },
       nav: {
         services: "Tjänster",
         howWeWork: "Hur Vi Arbetar",
@@ -1412,6 +1450,25 @@ export const translations = {
   },
   bg: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "AWSOON Агенция за Дигитален Маркетинг - Експерти по Google Business Profile",
+        home: {
+          title: "AWSOON | Агенция за Дигитален Маркетинг | Google Business Profile Експерти",
+          description: "AWSOON предлага експертни услуги за дигитален маркетинг включително оптимизация на Google Business Profile, Локално SEO, Google Ads, Meta Ads и управление на репутацията. Шведско качество на български цени. Поддръжка на 7 езика.",
+          keywords: "агенция за дигитален маркетинг, Google Business Profile, Локално SEO, Google Ads, Meta Ads, управление на репутацията, SEO услуги, онлайн маркетинг, оптимизация на бизнес профил, София България"
+        },
+        blog: {
+          title: "Google Business Profile Ръководства & Съвети | AWSOON Блог",
+          description: "Стъпка по стъпка ръководства и експертни съвети за оптимизиране и управление на вашия Google Business Profile. Научете SEO съвети, управление на отзиви и локални маркетингови стратегии.",
+          keywords: "Google Business Profile ръководства, GBP оптимизация съвети, локални SEO уроци, Google Maps маркетинг, управление на бизнес профил, стратегии за отзиви"
+        },
+        services: {
+          title: "Услуги за Дигитален Маркетинг | AWSOON",
+          description: "Пълни услуги за дигитален маркетинг: Google Business Profile, Локално SEO, Google Ads, Meta Ads, Управление на Репутацията и Уеб Разработка. Получете безплатна консултация днес.",
+          keywords: "услуги за дигитален маркетинг, SEO услуги, PPC реклама, маркетинг в социални мрежи, уеб разработка, онлайн управление на репутацията"
+        }
+      },
       nav: {
         services: "Услуги",
         howWeWork: "Как Работим",
@@ -2096,6 +2153,25 @@ export const translations = {
   },
   fr: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "AWSOON Agence de Marketing Digital - Experts Google Business Profile",
+        home: {
+          title: "AWSOON | Agence de Marketing Digital | Experts Google Business Profile",
+          description: "AWSOON propose des services experts en marketing digital incluant l'optimisation Google Business Profile, SEO local, Google Ads, Meta Ads et gestion de réputation. Qualité suédoise aux prix bulgares. Support en 7 langues.",
+          keywords: "agence marketing digital, Google Business Profile, SEO local, Google Ads, Meta Ads, gestion de réputation, services SEO, marketing en ligne, optimisation profil entreprise, Sofia Bulgarie"
+        },
+        blog: {
+          title: "Guides & Conseils Google Business Profile | Blog AWSOON",
+          description: "Tutoriels étape par étape et guides experts pour optimiser et gérer efficacement votre Google Business Profile. Apprenez les astuces SEO, la gestion des avis et les stratégies de marketing local.",
+          keywords: "guides Google Business Profile, conseils optimisation GBP, tutoriels SEO local, marketing Google Maps, gestion profil entreprise, stratégies avis"
+        },
+        services: {
+          title: "Services de Marketing Digital | AWSOON",
+          description: "Services complets de marketing digital: Google Business Profile, SEO local, Google Ads, Meta Ads, Gestion de Réputation et Développement Web. Obtenez une consultation gratuite aujourd'hui.",
+          keywords: "services marketing digital, services SEO, publicité PPC, marketing réseaux sociaux, développement web, gestion réputation en ligne"
+        }
+      },
       nav: {
         services: "Services",
         howWeWork: "Notre Méthode",
@@ -2801,6 +2877,25 @@ export const translations = {
   },
   ar: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "وكالة AWSOON للتسويق الرقمي - خبراء Google Business Profile",
+        home: {
+          title: "AWSOON | وكالة التسويق الرقمي | خبراء Google Business Profile",
+          description: "تقدم AWSOON خدمات التسويق الرقمي الخبيرة بما في ذلك تحسين Google Business Profile، SEO المحلي، Google Ads، Meta Ads وإدارة السمعة. جودة سويدية بأسعار بلغارية. دعم بـ 7 لغات.",
+          keywords: "وكالة التسويق الرقمي، Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة، خدمات SEO، التسويق عبر الإنترنت، تحسين ملف الأعمال، صوفيا بلغاريا"
+        },
+        blog: {
+          title: "أدلة ونصائح Google Business Profile | مدونة AWSOON",
+          description: "دروس تعليمية خطوة بخطوة وأدلة خبراء لمساعدتك في تحسين وإدارة Google Business Profile الخاص بك بشكل فعال. تعلم نصائح SEO وإدارة المراجعات واستراتيجيات التسويق المحلي.",
+          keywords: "أدلة Google Business Profile، نصائح تحسين GBP، دروس SEO المحلي، تسويق خرائط Google، إدارة ملف الأعمال، استراتيجيات المراجعات"
+        },
+        services: {
+          title: "خدمات التسويق الرقمي | AWSOON",
+          description: "خدمات تسويق رقمي شاملة: Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة وتطوير المواقع. احصل على استشارة مجانية اليوم.",
+          keywords: "خدمات التسويق الرقمي، خدمات SEO، إعلانات PPC، تسويق وسائل التواصل الاجتماعي، تطوير المواقع، إدارة السمعة عبر الإنترنت"
+        }
+      },
       nav: {
         services: "الخدمات",
         howWeWork: "طريقة العمل",
@@ -3506,6 +3601,25 @@ export const translations = {
   },
   es: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "AWSOON Agencia de Marketing Digital - Expertos en Google Business Profile",
+        home: {
+          title: "AWSOON | Agencia de Marketing Digital | Expertos en Google Business Profile",
+          description: "AWSOON ofrece servicios expertos de marketing digital incluyendo optimización de Google Business Profile, SEO local, Google Ads, Meta Ads y gestión de reputación. Calidad sueca a precios búlgaros. Soporte en 7 idiomas.",
+          keywords: "agencia marketing digital, Google Business Profile, SEO local, Google Ads, Meta Ads, gestión de reputación, servicios SEO, marketing online, optimización perfil empresarial, Sofía Bulgaria"
+        },
+        blog: {
+          title: "Guías y Consejos de Google Business Profile | Blog AWSOON",
+          description: "Tutoriales paso a paso y guías expertas para ayudarte a optimizar y gestionar tu Google Business Profile eficazmente. Aprende consejos de SEO, gestión de reseñas y estrategias de marketing local.",
+          keywords: "guías Google Business Profile, consejos optimización GBP, tutoriales SEO local, marketing Google Maps, gestión perfil empresarial, estrategias reseñas"
+        },
+        services: {
+          title: "Servicios de Marketing Digital | AWSOON",
+          description: "Servicios completos de marketing digital: Google Business Profile, SEO local, Google Ads, Meta Ads, Gestión de Reputación y Desarrollo Web. Obtén una consulta gratuita hoy.",
+          keywords: "servicios marketing digital, servicios SEO, publicidad PPC, marketing redes sociales, desarrollo web, gestión reputación online"
+        }
+      },
       nav: {
         services: "Servicios",
         howWeWork: "Cómo Trabajamos",
@@ -4211,6 +4325,25 @@ export const translations = {
   },
   tn: {
     translation: {
+      // SEO Meta Tags
+      seo: {
+        imageAlt: "وكالة AWSOON للتسويق الرقمي - خبراء Google Business Profile",
+        home: {
+          title: "AWSOON | وكالة التسويق الرقمي | خبراء Google Business Profile",
+          description: "AWSOON تقدّملك خدمات التسويق الرقمي الخبيرة بما فيها تحسين Google Business Profile، SEO المحلي، Google Ads، Meta Ads وإدارة السمعة. جودة سويدية بأسعار بلغارية. دعم بـ 7 لغات.",
+          keywords: "وكالة التسويق الرقمي، Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة، خدمات SEO، التسويق أونلاين، تحسين ملف الخدمة، صوفيا بلغاريا"
+        },
+        blog: {
+          title: "أدلة ونصائح Google Business Profile | مدونة AWSOON",
+          description: "دروس خطوة بخطوة وأدلة خبراء باش تعاونك تحسّن وتدير Google Business Profile متاعك بشكل فعّال. تعلّم نصائح SEO وإدارة التقييمات واستراتيجيات التسويق المحلي.",
+          keywords: "أدلة Google Business Profile، نصائح تحسين GBP، دروس SEO المحلي، تسويق خرائط Google، إدارة ملف الخدمة، استراتيجيات التقييمات"
+        },
+        services: {
+          title: "خدمات التسويق الرقمي | AWSOON",
+          description: "خدمات تسويق رقمي كاملة: Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة وتطوير المواقع. خذ استشارة مجانية اليوم.",
+          keywords: "خدمات التسويق الرقمي، خدمات SEO، إعلانات PPC، تسويق السوشيال ميديا، تطوير المواقع، إدارة السمعة أونلاين"
+        }
+      },
       nav: {
         services: "الخدمات",
         howWeWork: "كيفاش نخدمو",
