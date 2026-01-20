@@ -7,6 +7,7 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.3 }}
     >
+      <SEO page="home" />
       <Header />
       <main>
         <div className="hero-gradient">

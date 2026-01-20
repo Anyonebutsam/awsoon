@@ -1,0 +1,261 @@
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
+
+interface SEOProps {
+  titleKey?: string;
+  descriptionKey?: string;
+  page?: string;
+}
+
+const SEO = ({ titleKey, descriptionKey, page }: SEOProps) => {
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const currentLang = i18n.language;
+
+  useEffect(() => {
+    // Determine the page type for SEO
+    const pageName = page || 'home';
+    
+    // Get translated title and description
+    const title = titleKey 
+      ? t(titleKey) 
+      : t(`seo.${pageName}.title`, { defaultValue: t('seo.home.title') });
+    
+    const description = descriptionKey 
+      ? t(descriptionKey) 
+      : t(`seo.${pageName}.description`, { defaultValue: t('seo.home.description') });
+
+    const keywords = t(`seo.${pageName}.keywords`, { defaultValue: t('seo.home.keywords') });
+    const siteName = 'AWSOON';
+    const siteUrl = 'https://awsoon.lovable.app';
+    const currentUrl = `${siteUrl}${location.pathname}`;
+    const ogImage = 'https://awsoon.lovable.app/favicon.jpg';
+
+    // Update document title
+    document.title = title;
+
+    // Helper to update or create meta tags
+    const updateMetaTag = (selector: string, content: string, attribute = 'content') => {
+      let element = document.querySelector(selector) as HTMLMetaElement | null;
+      if (element) {
+        element.setAttribute(attribute, content);
+      } else {
+        element = document.createElement('meta');
+        const [attr, value] = selector.replace('[', '').replace(']', '').replace(/"/g, '').split('=');
+        element.setAttribute(attr, value);
+        element.setAttribute(attribute, content);
+        document.head.appendChild(element);
+      }
+    };
+
+    // Update basic meta tags
+    updateMetaTag('meta[name="description"]', description);
+    updateMetaTag('meta[name="keywords"]', keywords);
+    updateMetaTag('meta[name="author"]', siteName);
+
+    // Update Open Graph tags
+    updateMetaTag('meta[property="og:title"]', title);
+    updateMetaTag('meta[property="og:description"]', description);
+    updateMetaTag('meta[property="og:url"]', currentUrl);
+    updateMetaTag('meta[property="og:site_name"]', siteName);
+    updateMetaTag('meta[property="og:locale"]', getLocaleCode(currentLang));
+    updateMetaTag('meta[property="og:image"]', ogImage);
+    updateMetaTag('meta[property="og:image:alt"]', t('seo.imageAlt'));
+
+    // Update Twitter tags
+    updateMetaTag('meta[name="twitter:title"]', title);
+    updateMetaTag('meta[name="twitter:description"]', description);
+    updateMetaTag('meta[name="twitter:image:alt"]', t('seo.imageAlt'));
+
+    // Update canonical URL
+    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', currentUrl);
+
+    // Update hreflang tags for international SEO
+    updateHreflangTags(siteUrl, location.pathname);
+
+    // Add JSON-LD structured data
+    updateStructuredData(siteName, siteUrl, description, currentLang);
+
+  }, [currentLang, location.pathname, t, titleKey, descriptionKey, page]);
+
+  return null;
+};
+
+// Get proper locale code for Open Graph
+const getLocaleCode = (lang: string): string => {
+  const localeMap: Record<string, string> = {
+    en: 'en_US',
+    sv: 'sv_SE',
+    bg: 'bg_BG',
+    fr: 'fr_FR',
+    ar: 'ar_SA',
+    es: 'es_ES',
+    tn: 'ar_TN'
+  };
+  return localeMap[lang] || 'en_US';
+};
+
+// Update hreflang tags for multi-language SEO
+const updateHreflangTags = (siteUrl: string, pathname: string) => {
+  // Remove existing hreflang tags
+  document.querySelectorAll('link[hreflang]').forEach(el => el.remove());
+
+  const languages = ['en', 'sv', 'bg', 'fr', 'ar', 'es', 'tn'];
+  
+  languages.forEach(lang => {
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'alternate');
+    link.setAttribute('hreflang', lang === 'tn' ? 'ar-TN' : lang);
+    link.setAttribute('href', `${siteUrl}${pathname}?lang=${lang}`);
+    document.head.appendChild(link);
+  });
+
+  // Add x-default
+  const defaultLink = document.createElement('link');
+  defaultLink.setAttribute('rel', 'alternate');
+  defaultLink.setAttribute('hreflang', 'x-default');
+  defaultLink.setAttribute('href', `${siteUrl}${pathname}`);
+  document.head.appendChild(defaultLink);
+};
+
+// Add JSON-LD structured data
+const updateStructuredData = (
+  siteName: string, 
+  siteUrl: string, 
+  description: string,
+  lang: string
+) => {
+  // Remove existing structured data
+  document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
+
+  // Organization schema
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${siteUrl}/#organization`,
+    name: siteName,
+    url: siteUrl,
+    logo: `${siteUrl}/favicon.jpg`,
+    image: `${siteUrl}/favicon.jpg`,
+    description: description,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Sofia',
+      addressCountry: 'BG'
+    },
+    email: 'sam@awsoon.com',
+    priceRange: '€€',
+    areaServed: [
+      { '@type': 'Country', name: 'Sweden' },
+      { '@type': 'Country', name: 'Bulgaria' },
+      { '@type': 'Country', name: 'France' },
+      { '@type': 'Country', name: 'Spain' },
+      { '@type': 'Country', name: 'Tunisia' }
+    ],
+    knowsLanguage: ['en', 'sv', 'bg', 'fr', 'ar', 'es'],
+    sameAs: [],
+    serviceType: [
+      'Digital Marketing',
+      'Google Business Profile Management',
+      'Local SEO',
+      'Reputation Management',
+      'Google Ads',
+      'Meta Ads',
+      'Website Development'
+    ]
+  };
+
+  // Website schema
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteUrl}/#website`,
+    url: siteUrl,
+    name: siteName,
+    description: description,
+    inLanguage: lang,
+    publisher: {
+      '@id': `${siteUrl}/#organization`
+    }
+  };
+
+  // Professional service schema
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: siteName,
+    url: siteUrl,
+    description: description,
+    priceRange: '€€',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Sofia',
+      addressCountry: 'Bulgaria'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Digital Marketing Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Google Business Profile Management'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Local SEO Services'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Google Ads Management'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Meta Ads (Facebook & Instagram)'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Reputation Management'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Website Development'
+          }
+        }
+      ]
+    }
+  };
+
+  // Add schemas to head
+  [organizationSchema, websiteSchema, serviceSchema].forEach(schema => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+  });
+};
+
+export default SEO;
