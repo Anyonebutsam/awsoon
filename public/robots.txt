@@ -1,3 +1,6 @@
+# AWSOON Digital Marketing Agency
+# https://awsoon.lovable.app
+
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +15,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://awsoon.lovable.app/sitemap.xml

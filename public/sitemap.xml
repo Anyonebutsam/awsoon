@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://awsoon.lovable.app/</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/"/>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://awsoon.lovable.app/blog</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog"/>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://awsoon.lovable.app/blog/claim-business</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/claim-business?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/claim-business?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/claim-business?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/claim-business?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/claim-business?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/claim-business?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/claim-business?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/claim-business"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/verify-profile</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/verify-profile?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/verify-profile?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/verify-profile?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/verify-profile?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/verify-profile?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/verify-profile?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/verify-profile?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/verify-profile"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/edit-profile</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/edit-profile?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/edit-profile?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/edit-profile?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/edit-profile?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/edit-profile?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/edit-profile?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/edit-profile?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/edit-profile"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/add-photos</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/add-photos?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/add-photos?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/add-photos?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/add-photos?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/add-photos?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/add-photos?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/add-photos?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/add-photos"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/respond-reviews</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/respond-reviews?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/respond-reviews?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/respond-reviews?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/respond-reviews?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/respond-reviews?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/respond-reviews?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/respond-reviews?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/respond-reviews"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/create-posts</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/create-posts?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/create-posts?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/create-posts?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/create-posts?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/create-posts?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/create-posts?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/create-posts?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/create-posts"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/update-hours</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/update-hours?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/update-hours?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/update-hours?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/update-hours?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/update-hours?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/update-hours?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/update-hours?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/update-hours"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/add-products</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/add-products?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/add-products?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/add-products?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/add-products?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/add-products?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/add-products?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/add-products?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/add-products"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/get-more-reviews</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/get-more-reviews?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/get-more-reviews"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/remove-reviews</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/remove-reviews?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/remove-reviews?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/remove-reviews?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/remove-reviews?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/remove-reviews?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/remove-reviews?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/remove-reviews?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/remove-reviews"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/local-ranking</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/local-ranking?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/local-ranking?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/local-ranking?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/local-ranking?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/local-ranking?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/local-ranking?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/local-ranking?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/local-ranking"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/add-managers</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/add-managers?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/add-managers?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/add-managers?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/add-managers?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/add-managers?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/add-managers?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/add-managers?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/add-managers"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/transfer-ownership</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/transfer-ownership?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/transfer-ownership"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/remove-profile</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/remove-profile?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/remove-profile?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/remove-profile?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/remove-profile?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/remove-profile?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/remove-profile?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/remove-profile?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/remove-profile"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/handle-duplicates</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/handle-duplicates?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/handle-duplicates"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/ownership-conflict</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/ownership-conflict?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/ownership-conflict"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/set-more-hours</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/set-more-hours?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/set-more-hours?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/set-more-hours?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/set-more-hours?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/set-more-hours?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/set-more-hours?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/set-more-hours?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/set-more-hours"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/booking-links</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/booking-links?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/booking-links?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/booking-links?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/booking-links?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/booking-links?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/booking-links?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/booking-links?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/booking-links"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/blog/business-description</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/blog/business-description?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/blog/business-description?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/blog/business-description?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/blog/business-description?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/blog/business-description?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/blog/business-description?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/blog/business-description?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/blog/business-description"/>
+  </url>
+
+  <!-- Service Pages -->
+  <url>
+    <loc>https://awsoon.lovable.app/services/google-business-profile</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/services/google-business-profile?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/services/google-business-profile?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/services/google-business-profile?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/services/google-business-profile?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/services/google-business-profile?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/services/google-business-profile?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/services/google-business-profile?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/services/google-business-profile"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/services/local-seo</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/services/local-seo?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/services/local-seo?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/services/local-seo?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/services/local-seo?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/services/local-seo?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/services/local-seo?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/services/local-seo?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/services/local-seo"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/services/google-ads</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/services/google-ads?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/services/google-ads?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/services/google-ads?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/services/google-ads?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/services/google-ads?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/services/google-ads?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/services/google-ads?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/services/google-ads"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/services/meta-ads</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/services/meta-ads?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/services/meta-ads?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/services/meta-ads?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/services/meta-ads?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/services/meta-ads?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/services/meta-ads?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/services/meta-ads?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/services/meta-ads"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/services/reputation-management</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/services/reputation-management?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/services/reputation-management?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/services/reputation-management?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/services/reputation-management?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/services/reputation-management?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/services/reputation-management?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/services/reputation-management?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/services/reputation-management"/>
+  </url>
+
+  <url>
+    <loc>https://awsoon.lovable.app/services/website-development</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://awsoon.lovable.app/services/website-development?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://awsoon.lovable.app/services/website-development?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://awsoon.lovable.app/services/website-development?lang=bg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://awsoon.lovable.app/services/website-development?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://awsoon.lovable.app/services/website-development?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://awsoon.lovable.app/services/website-development?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ar-TN" href="https://awsoon.lovable.app/services/website-development?lang=tn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://awsoon.lovable.app/services/website-development"/>
+  </url>
+
+</urlset>
