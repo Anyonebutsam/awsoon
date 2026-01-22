@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import type { TFunction } from 'i18next';
 
 interface SEOProps {
   titleKey?: string;
@@ -81,7 +82,7 @@ const SEO = ({ titleKey, descriptionKey, page }: SEOProps) => {
     updateHreflangTags(siteUrl, location.pathname);
 
     // Add JSON-LD structured data
-    updateStructuredData(siteName, siteUrl, description, currentLang);
+    updateStructuredData(siteName, siteUrl, description, currentLang, location.pathname, t);
 
   }, [currentLang, location.pathname, t, titleKey, descriptionKey, page]);
 
@@ -130,7 +131,9 @@ const updateStructuredData = (
   siteName: string, 
   siteUrl: string, 
   description: string,
-  lang: string
+  lang: string,
+  pathname: string,
+  t: TFunction
 ) => {
   // Remove existing structured data
   document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
@@ -249,13 +252,104 @@ const updateStructuredData = (
     }
   };
 
+  // Breadcrumb schema
+  const breadcrumbSchema = generateBreadcrumbSchema(siteUrl, pathname, t);
+
   // Add schemas to head
-  [organizationSchema, websiteSchema, serviceSchema].forEach(schema => {
+  const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
+  if (breadcrumbSchema) {
+    schemas.push(breadcrumbSchema);
+  }
+  
+  schemas.forEach(schema => {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.textContent = JSON.stringify(schema);
     document.head.appendChild(script);
   });
+};
+
+// Generate breadcrumb schema based on current path
+const generateBreadcrumbSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction
+): object | null => {
+  const pathSegments = pathname.split('/').filter(Boolean);
+  
+  // Always start with home
+  const breadcrumbItems: Array<{
+    '@type': string;
+    position: number;
+    name: string;
+    item: string;
+  }> = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('nav.home', { defaultValue: 'Home' }),
+      item: siteUrl
+    }
+  ];
+
+  // Map path segments to readable names
+  const segmentNames: Record<string, string> = {
+    'blog': t('nav.blog', { defaultValue: 'Blog' }),
+    'services': t('nav.services', { defaultValue: 'Services' }),
+    'google-business-profile': t('services.googleBusinessProfile.title', { defaultValue: 'Google Business Profile' }),
+    'google-ads': t('services.googleAds.title', { defaultValue: 'Google Ads' }),
+    'meta-ads': t('services.metaAds.title', { defaultValue: 'Meta Ads' }),
+    'local-seo': t('services.localSeo.title', { defaultValue: 'Local SEO' }),
+    'reputation-management': t('services.reputationManagement.title', { defaultValue: 'Reputation Management' }),
+    'website-development': t('services.websiteDevelopment.title', { defaultValue: 'Website Development' })
+  };
+
+  // Blog article mappings
+  const blogArticles: Record<string, string> = {
+    'claim-business': t('blog.articles.claimBusiness.title', { defaultValue: 'Claim Your Business' }),
+    'verify-profile': t('blog.articles.verifyProfile.title', { defaultValue: 'Verify Your Profile' }),
+    'edit-profile': t('blog.articles.editProfile.title', { defaultValue: 'Edit Your Profile' }),
+    'add-photos': t('blog.articles.addPhotos.title', { defaultValue: 'Add Photos' }),
+    'update-hours': t('blog.articles.updateHours.title', { defaultValue: 'Update Hours' }),
+    'set-more-hours': t('blog.articles.setMoreHours.title', { defaultValue: 'Set More Hours' }),
+    'create-posts': t('blog.articles.createPosts.title', { defaultValue: 'Create Posts' }),
+    'respond-reviews': t('blog.articles.respondReviews.title', { defaultValue: 'Respond to Reviews' }),
+    'get-more-reviews': t('blog.articles.getMoreReviews.title', { defaultValue: 'Get More Reviews' }),
+    'remove-reviews': t('blog.articles.removeReviews.title', { defaultValue: 'Remove Reviews' }),
+    'add-products': t('blog.articles.addProducts.title', { defaultValue: 'Add Products' }),
+    'booking-links': t('blog.articles.bookingLinks.title', { defaultValue: 'Booking Links' }),
+    'add-managers': t('blog.articles.addManagers.title', { defaultValue: 'Add Managers' }),
+    'transfer-ownership': t('blog.articles.transferOwnership.title', { defaultValue: 'Transfer Ownership' }),
+    'handle-duplicates': t('blog.articles.handleDuplicates.title', { defaultValue: 'Handle Duplicates' }),
+    'ownership-conflict': t('blog.articles.ownershipConflict.title', { defaultValue: 'Ownership Conflict' }),
+    'remove-profile': t('blog.articles.removeProfile.title', { defaultValue: 'Remove Profile' }),
+    'local-ranking': t('blog.articles.localRanking.title', { defaultValue: 'Local Ranking' }),
+    'business-description': t('blog.articles.businessDescription.title', { defaultValue: 'Business Description' })
+  };
+
+  let currentPath = '';
+  pathSegments.forEach((segment, index) => {
+    currentPath += `/${segment}`;
+    const name = segmentNames[segment] || blogArticles[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    
+    breadcrumbItems.push({
+      '@type': 'ListItem',
+      position: index + 2,
+      name: name,
+      item: `${siteUrl}${currentPath}`
+    });
+  });
+
+  // Only return breadcrumb if we have more than just home
+  if (breadcrumbItems.length === 1) {
+    return null;
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbItems
+  };
 };
 
 export default SEO;
