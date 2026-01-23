@@ -255,10 +255,16 @@ const updateStructuredData = (
   // Breadcrumb schema
   const breadcrumbSchema = generateBreadcrumbSchema(siteUrl, pathname, t);
 
+  // FAQ schema (only on home page)
+  const faqSchema = generateFAQSchema(pathname, t);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
   if (breadcrumbSchema) {
     schemas.push(breadcrumbSchema);
+  }
+  if (faqSchema) {
+    schemas.push(faqSchema);
   }
   
   schemas.forEach(schema => {
@@ -349,6 +355,38 @@ const generateBreadcrumbSchema = (
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: breadcrumbItems
+  };
+};
+
+// Generate FAQ schema for home page
+const generateFAQSchema = (
+  pathname: string,
+  t: TFunction
+): object | null => {
+  // Only show FAQ schema on home page
+  if (pathname !== '/' && pathname !== '') {
+    return null;
+  }
+
+  const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5'];
+  
+  const mainEntity = faqKeys.map(key => ({
+    '@type': 'Question',
+    name: t(`faq.items.${key}.question`, { defaultValue: '' }),
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: t(`faq.items.${key}.answer`, { defaultValue: '' })
+    }
+  })).filter(item => item.name && item.acceptedAnswer.text);
+
+  if (mainEntity.length === 0) {
+    return null;
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity
   };
 };
 
