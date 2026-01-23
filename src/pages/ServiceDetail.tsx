@@ -134,7 +134,14 @@ const ServiceDetail = () => {
         duration: 0.4 
       }}
     >
-      <SEO page="services" />
+      <SEO 
+        page="services" 
+        serviceData={{
+          id: serviceId!,
+          image: service.image,
+          color: service.color
+        }}
+      />
       <Header />
       
       {/* Hero Section with Parallax */}
