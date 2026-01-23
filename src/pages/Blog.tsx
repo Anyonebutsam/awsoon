@@ -285,7 +285,14 @@ const Blog = () => {
 
     return (
       <div className="min-h-screen bg-[#0a0a0f] dark">
-        <SEO page="blog" />
+        <SEO 
+          page="blog" 
+          articleData={{
+            id: selectedArticle.id,
+            readTime: selectedArticle.readTime,
+            image: selectedArticle.image
+          }}
+        />
         <Header />
         <motion.main 
           className="pt-20"
