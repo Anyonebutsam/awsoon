@@ -3,13 +3,22 @@ import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import type { TFunction } from 'i18next';
 
+interface ArticleData {
+  id: string;
+  readTime: string;
+  image: string;
+  datePublished?: string;
+  dateModified?: string;
+}
+
 interface SEOProps {
   titleKey?: string;
   descriptionKey?: string;
   page?: string;
+  articleData?: ArticleData;
 }
 
-const SEO = ({ titleKey, descriptionKey, page }: SEOProps) => {
+const SEO = ({ titleKey, descriptionKey, page, articleData }: SEOProps) => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const currentLang = i18n.language;
@@ -82,9 +91,9 @@ const SEO = ({ titleKey, descriptionKey, page }: SEOProps) => {
     updateHreflangTags(siteUrl, location.pathname);
 
     // Add JSON-LD structured data
-    updateStructuredData(siteName, siteUrl, description, currentLang, location.pathname, t);
+    updateStructuredData(siteName, siteUrl, description, currentLang, location.pathname, t, articleData);
 
-  }, [currentLang, location.pathname, t, titleKey, descriptionKey, page]);
+  }, [currentLang, location.pathname, t, titleKey, descriptionKey, page, articleData]);
 
   return null;
 };
@@ -133,7 +142,8 @@ const updateStructuredData = (
   description: string,
   lang: string,
   pathname: string,
-  t: TFunction
+  t: TFunction,
+  articleData?: ArticleData
 ) => {
   // Remove existing structured data
   document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
@@ -258,6 +268,9 @@ const updateStructuredData = (
   // FAQ schema (only on home page)
   const faqSchema = generateFAQSchema(pathname, t);
 
+  // Article schema (for blog posts)
+  const articleSchema = generateArticleSchema(siteUrl, pathname, t, articleData);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
   if (breadcrumbSchema) {
@@ -265,6 +278,9 @@ const updateStructuredData = (
   }
   if (faqSchema) {
     schemas.push(faqSchema);
+  }
+  if (articleSchema) {
+    schemas.push(articleSchema);
   }
   
   schemas.forEach(schema => {
@@ -387,6 +403,64 @@ const generateFAQSchema = (
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity
+  };
+};
+
+// Generate Article schema for blog posts
+const generateArticleSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction,
+  articleData?: ArticleData
+): object | null => {
+  // Only generate for blog article pages
+  if (!pathname.startsWith('/blog/') || !articleData) {
+    return null;
+  }
+
+  const articleId = articleData.id;
+  const title = t(`blog.articles.${articleId}.title`, { defaultValue: '' });
+  const description = t(`blog.articles.${articleId}.description`, { defaultValue: '' });
+
+  if (!title) {
+    return null;
+  }
+
+  // Default dates - using a reasonable publication date
+  const datePublished = articleData.datePublished || '2024-01-15';
+  const dateModified = articleData.dateModified || '2025-01-20';
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${siteUrl}${pathname}#article`,
+    headline: title,
+    description: description,
+    image: articleData.image,
+    datePublished: datePublished,
+    dateModified: dateModified,
+    author: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON',
+      url: siteUrl
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/favicon.jpg`
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}${pathname}`
+    },
+    articleSection: t(`blog.articles.${articleId}.category`, { defaultValue: 'Google Business Profile' }),
+    wordCount: parseInt(articleData.readTime) * 200, // Estimate based on read time
+    inLanguage: t('lang', { defaultValue: 'en' })
   };
 };
 
