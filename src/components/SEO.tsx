@@ -11,14 +11,21 @@ interface ArticleData {
   dateModified?: string;
 }
 
+interface ServiceData {
+  id: string;
+  image: string;
+  color: string;
+}
+
 interface SEOProps {
   titleKey?: string;
   descriptionKey?: string;
   page?: string;
   articleData?: ArticleData;
+  serviceData?: ServiceData;
 }
 
-const SEO = ({ titleKey, descriptionKey, page, articleData }: SEOProps) => {
+const SEO = ({ titleKey, descriptionKey, page, articleData, serviceData }: SEOProps) => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const currentLang = i18n.language;
@@ -91,9 +98,9 @@ const SEO = ({ titleKey, descriptionKey, page, articleData }: SEOProps) => {
     updateHreflangTags(siteUrl, location.pathname);
 
     // Add JSON-LD structured data
-    updateStructuredData(siteName, siteUrl, description, currentLang, location.pathname, t, articleData);
+    updateStructuredData(siteName, siteUrl, description, currentLang, location.pathname, t, articleData, serviceData);
 
-  }, [currentLang, location.pathname, t, titleKey, descriptionKey, page, articleData]);
+  }, [currentLang, location.pathname, t, titleKey, descriptionKey, page, articleData, serviceData]);
 
   return null;
 };
@@ -143,7 +150,8 @@ const updateStructuredData = (
   lang: string,
   pathname: string,
   t: TFunction,
-  articleData?: ArticleData
+  articleData?: ArticleData,
+  serviceData?: ServiceData
 ) => {
   // Remove existing structured data
   document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
@@ -271,6 +279,9 @@ const updateStructuredData = (
   // Article schema (for blog posts)
   const articleSchema = generateArticleSchema(siteUrl, pathname, t, articleData);
 
+  // Service page schema (for service detail pages)
+  const servicePageSchema = generateServicePageSchema(siteUrl, pathname, t, serviceData);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
   if (breadcrumbSchema) {
@@ -281,6 +292,9 @@ const updateStructuredData = (
   }
   if (articleSchema) {
     schemas.push(articleSchema);
+  }
+  if (servicePageSchema) {
+    schemas.push(servicePageSchema);
   }
   
   schemas.forEach(schema => {
@@ -461,6 +475,84 @@ const generateArticleSchema = (
     articleSection: t(`blog.articles.${articleId}.category`, { defaultValue: 'Google Business Profile' }),
     wordCount: parseInt(articleData.readTime) * 200, // Estimate based on read time
     inLanguage: t('lang', { defaultValue: 'en' })
+  };
+};
+
+// Generate Service page schema for service detail pages
+const generateServicePageSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction,
+  serviceData?: ServiceData
+): object | null => {
+  // Only generate for service pages
+  if (!pathname.startsWith('/services/') || !serviceData) {
+    return null;
+  }
+
+  const serviceId = serviceData.id;
+  const title = t(`services.pages.${serviceId}.title`, { defaultValue: '' });
+  const subtitle = t(`services.pages.${serviceId}.subtitle`, { defaultValue: '' });
+  const description = t(`services.pages.${serviceId}.description`, { defaultValue: '' });
+
+  if (!title) {
+    return null;
+  }
+
+  // Get features for this service
+  const features: string[] = [];
+  for (let i = 1; i <= 8; i++) {
+    const featureKey = `services.pages.${serviceId}.features.feature${i}`;
+    const feature = t(featureKey, { defaultValue: '' });
+    if (feature && feature !== featureKey) {
+      features.push(feature);
+    }
+  }
+
+  // Service type mapping
+  const serviceTypeMap: Record<string, string> = {
+    'google-business-profile': 'Business Profile Management',
+    'google-ads': 'Advertising Service',
+    'meta-ads': 'Social Media Advertising',
+    'local-seo': 'SEO Services',
+    'reputation-management': 'Reputation Management',
+    'website-development': 'Web Development'
+  };
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${siteUrl}${pathname}#service`,
+    name: title,
+    description: description,
+    serviceType: serviceTypeMap[serviceId] || 'Digital Marketing Service',
+    provider: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    },
+    areaServed: [
+      { '@type': 'Country', name: 'Sweden' },
+      { '@type': 'Country', name: 'Bulgaria' },
+      { '@type': 'Country', name: 'France' },
+      { '@type': 'Country', name: 'Spain' },
+      { '@type': 'Country', name: 'Tunisia' }
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: title,
+      itemListElement: features.map((feature, index) => ({
+        '@type': 'Offer',
+        position: index + 1,
+        itemOffered: {
+          '@type': 'Service',
+          name: feature
+        }
+      }))
+    },
+    image: serviceData.image,
+    url: `${siteUrl}${pathname}`,
+    slogan: subtitle
   };
 };
 

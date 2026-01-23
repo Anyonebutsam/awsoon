@@ -35,7 +35,7 @@ export const translations = {
         badge: "Digital Marketing Excellence from Sofia",
         headline: "Grow Your Business with",
         headlineHighlight: "Expert Digital Marketing",
-        slogan: "Swedish quality and precision with Bulgarian prices.",
+        slogan: "Swedish quality and precision.",
         subheadline: "Google Business Profile optimization, Local SEO, and full digital marketing solutions to help your business dominate local search results.",
         talkToSales: "Talk to Sales",
         getStarted: "Get Started",
@@ -231,7 +231,7 @@ export const translations = {
               benefit3: "Mobile-optimized for all devices",
               benefit4: "Built for search engine visibility",
               benefit5: "Fast turnaround times",
-              benefit6: "Swedish quality with Bulgarian pricing"
+              benefit6: "Swedish quality at competitive prices"
             },
           }
         }
@@ -367,7 +367,7 @@ export const translations = {
       },
       // Footer
       footer: {
-        description: "Swedish quality and precision with Bulgarian prices. Your trusted partner for digital marketing excellence.",
+        description: "Swedish quality and precision. Your trusted partner for digital marketing excellence.",
         quickLinks: "Quick Links",
         services: "Services",
         contact: "Contact",
@@ -777,7 +777,7 @@ export const translations = {
         badge: "Digital Marknadsföring från Sofia",
         headline: "Väx Ditt Företag med",
         headlineHighlight: "Expert Digital Marknadsföring",
-        slogan: "Svensk kvalitet och precision med bulgariska priser.",
+        slogan: "Svensk kvalitet och precision.",
         subheadline: "Google Företagsprofil-optimering, Lokal SEO och kompletta digitala marknadsföringslösningar för att hjälpa ditt företag dominera lokala sökresultat.",
         talkToSales: "Prata med Försäljning",
         getStarted: "Kom Igång",
@@ -943,7 +943,7 @@ export const translations = {
               benefit3: "Mobiloptimerad för alla enheter",
               benefit4: "Byggd för synlighet i sökmotorer",
               benefit5: "Snabba leveranstider",
-              benefit6: "Svensk kvalitet till bulgariska priser"
+              benefit6: "Svensk kvalitet till konkurrenskraftiga priser"
             },
           }
         }
@@ -1073,7 +1073,7 @@ export const translations = {
         }
       },
       footer: {
-        description: "Svensk kvalitet och precision med bulgariska priser. Din betrodda partner för digital marknadsföringsexcellens.",
+        description: "Svensk kvalitet och precision. Din betrodda partner för digital marknadsföringsexcellens.",
         quickLinks: "Snabblänkar",
         services: "Tjänster",
         contact: "Kontakt",
@@ -1482,7 +1482,7 @@ export const translations = {
         badge: "Дигитален Маркетинг от София",
         headline: "Развийте Бизнеса Си с",
         headlineHighlight: "Експертен Дигитален Маркетинг",
-        slogan: "Шведско качество и прецизност на български цени.",
+        slogan: "Шведско качество и прецизност.",
         subheadline: "Оптимизация на Google Business Profile, Локално SEO и пълни решения за дигитален маркетинг, за да доминирате в локалните резултати.",
         talkToSales: "Говорете с нас",
         getStarted: "Започнете",
@@ -1646,7 +1646,7 @@ export const translations = {
               benefit3: "Мобилно оптимизиран за всички устройства",
               benefit4: "Изграден за видимост в търсачките",
               benefit5: "Бързи срокове за изпълнение",
-              benefit6: "Шведско качество на български цени"
+              benefit6: "Шведско качество на конкурентни цени"
             },
           }
         }
@@ -1776,7 +1776,7 @@ export const translations = {
         }
       },
       footer: {
-        description: "Шведско качество и прецизност на български цени. Вашият доверен партньор за дигитален маркетинг.",
+        description: "Шведско качество и прецизност. Вашият доверен партньор за дигитален маркетинг.",
         quickLinks: "Бързи Връзки",
         services: "Услуги",
         contact: "Контакт",
@@ -2185,7 +2185,7 @@ export const translations = {
         badge: "Excellence Marketing Digital depuis Sofia",
         headline: "Développez Votre Entreprise avec un",
         headlineHighlight: "Marketing Digital Expert",
-        slogan: "Qualité et précision suédoises aux prix bulgares.",
+        slogan: "Qualité et précision suédoises.",
         subheadline: "Optimisation Google Business Profile, SEO local et solutions marketing digital complètes pour dominer les résultats de recherche locaux.",
         talkToSales: "Parler aux Ventes",
         getStarted: "Commencer",
@@ -2370,7 +2370,7 @@ export const translations = {
               benefit3: "Optimisé mobile pour tous les appareils",
               benefit4: "Conçu pour la visibilité sur les moteurs de recherche",
               benefit5: "Délais de livraison rapides",
-              benefit6: "Qualité suédoise aux prix bulgares"
+              benefit6: "Qualité suédoise à prix compétitifs"
             },
           }
         }
@@ -2500,7 +2500,7 @@ export const translations = {
         }
       },
       footer: {
-        description: "Qualité et précision suédoises aux prix bulgares. Votre partenaire de confiance pour l'excellence en marketing digital.",
+        description: "Qualité et précision suédoises. Votre partenaire de confiance pour l'excellence en marketing digital.",
         quickLinks: "Liens Rapides",
         services: "Services",
         contact: "Contact",
@@ -2909,7 +2909,7 @@ export const translations = {
         badge: "التميز في التسويق الرقمي من صوفيا",
         headline: "نمّي عملك مع",
         headlineHighlight: "خبراء التسويق الرقمي",
-        slogan: "الجودة السويدية والدقة بأسعار بلغارية.",
+        slogan: "الجودة السويدية والدقة.",
         subheadline: "تحسين Google Business Profile، تحسين محركات البحث المحلية، وحلول التسويق الرقمي الكاملة للسيطرة على نتائج البحث المحلية.",
         talkToSales: "تحدث مع المبيعات",
         getStarted: "ابدأ الآن",
@@ -3094,7 +3094,7 @@ export const translations = {
               benefit3: "مُحسّن للجوال لجميع الأجهزة",
               benefit4: "مبني للظهور في محركات البحث",
               benefit5: "أوقات تسليم سريعة",
-              benefit6: "جودة سويدية بأسعار بلغارية"
+              benefit6: "جودة سويدية بأسعار تنافسية"
             },
           }
         }
@@ -3224,7 +3224,7 @@ export const translations = {
         }
       },
       footer: {
-        description: "الجودة السويدية والدقة بأسعار بلغارية. شريكك الموثوق للتميز في التسويق الرقمي.",
+        description: "الجودة السويدية والدقة. شريكك الموثوق للتميز في التسويق الرقمي.",
         quickLinks: "روابط سريعة",
         services: "الخدمات",
         contact: "اتصل بنا",
@@ -3633,7 +3633,7 @@ export const translations = {
         badge: "Excelencia en Marketing Digital desde Sofía",
         headline: "Haz Crecer Tu Negocio con",
         headlineHighlight: "Marketing Digital Experto",
-        slogan: "Calidad y precisión suecas a precios búlgaros.",
+        slogan: "Calidad y precisión suecas.",
         subheadline: "Optimización de Google Business Profile, SEO local y soluciones de marketing digital completas para dominar los resultados de búsqueda locales.",
         talkToSales: "Hablar con Ventas",
         getStarted: "Empezar",
@@ -3818,7 +3818,7 @@ export const translations = {
               benefit3: "Optimizado para móvil en todos los dispositivos",
               benefit4: "Construido para visibilidad en buscadores",
               benefit5: "Tiempos de entrega rápidos",
-              benefit6: "Calidad sueca a precios búlgaros"
+              benefit6: "Calidad sueca a precios competitivos"
             },
           }
         }
@@ -3948,7 +3948,7 @@ export const translations = {
         }
       },
       footer: {
-        description: "Calidad y precisión suecas a precios búlgaros. Tu socio de confianza para la excelencia en marketing digital.",
+        description: "Calidad y precisión suecas. Tu socio de confianza para la excelencia en marketing digital.",
         quickLinks: "Enlaces Rápidos",
         services: "Servicios",
         contact: "Contacto",
@@ -4357,7 +4357,7 @@ export const translations = {
         badge: "التميز في التسويق الرقمي من صوفيا",
         headline: "كبّر خدمتك مع",
         headlineHighlight: "خبراء التسويق الرقمي",
-        slogan: "جودة سويدية ودقة بأسعار بلغارية.",
+        slogan: "جودة سويدية ودقة.",
         subheadline: "تحسين Google Business Profile، SEO المحلي، وحلول التسويق الرقمي الكاملة باش تسيطر على نتائج البحث المحلية.",
         talkToSales: "تكلم معانا",
         getStarted: "ابدا توا",
@@ -4542,7 +4542,7 @@ export const translations = {
               benefit3: "مُحسّن للموبايل لكل الأجهزة",
               benefit4: "مبني للظهور في محركات البحث",
               benefit5: "أوقات تسليم سريعة",
-              benefit6: "جودة سويدية بأسعار بلغارية"
+              benefit6: "جودة سويدية بأسعار تنافسية"
             },
           }
         }
@@ -4672,7 +4672,7 @@ export const translations = {
         }
       },
       footer: {
-        description: "جودة سويدية ودقة بأسعار بلغارية. شريكك الموثوق للتميز في التسويق الرقمي.",
+        description: "جودة سويدية ودقة. شريكك الموثوق للتميز في التسويق الرقمي.",
         quickLinks: "روابط سريعة",
         services: "الخدمات",
         contact: "اتصل بينا",
