@@ -142,6 +142,171 @@ const updateHreflangTags = (siteUrl: string, pathname: string) => {
   document.head.appendChild(defaultLink);
 };
 
+// Generate WebPage schema for different page types
+const generateWebPageSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction,
+  siteName: string,
+  description: string,
+  lang: string
+): object => {
+  // Determine page type
+  let pageType = 'WebPage';
+  let pageName = t('seo.home.title', { defaultValue: 'Home' });
+  
+  if (pathname === '/' || pathname === '') {
+    pageType = 'WebPage';
+    pageName = t('seo.home.title', { defaultValue: 'Home' });
+  } else if (pathname.startsWith('/blog/')) {
+    pageType = 'Article';
+    const articleId = pathname.split('/').pop();
+    pageName = t(`blog.articles.${articleId}.title`, { defaultValue: 'Blog Article' });
+  } else if (pathname === '/blog') {
+    pageType = 'CollectionPage';
+    pageName = t('seo.blog.title', { defaultValue: 'Blog' });
+  } else if (pathname.startsWith('/services/')) {
+    pageType = 'WebPage';
+    const serviceId = pathname.split('/').pop();
+    pageName = t(`services.pages.${serviceId}.title`, { defaultValue: 'Service' });
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': pageType,
+    '@id': `${siteUrl}${pathname}#webpage`,
+    url: `${siteUrl}${pathname}`,
+    name: pageName,
+    description: description,
+    inLanguage: lang,
+    isPartOf: {
+      '@id': `${siteUrl}/#website`
+    },
+    about: {
+      '@id': `${siteUrl}/#organization`
+    },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${siteUrl}/favicon.jpg`
+    }
+  };
+};
+
+// Generate SiteNavigationElement schema
+const generateNavigationSchema = (
+  siteUrl: string,
+  t: TFunction
+): object => {
+  const navItems = [
+    { name: t('nav.services', { defaultValue: 'Services' }), url: `${siteUrl}/#services` },
+    { name: t('nav.process', { defaultValue: 'Process' }), url: `${siteUrl}/#process` },
+    { name: t('nav.pricing', { defaultValue: 'Pricing' }), url: `${siteUrl}/#pricing` },
+    { name: t('nav.faq', { defaultValue: 'FAQ' }), url: `${siteUrl}/#faq` },
+    { name: t('nav.blog', { defaultValue: 'Blog' }), url: `${siteUrl}/blog` },
+    { name: t('nav.contact', { defaultValue: 'Contact' }), url: `${siteUrl}/#contact` }
+  ];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SiteNavigationElement',
+    '@id': `${siteUrl}/#navigation`,
+    name: 'Main Navigation',
+    hasPart: navItems.map((item, index) => ({
+      '@type': 'SiteNavigationElement',
+      position: index + 1,
+      name: item.name,
+      url: item.url
+    }))
+  };
+};
+
+// Generate ItemList schema for blog listing page
+const generateBlogListSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction
+): object | null => {
+  if (pathname !== '/blog') {
+    return null;
+  }
+
+  const blogArticles = [
+    'claim-business', 'add-managers', 'local-ranking', 'ownership-conflict',
+    'handle-duplicates', 'remove-reviews', 'verify-profile', 'update-hours',
+    'booking-links', 'respond-reviews', 'add-photos', 'transfer-ownership',
+    'edit-profile', 'set-more-hours', 'get-more-reviews', 'remove-profile',
+    'create-posts', 'add-products', 'business-description'
+  ];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${siteUrl}/blog#itemlist`,
+    name: t('seo.blog.title', { defaultValue: 'Blog Articles' }),
+    description: t('seo.blog.description', { defaultValue: 'Learn about Google Business Profile optimization' }),
+    numberOfItems: blogArticles.length,
+    itemListElement: blogArticles.map((articleId, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `${siteUrl}/blog/${articleId}`,
+      name: t(`blog.articles.${articleId}.title`, { defaultValue: articleId })
+    }))
+  };
+};
+
+// Generate Pricing/Offer schema for home page
+const generatePricingSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction
+): object | null => {
+  if (pathname !== '/' && pathname !== '') {
+    return null;
+  }
+
+  const pricingPlans = [
+    {
+      name: t('pricing.starter.name', { defaultValue: 'Starter' }),
+      description: t('pricing.starter.description', { defaultValue: 'Perfect for small businesses' }),
+      price: '299',
+      currency: 'EUR'
+    },
+    {
+      name: t('pricing.growth.name', { defaultValue: 'Growth' }),
+      description: t('pricing.growth.description', { defaultValue: 'For growing businesses' }),
+      price: '599',
+      currency: 'EUR'
+    },
+    {
+      name: t('pricing.enterprise.name', { defaultValue: 'Enterprise' }),
+      description: t('pricing.enterprise.description', { defaultValue: 'Custom solutions' }),
+      price: '999',
+      currency: 'EUR'
+    }
+  ];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'OfferCatalog',
+    '@id': `${siteUrl}/#pricing`,
+    name: t('pricing.title', { defaultValue: 'Pricing Plans' }),
+    description: t('pricing.subtitle', { defaultValue: 'Choose the perfect plan for your business' }),
+    itemListElement: pricingPlans.map((plan, index) => ({
+      '@type': 'Offer',
+      position: index + 1,
+      name: plan.name,
+      description: plan.description,
+      price: plan.price,
+      priceCurrency: plan.currency,
+      priceValidUntil: '2025-12-31',
+      availability: 'https://schema.org/InStock',
+      seller: {
+        '@id': `${siteUrl}/#organization`
+      }
+    }))
+  };
+};
+
 // Generate Review schema for testimonials (home page)
 const generateReviewSchema = (
   siteUrl: string,
@@ -197,7 +362,7 @@ const updateStructuredData = (
   // Remove existing structured data
   document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
 
-  // Organization schema with AggregateRating
+  // Organization schema with AggregateRating and ContactPoint
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -239,10 +404,31 @@ const updateStructuredData = (
       worstRating: '1',
       ratingCount: '47',
       reviewCount: '47'
+    },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        email: 'sam@awsoon.com',
+        availableLanguage: ['English', 'Swedish', 'Bulgarian', 'French', 'Arabic', 'Spanish']
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        email: 'sam@awsoon.com',
+        availableLanguage: ['English', 'Swedish', 'Bulgarian', 'French', 'Arabic', 'Spanish']
+      }
+    ],
+    slogan: t('hero.slogan', { defaultValue: 'Swedish quality and precision.' }),
+    foundingDate: '2024',
+    numberOfEmployees: {
+      '@type': 'QuantitativeValue',
+      minValue: 1,
+      maxValue: 10
     }
   };
 
-  // Website schema
+  // Website schema with SearchAction for sitelinks
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -253,8 +439,19 @@ const updateStructuredData = (
     inLanguage: lang,
     publisher: {
       '@id': `${siteUrl}/#organization`
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${siteUrl}/blog?search={search_term_string}`
+      },
+      'query-input': 'required name=search_term_string'
     }
   };
+
+  // WebPage schema - dynamic based on page type
+  const webPageSchema = generateWebPageSchema(siteUrl, pathname, t, siteName, description, lang);
 
   // Professional service schema
   const serviceSchema = {
@@ -337,8 +534,17 @@ const updateStructuredData = (
   // HowTo schema (for blog tutorial articles)
   const howToSchema = generateHowToSchema(siteUrl, pathname, t, articleData);
 
+  // Navigation schema
+  const navigationSchema = generateNavigationSchema(siteUrl, t);
+
+  // Blog list schema
+  const blogListSchema = generateBlogListSchema(siteUrl, pathname, t);
+
+  // Pricing schema
+  const pricingSchema = generatePricingSchema(siteUrl, pathname, t);
+
   // Add schemas to head
-  const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
+  const schemas: object[] = [organizationSchema, websiteSchema, webPageSchema, serviceSchema, navigationSchema];
   if (breadcrumbSchema) {
     schemas.push(breadcrumbSchema);
   }
@@ -356,6 +562,12 @@ const updateStructuredData = (
   }
   if (howToSchema) {
     schemas.push(howToSchema);
+  }
+  if (blogListSchema) {
+    schemas.push(blogListSchema);
+  }
+  if (pricingSchema) {
+    schemas.push(pricingSchema);
   }
   
   schemas.forEach(schema => {
