@@ -334,6 +334,9 @@ const updateStructuredData = (
   // Review schema (for home page testimonials)
   const reviewSchema = generateReviewSchema(siteUrl, pathname, t);
 
+  // HowTo schema (for blog tutorial articles)
+  const howToSchema = generateHowToSchema(siteUrl, pathname, t, articleData);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
   if (breadcrumbSchema) {
@@ -350,6 +353,9 @@ const updateStructuredData = (
   }
   if (reviewSchema) {
     schemas.push(reviewSchema);
+  }
+  if (howToSchema) {
+    schemas.push(howToSchema);
   }
   
   schemas.forEach(schema => {
@@ -472,6 +478,69 @@ const generateFAQSchema = (
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity
+  };
+};
+
+// Generate HowTo schema for blog tutorial articles
+const generateHowToSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction,
+  articleData?: ArticleData
+): object | null => {
+  // Only generate for blog article pages with steps
+  if (!pathname.startsWith('/blog/') || !articleData) {
+    return null;
+  }
+
+  const articleId = articleData.id;
+  const title = t(`blog.articles.${articleId}.title`, { defaultValue: '' });
+  const description = t(`blog.articles.${articleId}.description`, { defaultValue: '' });
+
+  if (!title) {
+    return null;
+  }
+
+  // Get steps for this article
+  const steps: Array<{ '@type': string; position: number; name: string; text: string }> = [];
+  for (let i = 1; i <= 10; i++) {
+    const stepTitleKey = `blog.articles.${articleId}.steps.step${i}.title`;
+    const stepDescKey = `blog.articles.${articleId}.steps.step${i}.description`;
+    const stepTitle = t(stepTitleKey, { defaultValue: '' });
+    const stepDesc = t(stepDescKey, { defaultValue: '' });
+    
+    if (stepTitle && stepTitle !== stepTitleKey) {
+      steps.push({
+        '@type': 'HowToStep',
+        position: i,
+        name: stepTitle,
+        text: stepDesc || stepTitle
+      });
+    }
+  }
+
+  // Only return HowTo schema if we have steps
+  if (steps.length === 0) {
+    return null;
+  }
+
+  // Estimate total time based on read time
+  const readTimeMinutes = parseInt(articleData.readTime) || 5;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    '@id': `${siteUrl}${pathname}#howto`,
+    name: title,
+    description: description,
+    image: articleData.image,
+    totalTime: `PT${readTimeMinutes}M`,
+    step: steps,
+    author: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    }
   };
 };
 
