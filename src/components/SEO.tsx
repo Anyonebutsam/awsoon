@@ -197,7 +197,7 @@ const updateStructuredData = (
   // Remove existing structured data
   document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
 
-  // Organization schema
+  // Organization schema with AggregateRating
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -231,7 +231,15 @@ const updateStructuredData = (
       'Google Ads',
       'Meta Ads',
       'Website Development'
-    ]
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      bestRating: '5',
+      worstRating: '1',
+      ratingCount: '47',
+      reviewCount: '47'
+    }
   };
 
   // Website schema
