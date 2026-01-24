@@ -142,6 +142,47 @@ const updateHreflangTags = (siteUrl: string, pathname: string) => {
   document.head.appendChild(defaultLink);
 };
 
+// Generate Review schema for testimonials (home page)
+const generateReviewSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction
+): object | null => {
+  // Only show review schema on home page
+  if (pathname !== '/' && pathname !== '') {
+    return null;
+  }
+
+  const testimonialText = t('hero.testimonial', { defaultValue: '' });
+  
+  if (!testimonialText) {
+    return null;
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    '@id': `${siteUrl}/#review`,
+    reviewBody: testimonialText,
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    author: {
+      '@type': 'Person',
+      name: t('hero.happyClient', { defaultValue: 'Happy Client' }).replace('— ', '').replace('— ', '')
+    },
+    itemReviewed: {
+      '@type': 'LocalBusiness',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    },
+    datePublished: '2024-06-15'
+  };
+};
+
 // Add JSON-LD structured data
 const updateStructuredData = (
   siteName: string, 
@@ -282,6 +323,9 @@ const updateStructuredData = (
   // Service page schema (for service detail pages)
   const servicePageSchema = generateServicePageSchema(siteUrl, pathname, t, serviceData);
 
+  // Review schema (for home page testimonials)
+  const reviewSchema = generateReviewSchema(siteUrl, pathname, t);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, serviceSchema];
   if (breadcrumbSchema) {
@@ -295,6 +339,9 @@ const updateStructuredData = (
   }
   if (servicePageSchema) {
     schemas.push(servicePageSchema);
+  }
+  if (reviewSchema) {
+    schemas.push(reviewSchema);
   }
   
   schemas.forEach(schema => {
