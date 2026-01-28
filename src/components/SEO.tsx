@@ -374,8 +374,8 @@ const updateStructuredData = (
     description: description,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Sofia',
-      addressCountry: 'BG'
+      addressLocality: 'Stockholm',
+      addressCountry: 'SE'
     },
     email: 'sam@awsoon.com',
     priceRange: '€€',
@@ -463,8 +463,8 @@ const updateStructuredData = (
     priceRange: '€€',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Sofia',
-      addressCountry: 'Bulgaria'
+      addressLocality: 'Stockholm',
+      addressCountry: 'Sweden'
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -546,6 +546,24 @@ const updateStructuredData = (
   // Video schema (for pages with video content)
   const videoSchema = generateVideoSchema(siteUrl, pathname, t, articleData);
 
+  // Speakable schema (for voice search optimization)
+  const speakableSchema = generateSpeakableSchema(siteUrl, pathname, t, articleData);
+
+  // Person schema (for founder/team)
+  const personSchema = generatePersonSchema(siteUrl);
+
+  // Course schema (for educational blog content)
+  const courseSchema = generateCourseSchema(siteUrl, pathname, t);
+
+  // Event schema (for webinars/consultations)
+  const eventSchema = generateEventSchema(siteUrl, t);
+
+  // Software Application schema (for digital services)
+  const softwareSchema = generateSoftwareSchema(siteUrl, t);
+
+  // Action schema (for potential actions)
+  const actionSchema = generateActionSchema(siteUrl, t);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, webPageSchema, serviceSchema, navigationSchema];
   if (breadcrumbSchema) {
@@ -574,6 +592,24 @@ const updateStructuredData = (
   }
   if (videoSchema) {
     schemas.push(videoSchema);
+  }
+  if (speakableSchema) {
+    schemas.push(speakableSchema);
+  }
+  if (personSchema) {
+    schemas.push(personSchema);
+  }
+  if (courseSchema) {
+    schemas.push(courseSchema);
+  }
+  if (eventSchema) {
+    schemas.push(eventSchema);
+  }
+  if (softwareSchema) {
+    schemas.push(softwareSchema);
+  }
+  if (actionSchema) {
+    schemas.push(actionSchema);
   }
   
   schemas.forEach(schema => {
@@ -1053,6 +1089,263 @@ const generateVideoSchema = (
   }
 
   return null;
+};
+
+// Generate Speakable schema for voice search optimization
+const generateSpeakableSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction,
+  articleData?: ArticleData
+): object | null => {
+  // Speakable is best for articles and key landing pages
+  if (pathname.startsWith('/blog/') && articleData) {
+    const articleId = articleData.id;
+    const title = t(`blog.articles.${articleId}.title`, { defaultValue: '' });
+    const description = t(`blog.articles.${articleId}.description`, { defaultValue: '' });
+    
+    if (!title) return null;
+
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${siteUrl}${pathname}#speakable`,
+      name: title,
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['article h1', 'article h2', 'article p:first-of-type', '.step-title', '.pro-tips']
+      },
+      url: `${siteUrl}${pathname}`
+    };
+  }
+
+  // Home page speakable
+  if (pathname === '/' || pathname === '') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${siteUrl}/#speakable`,
+      name: t('seo.home.title', { defaultValue: 'AWSOON Digital Marketing' }),
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.hero-description', '.services-title', '#faq']
+      },
+      url: siteUrl
+    };
+  }
+
+  return null;
+};
+
+// Generate Person schema for founder/team
+const generatePersonSchema = (
+  siteUrl: string
+): object => {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${siteUrl}/#founder`,
+    name: 'Sam',
+    jobTitle: 'Founder & Digital Marketing Expert',
+    worksFor: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    },
+    email: 'sam@awsoon.com',
+    knowsAbout: [
+      'Digital Marketing',
+      'Google Business Profile',
+      'Local SEO',
+      'Google Ads',
+      'Meta Ads',
+      'Reputation Management',
+      'Website Development'
+    ],
+    knowsLanguage: ['English', 'Swedish', 'Bulgarian', 'French', 'Arabic', 'Spanish']
+  };
+};
+
+// Generate Course schema for educational blog content
+const generateCourseSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction
+): object | null => {
+  // Only show on blog listing page
+  if (pathname !== '/blog') {
+    return null;
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    '@id': `${siteUrl}/blog#course`,
+    name: t('blog.heroTitle', { defaultValue: 'Google Business Profile Mastery' }),
+    description: t('blog.heroSubtitle', { defaultValue: 'Complete guide to mastering your Google Business Profile' }),
+    provider: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    },
+    educationalLevel: 'Beginner to Advanced',
+    inLanguage: ['en', 'sv', 'bg', 'fr', 'ar', 'es'],
+    isAccessibleForFree: true,
+    teaches: [
+      'Google Business Profile optimization',
+      'Local SEO strategies',
+      'Review management',
+      'Business visibility improvement',
+      'Google Maps marketing'
+    ],
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'online',
+      courseWorkload: 'PT2H'
+    }
+  };
+};
+
+// Generate Event schema for webinars/consultations
+const generateEventSchema = (
+  siteUrl: string,
+  t: TFunction
+): object => {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    '@id': `${siteUrl}/#consultation`,
+    name: t('contact.title', { defaultValue: 'Free Digital Marketing Consultation' }),
+    description: t('contact.subtitle', { defaultValue: 'Get a personalized strategy session for your business' }),
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+    location: {
+      '@type': 'VirtualLocation',
+      url: siteUrl
+    },
+    organizer: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      validFrom: '2024-01-01',
+      url: `${siteUrl}/#contact`
+    },
+    performer: {
+      '@type': 'Person',
+      '@id': `${siteUrl}/#founder`,
+      name: 'Sam'
+    },
+    startDate: '2025-01-01',
+    endDate: '2025-12-31',
+    isAccessibleForFree: true
+  };
+};
+
+// Generate Software Application schema for digital services/tools
+const generateSoftwareSchema = (
+  siteUrl: string,
+  t: TFunction
+): object => {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    '@id': `${siteUrl}/#software`,
+    name: 'AWSOON Digital Marketing Platform',
+    description: t('seo.home.description', { defaultValue: 'Comprehensive digital marketing and Google Business Profile management services' }),
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: '299',
+      highPrice: '999',
+      priceCurrency: 'EUR',
+      offerCount: '3'
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      ratingCount: '47',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    author: {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'AWSOON'
+    },
+    featureList: [
+      'Google Business Profile Management',
+      'Local SEO Optimization',
+      'Review Monitoring & Response',
+      'Google Ads Campaign Management',
+      'Meta Ads Management',
+      'Website Development',
+      'Multi-language Support',
+      'Performance Analytics'
+    ]
+  };
+};
+
+// Generate Action schema for potential actions on the site
+const generateActionSchema = (
+  siteUrl: string,
+  t: TFunction
+): object => {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteUrl}/#actions`,
+    url: siteUrl,
+    potentialAction: [
+      {
+        '@type': 'CommunicateAction',
+        name: 'Contact Us',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: 'mailto:sam@awsoon.com',
+          actionPlatform: ['https://schema.org/EmailApplication']
+        }
+      },
+      {
+        '@type': 'ReadAction',
+        name: 'Read Blog',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${siteUrl}/blog`
+        }
+      },
+      {
+        '@type': 'ViewAction',
+        name: 'View Services',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${siteUrl}/#services`
+        }
+      },
+      {
+        '@type': 'SubscribeAction',
+        name: 'Get Started',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${siteUrl}/#contact`
+        }
+      },
+      {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${siteUrl}/blog?search={search_term_string}`
+        },
+        'query-input': 'required name=search_term_string'
+      }
+    ]
+  };
 };
 
 export default SEO;
