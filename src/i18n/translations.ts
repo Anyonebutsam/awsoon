@@ -6,8 +6,8 @@ export const translations = {
         imageAlt: "AWSOON Digital Marketing Agency - Expert Google Business Profile Management",
         home: {
           title: "AWSOON | Digital Marketing Agency | Google Business Profile Experts",
-          description: "AWSOON offers expert digital marketing services including Google Business Profile optimization, Local SEO, Google Ads, Meta Ads, and reputation management. Swedish quality at Bulgarian prices. Support in 7 languages.",
-          keywords: "digital marketing agency, Google Business Profile, Local SEO, Google Ads, Meta Ads, reputation management, SEO services, online marketing, business profile optimization, Sofia Bulgaria"
+          description: "AWSOON offers expert digital marketing services including Google Business Profile optimization, Local SEO, Google Ads, Meta Ads, and reputation management. Swedish quality and precision. Support in 7 languages.",
+          keywords: "digital marketing agency, Google Business Profile, Local SEO, Google Ads, Meta Ads, reputation management, SEO services, online marketing, business profile optimization, Stockholm Sweden"
         },
         blog: {
           title: "Google Business Profile Guides & Tips | AWSOON Blog",
@@ -32,7 +32,7 @@ export const translations = {
       },
       // Hero
       hero: {
-        badge: "Digital Marketing Excellence from Sofia",
+        badge: "Digital Marketing Excellence from Stockholm",
         headline: "Grow Your Business with",
         headlineHighlight: "Expert Digital Marketing",
         slogan: "Swedish quality and precision.",
@@ -321,7 +321,7 @@ export const translations = {
           },
           q4: {
             question: "Do you work with international clients?",
-            answer: "Yes! While we're based in Sofia, Bulgaria, we work with clients from all over the world. Our multilingual team can handle projects in multiple markets."
+            answer: "Yes! While we're based in Stockholm, Sweden, we work with clients from all over the world. Our multilingual team can handle projects in multiple markets."
           },
           q5: {
             question: "How do I get started?",
@@ -360,7 +360,7 @@ export const translations = {
         info: {
           email: "Email Us",
           location: "Location",
-          locationValue: "Sofia, Bulgaria",
+          locationValue: "Stockholm, Sweden",
           languages: "Languages",
           languagesValue: "We serve clients in 7 languages across Europe and beyond."
         }
@@ -750,8 +750,8 @@ export const translations = {
         imageAlt: "AWSOON Digital Marknadsföringsbyrå - Expert Google Företagsprofil Hantering",
         home: {
           title: "AWSOON | Digital Marknadsföringsbyrå | Google Företagsprofil Experter",
-          description: "AWSOON erbjuder expertdigitala marknadsföringstjänster inklusive Google Företagsprofil-optimering, Lokal SEO, Google Ads, Meta Ads och rykteshantering. Svensk kvalitet till bulgariska priser. Support på 7 språk.",
-          keywords: "digital marknadsföringsbyrå, Google Företagsprofil, Lokal SEO, Google Ads, Meta Ads, rykteshantering, SEO-tjänster, online marknadsföring, företagsprofiloptimering, Sofia Bulgarien"
+          description: "AWSOON erbjuder expertdigitala marknadsföringstjänster inklusive Google Företagsprofil-optimering, Lokal SEO, Google Ads, Meta Ads och rykteshantering. Svensk kvalitet och precision. Support på 7 språk.",
+          keywords: "digital marknadsföringsbyrå, Google Företagsprofil, Lokal SEO, Google Ads, Meta Ads, rykteshantering, SEO-tjänster, online marknadsföring, företagsprofiloptimering, Stockholm Sverige"
         },
         blog: {
           title: "Google Företagsprofil Guider & Tips | AWSOON Blogg",
@@ -774,7 +774,7 @@ export const translations = {
         getStarted: "Kom Igång"
       },
       hero: {
-        badge: "Digital Marknadsföring från Sofia",
+        badge: "Digital Marknadsföring från Stockholm",
         headline: "Väx Ditt Företag med",
         headlineHighlight: "Expert Digital Marknadsföring",
         slogan: "Svensk kvalitet och precision.",
@@ -1029,7 +1029,7 @@ export const translations = {
           },
           q4: {
             question: "Arbetar ni med internationella kunder?",
-            answer: "Ja! Även om vi är baserade i Sofia, Bulgarien, arbetar vi med kunder från hela världen. Vårt flerspråkiga team kan hantera projekt på flera marknader."
+            answer: "Ja! Även om vi är baserade i Stockholm, Sverige, arbetar vi med kunder från hela världen. Vårt flerspråkiga team kan hantera projekt på flera marknader."
           },
           q5: {
             question: "Hur kommer jag igång?",
@@ -1067,7 +1067,7 @@ export const translations = {
         info: {
           email: "Maila Oss",
           location: "Plats",
-          locationValue: "Sofia, Bulgarien",
+          locationValue: "Stockholm, Sverige",
           languages: "Språk",
           languagesValue: "Vi betjänar kunder på 7 språk över hela Europa och bortom."
         }
@@ -1479,7 +1479,7 @@ export const translations = {
         getStarted: "Започнете"
       },
       hero: {
-        badge: "Дигитален Маркетинг от София",
+        badge: "Дигитален Маркетинг от Стокхолм",
         headline: "Развийте Бизнеса Си с",
         headlineHighlight: "Експертен Дигитален Маркетинг",
         slogan: "Шведско качество и прецизност.",
@@ -1770,7 +1770,7 @@ export const translations = {
         info: {
           email: "Пишете ни",
           location: "Местоположение",
-          locationValue: "София, България",
+          locationValue: "Стокхолм, Швеция",
           languages: "Езици",
           languagesValue: "Обслужваме клиенти на 7 езика в Европа и извън нея."
         }
@@ -2158,8 +2158,8 @@ export const translations = {
         imageAlt: "AWSOON Agence de Marketing Digital - Experts Google Business Profile",
         home: {
           title: "AWSOON | Agence de Marketing Digital | Experts Google Business Profile",
-          description: "AWSOON propose des services experts en marketing digital incluant l'optimisation Google Business Profile, SEO local, Google Ads, Meta Ads et gestion de réputation. Qualité suédoise aux prix bulgares. Support en 7 langues.",
-          keywords: "agence marketing digital, Google Business Profile, SEO local, Google Ads, Meta Ads, gestion de réputation, services SEO, marketing en ligne, optimisation profil entreprise, Sofia Bulgarie"
+          description: "AWSOON propose des services experts en marketing digital incluant l'optimisation Google Business Profile, SEO local, Google Ads, Meta Ads et gestion de réputation. Qualité et précision suédoises. Support en 7 langues.",
+          keywords: "agence marketing digital, Google Business Profile, SEO local, Google Ads, Meta Ads, gestion de réputation, services SEO, marketing en ligne, optimisation profil entreprise, Stockholm Suède"
         },
         blog: {
           title: "Guides & Conseils Google Business Profile | Blog AWSOON",
@@ -2182,7 +2182,7 @@ export const translations = {
         getStarted: "Commencer"
       },
       hero: {
-        badge: "Excellence Marketing Digital depuis Sofia",
+        badge: "Excellence Marketing Digital depuis Stockholm",
         headline: "Développez Votre Entreprise avec un",
         headlineHighlight: "Marketing Digital Expert",
         slogan: "Qualité et précision suédoises.",
@@ -2456,7 +2456,7 @@ export const translations = {
           },
           q4: {
             question: "Travaillez-vous avec des clients internationaux?",
-            answer: "Oui! Bien que basés à Sofia, Bulgarie, nous travaillons avec des clients du monde entier. Notre équipe multilingue gère des projets sur plusieurs marchés."
+            answer: "Oui! Bien que basés à Stockholm, Suède, nous travaillons avec des clients du monde entier. Notre équipe multilingue gère des projets sur plusieurs marchés."
           },
           q5: {
             question: "Comment commencer?",
@@ -2494,7 +2494,7 @@ export const translations = {
         info: {
           email: "Email",
           location: "Localisation",
-          locationValue: "Sofia, Bulgarie",
+          locationValue: "Stockholm, Suède",
           languages: "Langues",
           languagesValue: "Nous servons des clients en 7 langues à travers l'Europe et au-delà."
         }
@@ -2882,8 +2882,8 @@ export const translations = {
         imageAlt: "وكالة AWSOON للتسويق الرقمي - خبراء Google Business Profile",
         home: {
           title: "AWSOON | وكالة التسويق الرقمي | خبراء Google Business Profile",
-          description: "تقدم AWSOON خدمات التسويق الرقمي الخبيرة بما في ذلك تحسين Google Business Profile، SEO المحلي، Google Ads، Meta Ads وإدارة السمعة. جودة سويدية بأسعار بلغارية. دعم بـ 7 لغات.",
-          keywords: "وكالة التسويق الرقمي، Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة، خدمات SEO، التسويق عبر الإنترنت، تحسين ملف الأعمال، صوفيا بلغاريا"
+          description: "تقدم AWSOON خدمات التسويق الرقمي الخبيرة بما في ذلك تحسين Google Business Profile، SEO المحلي، Google Ads، Meta Ads وإدارة السمعة. جودة ودقة سويدية. دعم بـ 7 لغات.",
+          keywords: "وكالة التسويق الرقمي، Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة، خدمات SEO، التسويق عبر الإنترنت، تحسين ملف الأعمال، ستوكهولم السويد"
         },
         blog: {
           title: "أدلة ونصائح Google Business Profile | مدونة AWSOON",
@@ -2906,7 +2906,7 @@ export const translations = {
         getStarted: "ابدأ الآن"
       },
       hero: {
-        badge: "التميز في التسويق الرقمي من صوفيا",
+        badge: "التميز في التسويق الرقمي من ستوكهولم",
         headline: "نمّي عملك مع",
         headlineHighlight: "خبراء التسويق الرقمي",
         slogan: "الجودة السويدية والدقة.",
@@ -3180,7 +3180,7 @@ export const translations = {
           },
           q4: {
             question: "هل تعملون مع عملاء دوليين؟",
-            answer: "نعم! بينما نحن مقرنا في صوفيا، بلغاريا، نعمل مع عملاء من جميع أنحاء العالم. فريقنا متعدد اللغات يمكنه التعامل مع مشاريع في أسواق متعددة."
+            answer: "نعم! بينما نحن مقرنا في ستوكهولم، السويد، نعمل مع عملاء من جميع أنحاء العالم. فريقنا متعدد اللغات يمكنه التعامل مع مشاريع في أسواق متعددة."
           },
           q5: {
             question: "كيف أبدأ؟",
@@ -3218,7 +3218,7 @@ export const translations = {
         info: {
           email: "البريد الإلكتروني",
           location: "الموقع",
-          locationValue: "صوفيا، بلغاريا",
+          locationValue: "ستوكهولم، السويد",
           languages: "اللغات",
           languagesValue: "نخدم العملاء بـ 7 لغات في أوروبا وخارجها."
         }
@@ -3606,8 +3606,8 @@ export const translations = {
         imageAlt: "AWSOON Agencia de Marketing Digital - Expertos en Google Business Profile",
         home: {
           title: "AWSOON | Agencia de Marketing Digital | Expertos en Google Business Profile",
-          description: "AWSOON ofrece servicios expertos de marketing digital incluyendo optimización de Google Business Profile, SEO local, Google Ads, Meta Ads y gestión de reputación. Calidad sueca a precios búlgaros. Soporte en 7 idiomas.",
-          keywords: "agencia marketing digital, Google Business Profile, SEO local, Google Ads, Meta Ads, gestión de reputación, servicios SEO, marketing online, optimización perfil empresarial, Sofía Bulgaria"
+          description: "AWSOON ofrece servicios expertos de marketing digital incluyendo optimización de Google Business Profile, SEO local, Google Ads, Meta Ads y gestión de reputación. Calidad y precisión suecas. Soporte en 7 idiomas.",
+          keywords: "agencia marketing digital, Google Business Profile, SEO local, Google Ads, Meta Ads, gestión de reputación, servicios SEO, marketing online, optimización perfil empresarial, Estocolmo Suecia"
         },
         blog: {
           title: "Guías y Consejos de Google Business Profile | Blog AWSOON",
@@ -3630,7 +3630,7 @@ export const translations = {
         getStarted: "Empezar"
       },
       hero: {
-        badge: "Excelencia en Marketing Digital desde Sofía",
+        badge: "Excelencia en Marketing Digital desde Estocolmo",
         headline: "Haz Crecer Tu Negocio con",
         headlineHighlight: "Marketing Digital Experto",
         slogan: "Calidad y precisión suecas.",
@@ -3904,7 +3904,7 @@ export const translations = {
           },
           q4: {
             question: "¿Trabajan con clientes internacionales?",
-            answer: "¡Sí! Aunque estamos en Sofía, Bulgaria, trabajamos con clientes de todo el mundo. Nuestro equipo multilingüe puede manejar proyectos en múltiples mercados."
+            answer: "¡Sí! Aunque estamos en Estocolmo, Suecia, trabajamos con clientes de todo el mundo. Nuestro equipo multilingüe puede manejar proyectos en múltiples mercados."
           },
           q5: {
             question: "¿Cómo empiezo?",
@@ -3942,7 +3942,7 @@ export const translations = {
         info: {
           email: "Email",
           location: "Ubicación",
-          locationValue: "Sofía, Bulgaria",
+          locationValue: "Estocolmo, Suecia",
           languages: "Idiomas",
           languagesValue: "Atendemos clientes en 7 idiomas en Europa y más allá."
         }
@@ -4330,8 +4330,8 @@ export const translations = {
         imageAlt: "وكالة AWSOON للتسويق الرقمي - خبراء Google Business Profile",
         home: {
           title: "AWSOON | وكالة التسويق الرقمي | خبراء Google Business Profile",
-          description: "AWSOON تقدّملك خدمات التسويق الرقمي الخبيرة بما فيها تحسين Google Business Profile، SEO المحلي، Google Ads، Meta Ads وإدارة السمعة. جودة سويدية بأسعار بلغارية. دعم بـ 7 لغات.",
-          keywords: "وكالة التسويق الرقمي، Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة، خدمات SEO، التسويق أونلاين، تحسين ملف الخدمة، صوفيا بلغاريا"
+          description: "AWSOON تقدّملك خدمات التسويق الرقمي الخبيرة بما فيها تحسين Google Business Profile، SEO المحلي، Google Ads، Meta Ads وإدارة السمعة. جودة ودقة سويدية. دعم بـ 7 لغات.",
+          keywords: "وكالة التسويق الرقمي، Google Business Profile، SEO المحلي، Google Ads، Meta Ads، إدارة السمعة، خدمات SEO، التسويق أونلاين، تحسين ملف الخدمة، ستوكهولم السويد"
         },
         blog: {
           title: "أدلة ونصائح Google Business Profile | مدونة AWSOON",
@@ -4628,7 +4628,7 @@ export const translations = {
           },
           q4: {
             question: "تخدمو مع كليانات دوليين؟",
-            answer: "ايه! مع أننا في صوفيا، بلغاريا، نخدمو مع كليانات من كل أنحاء العالم. الفريق متاعنا متعدد اللغات يقدر يتعامل مع مشاريع في أسواق متعددة."
+            answer: "ايه! مع أننا في ستوكهولم، السويد، نخدمو مع كليانات من كل أنحاء العالم. الفريق متاعنا متعدد اللغات يقدر يتعامل مع مشاريع في أسواق متعددة."
           },
           q5: {
             question: "كيفاش نبدا؟",
@@ -4666,7 +4666,7 @@ export const translations = {
         info: {
           email: "الإيمايل",
           location: "الموقع",
-          locationValue: "صوفيا، بلغاريا",
+          locationValue: "ستوكهولم، السويد",
           languages: "اللغات",
           languagesValue: "نخدمو الكليانات بـ 7 لغات في أوروبا وبرّا."
         }
