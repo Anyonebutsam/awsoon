@@ -543,6 +543,9 @@ const updateStructuredData = (
   // Pricing schema
   const pricingSchema = generatePricingSchema(siteUrl, pathname, t);
 
+  // Video schema (for pages with video content)
+  const videoSchema = generateVideoSchema(siteUrl, pathname, t, articleData);
+
   // Add schemas to head
   const schemas: object[] = [organizationSchema, websiteSchema, webPageSchema, serviceSchema, navigationSchema];
   if (breadcrumbSchema) {
@@ -568,6 +571,9 @@ const updateStructuredData = (
   }
   if (pricingSchema) {
     schemas.push(pricingSchema);
+  }
+  if (videoSchema) {
+    schemas.push(videoSchema);
   }
   
   schemas.forEach(schema => {
@@ -890,6 +896,163 @@ const generateServicePageSchema = (
     url: `${siteUrl}${pathname}`,
     slogan: subtitle
   };
+};
+
+// Generate VideoObject schema for pages with video content
+const generateVideoSchema = (
+  siteUrl: string,
+  pathname: string,
+  t: TFunction,
+  articleData?: ArticleData
+): object | null => {
+  // Video content mapping - define videos for specific pages/articles
+  const videoContent: Record<string, {
+    name: string;
+    description: string;
+    thumbnailUrl: string;
+    contentUrl?: string;
+    embedUrl?: string;
+    duration: string;
+    uploadDate: string;
+  }> = {
+    // Home page promotional video
+    '/': {
+      name: t('video.home.name', { defaultValue: 'AWSOON - Digital Marketing & Google Business Profile Management' }),
+      description: t('video.home.description', { defaultValue: 'Learn how AWSOON helps businesses improve their online presence with Google Business Profile optimization, Local SEO, and digital marketing services.' }),
+      thumbnailUrl: `${siteUrl}/favicon.jpg`,
+      duration: 'PT2M30S',
+      uploadDate: '2024-06-01'
+    },
+    // Blog tutorial videos
+    'claim-business': {
+      name: t('blog.articles.claim-business.title', { defaultValue: 'How to Claim Your Google Business Profile' }),
+      description: t('blog.articles.claim-business.description', { defaultValue: 'Step-by-step guide to claiming your business on Google' }),
+      thumbnailUrl: `${siteUrl}/favicon.jpg`,
+      duration: 'PT5M',
+      uploadDate: '2024-01-15'
+    },
+    'verify-profile': {
+      name: t('blog.articles.verify-profile.title', { defaultValue: 'How to Verify Your Google Business Profile' }),
+      description: t('blog.articles.verify-profile.description', { defaultValue: 'Complete verification guide for your business' }),
+      thumbnailUrl: `${siteUrl}/favicon.jpg`,
+      duration: 'PT6M',
+      uploadDate: '2024-01-20'
+    },
+    'local-ranking': {
+      name: t('blog.articles.local-ranking.title', { defaultValue: 'How to Improve Local Search Rankings' }),
+      description: t('blog.articles.local-ranking.description', { defaultValue: 'Tips and strategies for better local SEO' }),
+      thumbnailUrl: `${siteUrl}/favicon.jpg`,
+      duration: 'PT7M',
+      uploadDate: '2024-02-01'
+    },
+    'respond-reviews': {
+      name: t('blog.articles.respond-reviews.title', { defaultValue: 'How to Respond to Customer Reviews' }),
+      description: t('blog.articles.respond-reviews.description', { defaultValue: 'Best practices for engaging with customer feedback' }),
+      thumbnailUrl: `${siteUrl}/favicon.jpg`,
+      duration: 'PT5M',
+      uploadDate: '2024-02-15'
+    },
+    'get-more-reviews': {
+      name: t('blog.articles.get-more-reviews.title', { defaultValue: 'How to Get More Customer Reviews' }),
+      description: t('blog.articles.get-more-reviews.description', { defaultValue: 'Strategies to increase your review count' }),
+      thumbnailUrl: `${siteUrl}/favicon.jpg`,
+      duration: 'PT5M',
+      uploadDate: '2024-03-01'
+    }
+  };
+
+  // Check for home page
+  if (pathname === '/' || pathname === '') {
+    const homeVideo = videoContent['/'];
+    if (homeVideo) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        '@id': `${siteUrl}/#video`,
+        name: homeVideo.name,
+        description: homeVideo.description,
+        thumbnailUrl: homeVideo.thumbnailUrl,
+        uploadDate: homeVideo.uploadDate,
+        duration: homeVideo.duration,
+        publisher: {
+          '@type': 'Organization',
+          '@id': `${siteUrl}/#organization`,
+          name: 'AWSOON'
+        },
+        potentialAction: {
+          '@type': 'WatchAction',
+          target: siteUrl
+        }
+      };
+    }
+  }
+
+  // Check for blog article pages with video content
+  if (pathname.startsWith('/blog/') && articleData) {
+    const articleId = articleData.id;
+    const videoInfo = videoContent[articleId];
+    
+    if (videoInfo) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        '@id': `${siteUrl}${pathname}#video`,
+        name: videoInfo.name,
+        description: videoInfo.description,
+        thumbnailUrl: articleData.image || videoInfo.thumbnailUrl,
+        uploadDate: videoInfo.uploadDate,
+        duration: videoInfo.duration,
+        publisher: {
+          '@type': 'Organization',
+          '@id': `${siteUrl}/#organization`,
+          name: 'AWSOON'
+        },
+        isPartOf: {
+          '@type': 'Article',
+          '@id': `${siteUrl}${pathname}#article`
+        },
+        potentialAction: {
+          '@type': 'WatchAction',
+          target: `${siteUrl}${pathname}`
+        }
+      };
+    }
+  }
+
+  // Check for service pages
+  if (pathname.startsWith('/services/')) {
+    const serviceId = pathname.split('/').pop();
+    const serviceName = t(`services.pages.${serviceId}.title`, { defaultValue: '' });
+    const serviceDesc = t(`services.pages.${serviceId}.description`, { defaultValue: '' });
+    
+    if (serviceName && serviceName !== `services.pages.${serviceId}.title`) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        '@id': `${siteUrl}${pathname}#video`,
+        name: `${serviceName} - AWSOON`,
+        description: serviceDesc || `Learn about our ${serviceName} services`,
+        thumbnailUrl: `${siteUrl}/favicon.jpg`,
+        uploadDate: '2024-06-01',
+        duration: 'PT3M',
+        publisher: {
+          '@type': 'Organization',
+          '@id': `${siteUrl}/#organization`,
+          name: 'AWSOON'
+        },
+        isPartOf: {
+          '@type': 'Service',
+          '@id': `${siteUrl}${pathname}#service`
+        },
+        potentialAction: {
+          '@type': 'WatchAction',
+          target: `${siteUrl}${pathname}`
+        }
+      };
+    }
+  }
+
+  return null;
 };
 
 export default SEO;
